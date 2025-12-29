@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taxonomy Review Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <style>
+    :root {
+      --oxford-blue: #002147;
+      --text-primary: #002147;
+      --text-secondary: #4a5568;
+      --text-muted: #718096;
+      --bg-white: #ffffff;
+      --bg-light: #f8f9fa;
+      --border-light: #e2e8f0;
+      --border-selected: #002147;
+      --tabiya-green: #00FF91;
+      --tabiya-green-dark: #00CC73;
+      --tabiya-orange: #FF6B35;
+      --tabiya-gray: #F8F5F0;
+      --accent-blue: #3b82f6;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-white);
+      min-height: 100vh;
+      color: var(--text-primary);
+    }
+
+    h1, h2, h3, h4, .title-font {
+      font-family: 'DM Mono', monospace;
+      font-weight: 500;
+    }
+
+    .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+
+    .header {
+      background: var(--oxford-blue);
+      color: white;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header h1 { font-size: 16px; font-weight: 500; letter-spacing: -0.5px; }
+    .header .user-info { font-size: 13px; opacity: 0.9; font-family: 'Inter', sans-serif; }
+
+    .progress-bar { background: var(--border-light); height: 4px; overflow: hidden; margin: 20px 0 10px; }
+    .progress-fill { background: var(--tabiya-green); height: 100%; transition: width 0.3s; }
+    .progress-text { text-align: center; font-size: 13px; color: var(--text-muted); margin-bottom: 20px; }
+
+    .card {
+      background: var(--bg-white);
+      border: 2px solid var(--border-light);
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+    .card h2 { font-size: 14px; margin-bottom: 16px; color: var(--text-primary); text-transform: uppercase; letter-spacing: 0.5px; }
+    .card h3 { font-size: 13px; margin-bottom: 8px; color: var(--text-secondary); }
+
+    .item-code { font-family: 'DM Mono', monospace; color: var(--text-muted); font-size: 12px; margin-bottom: 4px; }
+    .item-label { font-size: 18px; font-weight: 500; margin: 8px 0 4px; color: var(--text-primary); }
+    .item-label-secondary { font-size: 15px; color: var(--text-secondary); margin-bottom: 12px; }
+
+    .lang-tag {
+      display: inline-block;
+      font-size: 10px;
+      font-family: 'DM Mono', monospace;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      margin-right: 6px;
+      min-width: 20px;
+    }
+
+    .decision-buttons { display: flex; gap: 10px; margin: 8px 0 0 0; }
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: opacity 0.2s;
+      font-family: 'Inter', sans-serif;
+    }
+    .btn:hover { opacity: 0.85; }
+    .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+    .btn-match { background: var(--tabiya-green); color: var(--oxford-blue); font-weight: 600; }
+    .btn-new-local { background: var(--oxford-blue); color: var(--tabiya-green); font-weight: 600; }
+    .btn-skip { background: var(--tabiya-gray); color: var(--oxford-blue); border: 2px solid var(--border-light); }
+    .btn-clear { background: var(--oxford-blue); color: var(--tabiya-green); font-weight: 600; }
+    .btn-primary { background: var(--oxford-blue); color: white; }
+    .btn-sm { padding: 5px 10px; font-size: 11px; }
+
+    .notes-input {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid var(--border-light);
+      font-size: 13px;
+      resize: vertical;
+      min-height: 50px;
+      font-family: 'Inter', sans-serif;
+    }
+    .notes-input:focus { outline: none; border-color: var(--oxford-blue); }
+
+    .occupation-highlight {
+      color: var(--tabiya-green-dark);
+      font-weight: 500;
+    }
+
+    .three-column { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+    @media (max-width: 1200px) { .three-column { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 800px) { .three-column { grid-template-columns: 1fr; } }
+
+    .setup-screen { max-width: 400px; margin: 80px auto; }
+    .setup-screen .card { border: 1px solid var(--border-light); }
+    .setup-screen input, .setup-screen select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--border-light);
+      font-size: 14px;
+      margin-bottom: 12px;
+      font-family: 'Inter', sans-serif;
+    }
+    .setup-screen input:focus, .setup-screen select:focus { outline: none; border-color: var(--oxford-blue); }
+    .setup-screen label { display: block; margin-bottom: 4px; font-size: 12px; font-weight: 500; color: var(--text-secondary); }
+
+    .loading { text-align: center; padding: 30px; color: var(--text-muted); font-size: 13px; }
+    .loading-status {
+      background: var(--bg-light);
+      border: 1px solid var(--border-light);
+      padding: 14px;
+      margin-bottom: 12px;
+    }
+    .loading-status .progress { background: var(--border-light); height: 4px; margin-top: 10px; overflow: hidden; }
+    .loading-status .progress-inner { background: var(--oxford-blue); height: 100%; transition: width 0.3s; }
+
+    .empty-state { text-align: center; padding: 50px 20px; color: var(--text-secondary); }
+    .empty-state h2 { margin-bottom: 8px; font-size: 18px; }
+
+    .stats { display: flex; gap: 30px; justify-content: center; margin: 20px 0; }
+    .stat { text-align: center; }
+    .stat-value { font-size: 28px; font-weight: 600; font-family: 'DM Mono', monospace; }
+    .stat-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+
+    .hidden { display: none !important; }
+
+    /* Tree Styles */
+    .tree-container { max-height: 550px; overflow-y: auto; border: 2px solid var(--border-light); }
+    .tree-node { border-bottom: 2px solid var(--border-light); }
+    .tree-node:last-child { border-bottom: none; }
+    .tree-row {
+      display: flex;
+      align-items: center;
+      padding: 8px 10px;
+      cursor: pointer;
+      transition: background 0.15s;
+      user-select: none;
+    }
+    .tree-row:hover { background: var(--bg-light); }
+    .tree-row.selected { background: var(--tabiya-gray); border-left: 3px solid var(--tabiya-green); margin-left: -3px; }
+    .tree-toggle {
+      width: 18px;
+      height: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 10px;
+      flex-shrink: 0;
+    }
+    .tree-toggle.has-children { cursor: pointer; }
+    .tree-toggle.has-children:hover { color: var(--oxford-blue); }
+    .tree-code { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text-muted); min-width: 45px; margin-right: 8px; }
+    .tree-label { font-size: 12px; flex: 1; color: var(--text-primary); }
+    .tree-badge {
+      font-size: 9px;
+      padding: 1px 4px;
+      margin-left: 6px;
+      background: var(--bg-light);
+      border: 2px solid var(--border-light);
+      color: var(--text-muted);
+      font-family: 'DM Mono', monospace;
+    }
+    .tree-select-btn {
+      padding: 3px 8px;
+      font-size: 10px;
+      background: var(--tabiya-green);
+      color: var(--oxford-blue);
+      border: none;
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 0.15s;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+    }
+    .tree-row:hover .tree-select-btn { opacity: 1; }
+    .tree-children { margin-left: 18px; border-left: 1px solid var(--border-light); }
+
+    /* Detail Panel */
+    .detail-panel {
+      background: var(--bg-light);
+      border: 1px solid var(--border-light);
+      padding: 14px;
+    }
+    .detail-panel h4 {
+      font-size: 10px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-family: 'DM Mono', monospace;
+    }
+    .detail-description { font-size: 12px; color: var(--text-secondary); line-height: 1.5; max-height: 80px; overflow-y: auto; margin-bottom: 14px; }
+    .hierarchy-section { margin-top: 14px; }
+    .hierarchy-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 10px;
+      background: var(--bg-white);
+      border: 1px solid var(--border-light);
+      margin-bottom: 4px;
+      cursor: pointer;
+      transition: border-color 0.15s;
+    }
+    .hierarchy-item:hover { border-color: var(--oxford-blue); }
+    .hierarchy-item .code { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text-muted); min-width: 50px; }
+    .hierarchy-item .label { font-size: 12px; flex: 1; }
+    .hierarchy-item.parent { border-left: 3px solid var(--accent-blue); }
+    .hierarchy-item.child { border-left: 3px solid var(--accent-green); margin-left: 16px; }
+
+    /* Modal */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,33,71,0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    .modal {
+      background: var(--bg-white);
+      border: 1px solid var(--border-light);
+      padding: 24px;
+      max-width: 600px;
+      width: 90%;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+    .modal h2 { margin-bottom: 12px; font-size: 16px; }
+    .modal p { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; }
+    .modal-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px; }
+
+    .selected-parent {
+      background: var(--bg-white);
+      border: 2px solid var(--accent-orange);
+      padding: 14px;
+      margin: 16px 0;
+    }
+    .selected-parent h3 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--accent-orange); margin-bottom: 10px; }
+    .selected-parent .label { font-weight: 500; color: var(--text-primary); }
+    .selected-parent .code { font-family: 'DM Mono', monospace; color: var(--text-muted); font-size: 11px; margin-top: 6px; }
+  </style>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen" class="setup-screen">
+    <div class="card">
+      <h2>Taxonomy Review Tool</h2>
+      <div class="loading-status">
+        <div id="loading-message" style="font-size: 13px; color: var(--text-secondary);">Initializing...</div>
+        <div class="progress"><div class="progress-inner" id="loading-progress" style="width: 0%"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Setup Screen -->
+  <div id="setup-screen" class="setup-screen hidden">
+    <div class="card">
+      <h2>Taxonomy Review Tool</h2>
+      <p style="color: var(--text-secondary); margin-bottom: 20px; font-size: 13px;">Review occupation matches for Tabiya ESCO localizations.</p>
+      <label>Select Project</label>
+      <select id="project-select"><option value="">Loading projects...</option></select>
+      <label>Your Name</label>
+      <input type="text" id="reviewer-name" placeholder="Enter your name to start">
+      <button class="btn btn-primary" style="width: 100%; margin-top: 8px;" onclick="startReview()">Start Reviewing</button>
+    </div>
+  </div>
+
+  <!-- Review Screen -->
+  <div id="review-screen" class="hidden">
+    <div class="header">
+      <h1>Taxonomy Review Tool</h1>
+      <div class="user-info">
+        <span id="header-project"></span> | <span id="header-reviewer"></span>
+        <button onclick="exitReview()" style="margin-left: 12px; padding: 4px 10px; background: rgba(255,255,255,0.15); border: none; color: white; cursor: pointer; font-size: 12px;">Exit</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+      <div class="progress-text" id="progress-text">Loading...</div>
+
+      <div id="review-content">
+        <div class="three-column">
+          <!-- Left: Item to Review -->
+          <div>
+            <!-- Card 1: Local Occupation (CNO/KESCO info) -->
+            <div class="card">
+              <h2>Local Occupation</h2>
+              <div id="cno-context" class="hidden">
+                <div class="item-code"><span id="cno-minor-code"></span>: <span id="cno-minor-title"></span></div>
+              </div>
+              <div style="margin-top: 8px;">
+                <div class="item-code"><span id="item-code" class="occupation-highlight"></span>: <span id="item-label-en" class="occupation-highlight"></span></div>
+                <div class="item-code" id="item-label-es-row" style="margin-top: 4px;"><span class="lang-tag">ES</span><span id="item-label" style="color: var(--text-secondary);"></span></div>
+              </div>
+            </div>
+
+            <!-- Card 2: Suggested Match -->
+            <div class="card hidden" id="suggested-match">
+              <h2>Suggested Match (rejected by LLM)</h2>
+              <div id="isco-context" class="hidden" style="margin-bottom: 10px;">
+                <div class="item-code"><span id="isco-group-code"></span>: <span id="isco-group-label"></span></div>
+              </div>
+              <div>
+                <div class="item-code"><span id="suggested-code" class="occupation-highlight"></span>: <span id="suggested-label-en" class="occupation-highlight"></span></div>
+                <div class="item-code" id="suggested-label-es-row" style="margin-top: 4px;"><span class="lang-tag">ES</span><span id="suggested-label-es" style="color: var(--text-secondary);"></span></div>
+                <div class="item-code" style="margin-top: 8px;"><span class="lang-tag" style="min-width: auto;">Semantic similarity:</span><span id="suggested-similarity"></span></div>
+              </div>
+            </div>
+
+            <!-- Card 3: Your Selection -->
+            <div class="card hidden" id="selected-esco" style="border: 2px solid var(--tabiya-green);">
+              <h2 style="color: var(--tabiya-green-dark);">Your Selection</h2>
+              <div>
+                <div class="item-code"><span id="selected-code" class="occupation-highlight"></span>: <span id="selected-label-en" class="occupation-highlight"></span></div>
+                <div class="item-code" id="selected-label-es-row" style="margin-top: 4px;"><span class="lang-tag">ES</span><span id="selected-label-es" style="color: var(--text-secondary);"></span></div>
+              </div>
+              <button onclick="clearSelection()" class="btn btn-sm btn-clear" style="margin-top: 12px;">Clear</button>
+            </div>
+
+            <!-- Card 4: Notes -->
+            <div class="card">
+              <h2>Notes (optional)</h2>
+              <textarea class="notes-input" id="notes-input" placeholder="Add any notes..."></textarea>
+            </div>
+
+            <!-- Decision Buttons -->
+            <div class="decision-buttons">
+              <button class="btn btn-match" onclick="submitDecision('MATCH')" id="btn-match" disabled>Match</button>
+              <button class="btn btn-new-local" onclick="showNewLocalModal()">New Local</button>
+              <button class="btn btn-skip" onclick="submitDecision('SKIP')">Skip</button>
+            </div>
+          </div>
+
+          <!-- Middle: ESCO Hierarchy -->
+          <div>
+            <div class="card">
+              <h2>ESCO Taxonomy</h2>
+              <div class="tree-container" id="tree-container" style="max-height: 550px;">
+                <div class="loading">Loading taxonomy...</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Selection Details -->
+          <div>
+            <div class="card" id="detail-card">
+              <h2>Selection Details</h2>
+              <div id="detail-content">
+                <div class="loading">Select an occupation to see details</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="empty-state" class="card hidden">
+        <div class="empty-state">
+          <h2>All Done!</h2>
+          <p>No more items to review in this project.</p>
+          <div class="stats" id="final-stats"></div>
+          <button class="btn btn-primary" onclick="exitReview()" style="margin-top: 20px;">Back to Projects</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- New Local Modal -->
+  <div id="new-local-modal" class="modal-overlay hidden">
+    <div class="modal">
+      <h2>Select Parent for New Local Occupation</h2>
+      <p>Expand the tree and select the ESCO group under which this new local occupation should be added.</p>
+
+      <div class="tree-container" id="parent-tree-container" style="max-height: 280px;">
+        <div class="loading">Loading...</div>
+      </div>
+
+      <div class="selected-parent hidden" id="selected-parent">
+        <h3>Selected Parent</h3>
+        <div><span class="lang-tag">EN</span><span class="label" id="parent-label-en"></span></div>
+        <div style="margin-top: 4px;"><span class="lang-tag">ES</span><span id="parent-label-es"></span></div>
+        <div class="code" id="parent-code"></div>
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn btn-skip" onclick="hideNewLocalModal()">Cancel</button>
+        <button class="btn btn-new-local" onclick="confirmNewLocal()" id="btn-confirm-new-local" disabled>Confirm New Local</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    // ========================================
+    // CONFIG
+    // ========================================
+    const SUPABASE_URL = 'https://ymzvilcsarexbcdyinqg.supabase.co';
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InltenZpbGNzYXJleGJjZHlpbnFnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjU4NTIwNjMsImV4cCI6MjA4MTQyODA2M30.v9LNoXljOmiAfvENhsmmZXpJOqA47ieFsdTIgPBrbfg';
+
+    const db = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+    // ========================================
+    // STATE
+    // ========================================
+    let currentProject = null;
+    let currentItem = null;
+    let reviewerName = '';
+    let selectedESCO = null;
+    let selectedParent = null;
+    let lockRefreshInterval = null;
+
+    // Taxonomy data
+    let escoLabels = {}; // code -> { labelEs, labelEn, id, description, isGroup }
+    let iscoGroups = {}; // isco_code -> { label, labelEs }
+    let hierarchyData = {}; // id -> { parentId, children: [] }
+    let topLevelGroups = []; // Root level groups
+
+    // ========================================
+    // INITIALIZATION
+    // ========================================
+    document.addEventListener('DOMContentLoaded', initializeApp);
+
+    async function initializeApp() {
+      updateLoadingStatus('Loading taxonomy data...', 30);
+      try {
+        await loadTaxonomyData();
+        updateLoadingStatus('Ready!', 100);
+      } catch (err) {
+        console.error('Failed to initialize:', err);
+        updateLoadingStatus('Error loading taxonomy', 100);
+      }
+
+      setTimeout(() => {
+        document.getElementById('loading-screen').classList.add('hidden');
+        document.getElementById('setup-screen').classList.remove('hidden');
+        loadProjects();
+      }, 500);
+    }
+
+    function updateLoadingStatus(message, progress) {
+      document.getElementById('loading-message').textContent = message;
+      document.getElementById('loading-progress').style.width = progress + '%';
+    }
+
+    let occupationsByGroup = {}; // group_code -> [occupation objects]
+
+    async function loadTaxonomyData() {
+      // Load ALL occupations with pagination (Supabase default limit is 1000)
+      let allOccs = [];
+      let offset = 0;
+      const pageSize = 1000;
+      while (true) {
+        const { data: occs } = await db.from('occupations')
+          .select('id, code, preferred_label, preferred_label_es, description, description_es, occupation_group_code')
+          .range(offset, offset + pageSize - 1);
+        if (!occs || occs.length === 0) break;
+        allOccs = allOccs.concat(occs);
+        if (occs.length < pageSize) break;
+        offset += pageSize;
+      }
+
+      allOccs.forEach(o => {
+        escoLabels[o.code] = {
+          id: o.id,
+          labelEn: o.preferred_label,
+          labelEs: o.preferred_label_es || o.preferred_label,
+          descriptionEn: o.description,
+          descriptionEs: o.description_es || o.description,
+          groupCode: o.occupation_group_code,
+          isGroup: false
+        };
+        // Group occupations by their parent group code
+        if (o.occupation_group_code) {
+          if (!occupationsByGroup[o.occupation_group_code]) {
+            occupationsByGroup[o.occupation_group_code] = [];
+          }
+          occupationsByGroup[o.occupation_group_code].push({
+            id: o.id,
+            code: o.code,
+            labelEn: o.preferred_label,
+            labelEs: o.preferred_label_es || o.preferred_label,
+            isGroup: false
+          });
+        }
+      });
+      console.log('Loaded', allOccs.length, 'occupations into', Object.keys(occupationsByGroup).length, 'groups');
+
+      // Load occupation groups
+      const { data: groups } = await db.from('occupation_groups').select('id, code, preferred_label, preferred_label_es, description');
+      if (groups) {
+        groups.forEach(g => {
+          escoLabels[g.code] = {
+            id: g.id,
+            labelEn: g.preferred_label,
+            labelEs: g.preferred_label_es || g.preferred_label,
+            descriptionEn: g.description,
+            descriptionEs: g.description,
+            isGroup: true
+          };
+        });
+      }
+
+      // Load hierarchy
+      const { data: hier } = await db.from('occupation_hierarchy').select('parent_id, child_id, parent_type, child_type');
+      if (hier) {
+        hier.forEach(h => {
+          if (!hierarchyData[h.child_id]) hierarchyData[h.child_id] = { parentId: null, children: [] };
+          hierarchyData[h.child_id].parentId = h.parent_id;
+
+          if (!hierarchyData[h.parent_id]) hierarchyData[h.parent_id] = { parentId: null, children: [] };
+          hierarchyData[h.parent_id].children.push(h.child_id);
+        });
+      }
+
+      // Build ISCO groups lookup from occupation_groups (codes like 11, 21, 0110 etc.)
+      if (groups) {
+        groups.forEach(g => {
+          const shortCode = g.code.replace(/^0+/, '') || '0';
+          iscoGroups[shortCode] = { label: g.preferred_label, labelEs: g.preferred_label_es || g.preferred_label };
+          iscoGroups[g.code] = { label: g.preferred_label, labelEs: g.preferred_label_es || g.preferred_label };
+        });
+      }
+
+      // Find top-level groups (single digit codes: 0-9)
+      if (groups) {
+        topLevelGroups = groups
+          .filter(g => /^[0-9]$/.test(g.code))
+          .sort((a, b) => parseInt(a.code) - parseInt(b.code))
+          .map(g => ({ id: g.id, code: g.code, labelEn: g.preferred_label, labelEs: g.preferred_label_es || g.preferred_label, isGroup: true }));
+      }
+
+      console.log('Loaded', Object.keys(escoLabels).length, 'occupations/groups,', topLevelGroups.length, 'top-level groups');
+    }
+
+    // ========================================
+    // TREE NAVIGATION
+    // ========================================
+    let expandedNodes = new Set();
+
+    function renderTree() {
+      const container = document.getElementById('tree-container');
+      let html = '';
+      for (const group of topLevelGroups) {
+        html += renderTreeNode(group, 0);
+      }
+      container.innerHTML = html || '<div class="loading">No taxonomy data</div>';
+    }
+
+    let clickTimer = null;
+    const DOUBLE_CLICK_DELAY = 250;
+
+    function renderTreeNode(item, depth) {
+      const hier = hierarchyData[item.id];
+      const groupChildren = hier && hier.children && hier.children.length > 0;
+      const occupationChildren = occupationsByGroup[item.code] || [];
+      const hasChildren = groupChildren || occupationChildren.length > 0;
+      const isExpanded = expandedNodes.has(item.id);
+      const isSelected = selectedESCO && selectedESCO.code === item.code;
+      const indent = depth * 16;
+      const badge = item.isGroup !== false ? '<span class="tree-badge">G</span>' : '';
+
+      let html = `<div class="tree-node" style="margin-left:${indent}px;" data-node-id="${item.id}">
+        <div class="tree-row ${isSelected ? 'selected' : ''}" data-code="${item.code}" data-id="${item.id}" data-has-children="${hasChildren}" onclick="handleRowClick(event, '${item.id}', '${item.code}', ${hasChildren})">
+          <span class="tree-toggle ${hasChildren ? 'has-children' : ''}">
+            ${hasChildren ? (isExpanded ? '&#9660;' : '&#9654;') : '&#183;'}
+          </span>
+          <span class="tree-code">${item.code}</span>
+          <span class="tree-label">${item.labelEn}${badge}</span>
+          <button class="tree-select-btn" onclick="event.stopPropagation(); selectByCode('${item.code}')">Select</button>
+        </div>
+      </div>`;
+
+      if (hasChildren && isExpanded) {
+        let allChildren = [];
+        if (groupChildren) {
+          // Only add groups from hierarchy, not occupations (occupations come from occupationsByGroup)
+          const groups = hier.children.map(childId => {
+            const child = findByIdInLabels(childId);
+            if (child && child.isGroup) {
+              return { id: child.id, code: child.code, labelEn: child.labelEn, labelEs: child.labelEs, isGroup: true };
+            }
+            return null;
+          }).filter(Boolean);
+          allChildren = allChildren.concat(groups);
+        }
+        allChildren = allChildren.concat(occupationChildren);
+        allChildren.sort((a, b) => a.code.localeCompare(b.code));
+
+        for (const child of allChildren) {
+          html += renderTreeNode(child, depth + 1);
+        }
+      }
+
+      return html;
+    }
+
+    function handleRowClick(event, id, code, hasChildren) {
+      event.stopPropagation();
+
+      if (clickTimer) {
+        // Double click - select
+        clearTimeout(clickTimer);
+        clickTimer = null;
+        selectByCode(code);
+      } else {
+        // Single click - wait to see if it's a double click
+        clickTimer = setTimeout(() => {
+          clickTimer = null;
+          if (hasChildren) {
+            toggleNode(id);
+          }
+        }, DOUBLE_CLICK_DELAY);
+      }
+    }
+
+    function toggleNode(id) {
+      if (expandedNodes.has(id)) {
+        // Close this node and all its descendants
+        closeNodeAndDescendants(id);
+      } else {
+        expandedNodes.add(id);
+      }
+      renderTree();
+    }
+
+    function closeNodeAndDescendants(id) {
+      expandedNodes.delete(id);
+      // Find all children and close them too
+      const hier = hierarchyData[id];
+      if (hier && hier.children) {
+        for (const childId of hier.children) {
+          closeNodeAndDescendants(childId);
+        }
+      }
+      // Also close occupation children (they use code, not id)
+      const item = findByIdInLabels(id);
+      if (item && occupationsByGroup[item.code]) {
+        for (const occ of occupationsByGroup[item.code]) {
+          expandedNodes.delete(occ.id);
+        }
+      }
+    }
+
+    function selectByCode(code) {
+      const info = escoLabels[code];
+      if (info) {
+        selectESCO({
+          code: code,
+          labelEn: info.labelEn,
+          labelEs: info.labelEs,
+          id: info.id,
+          isGroup: info.isGroup
+        });
+        renderTree();
+      }
+    }
+
+    function expandToCode(code) {
+      const info = escoLabels[code];
+      if (!info || !info.id) return;
+
+      let currentId = info.id;
+      const toExpand = [];
+      while (currentId) {
+        const hier = hierarchyData[currentId];
+        if (hier && hier.parentId) {
+          toExpand.push(hier.parentId);
+          currentId = hier.parentId;
+        } else {
+          break;
+        }
+      }
+      toExpand.forEach(id => expandedNodes.add(id));
+    }
+
+    // ========================================
+    // SELECTION & DETAILS
+    // ========================================
+    function selectESCO(data) {
+      selectedESCO = data;
+      document.getElementById('selected-esco').classList.remove('hidden');
+      document.getElementById('selected-label-en').textContent = data.labelEn;
+      document.getElementById('selected-label-es').textContent = data.labelEs;
+      document.getElementById('selected-code').textContent = data.code;
+      document.getElementById('btn-match').disabled = false;
+
+      // Hide ES row if same as EN or empty
+      const showSelectedEs = data.labelEs && data.labelEs !== data.labelEn;
+      document.getElementById('selected-label-es-row').classList.toggle('hidden', !showSelectedEs);
+
+      showSelectionDetails(data);
+    }
+
+    async function showSelectionDetails(data) {
+      const detailDiv = document.getElementById('detail-content');
+      const info = escoLabels[data.code] || {};
+
+      let html = `<div class="detail-panel">`;
+
+      // Code and type
+      html += `<div style="margin-bottom: 12px;">`;
+      html += `<span style="font-family: 'DM Mono', monospace; background: var(--bg-light); border: 1px solid var(--border-light); padding: 2px 6px; font-size: 11px;">${data.code}</span>`;
+      if (info.isGroup) html += ` <span class="tree-badge" style="margin-left: 6px;">GROUP</span>`;
+      html += `</div>`;
+
+      // Labels
+      html += `<div style="margin-bottom: 12px;">`;
+      html += `<div style="font-size: 14px; font-weight: 500; margin-bottom: 4px;">${data.labelEn}</div>`;
+      html += `<div style="font-size: 13px; color: var(--text-secondary);">${data.labelEs}</div>`;
+      html += `</div>`;
+
+      // Description
+      html += `<h4>Description</h4>`;
+      if (info.descriptionEn) {
+        html += `<div class="detail-description">${info.descriptionEn}</div>`;
+      } else {
+        html += `<div class="detail-description" style="color: var(--text-muted); font-style: italic;">No description available.</div>`;
+      }
+
+      // Get hierarchy
+      if (info.id && hierarchyData[info.id]) {
+        const hier = hierarchyData[info.id];
+
+        // Parent
+        if (hier.parentId) {
+          const parent = findByIdInLabels(hier.parentId);
+          if (parent) {
+            html += `<div class="hierarchy-section"><h4>Parent Group</h4>`;
+            html += `<div class="hierarchy-item parent" onclick='navigateToCode("${parent.code}")'>
+              <span class="code">${parent.code}</span>
+              <span class="label">${parent.labelEn}</span>
+            </div></div>`;
+          }
+        } else {
+          html += `<div class="hierarchy-section"><h4>Parent</h4>`;
+          html += `<div style="font-size: 11px; color: var(--text-muted); font-style: italic;">Top-level group</div></div>`;
+        }
+
+        // Children (for groups)
+        const groupChildren = hier.children && hier.children.length > 0;
+        const occupationChildren = occupationsByGroup[data.code] || [];
+
+        if (groupChildren || occupationChildren.length > 0) {
+          const totalChildren = (hier.children?.length || 0) + occupationChildren.length;
+          html += `<div class="hierarchy-section"><h4>Children (${totalChildren})</h4>`;
+          html += `<div style="max-height: 180px; overflow-y: auto;">`;
+
+          // Group children first
+          if (groupChildren) {
+            for (const childId of hier.children) {
+              const child = findByIdInLabels(childId);
+              if (child) {
+                html += `<div class="hierarchy-item child" onclick='navigateToCode("${child.code}")'>
+                  <span class="code">${child.code}</span>
+                  <span class="label">${child.labelEn}</span>
+                  <span class="tree-badge">G</span>
+                </div>`;
+              }
+            }
+          }
+
+          // Occupation children
+          for (const occ of occupationChildren) {
+            html += `<div class="hierarchy-item child" onclick='navigateToCode("${occ.code}")'>
+              <span class="code">${occ.code}</span>
+              <span class="label">${occ.labelEn}</span>
+            </div>`;
+          }
+
+          html += `</div></div>`;
+        } else if (!info.isGroup) {
+          // For occupations, show parent group info
+          if (info.groupCode) {
+            const parentGroup = escoLabels[info.groupCode];
+            if (parentGroup) {
+              html += `<div class="hierarchy-section"><h4>Parent Group</h4>`;
+              html += `<div class="hierarchy-item parent" onclick='navigateToCode("${info.groupCode}")'>
+                <span class="code">${info.groupCode}</span>
+                <span class="label">${parentGroup.labelEn}</span>
+                <span class="tree-badge">G</span>
+              </div></div>`;
+            }
+          }
+        }
+      } else if (!info.isGroup && info.groupCode) {
+        // Fallback for occupations without hierarchy data
+        const parentGroup = escoLabels[info.groupCode];
+        if (parentGroup) {
+          html += `<div class="hierarchy-section"><h4>Parent Group</h4>`;
+          html += `<div class="hierarchy-item parent" onclick='navigateToCode("${info.groupCode}")'>
+            <span class="code">${info.groupCode}</span>
+            <span class="label">${parentGroup.labelEn}</span>
+            <span class="tree-badge">G</span>
+          </div></div>`;
+        }
+      }
+
+      html += `</div>`;
+      detailDiv.innerHTML = html;
+    }
+
+    function findByIdInLabels(id) {
+      for (const [code, info] of Object.entries(escoLabels)) {
+        if (info.id === id) return { code, ...info };
+      }
+      return null;
+    }
+
+    function navigateToCode(code) {
+      const info = escoLabels[code];
+      if (info) {
+        expandToCode(code);
+        selectESCO({ code, labelEn: info.labelEn, labelEs: info.labelEs, id: info.id, isGroup: info.isGroup });
+        renderTree();
+      }
+    }
+
+    function clearSelection() {
+      selectedESCO = null;
+      document.getElementById('selected-esco').classList.add('hidden');
+      document.getElementById('btn-match').disabled = true;
+      document.getElementById('detail-content').innerHTML = '<div class="loading">Select an occupation to see details</div>';
+      renderTree();
+    }
+
+    // ========================================
+    // NEW LOCAL MODAL
+    // ========================================
+    let parentExpandedNodes = new Set();
+
+    function showNewLocalModal() {
+      selectedParent = null;
+      parentExpandedNodes = new Set();
+      document.getElementById('new-local-modal').classList.remove('hidden');
+      document.getElementById('selected-parent').classList.add('hidden');
+      document.getElementById('btn-confirm-new-local').disabled = true;
+
+      if (currentItem?.isco_code) {
+        const iscoCode = currentItem.isco_code.toString();
+        if (escoLabels[iscoCode]) {
+          parentExpandToCode(iscoCode);
+        } else {
+          const majorCode = iscoCode.charAt(0);
+          if (escoLabels[majorCode]) {
+            parentExpandedNodes.add(escoLabels[majorCode].id);
+          }
+        }
+      }
+      renderParentTree();
+    }
+
+    function hideNewLocalModal() {
+      document.getElementById('new-local-modal').classList.add('hidden');
+      selectedParent = null;
+    }
+
+    function parentExpandToCode(code) {
+      const info = escoLabels[code];
+      if (!info || !info.id) return;
+      let currentId = info.id;
+      while (currentId) {
+        const hier = hierarchyData[currentId];
+        if (hier && hier.parentId) {
+          parentExpandedNodes.add(hier.parentId);
+          currentId = hier.parentId;
+        } else {
+          break;
+        }
+      }
+    }
+
+    function renderParentTree() {
+      const container = document.getElementById('parent-tree-container');
+      let html = '';
+      for (const group of topLevelGroups) {
+        html += renderParentTreeNode(group, 0);
+      }
+      container.innerHTML = html || '<div class="loading">No taxonomy data</div>';
+    }
+
+    let parentClickTimer = null;
+
+    function renderParentTreeNode(item, depth) {
+      const hier = hierarchyData[item.id];
+      const groupChildren = hier && hier.children && hier.children.length > 0;
+      const occupationChildren = occupationsByGroup[item.code] || [];
+      const hasChildren = groupChildren || occupationChildren.length > 0;
+      const isExpanded = parentExpandedNodes.has(item.id);
+      const isSelected = selectedParent && selectedParent.code === item.code;
+      const indent = depth * 16;
+      const badge = item.isGroup !== false ? '<span class="tree-badge">G</span>' : '';
+
+      let html = `<div class="tree-node" style="margin-left:${indent}px;" data-node-id="${item.id}">
+        <div class="tree-row ${isSelected ? 'selected' : ''}" data-code="${item.code}" onclick="handleParentRowClick(event, '${item.id}', '${item.code}', ${hasChildren})">
+          <span class="tree-toggle ${hasChildren ? 'has-children' : ''}">
+            ${hasChildren ? (isExpanded ? '&#9660;' : '&#9654;') : '&#183;'}
+          </span>
+          <span class="tree-code">${item.code}</span>
+          <span class="tree-label">${item.labelEn}${badge}</span>
+          <button class="tree-select-btn" onclick="event.stopPropagation(); selectParentByCode('${item.code}')">Select</button>
+        </div>
+      </div>`;
+
+      if (hasChildren && isExpanded) {
+        let allChildren = [];
+        if (groupChildren) {
+          // Only add groups from hierarchy, not occupations
+          const groups = hier.children.map(childId => {
+            const child = findByIdInLabels(childId);
+            if (child && child.isGroup) {
+              return { id: child.id, code: child.code, labelEn: child.labelEn, labelEs: child.labelEs, isGroup: true };
+            }
+            return null;
+          }).filter(Boolean);
+          allChildren = allChildren.concat(groups);
+        }
+        allChildren = allChildren.concat(occupationChildren);
+        allChildren.sort((a, b) => a.code.localeCompare(b.code));
+
+        for (const child of allChildren) {
+          html += renderParentTreeNode(child, depth + 1);
+        }
+      }
+
+      return html;
+    }
+
+    function handleParentRowClick(event, id, code, hasChildren) {
+      event.stopPropagation();
+
+      if (parentClickTimer) {
+        clearTimeout(parentClickTimer);
+        parentClickTimer = null;
+        selectParentByCode(code);
+      } else {
+        parentClickTimer = setTimeout(() => {
+          parentClickTimer = null;
+          if (hasChildren) {
+            parentToggleNode(id);
+          }
+        }, DOUBLE_CLICK_DELAY);
+      }
+    }
+
+    function parentToggleNode(id) {
+      if (parentExpandedNodes.has(id)) {
+        parentCloseNodeAndDescendants(id);
+      } else {
+        parentExpandedNodes.add(id);
+      }
+      renderParentTree();
+    }
+
+    function parentCloseNodeAndDescendants(id) {
+      parentExpandedNodes.delete(id);
+      const hier = hierarchyData[id];
+      if (hier && hier.children) {
+        for (const childId of hier.children) {
+          parentCloseNodeAndDescendants(childId);
+        }
+      }
+    }
+
+    function selectParentByCode(code) {
+      const info = escoLabels[code];
+      if (info) {
+        selectedParent = { code, labelEn: info.labelEn, labelEs: info.labelEs, id: info.id, isGroup: info.isGroup };
+        document.getElementById('selected-parent').classList.remove('hidden');
+        document.getElementById('parent-label-en').textContent = info.labelEn;
+        document.getElementById('parent-label-es').textContent = info.labelEs;
+        document.getElementById('parent-code').textContent = code;
+        document.getElementById('btn-confirm-new-local').disabled = false;
+        renderParentTree();
+      }
+    }
+
+    async function confirmNewLocal() {
+      if (!selectedParent) return;
+      hideNewLocalModal();
+      await submitDecisionWithParent('NEW_LOCAL', selectedParent);
+    }
+
+    // ========================================
+    // PROJECT & REVIEW FLOW
+    // ========================================
+    async function loadProjects() {
+      const select = document.getElementById('project-select');
+      const { data } = await db.from('review_projects').select('*').eq('status', 'active');
+      if (!data || data.length === 0) { select.innerHTML = '<option value="">No projects</option>'; return; }
+      select.innerHTML = '<option value="">Select...</option>' + data.map(p => `<option value="${p.id}">${p.name}</option>`).join('');
+    }
+
+    async function startReview() {
+      const projectId = document.getElementById('project-select').value;
+      reviewerName = document.getElementById('reviewer-name').value.trim();
+      if (!projectId || !reviewerName) { alert('Please fill all fields'); return; }
+
+      const { data: project } = await db.from('review_projects').select('*').eq('id', projectId).single();
+      currentProject = project;
+
+      document.getElementById('setup-screen').classList.add('hidden');
+      document.getElementById('review-screen').classList.remove('hidden');
+      document.getElementById('header-project').textContent = project.name;
+      document.getElementById('header-reviewer').textContent = reviewerName;
+
+      await loadNextItem();
+      lockRefreshInterval = setInterval(refreshLock, 5 * 60 * 1000);
+    }
+
+    async function loadNextItem() {
+      await db.from('review_locks').delete().lt('expires_at', new Date().toISOString());
+      const { data: items } = await db.from('review_items').select('id, decision').eq('project_id', currentProject.id);
+      const total = items.length;
+      const reviewed = items.filter(i => i.decision !== null).length;
+
+      document.getElementById('progress-fill').style.width = `${(reviewed / total) * 100}%`;
+      document.getElementById('progress-text').textContent = `${reviewed} / ${total} reviewed (${Math.round((reviewed / total) * 100)}%)`;
+
+      const { data: nextItems } = await db.from('review_items').select('*').eq('project_id', currentProject.id).is('decision', null).order('id').limit(10);
+      if (!nextItems || nextItems.length === 0) { showEmptyState(total, reviewed); return; }
+
+      const { data: locks } = await db.from('review_locks').select('item_id').gt('expires_at', new Date().toISOString());
+      const lockedIds = new Set(locks?.map(l => l.item_id) || []);
+      const availableItem = nextItems.find(item => !lockedIds.has(item.id));
+
+      if (!availableItem) {
+        document.getElementById('review-content').innerHTML = '<div class="card"><div class="loading">All items locked. Refreshing...</div></div>';
+        setTimeout(loadNextItem, 10000);
+        return;
+      }
+
+      await db.from('review_locks').upsert({ item_id: availableItem.id, reviewer_name: reviewerName, expires_at: new Date(Date.now() + 30 * 60 * 1000).toISOString() });
+      currentItem = availableItem;
+      selectedESCO = null;
+      displayItem(availableItem);
+    }
+
+    function displayItem(item) {
+      document.getElementById('review-content').classList.remove('hidden');
+      document.getElementById('empty-state').classList.add('hidden');
+
+      // Card 1: Local Occupation
+      document.getElementById('item-code').textContent = item.local_code;
+      const localLabelEn = item.local_label_en || item.local_label;
+      const localLabelEs = item.local_label;
+      document.getElementById('item-label-en').textContent = localLabelEn;
+      document.getElementById('item-label').textContent = localLabelEs;
+
+      // Hide ES row if same as EN or empty
+      const showLocalEs = localLabelEs && localLabelEs !== localLabelEn;
+      document.getElementById('item-label-es-row').classList.toggle('hidden', !showLocalEs);
+
+      // CNO hierarchy context (if available)
+      const cnoContext = document.getElementById('cno-context');
+      if (item.cno_minor_code && item.cno_minor_title) {
+        document.getElementById('cno-minor-code').textContent = item.cno_minor_code;
+        document.getElementById('cno-minor-title').textContent = item.cno_minor_title;
+        cnoContext.classList.remove('hidden');
+      } else {
+        cnoContext.classList.add('hidden');
+      }
+
+      // Card 2: Suggested Match
+      const suggestedMatch = document.getElementById('suggested-match');
+      const iscoContext = document.getElementById('isco-context');
+
+      if (item.suggested_esco_code) {
+        suggestedMatch.classList.remove('hidden');
+
+        // ISCO group context (shown in suggested match card)
+        if (item.isco_code) {
+          const group = iscoGroups[item.isco_code] || iscoGroups[item.isco_code.toString()];
+          if (group) {
+            document.getElementById('isco-group-code').textContent = `ISCO-08: ${item.isco_code}`;
+            document.getElementById('isco-group-label').textContent = group.label;
+            iscoContext.classList.remove('hidden');
+          } else {
+            document.getElementById('isco-group-code').textContent = `ISCO-08: ${item.isco_code}`;
+            document.getElementById('isco-group-label').textContent = 'Unknown group';
+            iscoContext.classList.remove('hidden');
+          }
+        } else {
+          iscoContext.classList.add('hidden');
+        }
+
+        document.getElementById('suggested-code').textContent = item.suggested_esco_code;
+        const suggestedLabelEn = item.suggested_esco_label_en || '';
+        const suggestedLabelEs = item.suggested_esco_label || '';
+        document.getElementById('suggested-label-en').textContent = suggestedLabelEn;
+        document.getElementById('suggested-label-es').textContent = suggestedLabelEs;
+        document.getElementById('suggested-similarity').textContent = item.similarity ? ` ${Math.round(item.similarity * 100)}%` : '';
+
+        // Hide ES row if same as EN or empty
+        const showSuggestedEs = suggestedLabelEs && suggestedLabelEs !== suggestedLabelEn;
+        document.getElementById('suggested-label-es-row').classList.toggle('hidden', !showSuggestedEs);
+      } else {
+        suggestedMatch.classList.add('hidden');
+      }
+
+      // Card 3: Selection (hidden initially)
+      document.getElementById('selected-esco').classList.add('hidden');
+
+      // Card 4: Notes
+      document.getElementById('notes-input').value = '';
+
+      document.getElementById('btn-match').disabled = true;
+      document.getElementById('detail-content').innerHTML = '<div class="loading">Select an occupation to see details</div>';
+
+      // Expand tree to ISCO group if available
+      if (item.isco_code) {
+        const iscoCode = item.isco_code.toString();
+        if (escoLabels[iscoCode]) {
+          expandToCode(iscoCode);
+        } else {
+          const majorCode = iscoCode.charAt(0);
+          if (escoLabels[majorCode]) {
+            expandedNodes.add(escoLabels[majorCode].id);
+          }
+        }
+      }
+      renderTree();
+    }
+
+    async function submitDecision(decision) {
+      if (decision === 'MATCH' && !selectedESCO) { alert('Select an occupation first'); return; }
+      await submitDecisionWithParent(decision, null);
+    }
+
+    async function submitDecisionWithParent(decision, parent) {
+      const notes = document.getElementById('notes-input').value.trim();
+      try {
+        await db.from('review_items').update({
+          decision,
+          selected_esco_code: decision === 'MATCH' ? selectedESCO.code : null,
+          selected_esco_label: decision === 'MATCH' ? selectedESCO.labelEs : null,
+          selected_parent_code: decision === 'NEW_LOCAL' && parent ? parent.code : null,
+          selected_parent_label: decision === 'NEW_LOCAL' && parent ? parent.labelEn : null,
+          reviewer_name: reviewerName,
+          reviewed_at: new Date().toISOString(),
+          notes: notes || null
+        }).eq('id', currentItem.id);
+
+        await db.from('review_locks').delete().eq('item_id', currentItem.id);
+        await loadNextItem();
+      } catch (err) {
+        console.error('Submit error:', err);
+        alert('Error saving. Try again.');
+      }
+    }
+
+    async function refreshLock() {
+      if (!currentItem) return;
+      await db.from('review_locks').update({ expires_at: new Date(Date.now() + 30 * 60 * 1000).toISOString() }).eq('item_id', currentItem.id).eq('reviewer_name', reviewerName);
+    }
+
+    function showEmptyState(total, reviewed) {
+      document.getElementById('review-content').classList.add('hidden');
+      document.getElementById('empty-state').classList.remove('hidden');
+      document.getElementById('final-stats').innerHTML = `<div class="stat"><div class="stat-value">${reviewed}</div><div class="stat-label">Reviewed</div></div><div class="stat"><div class="stat-value">${total}</div><div class="stat-label">Total</div></div>`;
+    }
+
+    function exitReview() {
+      if (currentItem) db.from('review_locks').delete().eq('item_id', currentItem.id);
+      if (lockRefreshInterval) clearInterval(lockRefreshInterval);
+      currentProject = null; currentItem = null; selectedESCO = null;
+      document.getElementById('review-screen').classList.add('hidden');
+      document.getElementById('setup-screen').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Poetry
+poetry.lock  # Optional: commit if want to lock dependencies
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+*.cover
+*.py,cover
+.cache
+nosetests.xml
+coverage.xml
+
+# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+*.env
+**/.env
+**/credentials.json
+**/api_keys.txt
+**/*_secrets.*
+
+# Large data files
+**/data/embeddings/*.json
+**/data/intermediate/*.json
+**/data/*_embeddings.json
+**/outputs/intermediate/*.json
+shared_data/embeddings_cache/*.json
+shared_data/esco_embeddings_*.json
+
+# Archive folders (historical experiments)
+**/archive/
+**/archived/
+
+# Claude Code (IDE-specific, not required for pipeline)
+.claude/
+
+# Local research materials (never commit)
+references/
+**/references/
+local_research/
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# OS-specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+nul
+
+# Session/historical docs (internal use only)
+docs/session_summaries/
+docs/_archive/
+
+# IDE and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath
+*.sage.py
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Rope
+.ropeproject
+
+# mkdocs
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+# pytype
+.pytype/
+
+# Cython
+cython_debug/
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+*.bak
+*.swp
+
+# Large intermediate files (checkpoint files can be large)
+# Uncomment if causing repo bloat
+# outputs/intermediate/gemini_checkpoint.json
+
+# Compressed archives (if you create backups)
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Excel temporary files
+~$*.xlsx
+~$*.xls
+.~lock.*
+
+# PDFs (optional - source PDFs can be large)
+# Uncomment if you don't want to version source PDFs
+# data/source/pdfs/**/*.pdf
+
+# Generated documentation (if using doc generators)
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# Coverage reports
+coverage/
+.coverage
+
+# Benchmarks
+benchmarks/
+
+# Config files with sensitive info (if any)
+# config/production.yaml
+
+# Node modules (if any JS tooling)
+node_modules/
+
+# Any personal notes or drafts
+NOTES.md
+DRAFT_*.md
+TODO_personal.md

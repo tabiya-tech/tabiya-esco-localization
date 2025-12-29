@@ -1,0 +1,10 @@
+{
+  "name": "[Country] [Taxonomy]",
+  "country_code": "[XX]",
+  "source_taxonomy": "[Taxonomy Name]",
+  "description": "[Full taxonomy description]",
+  "language": "[Primary language]",
+  "local_code_field": "[code_column_name]",
+  "local_label_field": "[label_column_name]",
+  "local_label_en_field": "[english_label_column_name]"
+}

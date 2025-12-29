@@ -1,0 +1,9 @@
+{
+  "name": "Argentina CNO-2017",
+  "country_code": "AR",
+  "source_taxonomy": "CNO-2017",
+  "description": "Clasificador Nacional de Ocupaciones 2017",
+  "local_code_field": "cno_code",
+  "local_label_field": "cno_label_es",
+  "local_label_en_field": "cno_label_en"
+}

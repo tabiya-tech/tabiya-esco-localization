@@ -1,0 +1,9 @@
+{
+  "name": "Kenya KESCO",
+  "country_code": "KE",
+  "source_taxonomy": "KESCO",
+  "description": "Kenya Standard Classification of Occupations",
+  "local_code_field": "kesco_code",
+  "local_label_field": "kesco_title",
+  "local_label_en_field": "kesco_title"
+}
