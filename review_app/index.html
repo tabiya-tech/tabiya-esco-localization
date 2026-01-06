@@ -91,6 +91,89 @@
     }
     .btn:hover { opacity: 0.85; }
     .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+    .search-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 18px;
+      height: 18px;
+      background: var(--oxford-blue);
+      border-radius: 50%;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--tabiya-green);
+      cursor: pointer;
+      margin-left: 8px;
+      transition: all 0.15s;
+    }
+    .search-icon:hover { opacity: 0.8; }
+    .help-button {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      background: var(--oxford-blue);
+      color: var(--tabiya-green);
+      border: none;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+      font-family: 'Inter', sans-serif;
+      transition: opacity 0.15s;
+    }
+    .help-button:hover { opacity: 0.85; }
+    .help-button img { filter: invert(73%) sepia(57%) saturate(652%) hue-rotate(93deg) brightness(101%) contrast(101%); }
+    .help-modal {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,33,71,0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2000;
+    }
+    .help-modal-content {
+      background: white;
+      max-width: 700px;
+      width: 90%;
+      max-height: 85vh;
+      overflow-y: auto;
+      padding: 30px;
+      position: relative;
+    }
+    .help-modal-content h2 { font-size: 20px; margin-bottom: 20px; color: var(--oxford-blue); }
+    .help-modal-content h3 { font-size: 14px; margin: 20px 0 10px; color: var(--oxford-blue); text-transform: uppercase; letter-spacing: 0.5px; }
+    .help-modal-content p { font-size: 14px; line-height: 1.6; color: var(--text-secondary); margin-bottom: 12px; }
+    .help-modal-content ul { margin: 0 0 16px 20px; }
+    .help-modal-content li { font-size: 14px; line-height: 1.8; color: var(--text-secondary); }
+    .help-modal-content .btn-label { display: inline-block; padding: 2px 8px; font-size: 11px; font-weight: 600; margin: 0 2px; }
+    .help-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: var(--text-muted);
+      line-height: 1;
+    }
+    .help-close:hover { color: var(--oxford-blue); }
+    .recent-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 8px 10px;
+      border-bottom: 1px solid var(--border-light);
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .recent-item:hover { background: var(--bg-light); }
+    .recent-item:last-child { border-bottom: none; }
+    .recent-code { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--text-muted); min-width: 70px; }
+    .recent-label { font-size: 13px; flex: 1; color: var(--text-primary); }
+    .recent-decision { font-size: 11px; font-weight: 600; text-transform: uppercase; }
+    .btn-approve { background: white; color: var(--oxford-blue); border: 2px solid var(--oxford-blue); font-weight: 600; }
     .btn-match { background: var(--tabiya-green); color: var(--oxford-blue); font-weight: 600; }
     .btn-new-local { background: var(--oxford-blue); color: var(--tabiya-green); font-weight: 600; }
     .btn-skip { background: var(--tabiya-gray); color: var(--oxford-blue); border: 2px solid var(--border-light); }
@@ -306,6 +389,14 @@
     </div>
 
     <div class="container">
+      <!-- Help Button -->
+      <div style="display: flex; justify-content: flex-end; margin-bottom: 8px;">
+        <button class="help-button" onclick="showHelpModal()" title="Help & Instructions">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJvb2stc2VhcmNoLWljb24gbHVjaWRlLWJvb2stc2VhcmNoIj48cGF0aCBkPSJNMTEgMjJINS41YTEgMSAwIDAgMSAwLTVoNC41MDEiLz48cGF0aCBkPSJtMjEgMjItMS44NzktMS44NzgiLz48cGF0aCBkPSJNMyAxOS41di0xNUEyLjUgMi41IDAgMCAxIDUuNSAySDE4YTEgMSAwIDAgMSAxIDF2OCIvPjxjaXJjbGUgY3g9IjE3IiBjeT0iMTgiIHI9IjMiLz48L3N2Zz4=" alt="Help" style="width: 20px; height: 20px;">
+          <span>Help</span>
+        </button>
+      </div>
+
       <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
       <div class="progress-text" id="progress-text">Loading...</div>
 
@@ -320,7 +411,7 @@
                 <div class="item-code"><span id="cno-minor-code"></span>: <span id="cno-minor-title"></span></div>
               </div>
               <div style="margin-top: 8px;">
-                <div class="item-code"><span id="item-code" class="occupation-highlight"></span>: <span id="item-label-en" class="occupation-highlight"></span></div>
+                <div class="item-code"><span id="item-code" class="occupation-highlight"></span>: <span id="item-label-en" class="occupation-highlight"></span> <span class="search-icon" onclick="searchOccupation()" title="Search Google for this occupation">?</span></div>
                 <div class="item-code" id="item-label-es-row" style="margin-top: 4px;"><span class="lang-tag">ES</span><span id="item-label" style="color: var(--text-secondary);"></span></div>
               </div>
             </div>
@@ -356,6 +447,7 @@
 
             <!-- Decision Buttons -->
             <div class="decision-buttons">
+              <button class="btn btn-approve" onclick="approveSuggested()" id="btn-approve" disabled>Approve</button>
               <button class="btn btn-match" onclick="submitDecision('MATCH')" id="btn-match" disabled>Match</button>
               <button class="btn btn-new-local" onclick="showNewLocalModal()">New Local</button>
               <button class="btn btn-skip" onclick="submitDecision('SKIP')">Skip</button>
@@ -366,6 +458,10 @@
           <div>
             <div class="card">
               <h2>ESCO Taxonomy</h2>
+              <div style="margin-bottom: 12px;">
+                <input type="text" id="search-input" placeholder="Search occupations..." style="width: 100%; padding: 10px 12px; border: 2px solid var(--border-light); font-size: 13px; font-family: 'Inter', sans-serif;" oninput="handleSearch(this.value)">
+              </div>
+              <div id="search-results" class="tree-container hidden" style="max-height: 550px;"></div>
               <div class="tree-container" id="tree-container" style="max-height: 550px;">
                 <div class="loading">Loading taxonomy...</div>
               </div>
@@ -392,6 +488,14 @@
           <button class="btn btn-primary" onclick="exitReview()" style="margin-top: 20px;">Back to Projects</button>
         </div>
       </div>
+
+      <!-- Recently Reviewed -->
+      <div class="card" style="margin-top: 16px;">
+        <h2>Recently Reviewed (click to re-edit)</h2>
+        <div id="recently-reviewed" style="max-height: 200px; overflow-y: auto;">
+          <div class="loading">No items reviewed yet this session</div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -415,6 +519,43 @@
       <div class="modal-actions">
         <button class="btn btn-skip" onclick="hideNewLocalModal()">Cancel</button>
         <button class="btn btn-new-local" onclick="confirmNewLocal()" id="btn-confirm-new-local" disabled>Confirm New Local</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Help Modal -->
+  <div id="help-modal" class="help-modal" style="display: none;">
+    <div class="help-modal-content">
+      <button class="help-close" onclick="hideHelpModal()">&times;</button>
+      <h2>How to Review Occupations</h2>
+
+      <p>You are reviewing local occupation titles that need to be matched to the ESCO (European Skills, Competences, Qualifications and Occupations) taxonomy.</p>
+
+      <h3>The Review Screen</h3>
+      <ul>
+        <li><strong>Left Panel:</strong> Shows the local occupation to review, any suggested match, and your selection</li>
+        <li><strong>Middle Panel:</strong> ESCO taxonomy browser - search or navigate the tree to find matches</li>
+        <li><strong>Right Panel:</strong> Details about your selected ESCO occupation</li>
+      </ul>
+
+      <h3>Decision Buttons</h3>
+      <ul>
+        <li><span class="btn-label" style="background: white; color: var(--oxford-blue); border: 2px solid var(--oxford-blue);">Approve</span> Accept the suggested ESCO match as-is</li>
+        <li><span class="btn-label" style="background: var(--tabiya-green); color: var(--oxford-blue);">Match</span> Use your own selection from the ESCO tree/search</li>
+        <li><span class="btn-label" style="background: var(--oxford-blue); color: var(--tabiya-green);">New Local</span> This occupation has no ESCO equivalent - mark as country-specific</li>
+        <li><span class="btn-label" style="background: var(--tabiya-gray); color: var(--oxford-blue);">Skip</span> Unsure - leave for another reviewer</li>
+      </ul>
+
+      <h3>Tips</h3>
+      <ul>
+        <li>Click the <span class="search-icon" style="display: inline-flex; vertical-align: middle;">?</span> next to the local occupation to Google its meaning</li>
+        <li>Use the search box to quickly find ESCO occupations by keyword</li>
+        <li>Double-click a tree item to select it, single-click to expand/collapse</li>
+        <li>Your recently reviewed items appear below - click to re-edit if you made a mistake</li>
+      </ul>
+
+      <div style="margin-top: 24px; text-align: center;">
+        <button class="btn btn-primary" onclick="hideHelpModal()" style="padding: 12px 30px;">Start Reviewing</button>
       </div>
     </div>
   </div>
@@ -701,6 +842,197 @@
         }
       }
       toExpand.forEach(id => expandedNodes.add(id));
+    }
+
+    // ========================================
+    // HELP MODAL
+    // ========================================
+    let helpShownThisSession = false;
+
+    function showHelpModal() {
+      document.getElementById('help-modal').style.display = 'flex';
+    }
+
+    function hideHelpModal() {
+      document.getElementById('help-modal').style.display = 'none';
+      helpShownThisSession = true;
+    }
+
+    // ========================================
+    // RECENTLY REVIEWED
+    // ========================================
+    let recentlyReviewed = [];
+
+    function addToRecentlyReviewed(item, decision) {
+      recentlyReviewed.unshift({
+        id: item.id,
+        local_code: item.local_code,
+        local_label: item.local_label_en || item.local_label,
+        decision: decision,
+        timestamp: new Date().toISOString()
+      });
+      // Keep only last 10
+      if (recentlyReviewed.length > 10) recentlyReviewed.pop();
+      renderRecentlyReviewed();
+    }
+
+    function renderRecentlyReviewed() {
+      const container = document.getElementById('recently-reviewed');
+      if (!container) return;
+
+      if (recentlyReviewed.length === 0) {
+        container.innerHTML = '<div class="loading">No items reviewed yet this session</div>';
+        return;
+      }
+
+      let html = '';
+      for (const item of recentlyReviewed) {
+        const decisionClass = item.decision === 'MATCH' ? 'tabiya-green' : (item.decision === 'NEW_LOCAL' ? 'oxford-blue' : 'text-muted');
+        html += `<div class="recent-item" onclick="reReviewItem(${item.id})">
+          <span class="recent-code">${item.local_code}</span>
+          <span class="recent-label">${item.local_label}</span>
+          <span class="recent-decision" style="color: var(--${decisionClass});">${item.decision}</span>
+        </div>`;
+      }
+      container.innerHTML = html;
+    }
+
+    async function reReviewItem(itemId) {
+      // Release current lock if any
+      if (currentItem) {
+        await db.from('review_locks').delete().eq('item_id', currentItem.id);
+      }
+
+      // Load the item to re-review
+      const { data: item } = await db.from('review_items').select('*').eq('id', itemId).single();
+      if (!item) { alert('Item not found'); return; }
+
+      // Lock it
+      await db.from('review_locks').upsert({
+        item_id: item.id,
+        reviewer_name: reviewerName,
+        expires_at: new Date(Date.now() + 30 * 60 * 1000).toISOString()
+      });
+
+      // Clear previous decision to re-review
+      await db.from('review_items').update({ decision: null }).eq('id', itemId);
+
+      currentItem = item;
+      selectedESCO = null;
+      displayItem(item);
+
+      // Remove from recently reviewed
+      recentlyReviewed = recentlyReviewed.filter(r => r.id !== itemId);
+      renderRecentlyReviewed();
+    }
+
+    // ========================================
+    // GOOGLE SEARCH
+    // ========================================
+    function searchOccupation() {
+      if (!currentItem || !currentProject) return;
+      const label = currentItem.local_label_en || currentItem.local_label;
+      const country = currentProject.name.split(' ')[0]; // e.g., "Kenya" from "Kenya KESCO"
+      const query = `what is a ${label} in ${country}`;
+      const url = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+      window.open(url, '_blank');
+    }
+
+    // ========================================
+    // SEARCH
+    // ========================================
+    let searchTimeout = null;
+
+    function handleSearch(query) {
+      clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(() => performSearch(query), 200);
+    }
+
+    function performSearch(query) {
+      const searchResults = document.getElementById('search-results');
+      const treeContainer = document.getElementById('tree-container');
+
+      if (!query || query.trim().length < 2) {
+        searchResults.classList.add('hidden');
+        treeContainer.classList.remove('hidden');
+        return;
+      }
+
+      const q = query.toLowerCase().trim();
+      const results = [];
+
+      // Search through all occupations and groups
+      for (const [code, info] of Object.entries(escoLabels)) {
+        const labelEn = (info.labelEn || '').toLowerCase();
+        const labelEs = (info.labelEs || '').toLowerCase();
+
+        if (labelEn.includes(q) || labelEs.includes(q) || code.toLowerCase().includes(q)) {
+          results.push({
+            code,
+            labelEn: info.labelEn,
+            labelEs: info.labelEs,
+            isGroup: info.isGroup,
+            // Score: exact match > starts with > contains
+            score: labelEn === q ? 3 : (labelEn.startsWith(q) ? 2 : 1)
+          });
+        }
+      }
+
+      // Sort by score (best matches first), then by code
+      results.sort((a, b) => b.score - a.score || a.code.localeCompare(b.code));
+
+      // Limit to top 30 results
+      const limitedResults = results.slice(0, 30);
+
+      // Render results
+      if (limitedResults.length === 0) {
+        searchResults.innerHTML = '<div class="loading">No matches found</div>';
+      } else {
+        let html = '';
+        for (const r of limitedResults) {
+          const isSelected = selectedESCO && selectedESCO.code === r.code;
+          const badge = r.isGroup ? '<span class="tree-badge">G</span>' : '';
+          html += `<div class="tree-node">
+            <div class="tree-row ${isSelected ? 'selected' : ''}" onclick="selectFromSearch('${r.code}')">
+              <span class="tree-toggle">&#183;</span>
+              <span class="tree-code">${r.code}</span>
+              <span class="tree-label">${r.labelEn}${badge}</span>
+              <button class="tree-select-btn" onclick="event.stopPropagation(); selectFromSearch('${r.code}')">Select</button>
+            </div>
+          </div>`;
+        }
+        if (results.length > 30) {
+          html += `<div class="loading">${results.length - 30} more results. Refine your search.</div>`;
+        }
+        searchResults.innerHTML = html;
+      }
+
+      searchResults.classList.remove('hidden');
+      treeContainer.classList.add('hidden');
+    }
+
+    function selectFromSearch(code) {
+      const info = escoLabels[code];
+      if (info) {
+        selectESCO({
+          code: code,
+          labelEn: info.labelEn,
+          labelEs: info.labelEs,
+          id: info.id,
+          isGroup: info.isGroup
+        });
+        // Re-render search results to show selection
+        const query = document.getElementById('search-input').value;
+        if (query && query.trim().length >= 2) {
+          performSearch(query);
+        }
+      }
+    }
+
+    function clearSearch() {
+      document.getElementById('search-input').value = '';
+      document.getElementById('search-results').classList.add('hidden');
+      document.getElementById('tree-container').classList.remove('hidden');
     }
 
     // ========================================
@@ -1033,6 +1365,11 @@
       document.getElementById('header-project').textContent = project.name;
       document.getElementById('header-reviewer').textContent = reviewerName;
 
+      // Show help modal on first start
+      if (!helpShownThisSession) {
+        showHelpModal();
+      }
+
       await loadNextItem();
       lockRefreshInterval = setInterval(refreshLock, 5 * 60 * 1000);
     }
@@ -1097,20 +1434,17 @@
       if (item.suggested_esco_code) {
         suggestedMatch.classList.remove('hidden');
 
-        // ISCO group context (shown in suggested match card)
-        if (item.isco_code) {
-          const group = iscoGroups[item.isco_code] || iscoGroups[item.isco_code.toString()];
-          if (group) {
-            document.getElementById('isco-group-code').textContent = `ISCO-08: ${item.isco_code}`;
-            document.getElementById('isco-group-label').textContent = group.label;
-            iscoContext.classList.remove('hidden');
-          } else {
-            document.getElementById('isco-group-code').textContent = `ISCO-08: ${item.isco_code}`;
-            document.getElementById('isco-group-label').textContent = 'Unknown group';
-            iscoContext.classList.remove('hidden');
-          }
+        // ISCO group context - extract from suggested ESCO code (first 4 digits)
+        const suggestedIsco = item.suggested_esco_code.substring(0, 4);
+        const group = iscoGroups[suggestedIsco] || iscoGroups[suggestedIsco.replace(/^0+/, '')];
+        if (group) {
+          document.getElementById('isco-group-code').textContent = `ISCO-08: ${suggestedIsco}`;
+          document.getElementById('isco-group-label').textContent = group.label;
+          iscoContext.classList.remove('hidden');
         } else {
-          iscoContext.classList.add('hidden');
+          document.getElementById('isco-group-code').textContent = `ISCO-08: ${suggestedIsco}`;
+          document.getElementById('isco-group-label').textContent = '';
+          iscoContext.classList.remove('hidden');
         }
 
         document.getElementById('suggested-code').textContent = item.suggested_esco_code;
@@ -1134,7 +1468,11 @@
       document.getElementById('notes-input').value = '';
 
       document.getElementById('btn-match').disabled = true;
+      document.getElementById('btn-approve').disabled = !item.suggested_esco_code;
       document.getElementById('detail-content').innerHTML = '<div class="loading">Select an occupation to see details</div>';
+
+      // Clear search
+      clearSearch();
 
       // Expand tree to ISCO group if available
       if (item.isco_code) {
@@ -1149,6 +1487,34 @@
         }
       }
       renderTree();
+    }
+
+    async function approveSuggested() {
+      if (!currentItem?.suggested_esco_code) { alert('No suggested match to approve'); return; }
+      const suggestedCode = currentItem.suggested_esco_code;
+      const suggestedLabel = currentItem.suggested_esco_label || currentItem.suggested_esco_label_en || '';
+
+      // Submit with the suggested ESCO as the selection
+      const notes = document.getElementById('notes-input').value.trim();
+      try {
+        await db.from('review_items').update({
+          decision: 'MATCH',
+          selected_esco_code: suggestedCode,
+          selected_esco_label: suggestedLabel,
+          selected_parent_code: null,
+          selected_parent_label: null,
+          reviewer_name: reviewerName,
+          reviewed_at: new Date().toISOString(),
+          notes: notes || null
+        }).eq('id', currentItem.id);
+
+        await db.from('review_locks').delete().eq('item_id', currentItem.id);
+        addToRecentlyReviewed(currentItem, 'MATCH');
+        await loadNextItem();
+      } catch (err) {
+        console.error('Submit error:', err);
+        alert('Error saving. Try again.');
+      }
     }
 
     async function submitDecision(decision) {
@@ -1171,6 +1537,7 @@
         }).eq('id', currentItem.id);
 
         await db.from('review_locks').delete().eq('item_id', currentItem.id);
+        addToRecentlyReviewed(currentItem, decision);
         await loadNextItem();
       } catch (err) {
         console.error('Submit error:', err);

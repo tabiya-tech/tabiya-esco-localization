@@ -71,6 +71,12 @@ High-level updates across all localization efforts. For detailed session context
 - Created final output and combined pipeline script for documentation
 - Status: Milestone Reached - Matching pipeline complete, ready for skill assignment
 
+### 2025-12-30 - Kenya
+- Added needs_review flag to final output (821 low-similarity + 156 new_local = 977 items)
+- Loaded 975 review items to Supabase review tool
+- Tested simplified Step 2A prompt - kept original (better balance)
+- Status: In Progress - Human review phase started
+
 ---
 
 ## Ethiopia
@@ -109,6 +115,12 @@ High-level updates across all localization efforts. For detailed session context
 - Removed outdated docs: ARCHITECTURE.md, PIPELINE_SPECIFICATION.md, DECISIONS_LOG.md
 - Updated all references across CLAUDE.md, README.md, session commands
 - Status: Milestone Reached - Framework docs reflect actual implementation
+
+### 2026-01-06 - Framework
+- Set up GitHub repo (tabiya-tech/tabiya-esco-localization) and deployed review app to GitHub Pages
+- Major review app improvements: Approve button, keyword search, Google search icon, help modal, recently reviewed list
+- Created setup_new_country.py script and GitHub Actions workflow for review app deployment
+- Status: Milestone Reached - Framework and review app production-ready (pending push of latest changes)
 
 ---
 
