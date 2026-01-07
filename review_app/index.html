@@ -622,7 +622,7 @@
       const pageSize = 1000;
       while (true) {
         const { data: occs } = await db.from('occupations')
-          .select('id, code, preferred_label, preferred_label_es, description, description_es, occupation_group_code')
+          .select('id, code, preferred_label, preferred_label_es, description, description_es, occupation_group_code, alt_labels')
           .range(offset, offset + pageSize - 1);
         if (!occs || occs.length === 0) break;
         allOccs = allOccs.concat(occs);
@@ -631,6 +631,15 @@
       }
 
       allOccs.forEach(o => {
+        // Parse alt_labels - can be newline-separated string or array
+        let altLabels = [];
+        if (o.alt_labels) {
+          if (Array.isArray(o.alt_labels)) {
+            altLabels = o.alt_labels;
+          } else if (typeof o.alt_labels === 'string') {
+            altLabels = o.alt_labels.split('\n').map(s => s.trim()).filter(s => s);
+          }
+        }
         escoLabels[o.code] = {
           id: o.id,
           labelEn: o.preferred_label,
@@ -638,6 +647,7 @@
           descriptionEn: o.description,
           descriptionEs: o.description_es || o.description,
           groupCode: o.occupation_group_code,
+          altLabels: altLabels,
           isGroup: false
         };
         // Group occupations by their parent group code
@@ -965,15 +975,32 @@
       for (const [code, info] of Object.entries(escoLabels)) {
         const labelEn = (info.labelEn || '').toLowerCase();
         const labelEs = (info.labelEs || '').toLowerCase();
+        const altLabels = (info.altLabels || []).map(s => s.toLowerCase());
 
-        if (labelEn.includes(q) || labelEs.includes(q) || code.toLowerCase().includes(q)) {
+        // Check preferred labels and code
+        let matched = labelEn.includes(q) || labelEs.includes(q) || code.toLowerCase().includes(q);
+        let matchedAlt = null;
+
+        // Check alt labels
+        if (!matched && altLabels.length > 0) {
+          for (const alt of altLabels) {
+            if (alt.includes(q)) {
+              matched = true;
+              matchedAlt = info.altLabels[altLabels.indexOf(alt)]; // Get original case
+              break;
+            }
+          }
+        }
+
+        if (matched) {
           results.push({
             code,
             labelEn: info.labelEn,
             labelEs: info.labelEs,
+            matchedAlt: matchedAlt,
             isGroup: info.isGroup,
-            // Score: exact match > starts with > contains
-            score: labelEn === q ? 3 : (labelEn.startsWith(q) ? 2 : 1)
+            // Score: exact match > starts with > contains > alt label match
+            score: labelEn === q ? 4 : (labelEn.startsWith(q) ? 3 : (matchedAlt ? 1 : 2))
           });
         }
       }
@@ -992,11 +1019,12 @@
         for (const r of limitedResults) {
           const isSelected = selectedESCO && selectedESCO.code === r.code;
           const badge = r.isGroup ? '<span class="tree-badge">G</span>' : '';
+          const altInfo = r.matchedAlt ? `<span style="font-size: 10px; color: var(--text-muted); margin-left: 6px;">(alt: ${r.matchedAlt})</span>` : '';
           html += `<div class="tree-node">
             <div class="tree-row ${isSelected ? 'selected' : ''}" onclick="selectFromSearch('${r.code}')">
               <span class="tree-toggle">&#183;</span>
               <span class="tree-code">${r.code}</span>
-              <span class="tree-label">${r.labelEn}${badge}</span>
+              <span class="tree-label">${r.labelEn}${badge}${altInfo}</span>
               <button class="tree-select-btn" onclick="event.stopPropagation(); selectFromSearch('${r.code}')">Select</button>
             </div>
           </div>`;
