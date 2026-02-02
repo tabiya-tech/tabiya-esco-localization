@@ -897,7 +897,8 @@
 
       let html = '';
       for (const item of recentlyReviewed) {
-        const decisionClass = item.decision === 'MATCH' ? 'tabiya-green' : (item.decision === 'NEW_LOCAL' ? 'oxford-blue' : 'text-muted');
+        const decisionColors = { 'APPROVE': 'tabiya-green', 'MATCH': 'tabiya-green', 'NEW_LOCAL': 'oxford-blue', 'SKIP': 'text-muted' };
+        const decisionClass = decisionColors[item.decision] || 'text-muted';
         html += `<div class="recent-item" onclick="reReviewItem(${item.id})">
           <span class="recent-code">${item.local_code}</span>
           <span class="recent-label">${item.local_label}</span>
@@ -1365,8 +1366,17 @@
     }
 
     async function confirmNewLocal() {
-      if (!selectedParent) return;
+      if (!selectedParent) {
+        alert('Please select a parent ESCO group first');
+        return;
+      }
+      if (!selectedParent.code) {
+        alert('Error: Parent has no code. Please re-select.');
+        console.error('Invalid parent:', selectedParent);
+        return;
+      }
       hideNewLocalModal();
+      console.log('Submitting NEW_LOCAL with parent:', selectedParent.code, selectedParent.labelEn);
       await submitDecisionWithParent('NEW_LOCAL', selectedParent);
     }
 
@@ -1406,13 +1416,18 @@
       await db.from('review_locks').delete().lt('expires_at', new Date().toISOString());
       const { data: items } = await db.from('review_items').select('id, decision').eq('project_id', currentProject.id);
       const total = items.length;
-      const reviewed = items.filter(i => i.decision !== null).length;
+      // Only count APPROVE, MATCH, NEW_LOCAL as reviewed (SKIP stays in queue)
+      const finalDecisions = ['APPROVE', 'MATCH', 'NEW_LOCAL'];
+      const reviewed = items.filter(i => finalDecisions.includes(i.decision)).length;
 
       document.getElementById('progress-fill').style.width = `${(reviewed / total) * 100}%`;
       document.getElementById('progress-text').textContent = `${reviewed} / ${total} reviewed (${Math.round((reviewed / total) * 100)}%)`;
 
-      const { data: nextItems } = await db.from('review_items').select('*').eq('project_id', currentProject.id).is('decision', null).order('id').limit(10);
-      if (!nextItems || nextItems.length === 0) { showEmptyState(total, reviewed); return; }
+      // Get pending items: first nulls (new), then SKIPs (deferred)
+      const { data: nullItems } = await db.from('review_items').select('*').eq('project_id', currentProject.id).is('decision', null).order('id').limit(10);
+      const { data: skipItems } = await db.from('review_items').select('*').eq('project_id', currentProject.id).eq('decision', 'SKIP').order('id').limit(10);
+      const nextItems = [...(nullItems || []), ...(skipItems || [])].slice(0, 10);
+      if (nextItems.length === 0) { showEmptyState(total, reviewed); return; }
 
       const { data: locks } = await db.from('review_locks').select('item_id').gt('expires_at', new Date().toISOString());
       const lockedIds = new Set(locks?.map(l => l.item_id) || []);
@@ -1526,7 +1541,7 @@
       const notes = document.getElementById('notes-input').value.trim();
       try {
         await db.from('review_items').update({
-          decision: 'MATCH',
+          decision: 'APPROVE',
           selected_esco_code: suggestedCode,
           selected_esco_label: suggestedLabel,
           selected_parent_code: null,
@@ -1537,7 +1552,7 @@
         }).eq('id', currentItem.id);
 
         await db.from('review_locks').delete().eq('item_id', currentItem.id);
-        addToRecentlyReviewed(currentItem, 'MATCH');
+        addToRecentlyReviewed(currentItem, 'APPROVE');
         await loadNextItem();
       } catch (err) {
         console.error('Submit error:', err);

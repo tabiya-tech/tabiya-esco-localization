@@ -77,6 +77,16 @@ High-level updates across all localization efforts. For detailed session context
 - Tested simplified Step 2A prompt - kept original (better balance)
 - Status: In Progress - Human review phase started
 
+### 2026-01-21 - Kenya
+- Built review export pipeline with APPROVE/MATCH/NEW_LOCAL distinction; fixed 475 items retroactively
+- Created taxonomy merge script; produced first localized occupations.csv (2,547 alt labels added)
+- Status: Milestone Reached - Taxonomy merge Phase 1 complete; NEW_LOCAL handling pending
+
+### 2026-02-02 - Kenya
+- Human review 100% complete: 975/975 items reviewed (470 APPROVE, 291 MATCH, 154 NEW_LOCAL, 60 SKIP)
+- Exported review decisions to matches_final files
+- Status: Milestone Reached - Human review phase complete; NEW_LOCAL and SKIP items pending
+
 ---
 
 ## Ethiopia
