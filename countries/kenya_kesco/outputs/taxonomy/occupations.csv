@@ -473,7 +473,6 @@ County Commissioner
 Deputy County Commissioner
 District Officer
 District commissioner
-Manager Resource Mobilization
 Postmaster
 Postmaster General
 Regional Coordinators
@@ -558,6 +557,7 @@ cbcea8af-7a41-4726-af20-f2aa6af475de
 453a11c3-448f-42a6-af3f-11385301a66d
 eed36ec6-490d-4ba3-a58e-7d92135fb679",1120,1120.3,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,chief executive officer,"Assistant Chief
 CEO
+Chairperson and members of Commission of Administrative Justice
 Chairperson, Company
 Director-General, Corporation
 University Board Chairperson
@@ -898,16 +898,17 @@ sustainability manager","Sustainability managers are responsible for ensuring th
 6132862a-2fd7-4113-b16a-046ba9102b98
 9c321281-fbe8-4e32-adae-da0d31199fac
 ac91ccf0-3b64-44c8-b95e-c0b6816188f1
-96dd3a7a-173d-455b-aafc-c7e821cbaecd",1219,1219.1,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,business service manager,"actuarial advisory services manager
-corporate service manager
-business service manager
-service operations manager
-professional services manager
+96dd3a7a-173d-455b-aafc-c7e821cbaecd",1219,1219.1,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,business service manager,"Manager Resource Mobilization
+actuarial advisory services manager
 business service executive
+business service manager
+corporate service manager
+corporate services consultant
 post-office manager
 professional services consultant
-corporate services consultant
-professional services executive",Business service managers are reponsible for the provision of professional services to companies. They organise the provision of services tailored to the needs of the client and liaise with clients to agree on the contractual obligations for both parties.
+professional services executive
+professional services manager
+service operations manager",Business service managers are reponsible for the provision of professional services to companies. They organise the provision of services tailored to the needs of the client and liaise with clients to agree on the contractual obligations for both parties.
 687671c0ebd2bf665349dcbe,http://data.europa.eu/esco/occupation/b42c5ed4-c6e4-4694-934f-96127719cc43,"b7d591ce-0f20-4e99-a4bc-13882e978074
 a096e701-28e4-401b-9393-103d65135859
 2554f0be-83b9-40e4-867f-dc1374322bc7
@@ -33665,7 +33666,7 @@ Includes:
 - people working in rural and urban settings
 - people performing felling, preservation, plantation and protection of trees
 - people working with heavy equipment
-- people managing the relationship between trees, their surroundings and people",http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,arboriculturist,"Farmer, cereal
+- people managing the relationship between trees, their surroundings and people",http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,arboriculturist,"Arboriculturist
 arboretum worker
 arboriculture specialist
 arboriculturist

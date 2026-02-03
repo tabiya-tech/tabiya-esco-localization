@@ -9,14 +9,14 @@
     "step_2b_selected": 1261,
     "step_2b_none": 156,
     "step_2b_errors": 0,
-    "review_exported_at": "2026-02-02T21:33:16.490169",
+    "review_exported_at": "2026-02-03T07:28:20.907190",
     "review_stats": {
-      "approved": 492,
-      "matched": 313,
+      "approved": 493,
+      "matched": 312,
       "new_local": 170,
       "skipped": 0,
       "not_found": 0,
-      "esco_changed": 22
+      "esco_changed": 0
     }
   },
   "matches": [
@@ -1124,7 +1124,7 @@
       "esco_label": "chief executive officer",
       "matched_label": "chairman",
       "similarity": 0.853410771075587,
-      "category": "new_local",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_112",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -1134,15 +1134,16 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "NONE",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "MATCH"
     },
     {
       "kesco_code": "1121-25",
       "kesco_title": "Manager Resource Mobilization",
       "isco_code": 1121,
       "unit_group": 1121,
-      "esco_code": "1112.6",
-      "esco_label": "gerente de administración pública",
+      "esco_code": "1219.1",
+      "esco_label": "business service manager",
       "matched_label": "employment service manager",
       "similarity": 0.8775911493541113,
       "category": "human_matched",
@@ -1155,10 +1156,10 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "NONE",
-      "review_decision": "MATCH",
       "reviewer": "Afsana",
-      "reviewed_at": "2025-12-28T00:59:39.097+00:00",
-      "review_status": "completed"
+      "reviewed_at": "2026-02-03T12:27:40.481+00:00",
+      "review_status": "completed",
+      "review_decision": "MATCH"
     },
     {
       "kesco_code": "1121-26",
@@ -57028,31 +57029,10 @@
       "kesco_title": "Arboriculturist",
       "isco_code": 6111,
       "unit_group": 6111,
-      "esco_code": "6111.1",
-      "esco_label": "agronomic crop production team leader",
+      "esco_code": "6112.1",
+      "esco_label": "arboriculturist",
       "matched_label": "crop growing team leader",
       "similarity": 0.825152757236293,
-      "category": "new_local",
-      "search_strategy": "isco_constrained_6111",
-      "upgraded": false,
-      "crosswalk_mismatch": false,
-      "original_esco_code": NaN,
-      "original_esco_label": NaN,
-      "original_similarity": NaN,
-      "llm_decision": "REJECT",
-      "step_2b_reason": "rejected",
-      "step_2b_decision": "NONE",
-      "review_status": "pending"
-    },
-    {
-      "kesco_code": "6111-11",
-      "kesco_title": "Farmer, cereal",
-      "isco_code": 6111,
-      "unit_group": 6111,
-      "esco_code": "6112.1",
-      "esco_label": "arboricultor",
-      "matched_label": "crop growing team leader",
-      "similarity": 0.8601187610298712,
       "category": "human_matched",
       "search_strategy": "isco_constrained_6111",
       "upgraded": false,
@@ -57063,10 +57043,34 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "NONE",
-      "review_decision": "MATCH",
+      "review_status": "completed",
+      "review_decision": "MATCH"
+    },
+    {
+      "kesco_code": "6111-11",
+      "kesco_title": "Farmer, cereal",
+      "isco_code": 6111,
+      "unit_group": 6111,
+      "esco_code": "6112.1",
+      "esco_label": "arboricultor",
+      "matched_label": "crop growing team leader",
+      "similarity": 0.8601187610298712,
+      "category": "new_local",
+      "search_strategy": "isco_constrained_6111",
+      "upgraded": false,
+      "crosswalk_mismatch": false,
+      "original_esco_code": NaN,
+      "original_esco_label": NaN,
+      "original_similarity": NaN,
+      "llm_decision": "REJECT",
+      "step_2b_reason": "rejected",
+      "step_2b_decision": "NONE",
       "reviewer": "Afsana",
-      "reviewed_at": "2026-01-14T21:23:15.21+00:00",
-      "review_status": "completed"
+      "reviewed_at": "2026-02-03T12:27:50.999+00:00",
+      "review_status": "completed",
+      "review_decision": "NEW_LOCAL",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-12",
@@ -101626,7 +101630,9 @@
       "review_status": "completed",
       "review_decision": "NEW_LOCAL",
       "reviewer": "Afsana",
-      "reviewed_at": "2026-01-21T23:45:10.895+00:00"
+      "reviewed_at": "2026-01-21T23:45:10.895+00:00",
+      "parent_isco_code": "8160",
+      "parent_isco_label": "Food and related products machine operators"
     },
     {
       "kesco_code": "8160-72",
@@ -101669,7 +101675,9 @@
       "review_status": "completed",
       "review_decision": "NEW_LOCAL",
       "reviewer": "Afsana",
-      "reviewed_at": "2026-01-21T23:45:20.904+00:00"
+      "reviewed_at": "2026-01-21T23:45:20.904+00:00",
+      "parent_isco_code": "8160",
+      "parent_isco_label": "Food and related products machine operators"
     },
     {
       "kesco_code": "8160-74",
@@ -101712,7 +101720,9 @@
       "review_status": "completed",
       "review_decision": "NEW_LOCAL",
       "reviewer": "Afsana",
-      "reviewed_at": "2026-01-21T23:46:43.904+00:00"
+      "reviewed_at": "2026-01-21T23:46:43.904+00:00",
+      "parent_isco_code": "8160",
+      "parent_isco_label": "Food and related products machine operators"
     },
     {
       "kesco_code": "8160-76",
@@ -104670,7 +104680,9 @@
       "review_status": "completed",
       "review_decision": "NEW_LOCAL",
       "reviewer": "Afsana",
-      "reviewed_at": "2026-01-21T23:49:30.3+00:00"
+      "reviewed_at": "2026-01-21T23:49:30.3+00:00",
+      "parent_isco_code": "8189",
+      "parent_isco_label": "Stationary plant and machine operators not elsewhere classified"
     },
     {
       "kesco_code": "8184-12",
@@ -106757,7 +106769,9 @@
       "review_status": "completed",
       "review_decision": "NEW_LOCAL",
       "reviewer": "Afsana",
-      "reviewed_at": "2026-01-21T23:55:33.776+00:00"
+      "reviewed_at": "2026-01-21T23:55:33.776+00:00",
+      "parent_isco_code": "8321",
+      "parent_isco_label": "Motorcycle drivers"
     },
     {
       "kesco_code": "8321-16",
@@ -106781,7 +106795,9 @@
       "review_status": "completed",
       "review_decision": "NEW_LOCAL",
       "reviewer": "Afsana",
-      "reviewed_at": "2026-01-21T23:55:26.035+00:00"
+      "reviewed_at": "2026-01-21T23:55:26.035+00:00",
+      "parent_isco_code": "8321",
+      "parent_isco_label": "Motorcycle drivers"
     },
     {
       "kesco_code": "8321-17",
@@ -106826,7 +106842,9 @@
       "review_status": "completed",
       "review_decision": "NEW_LOCAL",
       "reviewer": "Afsana",
-      "reviewed_at": "2026-01-21T23:55:45.245+00:00"
+      "reviewed_at": "2026-01-21T23:55:45.245+00:00",
+      "parent_isco_code": "8321",
+      "parent_isco_label": "Motorcycle drivers"
     },
     {
       "kesco_code": "8321-21",
@@ -109172,7 +109190,9 @@
       "review_status": "completed",
       "review_decision": "NEW_LOCAL",
       "reviewer": "Afsana",
-      "reviewed_at": "2026-01-21T23:59:32.798+00:00"
+      "reviewed_at": "2026-01-21T23:59:32.798+00:00",
+      "parent_isco_code": "8350",
+      "parent_isco_label": "Ships’ deck crews and related workers"
     },
     {
       "kesco_code": "8350-17",
