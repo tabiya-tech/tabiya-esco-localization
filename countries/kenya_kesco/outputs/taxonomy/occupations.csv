@@ -464,8 +464,10 @@ Chairperson and Members of the National Land Commission
 Chairperson and Members of the Parliamentary Service Commission
 Chairperson and Members of the Public Service Commission
 Chairperson and Members of the Teachers Service Commission
+Chief
 Chief County Officer
 Chief of Staff and Head of Public Service
+Comptroller of State House
 County Chief of Staff
 County Commissioner
 Deputy County Commissioner
@@ -473,6 +475,7 @@ District Officer
 District commissioner
 Manager Resource Mobilization
 Postmaster
+Postmaster General
 Regional Coordinators
 Secretary, County Public Service Board
 Secretary, Public Service Commission
@@ -553,7 +556,8 @@ aquarium chief executive officer","Animal facility managers coordinate and plan 
 7a616a81-0731-4498-bb2c-dd944c58d4dd
 cbcea8af-7a41-4726-af20-f2aa6af475de
 453a11c3-448f-42a6-af3f-11385301a66d
-eed36ec6-490d-4ba3-a58e-7d92135fb679",1120,1120.3,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,chief executive officer,"CEO
+eed36ec6-490d-4ba3-a58e-7d92135fb679",1120,1120.3,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,chief executive officer,"Assistant Chief
+CEO
 Chairperson, Company
 Director-General, Corporation
 University Board Chairperson
@@ -13215,6 +13219,7 @@ b31840b6-4301-4445-bbd1-1ece950beb90
 8d8ecd59-5d95-4e46-a3ae-7a9e70bb62ed
 50ef81a8-013f-41e2-9dc8-642223597b1c
 79db4ccf-7389-4107-b26b-086b3c4e5e8d",2411,2411.1.11,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,public finance accountant,"County Treasurer
+Paymaster General
 Town Treasurer
 finance accountant
 finance accountant of government administration
@@ -17286,7 +17291,8 @@ military chaplain","Chaplains perform religious activities in secular institutio
 e29291a9-886a-4a62-84a4-0cfb13fef179
 265799d8-9d77-4fbc-b796-e614be3734d0
 111ee2d5-3af9-466c-8167-e38246b2bc33
-e4491189-03bc-4aea-acb2-72c53ae5241e",2636,2636.2,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,minister of religion,"Father-in-charge/Parish priest
+e4491189-03bc-4aea-acb2-72c53ae5241e",2636,2636.2,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,minister of religion,"Bonze
+Father-in-charge/Parish priest
 Nun/Mother superior
 Poojari
 Preacher, lay
@@ -17897,7 +17903,8 @@ subtitler/adaptor","Subtitlers can work intralingually, within the same language
 fa2e90e6-7c50-4952-982e-dad5cfa7cbc5
 f7d8f3b3-904b-4736-a0f9-8321f73039d1
 86a459b8-ff7c-4129-82e3-4051ba65bae2",2651,2651.1,,"Excludes:
-- people performing non-artistic painting",http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,artistic painter,"Portrait Painter
+- people performing non-artistic painting",http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,artistic painter,"Other Artists
+Portrait Painter
 artistic painter
 creative painter
 drawing & painting artist
@@ -27844,33 +27851,34 @@ miniature model set designer and builder",Miniature set designers design and bui
 f84d5579-04fc-45b2-94b2-328614e1381d
 6d15c4e1-790e-401c-93c1-51a821e3bf86
 919f3cb4-7a05-4b4b-a3fe-14e2125f4c09
-91cbcf65-22cc-4929-9f26-5cf7bf3ccf94",3432,3432.4,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,set builder,"set builder and designer
-property maker & set builder
-set designer & builder
-set constructor
-stage and set builder
-set builder and property maker
-chief carpenter
-prop maker & set builder
-set builder and dresser
-set builder & prop maker
-scenic builder
-set builder & property maker
-set and stage builder
-set dresser and builder
-set designer and builder
+91cbcf65-22cc-4929-9f26-5cf7bf3ccf94",3432,3432.4,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,set builder,"Designer, armorial
+blacksmith welder
 carpenter
-prop maker and set builder
-set & stage builder
-set builder
-set builder & dresser
+chief carpenter
 exhibition builder
-stage & set builder
-set builder & designer
+prop maker & set builder
+prop maker and set builder
+property maker & set builder
 property maker and set builder
-set dresser & builder
+scenic builder
+set & stage builder
+set and stage builder
+set builder
+set builder & designer
+set builder & dresser
+set builder & prop maker
+set builder & property maker
+set builder and designer
+set builder and dresser
 set builder and prop maker
-blacksmith welder","Set builders construct, build, prepare, adapt and maintain scenic elements used on stage and for filming movies or television programs. They use a wide variety of materials like wood, steel, aluminium and plastics. Their work is based on artistic vision, scale models, sketches and plans. They work in close cooperation with the designers and may build exibition stands for fairs, carnavals and other events."
+set builder and property maker
+set constructor
+set designer & builder
+set designer and builder
+set dresser & builder
+set dresser and builder
+stage & set builder
+stage and set builder","Set builders construct, build, prepare, adapt and maintain scenic elements used on stage and for filming movies or television programs. They use a wide variety of materials like wood, steel, aluminium and plastics. Their work is based on artistic vision, scale models, sketches and plans. They work in close cooperation with the designers and may build exibition stands for fairs, carnavals and other events."
 687671c1ebd2bf665349e37c,http://data.europa.eu/esco/occupation/4ed36f4c-9d5b-4a01-bf59-7f3c7844ce95,"6fea14ae-03b6-4776-a5b7-69da94c0f85f
 3dbfa589-b0b3-48da-ac8d-21331632ff7e
 4cee8fcf-79dc-4d0a-9011-9b3d1b214d61
@@ -27909,6 +27917,7 @@ theatre designer","Set designers develop a set concept for a performance and sup
 70abf5ad-e2a6-488e-8afa-2b74a0a4f323
 de48ab62-6783-4eda-b81e-c3ea1e24c784
 b40500f6-a94c-4fdc-9cd6-11cdabb1a018",3432,3432.6,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,visual merchandiser,"Decorator, display
+Dresser, window
 assistant visual merchandiser
 display assistant
 display designer
@@ -28599,7 +28608,8 @@ IT security technician","ICT security technicians propose and implement necessar
 3e4b8ff2-385f-4f31-a075-f800002a69f1
 dd48fdc0-59ca-4ba9-8626-dc18518bff8f
 f6f1e18b-b742-403a-a303-f6b68fbc8782
-fd7049cc-9f31-42d7-a99f-8bb2dae362fb",3512,3512.4,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,ICT technician,"Engineer, computer: computer support
+fd7049cc-9f31-42d7-a99f-8bb2dae362fb",3512,3512.4,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,ICT technician,"Assistant, computer: engineering (operations)
+Engineer, computer: computer support
 Engineer, desktop support
 ICT engineer
 ICT technician
@@ -28907,6 +28917,7 @@ d609ddc4-be58-491d-8073-4e27dba23566
 982dd0b6-c06e-46ad-acc9-f19c34879eb5",4110,4110.1,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,office clerk,"Clerk, Copyright
 Clerk, Enquiry
 Clerk, appointments
+Timekeeper, Motor Transport
 clerical assistant
 correspondence clerk
 office clerk","Office clerks are responsible for performing clerical and administrative duties in an office setting and support of business operations within a department. They assist all the administrative staff, secretaries, and assistants by sorting mail, filing forms and documents, answering phones, greeting clients and scheduling meetings."
@@ -29672,12 +29683,14 @@ wages clerk","Payroll clerks manage the time sheets and pay checks of the employ
 fce6deff-ae91-4c76-ba51-29aa4898e69f
 2b2d0610-4971-447e-a85f-2db7d48369e1
 d340a743-e83a-4c2b-90f9-75a702661d51
-33882406-b5eb-4793-b770-9faf1ee18945",4321,4321.1,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,inventory coordinator,"Clerk, control: stock
+33882406-b5eb-4793-b770-9faf1ee18945",4321,4321.1,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,inventory coordinator,"Attendant, tool crib
+Clerk, control: stock
 Clerk, depository: furniture
 Clerk, dispatch: stock
 Clerk, goods: inward
 Clerk, inventory: stock control
 Clerk, records: stock control
+Clerk, scale
 Clerk, stock
 Clerk, storeroom
 Clerk, supply
@@ -34225,6 +34238,7 @@ residential property builder","House builders construct, maintain and repair hou
 Builder, chimney
 Layer, firebrick
 Paviour
+Tuck pointer
 brick layer
 brick laying labourer
 brick laying worker
@@ -35566,6 +35580,7 @@ assistant theatre technician","Stagehands assist stage technicians setting up an
 83d6d74f-1655-4b7a-a9ec-e290050a57c0
 8b3e0c3a-6e3d-4120-8d1c-709e4892f3b5
 59420752-53d5-4434-8310-253333cd0b96",7215,7215.2,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,rigger,"Banksman, mine
+Grip
 Rigger, ski-lift
 Rigger, theatrical
 Spinner-squeezer, wire
@@ -36102,13 +36117,14 @@ straightening press operator","Straightening machine operators set up and tend s
 a7f1acde-66d6-486e-9f8e-6b05d74dd506
 8bf3f2bd-7c82-4450-8805-aac081efcd4f
 b28c5a9a-2fd6-4c4a-9047-1fdd7af3cb7d
-9ae6889f-7415-4083-bffd-67e75b72a5bc",7223,7223.23,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,swaging machine operator,"swaging machine operative
+9ae6889f-7415-4083-bffd-67e75b72a5bc",7223,7223.23,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,swaging machine operator,"Operator, machine: commutator (production)
 forging machine operative
-swaging machine tender
-swaging machine setter
 forging machine setter
+forging machine tender
+swaging machine operative
 swaging machine operator
-forging machine tender","Swaging machine operators set up and tend rotary swaging machines, designed to alter round ferrous and non-ferrous metal workpieces into their desired shape by first hammering them into a smaller diameter through the compressive force of two or more dies and then tagging them using a rotary swager, a process through which no excess material is lost."
+swaging machine setter
+swaging machine tender","Swaging machine operators set up and tend rotary swaging machines, designed to alter round ferrous and non-ferrous metal workpieces into their desired shape by first hammering them into a smaller diameter through the compressive force of two or more dies and then tagging them using a rotary swager, a process through which no excess material is lost."
 687671c1ebd2bf665349e57b,http://data.europa.eu/esco/occupation/77a25ee0-94ad-443e-91ea-3e6d3506181b,"ab54bfbc-7ae4-4914-ab8e-66a88dac59d3
 16d655a7-a6e1-4254-abd8-3eeabe8b07a1
 8fb0b32d-0643-4bee-9696-e5ceb057b20b
@@ -37874,6 +37890,7 @@ Dipper, ceramics
 Driller, pottery
 Jollier, pottery and porcelain
 Maker, pottery spout
+Sticker-up, pottery
 Turner, pottery and porcelain
 abrasive wheel moulder
 ceramics maker
@@ -38079,7 +38096,8 @@ small-scale paper producer","Artisan papermakers create paper slurry, strain it 
 f3537cc0-90d1-4092-a10c-ffadab4587ab
 546d7d37-734e-4b40-b95e-7922416a82f5
 7ea0e0fb-466b-453e-820c-d915536bc7b1
-daf945c2-6c1c-4081-b7d8-b8be0592e9bc",7317,7317.2,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,basketmaker,"Maker, footwear: raffia
+daf945c2-6c1c-4081-b7d8-b8be0592e9bc",7317,7317.2,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,basketmaker,"Creeler
+Maker, footwear: raffia
 Weaver, straw
 Worker, handicraft: straw articles
 artisan basket weaver
@@ -38275,6 +38293,7 @@ da7b1cc8-53ae-404c-834c-180fa02241e7
 877e8abe-1656-4b76-b25b-5357e40048c3
 3df94f89-a660-4bf4-85da-2ad476cb296b",7318,7318.6,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,weaver,"Blender, fibre: textile
 Carder, fibre: textile
+Lap former, textile fibre:
 Picker, fibre: textile
 Preparer, fibre: textile
 Rover, fibre: textile
@@ -38364,6 +38383,7 @@ dfbe7272-b8dc-4a41-b9f5-2a94e5183723
 CTP operator
 CTP specialist
 CTP worker
+Caster, electrotype
 Engraver, lithographic stone: printing
 Engraver, metal die: printing
 Engraver, metal plate: printing
@@ -38371,15 +38391,19 @@ Engraver, metal roller: printing
 Etcher, printing: metal plate
 Etcher, printing: metal roller
 Finisher, photo-engraving: printing plates
+Maker, braille plate
 Maker, photogravure: printing plate
 Maker, plate: printing
+Maker, stencil: printing plate
 Maker-up, printing
+Moulder, electrotype
 Mounter, plate: screen printing
 Operator, camera: printing
 Photogravurist
 Photolithographer
 Printer, pantograph
 Retoucher, printing plates
+Stereotyper
 Stonehand, printing
 Transferrer, lithographic
 Transferrer, photo-mechanical: printing plates
@@ -38403,7 +38427,8 @@ platesetter technician","Lithographers make and prepare metal plates to be used 
 c22e74cb-85c7-48fb-96bc-cc3b84f408f5
 8038605b-c531-4f3d-b91f-a246862eab07
 99b31967-638b-4ee4-be1b-39861348d957
-7aae652f-5602-457f-b3c7-e1e24edc07bb",7321,7321.1.3,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,prepress operator,"Proof-presser
+7aae652f-5602-457f-b3c7-e1e24edc07bb",7321,7321.1.3,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,prepress operator,"Caster, stereotype
+Proof-presser
 Proofer, photogravure
 Prover, photo-engraving
 digital pre-press operator
@@ -40407,7 +40432,8 @@ clothing CAD pattern maker","Clothing CAD patternmakers design, evaluate, adjust
 6463dcec-1a02-4cba-a412-6d047c411212
 a99d6f9b-e6d6-4c44-b9ee-6685678fe71d
 8c6fa7f9-8998-4fc6-8775-860e7412183f
-d5c6e6f7-c668-4d2c-a5da-64f06dcc77d2",7532,7532.2,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,clothing cutter,"Cutter, umbrella
+d5c6e6f7-c668-4d2c-a5da-64f06dcc77d2",7532,7532.2,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,clothing cutter,"Cutter, tent
+Cutter, umbrella
 Cutter, upholstery
 Spreader, Fabric
 bespoke clothing cutter
@@ -41533,8 +41559,10 @@ underground miner operator",Underground heavy equipment operators control heavy-
 77e0d0c0-e81f-474a-8c67-0df8154bc471
 513f5569-2de6-4f71-9a7a-1a75c3d0c950
 62c20e6b-6ba0-4ec0-b053-aad559c8cad0",8111,8111.5,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,underground miner,"Bolter, roof: mining
+Clipper, mine
 Miner, diamond
 Miner, gold
+On setter, mine
 Worker, timbering: mine
 Worker, timbering: underground
 coal cutter
@@ -41931,7 +41959,9 @@ plastic extrusion operator","Extrusion machine operators set up, monitor and mai
 29a3aec8-d2ad-4ddc-b0f5-03464d8ae1c4
 3d039548-609f-4b97-835f-8d9b599232f3
 5624936a-1cfa-4515-91fd-788332569831
-d71d35b0-3cc5-4814-9167-8291c72365ab",8121,8121.3,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,metal annealer,"Refiner, metal
+d71d35b0-3cc5-4814-9167-8291c72365ab",8121,8121.3,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,metal annealer,"Dryer, asbestos
+Ladler, metal
+Refiner, metal
 annealing kiln operator
 annealing kiln worker
 annealing operator
@@ -43319,16 +43349,17 @@ tube winding machine operator",Insulating tube winders set up and operate a mach
 4532430e-9105-4f2a-af98-9c3222afc4ee
 ff3744ca-ea34-477f-b3f4-db6ec2abec34
 47e36b3e-bb45-4892-b022-8550e11bbffb
-f7ec8959-268a-495c-87bb-a300e12992f2",8142,8142.9,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,plastic furniture machine operator,"plastic furniture machine worker
-plastic furniture manufacturer
-plastic furniture machine operative
+f7ec8959-268a-495c-87bb-a300e12992f2",8142,8142.9,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,plastic furniture machine operator,"Builder, plastic boat
 plastic furniture assembler
-plastic furniture maker
-plastic furniture machine setter
 plastic furniture assembly worker
-plastic furniture production operative
-plastic furniture machine tender
+plastic furniture machine operative
 plastic furniture machine operator
+plastic furniture machine setter
+plastic furniture machine tender
+plastic furniture machine worker
+plastic furniture maker
+plastic furniture manufacturer
+plastic furniture production operative
 plastic furniture production process worker","Plastic furniture machine operators tend plastic processing machines that produce pieces such as plastic chairs and tables. They inspect each resulting product, detect abnormalities and remove inadequate pieces. In some cases, they may assemble different plastic parts to obtain the final product."
 687671c1ebd2bf665349e6ff,http://data.europa.eu/esco/occupation/c706886d-5bc7-4430-9a72-051fc483235f,"d6b8c620-be14-4684-ae91-dbbc79c1f26c
 bb709b4c-a5dd-40d1-a02e-41ec4643be99
@@ -44211,7 +44242,8 @@ mattress making machine operator","Mattress making machine operators utilise mac
 48f4ac53-a6a2-439e-b968-d001de5f026e
 fa2ae0e6-57a1-415e-bcd0-7e8a43acfeda
 d7bf81c9-526e-4bf2-af0d-98d0ef3c8ae9
-dc169eed-fbf8-47f6-ae57-28582bc02926",8159,8159.6,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,nonwoven staple machine operator,"Operator, machine: forming (felt hoods)
+dc169eed-fbf8-47f6-ae57-28582bc02926",8159,8159.6,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,nonwoven staple machine operator,"Operator, machine: blocking (hats)
+Operator, machine: forming (felt hoods)
 non woven fabric machine operator
 non woven staple machinist
 non woven staple processing machine operator
@@ -44283,7 +44315,8 @@ sweets machine operator","Candy machine operators tend machines that weigh, meas
 13356687-1c0a-49cc-9b50-c8856ac97922
 ad2dcf2d-deb6-4d1a-adc0-35e1ab94ed30
 d2f50f12-8c73-4aa9-939e-ed3811a6ec80
-3510b5dc-4826-422c-bd0b-dd88de1d4560",8160,8160.12,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,carbonation operator,"Operator, machine: soft-drinks production
+3510b5dc-4826-422c-bd0b-dd88de1d4560",8160,8160.12,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,carbonation operator,"Operator, carbonation equipment: metal
+Operator, machine: soft-drinks production
 beverage carbonation worker
 carbonation operator
 drinks gasification processor
@@ -45360,7 +45393,9 @@ presser","Dry press operators press dry tempered clay or silica into bricks and 
 ad24fe3f-9f97-460a-9afe-682d91eb2f7c
 59b00ca0-3d95-4227-b734-a27f6205bd1b
 76c0a70e-086d-4dc6-b39d-b4d76c8e1e48
-e5a51eb4-d97c-4dba-bc34-e5f23110c96f",8181,8181.6,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,fibre machine tender,"Opener, fibre: textile
+e5a51eb4-d97c-4dba-bc34-e5f23110c96f",8181,8181.6,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,fibre machine tender,"Drawer, fibre: optic
+Fibre Drawer
+Opener, fibre: textile
 extruding and forming machine setter
 extruding machine setter
 fiber extruding machine operator
@@ -46932,7 +46967,9 @@ f38ae0b4-cebc-4de7-811b-8bc25869963f
 67249940-598c-4f2a-94ff-fc26b07fdc28
 3e75cb17-3e23-4f81-a73d-582edc78df6c",8343,8343.1,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,automated cable vehicle controller,"Driver, funicular
 Operator, chair-lift
+Operator, conveyer
 Operator, funicular
+Operator, machine: cable installation
 Operator, roller coaster
 Operator, ski-lift
 automated cable vehicle controller
@@ -46960,24 +46997,30 @@ straddle crane operator","Container crane operators operate electrically powered
 955406e1-397e-4212-b911-c42155ca89a5
 1a8f217a-f141-4377-8fd2-cafa9a372ad3
 9be511bb-3b96-4168-a710-1ba20355b196
-0040c372-e9ef-468c-90b3-2b8e4a9ccc46",8343,8343.3,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,mobile crane operator,"lorry-mounted crane driver
-mobile crane operators
+0040c372-e9ef-468c-90b3-2b8e4a9ccc46",8343,8343.3,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,mobile crane operator,"Operator, boat: derrick
+Operator, cage: mine
+Operator, donkey engine
+bottom cat operator
 compact crane driver
-mini crane operator
-mobile crane driver
+compact crane operator
+lorry-mounted crane driver
 lorry-mounted crane operator
 mini crane driver
-compact crane operator
-operator specialised in mobile crane
+mini crane operator
+mobile crane driver
 mobile crane operator
-bottom cat operator","Mobile crane operators work with a variety of crane types that can be moved easily around the road, rail and water. Mobile cranes are often mounted on trucks."
+mobile crane operators
+operator specialised in mobile crane","Mobile crane operators work with a variety of crane types that can be moved easily around the road, rail and water. Mobile cranes are often mounted on trucks."
 687671c1ebd2bf665349e7e7,http://data.europa.eu/esco/occupation/1de948c1-192a-4810-afb7-48548217a912,"b3699e43-b8b3-4344-9baa-7c4b389d4c65
 b1307cc3-c788-4197-94f8-e0abe1ec0974
 e6afbe2c-9a38-489c-940d-576e823820aa
 1c664825-1022-4a05-8b75-8aff18a22350
-5a45ed6a-d932-4918-a8ca-5567b505fc83",8343,8343.4,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,production plant crane operator,"Operator, elevator: material-handling
+5a45ed6a-d932-4918-a8ca-5567b505fc83",8343,8343.4,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,production plant crane operator,"Banks woman, mine
+Operator, drawbridge
+Operator, elevator: material-handling
 Operator, hoist
 Operator, winch
+Tender, skip
 bottom cat operator
 bottom crane operator
 bridge crane operator
@@ -47042,7 +47085,8 @@ warehouse material handler","Forklift operators are responsible for operating fo
 9d254296-fc22-45ab-8f7b-309578d34566
 d02d2aac-312c-4e44-a38e-d5daba1615bb
 62b9209b-ecb2-4cca-9f4f-313aeecc96ac
-56ab2c6c-c7dd-4cce-959b-d06c4536b750",8350,8350.1,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,boatswain,"Crewwoman, dredger
+56ab2c6c-c7dd-4cce-959b-d06c4536b750",8350,8350.1,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,boatswain,"Coxswain, lifeboat
+Crewwoman, dredger
 boatswain
 bosum
 fisheries boatswain

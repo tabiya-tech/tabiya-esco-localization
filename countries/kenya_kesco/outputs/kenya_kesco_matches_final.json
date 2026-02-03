@@ -9,14 +9,14 @@
     "step_2b_selected": 1261,
     "step_2b_none": 156,
     "step_2b_errors": 0,
-    "review_exported_at": "2026-02-02T09:40:21.909343",
+    "review_exported_at": "2026-02-02T21:33:16.490169",
     "review_stats": {
-      "approved": 470,
-      "matched": 291,
-      "new_local": 154,
-      "skipped": 60,
+      "approved": 492,
+      "matched": 313,
+      "new_local": 170,
+      "skipped": 0,
       "not_found": 0,
-      "esco_changed": 6
+      "esco_changed": 22
     }
   },
   "matches": [
@@ -551,7 +551,7 @@
       "esco_label": "city councillor",
       "matched_label": "county councillor",
       "similarity": 0.8933076433208013,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -561,7 +561,12 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "NEW_LOCAL",
+      "parent_esco_code": "1112",
+      "parent_esco_label": "Senior government officials",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T00:47:54.451+00:00"
     },
     {
       "kesco_code": "1110-43",
@@ -1318,7 +1323,7 @@
       "esco_label": "chief executive officer",
       "matched_label": "senior executive officer",
       "similarity": 0.8479981099229262,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_112",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -1328,7 +1333,12 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "NEW_LOCAL",
+      "parent_esco_code": "1112",
+      "parent_esco_label": "Senior government officials",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T00:48:16.594+00:00"
     },
     {
       "kesco_code": "1122-17",
@@ -1545,11 +1555,11 @@
       "kesco_title": "Comptroller of State House",
       "isco_code": 1123,
       "unit_group": 1123,
-      "esco_code": "1120.4",
-      "esco_label": "chief operating officer",
+      "esco_code": "1112.6",
+      "esco_label": "gerente de administración pública",
       "matched_label": "chief administrative officer",
       "similarity": 0.8328722926845715,
-      "category": "new_local",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_112",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -1559,7 +1569,10 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "NONE",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "MATCH",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-02T23:53:26.172+00:00"
     },
     {
       "kesco_code": "1123-12",
@@ -1719,11 +1732,11 @@
       "kesco_title": "Chief",
       "isco_code": 1123,
       "unit_group": 1123,
-      "esco_code": "1120.4",
-      "esco_label": "chief operating officer",
+      "esco_code": "1112.6",
+      "esco_label": "gerente de administración pública",
       "matched_label": "chief administrative officer",
       "similarity": 0.9006184646269821,
-      "category": "new_local",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_112",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -1733,18 +1746,21 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "NONE",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "MATCH",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T00:56:18.352+00:00"
     },
     {
       "kesco_code": "1123-22",
       "kesco_title": "Assistant Chief",
       "isco_code": 1123,
       "unit_group": 1123,
-      "esco_code": "1120.4",
-      "esco_label": "chief operating officer",
+      "esco_code": "1120.3",
+      "esco_label": "director ejecutivo",
       "matched_label": "deputy chief executive officer",
       "similarity": 0.8949359240855772,
-      "category": "new_local",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_112",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -1754,7 +1770,10 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "NONE",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "MATCH",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-02T23:53:50.172+00:00"
     },
     {
       "kesco_code": "1123-23",
@@ -1812,7 +1831,7 @@
       "esco_label": "public finance accountant",
       "matched_label": "treasury officer",
       "similarity": 0.8896703272709232,
-      "category": "step_2b_matched",
+      "category": "human_approved",
       "search_strategy": "isco_constrained_112",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -1822,7 +1841,10 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "APPROVE",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T00:47:33.811+00:00"
     },
     {
       "kesco_code": "1123-26",
@@ -2633,11 +2655,11 @@
       "kesco_title": "Postmaster General",
       "isco_code": 1140,
       "unit_group": 1140,
-      "esco_code": "1112.7",
-      "esco_label": "secretary general",
+      "esco_code": "1112.6",
+      "esco_label": "gerente de administración pública",
       "matched_label": "general secretary",
       "similarity": 0.8714644312418347,
-      "category": "new_local",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_11",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -2647,7 +2669,10 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "NONE",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "MATCH",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T00:56:31.574+00:00"
     },
     {
       "kesco_code": "1140-23",
@@ -20175,11 +20200,11 @@
       "kesco_title": "Bonze",
       "isco_code": 2636,
       "unit_group": 2636,
-      "esco_code": "3413.1",
-      "esco_label": "monk/nun",
+      "esco_code": "2636.2",
+      "esco_label": "ministro de culto",
       "matched_label": "monk",
       "similarity": 0.8930103633396731,
-      "category": "step_2b_matched",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_2636",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -20189,7 +20214,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "MATCH",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T00:59:24.841+00:00"
     },
     {
       "kesco_code": "2636-18",
@@ -20552,7 +20580,7 @@
       "esco_label": "archivist",
       "matched_label": "processing archivist",
       "similarity": 0.8764530508316142,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_2641",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -20562,7 +20590,12 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "NEW_LOCAL",
+      "parent_esco_code": "2641",
+      "parent_esco_label": "Authors and related writers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T01:03:17.639+00:00"
     },
     {
       "kesco_code": "2641-22",
@@ -21354,7 +21387,7 @@
       "esco_label": "artistic painter",
       "matched_label": "visual artist",
       "similarity": 0.8597153894812907,
-      "category": "step_2b_matched",
+      "category": "human_approved",
       "search_strategy": "isco_constrained_2651",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -21364,7 +21397,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "APPROVE",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T01:04:56.128+00:00"
     },
     {
       "kesco_code": "2651-23",
@@ -24566,7 +24602,12 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "NONE",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "NEW_LOCAL",
+      "parent_esco_code": "3119",
+      "parent_esco_label": "Physical and engineering science technicians not elsewhere classified",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T01:07:46.302+00:00"
     },
     {
       "kesco_code": "3119-24",
@@ -38769,11 +38810,11 @@
       "kesco_title": "Designer, armorial",
       "isco_code": 3432,
       "unit_group": 3432,
-      "esco_code": "3432.1",
-      "esco_label": "interior designer",
+      "esco_code": "3432.4",
+      "esco_label": "constructor de decorados",
       "matched_label": "spacial designer",
       "similarity": 0.8821967108926054,
-      "category": "new_local",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_3432",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -38783,7 +38824,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "NONE",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "MATCH",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T01:13:28.356+00:00"
     },
     {
       "kesco_code": "3432-15",
@@ -38927,7 +38971,7 @@
       "esco_label": "visual merchandiser",
       "matched_label": "window dresser",
       "similarity": 0.8853887958158717,
-      "category": "step_2b_matched",
+      "category": "human_approved",
       "search_strategy": "isco_constrained_3432",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -38937,7 +38981,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "APPROVE",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T01:14:01.654+00:00"
     },
     {
       "kesco_code": "3432-25",
@@ -39683,11 +39730,11 @@
       "kesco_title": "Assistant, computer: engineering (operations)",
       "isco_code": 3511,
       "unit_group": 3511,
-      "esco_code": "3511.1",
-      "esco_label": "data centre operator",
+      "esco_code": "3512.4",
+      "esco_label": "técnico de TIC",
       "matched_label": "data center operator",
       "similarity": 0.8655924603464613,
-      "category": "step_2b_matched",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_3511",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -39697,7 +39744,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "MATCH",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T01:32:36.796+00:00"
     },
     {
       "kesco_code": "3511-12",
@@ -42233,11 +42283,11 @@
       "kesco_title": "Timekeeper, Motor Transport",
       "isco_code": 4110,
       "unit_group": 4110,
-      "esco_code": "4110.1.1",
-      "esco_label": "membership administrator",
+      "esco_code": "4110.1",
+      "esco_label": "auxiliar administrativo",
       "matched_label": "administrative support officer",
       "similarity": 0.8210775028288958,
-      "category": "new_local",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_4110",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -42247,7 +42297,10 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "NONE",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "MATCH",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T01:34:42.668+00:00"
     },
     {
       "kesco_code": "4120-11",
@@ -45132,7 +45185,12 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "NONE",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "NEW_LOCAL",
+      "parent_esco_code": "4229",
+      "parent_esco_label": "Client information workers not elsewhere classified",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T01:36:57.509+00:00"
     },
     {
       "kesco_code": "4228-14",
@@ -45167,7 +45225,7 @@
       "esco_label": "contact tracing agent",
       "matched_label": "contact tracing specialist",
       "similarity": 0.8463042104752421,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_422",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -45177,7 +45235,12 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "NEW_LOCAL",
+      "parent_esco_code": "4229",
+      "parent_esco_label": "Client information workers not elsewhere classified",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T01:37:20.987+00:00"
     },
     {
       "kesco_code": "4311-11",
@@ -45822,7 +45885,7 @@
       "esco_label": "inventory coordinator",
       "matched_label": "stockroom coordinator",
       "similarity": 0.871828931197579,
-      "category": "step_2b_matched",
+      "category": "human_approved",
       "search_strategy": "isco_constrained_4321",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -45832,7 +45895,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "APPROVE",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T01:39:20.51+00:00"
     },
     {
       "kesco_code": "4321-12",
@@ -46050,7 +46116,7 @@
       "esco_label": "inventory coordinator",
       "matched_label": "inventory taker",
       "similarity": 0.8499738587051622,
-      "category": "step_2b_matched",
+      "category": "human_approved",
       "search_strategy": "isco_constrained_4321",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -46060,7 +46126,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "APPROVE",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T01:42:58.524+00:00"
     },
     {
       "kesco_code": "4321-25",
@@ -48824,7 +48893,12 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "NONE",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "NEW_LOCAL",
+      "parent_esco_code": "4419",
+      "parent_esco_label": "Clerical support workers not elsewhere classified",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T01:45:33.529+00:00"
     },
     {
       "kesco_code": "4417-22",
@@ -51474,7 +51548,12 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "NONE",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "NEW_LOCAL",
+      "parent_esco_code": "5169",
+      "parent_esco_label": "Personal services workers not elsewhere classified",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T01:49:22.36+00:00"
     },
     {
       "kesco_code": "5172-11",
@@ -64838,7 +64917,7 @@
       "esco_label": "bricklayer",
       "matched_label": "brick layer",
       "similarity": 0.8007250944805496,
-      "category": "step_2b_matched",
+      "category": "human_approved",
       "search_strategy": "isco_constrained_7112",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -64848,7 +64927,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "APPROVE",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T01:49:53.831+00:00"
     },
     {
       "kesco_code": "7113-11",
@@ -69159,7 +69241,7 @@
       "esco_label": "rigger",
       "matched_label": "rigger",
       "similarity": 0.8455079067732223,
-      "category": "step_2b_matched",
+      "category": "human_approved",
       "search_strategy": "isco_constrained_7215",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -69169,7 +69251,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "APPROVE",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T01:50:46.824+00:00"
     },
     {
       "kesco_code": "7215-12",
@@ -70387,7 +70472,7 @@
       "esco_label": "swaging machine operator",
       "matched_label": "swaging machine operative",
       "similarity": 0.8827918691919054,
-      "category": "step_2b_matched",
+      "category": "human_approved",
       "search_strategy": "isco_constrained_7223",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -70397,7 +70482,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "APPROVE",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T01:52:22.768+00:00"
     },
     {
       "kesco_code": "7223-31",
@@ -75273,11 +75361,11 @@
       "kesco_title": "Sticker-up, pottery",
       "isco_code": 7314,
       "unit_group": 7314,
-      "esco_code": "7316.1.1",
-      "esco_label": "ceramic painter",
+      "esco_code": "7314.2",
+      "esco_label": "alfarero de producción",
       "matched_label": "ceramic decorator",
       "similarity": 0.8886878583412035,
-      "category": "step_2b_matched",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_7314",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -75287,7 +75375,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "MATCH",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T01:53:53.555+00:00"
     },
     {
       "kesco_code": "7314-31",
@@ -76323,7 +76414,7 @@
       "esco_label": "basketmaker",
       "matched_label": "reed weaver",
       "similarity": 0.8454903845274268,
-      "category": "step_2b_matched",
+      "category": "human_approved",
       "search_strategy": "isco_constrained_7317",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -76333,7 +76424,10 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "APPROVE",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T01:54:44.786+00:00"
     },
     {
       "kesco_code": "7317-12",
@@ -76838,7 +76932,7 @@
       "esco_label": "weaver",
       "matched_label": "fabric weaver",
       "similarity": 0.8826517916217741,
-      "category": "new_local",
+      "category": "human_approved",
       "search_strategy": "isco_constrained_7318",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -76848,7 +76942,10 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "NONE",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "APPROVE",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T01:57:59.693+00:00"
     },
     {
       "kesco_code": "7318-23",
@@ -77348,7 +77445,7 @@
       "esco_label": "fibre machine tender",
       "matched_label": "fibre machine operative",
       "similarity": 0.8783784694332054,
-      "category": "step_2b_matched",
+      "category": "human_approved",
       "search_strategy": "isco_constrained_7318",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -77358,7 +77455,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "APPROVE",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T01:58:11.203+00:00"
     },
     {
       "kesco_code": "7318-54",
@@ -77727,11 +77827,11 @@
       "kesco_title": "Caster, electrotype",
       "isco_code": 7321,
       "unit_group": 7321,
-      "esco_code": "8122.7",
-      "esco_label": "electroplating machine operator",
+      "esco_code": "7321.1.2",
+      "esco_label": "litógrafo",
       "matched_label": "electro plater",
       "similarity": 0.888694243706643,
-      "category": "step_2b_matched",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_7321",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -77741,18 +77841,21 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "MATCH",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:03:21.657+00:00"
     },
     {
       "kesco_code": "7321-16",
       "kesco_title": "Caster, stereotype",
       "isco_code": 7321,
       "unit_group": 7321,
-      "esco_code": "7321.1.6",
-      "esco_label": "typesetter",
+      "esco_code": "7321.1.3",
+      "esco_label": "operario de preimpresión",
       "matched_label": "typesetter",
       "similarity": 0.8142455278492835,
-      "category": "step_2b_matched",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_7321",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -77762,7 +77865,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "MATCH",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:04:02.429+00:00"
     },
     {
       "kesco_code": "7321-17",
@@ -78188,7 +78294,7 @@
       "esco_label": "lithographer",
       "matched_label": "platesetter specialist",
       "similarity": 0.8903191049744977,
-      "category": "step_2b_matched",
+      "category": "human_approved",
       "search_strategy": "isco_constrained_7321",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -78198,7 +78304,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "APPROVE",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:04:07.294+00:00"
     },
     {
       "kesco_code": "7321-45",
@@ -78262,11 +78371,11 @@
       "kesco_title": "Maker, stencil: printing plate",
       "isco_code": 7321,
       "unit_group": 7321,
-      "esco_code": "7321.1.5",
-      "esco_label": "screen making technician",
+      "esco_code": "7321.1.2",
+      "esco_label": "litógrafo",
       "matched_label": "silk screen etcher",
       "similarity": 0.8934259627595404,
-      "category": "step_2b_matched",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_7321",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -78276,7 +78385,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "MATCH",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:04:23.079+00:00"
     },
     {
       "kesco_code": "7321-51",
@@ -78344,7 +78456,7 @@
       "esco_label": "lithographer",
       "matched_label": "metal lithographer",
       "similarity": 0.883630962233515,
-      "category": "step_2b_matched",
+      "category": "human_approved",
       "search_strategy": "isco_constrained_7321",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -78354,7 +78466,10 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "APPROVE",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:04:30.533+00:00"
     },
     {
       "kesco_code": "7321-55",
@@ -78765,11 +78880,11 @@
       "kesco_title": "Stereotyper",
       "isco_code": 7321,
       "unit_group": 7321,
-      "esco_code": "7321.1.1",
-      "esco_label": "imagesetter",
+      "esco_code": "7321.1.2",
+      "esco_label": "litógrafo",
       "matched_label": "imagesetter",
       "similarity": 0.8407728478254027,
-      "category": "step_2b_matched",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_7321",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -78779,7 +78894,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "MATCH",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:05:21.907+00:00"
     },
     {
       "kesco_code": "7321-82",
@@ -88153,7 +88271,7 @@
       "esco_label": "clothing cutter",
       "matched_label": "clothing cutter",
       "similarity": 0.8804833709906033,
-      "category": "step_2b_matched",
+      "category": "human_approved",
       "search_strategy": "isco_constrained_7532",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -88163,7 +88281,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "APPROVE",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:05:33.014+00:00"
     },
     {
       "kesco_code": "7532-21",
@@ -91159,7 +91280,7 @@
       "esco_label": "pest management worker",
       "matched_label": "pest management worker",
       "similarity": 0.8500000932587883,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_7544",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -91169,7 +91290,12 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "NEW_LOCAL",
+      "parent_esco_code": "7544",
+      "parent_esco_label": "Fumigators and other pest and weed controllers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:06:05.971+00:00"
     },
     {
       "kesco_code": "7544-14",
@@ -91380,7 +91506,12 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "NONE",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "NEW_LOCAL",
+      "parent_esco_code": "7549",
+      "parent_esco_label": "Craft and related workers not elsewhere classified",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:07:15.743+00:00"
     },
     {
       "kesco_code": "7545-12",
@@ -91422,7 +91553,12 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "NONE",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "NEW_LOCAL",
+      "parent_esco_code": "7549",
+      "parent_esco_label": "Craft and related workers not elsewhere classified",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:07:38.821+00:00"
     },
     {
       "kesco_code": "7545-14",
@@ -91574,7 +91710,7 @@
       "esco_label": "underground miner",
       "matched_label": "coal cutter",
       "similarity": 0.8564869453044904,
-      "category": "step_2b_matched",
+      "category": "human_approved",
       "search_strategy": "isco_constrained_8111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -91584,7 +91720,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "APPROVE",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:08:21.823+00:00"
     },
     {
       "kesco_code": "8111-13",
@@ -94157,7 +94296,7 @@
       "esco_label": "anodising machine operator",
       "matched_label": "anodiser",
       "similarity": 0.8805059020811525,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_8121",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -94167,7 +94306,12 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "NEW_LOCAL",
+      "parent_esco_code": "8121",
+      "parent_esco_label": "Metal processing plant operators",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:11:18.935+00:00"
     },
     {
       "kesco_code": "8121-14",
@@ -94178,7 +94322,7 @@
       "esco_label": "metal annealer",
       "matched_label": "metal annealer",
       "similarity": 0.8188087959948758,
-      "category": "new_local",
+      "category": "human_approved",
       "search_strategy": "isco_constrained_8121",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -94188,7 +94332,10 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "NONE",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "APPROVE",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:11:58.138+00:00"
     },
     {
       "kesco_code": "8121-15",
@@ -94214,11 +94361,11 @@
       "kesco_title": "Ladler, metal",
       "isco_code": 8121,
       "unit_group": 8121,
-      "esco_code": "8121.1",
-      "esco_label": "casting machine operator",
+      "esco_code": "8121.3",
+      "esco_label": "recocedor de metales",
       "matched_label": "ladleman",
       "similarity": 0.8878707161926721,
-      "category": "step_2b_matched",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_8121",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -94228,7 +94375,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "MATCH",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:12:52.938+00:00"
     },
     {
       "kesco_code": "8121-17",
@@ -94254,11 +94404,11 @@
       "kesco_title": "Operator, carbonation equipment: metal",
       "isco_code": 8121,
       "unit_group": 8121,
-      "esco_code": "8121.2",
-      "esco_label": "extrusion machine operator",
+      "esco_code": "8160.12",
+      "esco_label": "operador de carbonatación",
       "matched_label": "metal extrusion machine operator",
       "similarity": 0.899440967723616,
-      "category": "new_local",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_8121",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -94268,7 +94418,10 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "NONE",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "MATCH",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:15:25.409+00:00"
     },
     {
       "kesco_code": "8121-21",
@@ -97718,11 +97871,11 @@
       "kesco_title": "Builder, plastic boat",
       "isco_code": 8142,
       "unit_group": 8142,
-      "esco_code": "8142.4",
-      "esco_label": "fiberglass laminator",
+      "esco_code": "8142.9",
+      "esco_label": "operador de máquina de muebles de plástico",
       "matched_label": "boat hull laminator",
       "similarity": 0.8879324384904577,
-      "category": "step_2b_matched",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_8142",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -97732,7 +97885,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "MATCH",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:15:49.385+00:00"
     },
     {
       "kesco_code": "8142-12",
@@ -97743,7 +97899,7 @@
       "esco_label": "fibre machine tender",
       "matched_label": "fibre machine operative",
       "similarity": 0.8621750545485566,
-      "category": "step_2b_matched",
+      "category": "human_approved",
       "search_strategy": "isco_constrained_8142",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -97753,7 +97909,10 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "APPROVE",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:15:55.63+00:00"
     },
     {
       "kesco_code": "8142-13",
@@ -100319,11 +100478,11 @@
       "kesco_title": "Operator, machine: blocking (hats)",
       "isco_code": 8158,
       "unit_group": 8158,
-      "esco_code": "7531.4",
-      "esco_label": "milliner",
+      "esco_code": "8159.6",
+      "esco_label": "operador de máquina de fibras discontinuas no tejidas",
       "matched_label": "hat maker",
       "similarity": 0.87821989064482,
-      "category": "step_2b_matched",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_815",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -100333,7 +100492,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "MATCH",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:17:21.796+00:00"
     },
     {
       "kesco_code": "8158-13",
@@ -108150,7 +108312,7 @@
       "esco_label": "production plant crane operator",
       "matched_label": "ingot stripper",
       "similarity": 0.7966115350770548,
-      "category": "step_2b_matched",
+      "category": "human_approved",
       "search_strategy": "isco_constrained_8343",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -108160,7 +108322,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "APPROVE",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:18:42.814+00:00"
     },
     {
       "kesco_code": "8343-14",
@@ -108243,18 +108408,23 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "NONE",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "NEW_LOCAL",
+      "parent_esco_code": "8343",
+      "parent_esco_label": "Crane, hoist and related plant operators",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:20:10.603+00:00"
     },
     {
       "kesco_code": "8343-18",
       "kesco_title": "On setter, mine",
       "isco_code": 8343,
       "unit_group": 8343,
-      "esco_code": "8343.4",
-      "esco_label": "production plant crane operator",
+      "esco_code": "8111.5",
+      "esco_label": "minero subterráneo",
       "matched_label": "ingot stripper",
       "similarity": 0.7949848913849782,
-      "category": "step_2b_matched",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_8343",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -108264,18 +108434,21 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "MATCH",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:20:46.67+00:00"
     },
     {
       "kesco_code": "8343-21",
       "kesco_title": "Operator, boat: derrick",
       "isco_code": 8343,
       "unit_group": 8343,
-      "esco_code": "8343.2",
-      "esco_label": "container crane operator",
+      "esco_code": "8343.3",
+      "esco_label": "operador de grúa móvil",
       "matched_label": "ship crane operator",
       "similarity": 0.8979442257548834,
-      "category": "step_2b_matched",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_8343",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -108285,7 +108458,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "MATCH",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:22:12.94+00:00"
     },
     {
       "kesco_code": "8343-22",
@@ -108349,11 +108525,11 @@
       "kesco_title": "Operator, cage: mine",
       "isco_code": 8343,
       "unit_group": 8343,
-      "esco_code": "8343.4",
-      "esco_label": "production plant crane operator",
+      "esco_code": "8343.3",
+      "esco_label": "operador de grúa móvil",
       "matched_label": "pit crane operator",
       "similarity": 0.8942514856787761,
-      "category": "step_2b_matched",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_8343",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -108363,7 +108539,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "MATCH",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:22:40.63+00:00"
     },
     {
       "kesco_code": "8343-26",
@@ -108389,11 +108568,11 @@
       "kesco_title": "Operator, conveyer",
       "isco_code": 8343,
       "unit_group": 8343,
-      "esco_code": "8343.4",
-      "esco_label": "production plant crane operator",
+      "esco_code": "8343.1",
+      "esco_label": "controlador de vehículos por cable automatizados",
       "matched_label": "mill crane operator",
       "similarity": 0.8865147042170529,
-      "category": "step_2b_matched",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_8343",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -108403,7 +108582,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "MATCH",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:23:41.884+00:00"
     },
     {
       "kesco_code": "8343-28",
@@ -108433,7 +108615,7 @@
       "esco_label": "mobile crane operator",
       "matched_label": "mini crane operator",
       "similarity": 0.8693557463009935,
-      "category": "step_2b_matched",
+      "category": "human_approved",
       "search_strategy": "isco_constrained_8343",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -108443,7 +108625,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "APPROVE",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:24:14.678+00:00"
     },
     {
       "kesco_code": "8343-32",
@@ -108454,7 +108639,7 @@
       "esco_label": "production plant crane operator",
       "matched_label": "bridge crane operator",
       "similarity": 0.9358291524840616,
-      "category": "new_local",
+      "category": "human_approved",
       "search_strategy": "isco_constrained_8343",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -108464,7 +108649,10 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "NONE",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "APPROVE",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:24:22.383+00:00"
     },
     {
       "kesco_code": "8343-33",
@@ -108532,7 +108720,7 @@
       "esco_label": "container crane operator",
       "matched_label": "dock crane operator",
       "similarity": 0.8981949540736145,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_8343",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -108542,7 +108730,12 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "NEW_LOCAL",
+      "parent_esco_code": "8343",
+      "parent_esco_label": "Crane, hoist and related plant operators",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:25:29.124+00:00"
     },
     {
       "kesco_code": "8343-37",
@@ -108553,7 +108746,7 @@
       "esco_label": "automated cable vehicle controller",
       "matched_label": "cable propelled vehicle operator",
       "similarity": 0.89795724957567,
-      "category": "step_2b_matched",
+      "category": "human_approved",
       "search_strategy": "isco_constrained_8343",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -108563,7 +108756,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "APPROVE",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:25:59.987+00:00"
     },
     {
       "kesco_code": "8343-38",
@@ -108711,7 +108907,7 @@
       "esco_label": "container crane operator",
       "matched_label": "dockside crane operator",
       "similarity": 0.8867428166010469,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_8343",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -108721,7 +108917,12 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "NEW_LOCAL",
+      "parent_esco_code": "8343",
+      "parent_esco_label": "Crane, hoist and related plant operators",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:26:24.504+00:00"
     },
     {
       "kesco_code": "8343-48",
@@ -108732,7 +108933,7 @@
       "esco_label": "container crane operator",
       "matched_label": "dockside crane operator",
       "similarity": 0.8599967070042895,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_8343",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -108742,7 +108943,12 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "NEW_LOCAL",
+      "parent_esco_code": "8343",
+      "parent_esco_label": "Crane, hoist and related plant operators",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:26:32.527+00:00"
     },
     {
       "kesco_code": "8343-51",
@@ -108753,7 +108959,7 @@
       "esco_label": "production plant crane operator",
       "matched_label": "ingot stripper",
       "similarity": 0.7937968023173796,
-      "category": "step_2b_matched",
+      "category": "human_approved",
       "search_strategy": "isco_constrained_8343",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -108763,7 +108969,10 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "APPROVE",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:29:28.314+00:00"
     },
     {
       "kesco_code": "8344-11",
@@ -108922,11 +109131,11 @@
       "kesco_title": "Coxswain, lifeboat",
       "isco_code": 8350,
       "unit_group": 8350,
-      "esco_code": "3152.2",
-      "esco_label": "helmsman",
+      "esco_code": "8350.1",
+      "esco_label": "contramaestre",
       "matched_label": "steersman",
       "similarity": 0.8866626775770124,
-      "category": "step_2b_matched",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_8350",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -108936,7 +109145,10 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "SELECT",
-      "review_status": "pending"
+      "review_status": "completed",
+      "review_decision": "MATCH",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T02:30:15.341+00:00"
     },
     {
       "kesco_code": "8350-16",
