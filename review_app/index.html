@@ -1750,22 +1750,35 @@
     }
 
     async function editBrowseItem(itemId) {
-      // Find the item
-      const item = allBrowseItems.find(i => i.id === itemId);
-      if (!item) return;
+      // Find the item (convert to number for comparison)
+      const numId = parseInt(itemId);
+      const item = allBrowseItems.find(i => i.id === numId || i.id === itemId);
+      if (!item) {
+        console.error('Item not found:', itemId);
+        alert('Item not found');
+        return;
+      }
 
       // Set reviewer name if not set
       reviewerName = document.getElementById('reviewer-name').value.trim() || 'Editor';
 
-      // Switch to review mode with this item
-      browseMode = false;
+      // Keep browseMode true so we return to browse after editing
+      browseMode = true;
+
+      // Build currentItem with all fields displayItem needs
       currentItem = {
         id: item.id,
         local_code: item.local_code,
         local_label: item.local_label,
+        local_label_en: item.local_label,
         isco_code: item.isco_code,
         suggested_esco_code: item.suggested_esco_code,
-        suggested_esco_label: item.suggested_esco_label
+        suggested_esco_label: item.suggested_esco_label,
+        suggested_esco_label_en: item.suggested_esco_label,
+        similarity: item.similarity || 0,
+        decision: item.decision,
+        selected_esco_code: item.selected_esco_code,
+        selected_esco_label: item.selected_esco_label
       };
 
       document.getElementById('browse-screen').classList.add('hidden');
@@ -1774,11 +1787,16 @@
       document.getElementById('header-reviewer').textContent = reviewerName + ' (Edit Mode)';
 
       // Update progress to show edit mode
-      document.getElementById('progress-text').textContent = 'Edit Mode - Editing: ' + item.local_code;
+      document.getElementById('progress-text').textContent = 'Edit Mode - Editing: ' + item.local_code + ' (Current: ' + (item.decision || 'Pending') + ')';
       document.getElementById('progress-fill').style.width = '100%';
 
       // Display the item
       displayItem(currentItem);
+
+      // If already has a selected ESCO, show it
+      if (item.selected_esco_code && escoLabels[item.selected_esco_code]) {
+        selectOccupation(item.selected_esco_code);
+      }
     }
 
     function exitBrowse() {
