@@ -1665,7 +1665,7 @@
       const pageSize = 1000;
       while (true) {
         const { data } = await db.from('review_items')
-          .select('id, local_code, local_title, isco_code, suggested_esco_code, suggested_esco_label, decision, selected_esco_code, selected_esco_label, selected_parent_code, reviewer_name')
+          .select('id, local_code, local_label, isco_code, suggested_esco_code, suggested_esco_label, decision, selected_esco_code, selected_esco_label, selected_parent_code, reviewer_name')
           .eq('project_id', projectId)
           .order('local_code')
           .range(offset, offset + pageSize - 1);
@@ -1688,7 +1688,7 @@
       if (searchTerm) {
         filtered = filtered.filter(item =>
           item.local_code.toLowerCase().includes(searchTerm) ||
-          (item.local_title && item.local_title.toLowerCase().includes(searchTerm))
+          (item.local_label && item.local_label.toLowerCase().includes(searchTerm))
         );
       }
 
@@ -1735,7 +1735,7 @@
 
         html += `<tr style="border-bottom: 1px solid var(--border-light);">`;
         html += `<td style="padding: 8px; font-family: 'DM Mono', monospace;">${item.local_code}</td>`;
-        html += `<td style="padding: 8px;">${item.local_title || ''}</td>`;
+        html += `<td style="padding: 8px;">${item.local_label || ''}</td>`;
         html += `<td style="padding: 8px; color: ${decisionColor}; font-weight: 500;">${decision}</td>`;
         html += `<td style="padding: 8px; font-size: 12px;"><span style="font-family: 'DM Mono', monospace;">${escoMatch}</span> ${escoLabel ? '<br><span style="color: var(--text-muted);">' + escoLabel.substring(0, 30) + '</span>' : ''}</td>`;
         html += `<td style="padding: 8px;"><button class="btn" style="padding: 4px 12px; font-size: 12px; background: var(--oxford-blue); color: white;" onclick="editBrowseItem('${item.id}')">Edit</button></td>`;
@@ -1762,7 +1762,7 @@
       currentItem = {
         id: item.id,
         local_code: item.local_code,
-        local_title: item.local_title,
+        local_label: item.local_label,
         isco_code: item.isco_code,
         suggested_esco_code: item.suggested_esco_code,
         suggested_esco_label: item.suggested_esco_label
@@ -1813,7 +1813,7 @@
         const itemId = currentItem?.id;
         if (itemId) {
           const { data } = await db.from('review_items')
-            .select('id, local_code, local_title, isco_code, suggested_esco_code, suggested_esco_label, decision, selected_esco_code, selected_esco_label, selected_parent_code, reviewer_name')
+            .select('id, local_code, local_label, isco_code, suggested_esco_code, suggested_esco_label, decision, selected_esco_code, selected_esco_label, selected_parent_code, reviewer_name')
             .eq('id', itemId)
             .single();
           if (data) {
