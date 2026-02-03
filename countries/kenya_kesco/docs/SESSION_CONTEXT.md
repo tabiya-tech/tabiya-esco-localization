@@ -13,6 +13,17 @@
 - Checked Supabase review status: 975/975 items reviewed (100%)
 - Exported review decisions to `kenya_kesco_matches_final.json` and `.xlsx`
 
+### 2. Taxonomy Merge Completed
+- Ran `03_merge_taxonomy.py` to add KESCO titles as alt labels to ESCO occupations
+- 2,760 alt labels added to 955 unique ESCO occupations
+- Output: `outputs/taxonomy/occupations.csv`
+
+### 3. Fixed NEW_LOCAL Parent Selection Bug
+- Discovered bug: `hideNewLocalModal()` was clearing `selectedParent` before submit
+- All 154 NEW_LOCAL items have no parent codes due to this bug
+- Fixed by copying parent object before hiding modal
+- Fix committed and pushed to GitHub (deploys automatically)
+
 ### Review Decision Breakdown
 | Decision | Count | Description |
 |----------|-------|-------------|
@@ -51,13 +62,14 @@
 | Missing translations | 0 |
 
 ## Next Steps
-1. **Handle NEW_LOCAL occupations** - 154 items need parent codes and skill inheritance
-2. **Review 4-model comparison** - Decide if current 2.5-flash translations are acceptable
-3. **Translate skills** - Run translation pipeline on skills.csv (next major file)
-4. **Address SKIP items** - 60 items skipped during review need resolution
+1. **Re-review NEW_LOCAL items** - 154 items need parent codes (run `05_reset_incomplete_newlocal.py` to reset in Supabase)
+2. **Address SKIP items** - 60 items skipped during review need resolution
+3. **Review 4-model comparison** - Decide if current 2.5-flash translations are acceptable
+4. **Translate skills** - Run translation pipeline on skills.csv (next major file)
 
 ## Notes
 - Human review phase took approximately 6 weeks (started 2025-12-30)
 - 6 ESCO codes were changed during MATCH decisions (out of 291 MATCH items)
 - Translation scripts at `core/translation/` (framework level, shared)
 - Country outputs at `countries/kenya_kesco/outputs/translations/sw/`
+- NEW_LOCAL parent selection bug fixed 2026-02-02; items need re-review

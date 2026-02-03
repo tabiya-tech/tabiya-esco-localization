@@ -85,7 +85,9 @@ High-level updates across all localization efforts. For detailed session context
 ### 2026-02-02 - Kenya
 - Human review 100% complete: 975/975 items reviewed (470 APPROVE, 291 MATCH, 154 NEW_LOCAL, 60 SKIP)
 - Exported review decisions to matches_final files
-- Status: Milestone Reached - Human review phase complete; NEW_LOCAL and SKIP items pending
+- Ran taxonomy merge: 2,760 alt labels added to 955 ESCO occupations
+- Fixed review app bug: NEW_LOCAL parent selection was not saving (all 154 items affected)
+- Status: Milestone Reached - Taxonomy merge complete; NEW_LOCAL items need re-review for parent codes
 
 ---
 
