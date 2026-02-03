@@ -375,6 +375,37 @@
       <label>Your Name</label>
       <input type="text" id="reviewer-name" placeholder="Enter your name to start">
       <button class="btn btn-primary" style="width: 100%; margin-top: 8px;" onclick="startReview()">Start Reviewing</button>
+      <button class="btn" style="width: 100%; margin-top: 8px; background: var(--bg-light); border: 1px solid var(--border-light); color: var(--text-primary);" onclick="startBrowse()">Browse & Edit All</button>
+    </div>
+  </div>
+
+  <!-- Browse Screen -->
+  <div id="browse-screen" class="hidden">
+    <div class="header">
+      <h1>Browse All Items</h1>
+      <div class="user-info">
+        <span id="browse-header-project"></span>
+        <button onclick="exitBrowse()" style="margin-left: 12px; padding: 4px 10px; background: rgba(255,255,255,0.15); border: none; color: white; cursor: pointer; font-size: 12px;">Back</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
+          <input type="text" id="browse-search" placeholder="Search by code or title..." style="flex: 1; min-width: 200px; padding: 10px 12px; border: 2px solid var(--border-light); font-size: 13px;" oninput="filterBrowseItems()">
+          <select id="browse-filter" style="padding: 10px 12px; border: 2px solid var(--border-light); font-size: 13px;" onchange="filterBrowseItems()">
+            <option value="">All Decisions</option>
+            <option value="APPROVE">APPROVE</option>
+            <option value="MATCH">MATCH</option>
+            <option value="NEW_LOCAL">NEW_LOCAL</option>
+            <option value="SKIP">SKIP</option>
+            <option value="null">Pending</option>
+          </select>
+          <span id="browse-count" style="align-self: center; font-size: 13px; color: var(--text-muted);"></span>
+        </div>
+        <div id="browse-results" style="max-height: 600px; overflow-y: auto;">
+          <div class="loading">Loading items...</div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -1608,6 +1639,193 @@
       document.getElementById('review-screen').classList.add('hidden');
       document.getElementById('setup-screen').classList.remove('hidden');
     }
+
+    // ========================================
+    // BROWSE MODE
+    // ========================================
+    let allBrowseItems = [];
+    let browseMode = false;
+
+    async function startBrowse() {
+      const projectSelect = document.getElementById('project-select');
+      const projectId = projectSelect.value;
+      if (!projectId) { alert('Please select a project'); return; }
+
+      currentProject = { id: projectId, name: projectSelect.options[projectSelect.selectedIndex].text };
+      document.getElementById('browse-header-project').textContent = currentProject.name;
+      document.getElementById('setup-screen').classList.add('hidden');
+      document.getElementById('browse-screen').classList.remove('hidden');
+      browseMode = true;
+
+      // Load all items for this project
+      document.getElementById('browse-results').innerHTML = '<div class="loading">Loading all items...</div>';
+
+      let items = [];
+      let offset = 0;
+      const pageSize = 1000;
+      while (true) {
+        const { data } = await db.from('review_items')
+          .select('id, local_code, local_title, isco_code, suggested_esco_code, suggested_esco_label, decision, selected_esco_code, selected_esco_label, selected_parent_code, reviewer_name')
+          .eq('project_id', projectId)
+          .order('local_code')
+          .range(offset, offset + pageSize - 1);
+        if (!data || data.length === 0) break;
+        items = items.concat(data);
+        if (data.length < pageSize) break;
+        offset += pageSize;
+      }
+
+      allBrowseItems = items;
+      filterBrowseItems();
+    }
+
+    function filterBrowseItems() {
+      const searchTerm = document.getElementById('browse-search').value.toLowerCase();
+      const decisionFilter = document.getElementById('browse-filter').value;
+
+      let filtered = allBrowseItems;
+
+      if (searchTerm) {
+        filtered = filtered.filter(item =>
+          item.local_code.toLowerCase().includes(searchTerm) ||
+          (item.local_title && item.local_title.toLowerCase().includes(searchTerm))
+        );
+      }
+
+      if (decisionFilter) {
+        if (decisionFilter === 'null') {
+          filtered = filtered.filter(item => !item.decision);
+        } else {
+          filtered = filtered.filter(item => item.decision === decisionFilter);
+        }
+      }
+
+      document.getElementById('browse-count').textContent = `${filtered.length} of ${allBrowseItems.length} items`;
+      renderBrowseResults(filtered.slice(0, 200)); // Limit to 200 for performance
+    }
+
+    function renderBrowseResults(items) {
+      const container = document.getElementById('browse-results');
+      if (items.length === 0) {
+        container.innerHTML = '<div style="padding: 20px; color: var(--text-muted);">No items match your search.</div>';
+        return;
+      }
+
+      const decisionColors = {
+        'APPROVE': 'var(--tabiya-green-dark)',
+        'MATCH': 'var(--accent-blue)',
+        'NEW_LOCAL': 'var(--tabiya-orange)',
+        'SKIP': 'var(--text-muted)'
+      };
+
+      let html = '<table style="width: 100%; border-collapse: collapse; font-size: 13px;">';
+      html += '<thead><tr style="background: var(--bg-light); text-align: left;">';
+      html += '<th style="padding: 8px; border-bottom: 1px solid var(--border-light);">Code</th>';
+      html += '<th style="padding: 8px; border-bottom: 1px solid var(--border-light);">Title</th>';
+      html += '<th style="padding: 8px; border-bottom: 1px solid var(--border-light);">Decision</th>';
+      html += '<th style="padding: 8px; border-bottom: 1px solid var(--border-light);">ESCO Match</th>';
+      html += '<th style="padding: 8px; border-bottom: 1px solid var(--border-light);">Actions</th>';
+      html += '</tr></thead><tbody>';
+
+      for (const item of items) {
+        const decision = item.decision || 'Pending';
+        const decisionColor = decisionColors[item.decision] || 'var(--text-muted)';
+        const escoMatch = item.selected_esco_code || item.suggested_esco_code || '-';
+        const escoLabel = item.selected_esco_label || item.suggested_esco_label || '';
+
+        html += `<tr style="border-bottom: 1px solid var(--border-light);">`;
+        html += `<td style="padding: 8px; font-family: 'DM Mono', monospace;">${item.local_code}</td>`;
+        html += `<td style="padding: 8px;">${item.local_title || ''}</td>`;
+        html += `<td style="padding: 8px; color: ${decisionColor}; font-weight: 500;">${decision}</td>`;
+        html += `<td style="padding: 8px; font-size: 12px;"><span style="font-family: 'DM Mono', monospace;">${escoMatch}</span> ${escoLabel ? '<br><span style="color: var(--text-muted);">' + escoLabel.substring(0, 30) + '</span>' : ''}</td>`;
+        html += `<td style="padding: 8px;"><button class="btn" style="padding: 4px 12px; font-size: 12px; background: var(--oxford-blue); color: white;" onclick="editBrowseItem('${item.id}')">Edit</button></td>`;
+        html += '</tr>';
+      }
+
+      html += '</tbody></table>';
+      if (items.length >= 200) {
+        html += '<div style="padding: 12px; color: var(--text-muted); font-size: 12px;">Showing first 200 results. Use search to narrow down.</div>';
+      }
+      container.innerHTML = html;
+    }
+
+    async function editBrowseItem(itemId) {
+      // Find the item
+      const item = allBrowseItems.find(i => i.id === itemId);
+      if (!item) return;
+
+      // Set reviewer name if not set
+      reviewerName = document.getElementById('reviewer-name').value.trim() || 'Editor';
+
+      // Switch to review mode with this item
+      browseMode = false;
+      currentItem = {
+        id: item.id,
+        local_code: item.local_code,
+        local_title: item.local_title,
+        isco_code: item.isco_code,
+        suggested_esco_code: item.suggested_esco_code,
+        suggested_esco_label: item.suggested_esco_label
+      };
+
+      document.getElementById('browse-screen').classList.add('hidden');
+      document.getElementById('review-screen').classList.remove('hidden');
+      document.getElementById('header-project').textContent = currentProject.name;
+      document.getElementById('header-reviewer').textContent = reviewerName + ' (Edit Mode)';
+
+      // Update progress to show edit mode
+      document.getElementById('progress-text').textContent = 'Edit Mode - Editing: ' + item.local_code;
+      document.getElementById('progress-fill').style.width = '100%';
+
+      // Display the item
+      displayItem(currentItem);
+    }
+
+    function exitBrowse() {
+      browseMode = false;
+      allBrowseItems = [];
+      currentProject = null;
+      document.getElementById('browse-screen').classList.add('hidden');
+      document.getElementById('setup-screen').classList.remove('hidden');
+    }
+
+    // Modify exitReview to go back to browse if in edit mode
+    const originalExitReview = exitReview;
+    exitReview = function() {
+      if (browseMode || document.getElementById('browse-screen').classList.contains('hidden') === false) {
+        // Just go back to browse
+        document.getElementById('review-screen').classList.add('hidden');
+        document.getElementById('browse-screen').classList.remove('hidden');
+        browseMode = true;
+        filterBrowseItems(); // Refresh the list
+      } else {
+        originalExitReview();
+      }
+    };
+
+    // Override loadNextItem when in edit mode to go back to browse
+    const originalLoadNextItem = loadNextItem;
+    loadNextItem = async function() {
+      if (browseMode) {
+        document.getElementById('review-screen').classList.add('hidden');
+        document.getElementById('browse-screen').classList.remove('hidden');
+        // Refresh the browse list to show updated decision
+        const itemId = currentItem?.id;
+        if (itemId) {
+          const { data } = await db.from('review_items')
+            .select('id, local_code, local_title, isco_code, suggested_esco_code, suggested_esco_label, decision, selected_esco_code, selected_esco_label, selected_parent_code, reviewer_name')
+            .eq('id', itemId)
+            .single();
+          if (data) {
+            const idx = allBrowseItems.findIndex(i => i.id === itemId);
+            if (idx >= 0) allBrowseItems[idx] = data;
+          }
+        }
+        filterBrowseItems();
+      } else {
+        await originalLoadNextItem();
+      }
+    };
   </script>
 </body>
 </html>
