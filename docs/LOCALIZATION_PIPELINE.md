@@ -301,12 +301,28 @@ ESCO embeddings are generated once and cached in `shared_data/embeddings_cache/`
 
 This pipeline assumes a national taxonomy with ISCO crosswalk. Adaptations needed for other contexts:
 
-| Missing Component | Adaptation |
-|-------------------|------------|
-| No ISCO crosswalk | Skip Step 1A, use only unconstrained matching. Increase LLM validation scope. |
-| No structured taxonomy | Extract from job postings, labor surveys, or expert knowledge. Build taxonomy first. |
-| Non-ISCO-based taxonomy | Map to ISCO first, or use direct semantic matching to ESCO. |
-| No English translation | Match in source language if ESCO translations available, or translate first. |
+| Missing Component | Adaptation | Example |
+|-------------------|------------|---------|
+| No ISCO crosswalk | Skip Step 1A, use only unconstrained matching. Increase LLM validation scope. | - |
+| No national taxonomy | Use NOS or other sector standards as source. Extract skills, match occupations and skills separately. | Zambia |
+| Non-ISCO-based taxonomy | Map to ISCO first, or use direct semantic matching to ESCO. | - |
+| No English translation | Match in source language if ESCO translations available, or translate first. | - |
+
+### NOS-based Approach (Zambia)
+
+When no national occupational taxonomy exists, National Occupational Standards (NOS) can serve as the source. The Zambia pipeline demonstrates this approach:
+
+1. Extract structured data from NOS PDFs (performance criteria, knowledge, skills)
+2. Match NOS occupations to ESCO (embedding + LLM validation)
+3. Match NOS knowledge phrases to ESCO knowledge pool (Tier 1)
+4. Match NOS skill phrases to ESCO skill pool (Tier 2)
+5. Use performance criteria (tasks) for gap analysis, not direct matching
+6. Consolidate, deduplicate, generate descriptions, place in hierarchy
+7. Generate 9-file taxonomy output
+
+Key difference from the standard pipeline: NOS performance criteria are tasks, not skills. They must not be added directly to the taxonomy. See `docs/SKILL_DEFINITIONS_AND_CONTEXTUALIZATION.md` for the skills vs tasks distinction.
+
+See `countries/zambia/docs/METHODOLOGY.md` for full details.
 
 ---
 
@@ -320,6 +336,6 @@ Each country maintains its own documentation in `countries/{country}/docs/`:
 
 ## References
 
-- `DATA_DICTIONARY.md` - Tabiya 9-file format specification
-- `CODING_STANDARDS.md` - Python implementation standards
-- `ESCO_SYNC_GUIDE.md` - Syncing ESCO reference data
+- `docs/SKILL_DEFINITIONS_AND_CONTEXTUALIZATION.md` - Skills vs tasks, ESCO phrasing conventions
+- `docs/CODING_STANDARDS.md` - Python implementation standards
+- `shared_data/esco_taxonomy/` - Base ESCO taxonomy (9-file format reference)
