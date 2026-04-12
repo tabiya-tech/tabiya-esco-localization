@@ -1,0 +1,21 @@
+{
+  "occupations": {
+    "total_nos": 72,
+    "matched": 56,
+    "new_local": 16
+  },
+  "new_skills": {
+    "total": 683,
+    "skill_competence": 330,
+    "knowledge": 353
+  },
+  "contextualised_labels": {
+    "esco_skills_with_alt_labels": 1451,
+    "total_alt_labels": 9394
+  },
+  "occupation_skill_map": {
+    "total_mappings": 4441,
+    "esco_existing": 3676,
+    "zambia_localized": 765
+  }
+}

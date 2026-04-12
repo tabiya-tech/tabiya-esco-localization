@@ -1,0 +1,19 @@
+{
+  "new_skills": {
+    "total": 683,
+    "with_description": 683,
+    "with_hierarchy": 683,
+    "skill_competence": 330,
+    "knowledge": 353
+  },
+  "alt_labels": {
+    "esco_skills_with_alt_labels": 1456,
+    "total_alt_labels": 9772
+  },
+  "occupation_skill_map": {
+    "total_mappings": 7427,
+    "esco_existing": 3676,
+    "zambia_new": 750,
+    "zambia_ctx_new_attachment": 3001
+  }
+}

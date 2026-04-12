@@ -156,9 +156,19 @@ temp/
 *.bak
 *.swp
 
-# Large intermediate files (checkpoint files can be large)
-# Uncomment if causing repo bloat
-# outputs/intermediate/gemini_checkpoint.json
+# Checkpoint files (intermediate state, not needed in repo)
+**/*checkpoint*.json
+
+# Large shared embedding files
+shared_data/esco_skill_embeddings_en_gemini.json
+shared_data/esco_knowledge_embeddings_en_gemini.json
+shared_data/onet_embeddings_gemini.json
+
+# Intermediate hierarchy/skill group files
+**/outputs/_skill_groups_list.json
+**/outputs/new_skills_hierarchy.json
+**/outputs/new_skills_hierarchy_validated.json
+**/outputs/skill_hierarchy_placement.json
 
 # Compressed archives (if you create backups)
 *.zip

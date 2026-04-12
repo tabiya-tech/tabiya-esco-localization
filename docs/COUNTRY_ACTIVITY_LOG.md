@@ -89,6 +89,19 @@ High-level updates across all localization efforts. For detailed session context
 - Fixed review app bug: NEW_LOCAL parent selection was not saving (all 154 items affected)
 - Status: Milestone Reached - Taxonomy merge complete; NEW_LOCAL items need re-review for parent codes
 
+### 2026-02-04 - Kenya
+- Built skill assignment UI in review tool with full ESCO skill group hierarchy (S, T, K categories)
+- Created Supabase table for skill_group_selections; UI persists selections per occupation
+- 69 new local occupations ready for skill group assignment via UI
+- Status: Milestone Reached - Skill assignment UI complete, ready for manual skill group selection
+
+### 2026-02-18 - Kenya
+- Replaced LLM-based O*NET matching with semantic embedding similarity (cosine over Gemini embeddings)
+- Created shared O*NET embedding generation script and new local embedding step in 05_create_new_local.py
+- Refined LLM skill selection prompt to prioritise closest O*NET match over transferable skills
+- Test run: skill counts improved from 305/334/29/16 to 109/59/76/41 (target 25-50)
+- Status: In Progress - Pipeline ready for full run on 69 occupations
+
 ---
 
 ## Ethiopia
@@ -99,7 +112,14 @@ High-level updates across all localization efforts. For detailed session context
 
 ## Zambia
 
-*No activity yet.*
+### 2026-04-09 to 2026-04-11 - Zambia
+- Set up project, imported 73 NOS PDFs from Zambia Qualifications Authority (8 sectors)
+- Extracted 19,872 skill phrases; built 10-script pipeline for full localization
+- Occupation matching: 56 MATCH, 16 NEW_LOCAL (with descriptions, alt labels)
+- Skill matching: 683 new skills, 9,772 alt labels added to 1,456 ESCO skills, 416 PC-derived gaps
+- Generated Tabiya 9-file taxonomy output (3,090 occupations, 14,579 skills, 135,433 relations)
+- Created shared reference: docs/SKILL_DEFINITIONS_AND_CONTEXTUALIZATION.md
+- Status: Milestone Reached - Taxonomy output generated, pending human review and ISCO code assignment
 
 ---
 

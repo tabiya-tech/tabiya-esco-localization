@@ -1,0 +1,321 @@
+[
+  {
+    "nos_title": "Agricultural Marketing Officer (AMO)",
+    "nos_sector": "Agriculture",
+    "zqf_level": 7,
+    "preferred_label": "agricultural marketing officer",
+    "description": "Agricultural marketing officers manage and supervise marketing information related to agricultural commodities and products. They develop and implement agricultural marketing systems to support sustainable domestic and international market strategies. These officers also oversee activities related to agricultural trade promotion, agricultural finance, marketing infrastructure, and marketing research.",
+    "alt_labels": [
+      "agricultural marketing specialist",
+      "farm marketing advisor",
+      "agricultural trade officer",
+      "crop marketing manager",
+      "livestock marketing specialist",
+      "agricultural marketing and trade officer",
+      "agricultural finance officer"
+    ],
+    "nos_description": "The AMO works to manage and supervise the marketing information, the agricultural trade promotion and agricultural finance support, marketing infrastructure and requirements and oversees the marketing research activities",
+    "nos_purpose": "To undertake and supervise the development and implementation of agricultural marketing systems to develop sustainable domestic and foreign market strategies for agricultural commodities and products",
+    "reason_new_local": "NOS covers marketing, trade promotion, and agricultural finance - broader than ESCO agricultural policy officer which only covers policy analysis.",
+    "isco_unit_group_code": "2431"
+  },
+  {
+    "nos_title": "Fisheries Officer",
+    "nos_sector": "Agriculture",
+    "zqf_level": 7,
+    "preferred_label": "fisheries officer",
+    "description": "Fisheries officers manage, conserve, and protect fisheries resources. They oversee the enforcement of fisheries regulations and participate in habitat improvement programs. These officers also conduct research and development activities related to fisheries resources and promote sustainable fishing practices within communities.",
+    "alt_labels": [
+      "fisheries inspector",
+      "fisheries conservation officer",
+      "fisheries manager",
+      "aquatic resources manager",
+      "fisheries enforcement officer",
+      "fish and wildlife officer",
+      "fisheries specialist"
+    ],
+    "nos_description": "The Fisheries Officer is responsible for management, conservation and protection of fisheries resources. They supervise the enforcement of fisheries regulations, transfer of fishing technologies to fisherfolk communities and participate in habitat improvement programmes",
+    "nos_purpose": "To undertake and supervise the development and implementation of fisheries programmes in order to ensure sustainable development of the fisheries sub sector",
+    "reason_new_local": "Different function. NOS manages, conserves, and enforces fisheries regulations (government role). ESCO fisheries adviser provides consultancy - different work.",
+    "isco_unit_group_code": "3142"
+  },
+  {
+    "nos_title": "Agricultural Extension Officer",
+    "nos_sector": "Agriculture",
+    "zqf_level": 4,
+    "preferred_label": "agricultural extension officer",
+    "description": "Agricultural extension officers disseminate information and demonstrate new agricultural technologies and practices to farmers. They identify local agricultural challenges and advise on appropriate solutions. These officers also organize training programs and connect farmers with resources and markets to improve agricultural productivity and sustainability.",
+    "alt_labels": [
+      "agricultural extension agent",
+      "agricultural advisor",
+      "farm extension officer",
+      "extension specialist",
+      "agricultural demonstrator",
+      "field extension officer",
+      "agriculture technology officer"
+    ],
+    "nos_description": "An agriculture extension officer gives talks, guidance and actual demonstrations on latest technologies related to agriculture. He/she also works with other experts in agriculture to learn more or develop new methods that advance production and productivity",
+    "nos_purpose": "To undertake the provision of extension services in order to facilitate dissemination of information and technologies for improved agriculture at Camp level",
+    "reason_new_local": "Agricultural extension/advisory role focused on technology transfer and demonstrations. ESCO agronomist is research/consulting focused.",
+    "isco_unit_group_code": "3142"
+  },
+  {
+    "nos_title": "Animal Breeder – Geneticist",
+    "nos_sector": "Agriculture",
+    "zqf_level": 9,
+    "preferred_label": "animal breeder geneticist",
+    "description": "Animal breeder geneticists evaluate and select animals for breeding programs to improve desirable genetic traits and optimize animal production. They apply principles of genetics and animal science to determine the genetic value of animals through phenotypic or molecular analysis. These professionals design and implement breeding strategies, including selection and mating systems, to enhance animal value and well-being.",
+    "alt_labels": [
+      "livestock genetics specialist",
+      "animal breeding specialist",
+      "livestock improvement specialist",
+      "animal genetics consultant",
+      "breeding program manager",
+      "animal geneticist",
+      "livestock geneticist"
+    ],
+    "nos_description": "An Animal Breeder-Geneticist works with research management and technical production teams to evaluate, select and mate animal populations in order to maximize desirable genetic traits and consequently improve/optimize production and productivity",
+    "nos_purpose": "The job role is responsible for ensuring proper livestock breeding management through evaluating the genetic value of animals (at phenotypic or molecular levels), deciding which animals are chosen as parents and the extent to which they are used (Selection), and deciding which males are mated to which females (Mating Systems) in order to improve populations of animals, thereby improving animal value and well-being",
+    "reason_new_local": "The NOS role focuses specifically on the genetic aspects of animal breeding, including selection and mating systems to improve genetic traits. The ESCO options are more general and don't focus on the genetic expertise.",
+    "isco_unit_group_code": "2131"
+  },
+  {
+    "nos_title": "Aquacultural Economist",
+    "nos_sector": "Agriculture",
+    "zqf_level": 7,
+    "preferred_label": "aquacultural economist",
+    "description": "Aquacultural economists analyse the economic aspects of aquaculture production. They conduct economic analysis, develop models, and provide advice to stakeholders including governments and private sector aquaculture businesses. Their work includes cost-benefit analysis, financial management, and market analysis to support the sustainable development and growth of the aquaculture industry.",
+    "alt_labels": [
+      "aquaculture economics consultant",
+      "fisheries economist",
+      "aquaculture business analyst",
+      "aquaculture financial manager",
+      "aquatic resource economist",
+      "aquaculture development officer",
+      "aquaculture investment analyst"
+    ],
+    "nos_description": "An Aquacultural Economist is responsible for the development & implementation of programmes for the aquaculture industry. Further, the job holder is expected to do Economic analysis & modelling of aquaculture and Capacity development in support for aquaculture industry",
+    "nos_purpose": "An Aquacultural Economist is responsible for providing economic advice to government, assessments and analysis of aquaculture data, cost- benefit analysis and business skills to stakeholders and the private sector engaged in aquacultural activities",
+    "reason_new_local": "None of the ESCO occupations focus on the economic aspects of aquaculture, which is the primary function of the NOS occupation. The NOS role requires economics expertise applied to aquaculture, not just general aquaculture knowledge.",
+    "isco_unit_group_code": "2631"
+  },
+  {
+    "nos_title": "Scuba Diver",
+    "nos_sector": "Agriculture",
+    "zqf_level": 4,
+    "preferred_label": "aquaculture scuba diver",
+    "description": "Aquaculture scuba divers perform underwater tasks related to fish farming and aquatic resource management. They conduct inspections, maintenance, and repairs of underwater structures such as nets, cages, and pipelines. These divers also perform tasks such as retrieving objects, searching for lost equipment, and assisting with biological surveys, often working in inshore waters at depths up to 30 meters.",
+    "alt_labels": [
+      "fisheries diver",
+      "commercial aquaculture diver",
+      "underwater fish farm worker",
+      "inshore scuba diver",
+      "aquatic resource diver",
+      "scuba net inspector",
+      "aquaculture equipment technician (diver)"
+    ],
+    "nos_description": "The role of a SCUBA Diver is to perform commercial diving activities and underwater operations in inshore waters. The spectrum of SCUBA diving includes industrial tasks (Inspecting nets and enclosures, locate or recover submerged automobiles, boats, logs, articles, search for bodies and administer first aid and CPR in case of emergencies) performed from just below the water to 30m depth",
+    "nos_purpose": "To operate safely and competently under water to depths of 30m using self-contained and surface-supplied breathing apparatus. Apply basic skills in order to complete a range of underwater tasks safely and efficiently and be able to administer first aid and CPR",
+    "reason_new_local": "Wrong domain. NOS is fisheries/aquaculture sector diving for inshore waters. ESCO construction commercial diver is for construction underwater work.",
+    "isco_unit_group_code": "7541"
+  },
+  {
+    "nos_title": "Livestock Slaughter Supervisor",
+    "nos_sector": "Agriculture",
+    "zqf_level": 3,
+    "preferred_label": "livestock slaughter supervisor",
+    "description": "Livestock slaughter supervisors oversee the safe, hygienic, and efficient slaughtering of livestock. They manage all stages of the process, from the handling of live animals before slaughter to the splitting and loading of carcasses. Their responsibilities include ensuring compliance with safety, health, hygiene, and environmental regulations, as well as supervising staff and maintaining separation between clean and dirty processes within the abattoir.",
+    "alt_labels": [
+      "abattoir supervisor",
+      "slaughterhouse supervisor",
+      "meat processing supervisor",
+      "slaughter floor supervisor",
+      "slaughtering supervisor",
+      "animal slaughter supervisor",
+      "livestock processing supervisor"
+    ],
+    "nos_description": "Ensure that animals and carcasses are managed safely and hygienically before, and throughout the slaughter process",
+    "nos_purpose": "To oversee (1) the care of the animal prior to slaughter, (2) the restraint, stunning and bleeding of the animal, (3) the hygienic removal of the head, feet hides and internal organs and cleaning of them, and (4) the splitting of the clean, inspected carcasses and loading into the cold-room or into trucks",
+    "reason_new_local": "None of the ESCO options fully captures the supervisory and comprehensive nature of the NOS role, which includes overseeing the entire slaughter process from live animal handling to carcass management.",
+    "isco_unit_group_code": "7511"
+  },
+  {
+    "nos_title": "Aquaculture Farmer",
+    "nos_sector": "Agriculture",
+    "zqf_level": 4,
+    "preferred_label": "aquaculture farmer",
+    "description": "Aquaculture farmers cultivate aquatic organisms in controlled environments. They oversee all aspects of the operation, from selecting species and managing breeding to ensuring optimal growing conditions and disease prevention. These farmers are also responsible for harvesting, processing, and marketing their aquatic products while adhering to strict safety and hygiene standards.",
+    "alt_labels": [
+      "fish farmer",
+      "shellfish farmer",
+      "aquatic farm manager",
+      "aquaculture farm owner",
+      "fish farm operator",
+      "aquafarmer",
+      "marine farmer"
+    ],
+    "nos_description": "An Aquaculture Farmer is responsible for growing aquatic organisms in culture system and managing the stock from fish seed to marketable size",
+    "nos_purpose": "This job role is responsible for identifying the organisms for culture in aquaculture system and their appropriate management practices for the production of organisms which are safe for human consumption",
+    "reason_new_local": "NOS implies farm ownership/management of aquaculture operation. ESCO aquaculture husbandry worker is a lower-level worker role.",
+    "isco_unit_group_code": "6221"
+  },
+  {
+    "nos_title": "Fisheries Extension Assistant",
+    "nos_sector": "Agriculture",
+    "zqf_level": 5,
+    "preferred_label": "fisheries extension assistant",
+    "description": "Fisheries extension assistants support the implementation of fisheries extension and development programs within communities. They conduct field visits to fishing communities, mobilize members for training, and gather information related to fishing activities. Their work ensures community participation in sustainable fishing practices and identifies target groups for training and other community-level initiatives.",
+    "alt_labels": [
+      "fisheries extension worker",
+      "fisheries community mobilizer",
+      "fish farming extension assistant",
+      "fisheries development assistant",
+      "community fisheries officer",
+      "extension support officer (fisheries)"
+    ],
+    "nos_description": "A Fisheries Extension Assistant is responsible for making field visits, mobilising members of the fishing community for extension training, gathering of information and other activities at community level",
+    "nos_purpose": "This job role is responsible for providing assistance in ensuring active community participation, identifying target group for the training and other community level activities This position is responsible for providing fisheries extension services in the community",
+    "reason_new_local": "Community-level fisheries extension worker. ESCO community health worker is wrong domain entirely.",
+    "isco_unit_group_code": "3142"
+  },
+  {
+    "nos_title": "Senior Agriculture Officer",
+    "nos_sector": "Agriculture",
+    "zqf_level": 7,
+    "preferred_label": "senior agriculture officer",
+    "description": "Senior agriculture officers supervise the delivery of agricultural extension and advisory services, acting as a link between agricultural research and development and farmers. They coordinate with researchers and other stakeholders to promote agricultural technology and best practices. These officers facilitate farmer training, conduct demonstrations, and monitor the implementation of new techniques to increase productivity and profitability.",
+    "alt_labels": [
+      "principal agriculture officer",
+      "agricultural extension supervisor",
+      "agricultural liaison officer",
+      "chief agriculture officer",
+      "lead agricultural advisor",
+      "senior extension officer",
+      "agriculture program manager"
+    ],
+    "nos_description": "The SAO works with the Research and Development team to market and transfer the technology, products, knowledge and information to the farmers, acting as a bridge between the Ministry of Agriculture and farmers increasing their productivity and profitability",
+    "nos_purpose": "This job role is responsible for supervising delivery of agriculture extension and advisory services in the field in collaboration with Researchers and other stakeholders",
+    "reason_new_local": "Supervisory agricultural extension role bridging Ministry and farmers. ESCO agricultural technician does lab/field experiments - different function.",
+    "isco_unit_group_code": "3142"
+  },
+  {
+    "nos_title": "Heavy Duty Machine Operator",
+    "nos_sector": "Construction",
+    "zqf_level": 4,
+    "preferred_label": "heavy duty machine operator",
+    "description": "Heavy duty machine operators drive, maneuver, and control various types of heavy machinery used in construction projects. They operate equipment to perform tasks such as excavation, earthmoving, lifting, and material handling. These operators also perform routine inspections and maintenance on their machines, ensuring they are operating safely and efficiently and coordinating their work with other crew members on the construction site.",
+    "alt_labels": [
+      "heavy equipment operator",
+      "construction equipment operator",
+      "heavy machine driver",
+      "plant operator",
+      "earthmoving equipment operator",
+      "mobile plant operator",
+      "heavy machinery operator"
+    ],
+    "nos_description": "A Machine Operator drives, manoeuvres or controls heavy machinery used to construct roads, bridges, buildings, and other structures. Machine Operator takes care of all machine-specific functions such as configuring the equipment, loading, and operating the machines, and optimising the machine capability. A Machine Operator needs to ensure that the machine works at its full capacity, oversee its maintenance, and perform timely quality checks. In performing this task, a Machine Operator shall clean and maintain equipment, make basic repairs as necessary, report malfunctioning equipment to supervisors, move levers, push pedals, or turn valves to drive and manoeuvre equipment, and coordinate machine actions with crew members using hand or audio signals. A Machine Operator shall use the heavy-duty construction equipment to complete works as per task specifications",
+    "nos_purpose": "A Machine Operator shall efficiently and safely utilise construction equipment to complete tasks such as haulage, excavation, compaction and/or hoisting of materials on a construction site",
+    "reason_new_local": "NOS operates multiple heavy machine types for roads, bridges, buildings. ESCO bulldozer operator is limited to one machine type.",
+    "isco_unit_group_code": "8342"
+  },
+  {
+    "nos_title": "Metal Fabricator",
+    "nos_sector": "Manufacturing",
+    "zqf_level": 5,
+    "preferred_label": "metal fabricator",
+    "description": "Metal fabricators construct metal products and structures using a variety of techniques and tools. They interpret blueprints and specifications to cut, shape, and assemble metal components. These workers utilize welding, machining, and other fabrication methods to create frameworks, shells, and other metal parts for diverse applications.",
+    "alt_labels": [
+      "metal worker",
+      "fabricator",
+      "welder fabricator",
+      "steel fabricator",
+      "structural metal fabricator",
+      "metal assembler",
+      "fitter welder"
+    ],
+    "nos_description": "Metal fabricators follow patterns and blueprints to create structures from raw metal. They are skilled crafts persons who assemble structural metal products such as frameworks or shells for machinery, ovens, tanks, stacks, and metal parts for buildings and bridges. They prepare, cut, shape, machine, and weld metal using complex hand tools and equipment such as blowtorches, shears, gauges, power saws, and workshop presses",
+    "nos_purpose": "A Metal Fabricator carries out maintenance, manufacturing, welding, and fabrication of a variety of engineering designs by using machines and tools such as welding machines, rivet guns, guillotines, benders, etc",
+    "reason_new_local": "None of the ESCO options fully encompasses the fabrication, erection, inspection, and welding aspects of the Zambian Metal Fabricator role.",
+    "isco_unit_group_code": "7223"
+  },
+  {
+    "nos_title": "Workshop Machines Operator",
+    "nos_sector": "Manufacturing",
+    "zqf_level": 4,
+    "preferred_label": "workshop machines operator",
+    "description": "Workshop machines operators set up, operate, and maintain a variety of machine tools to produce precision parts and instruments. They interpret blueprints, sketches, and engineering specifications to determine the sequence of operations and the dimensions of finished products. These operators monitor machine performance, adjust settings as needed, and inspect parts to ensure they meet quality standards.",
+    "alt_labels": [
+      "machine shop operator",
+      "machinist",
+      "machine operator",
+      "cnc operator",
+      "lathe operator",
+      "milling machine operator",
+      "grinding machine operator"
+    ],
+    "nos_description": "Operating of Machinery/Equipment",
+    "nos_purpose": "To Safely and economically Operate machinery/equipment",
+    "reason_new_local": "Operates shaping, lathe, milling, grinding, and CNC machines. ESCO lathe and turning machine operator covers only one machine type.",
+    "isco_unit_group_code": "8189"
+  },
+  {
+    "nos_title": "Winding Engine Operator",
+    "nos_sector": "Mining",
+    "zqf_level": 4,
+    "preferred_label": "winding engine operator (mining)",
+    "description": "Winding engine operators control and monitor the operation of winding engines to transport personnel, equipment, and materials in and out of mine shafts. They manage the speed and movement of cages or skips within the shaft, ensuring safe and efficient transport. These operators also perform routine inspections, maintenance, and troubleshooting of the winding engine and related equipment, adhering to strict safety protocols.",
+    "alt_labels": [
+      "mine hoist operator",
+      "hoist operator (mining)",
+      "shaft hoist operator",
+      "winding engine driver",
+      "mine winder",
+      "cage operator (mining)",
+      "skip operator (mining)"
+    ],
+    "nos_description": "A Winding Engine Operator ensures execution of activities related to the winding engine",
+    "nos_purpose": "To operate the winding engine connected to the mine shaft",
+    "reason_new_local": "Wrong match. Mining winding engines hoist cages/skips in mine shafts. ESCO winding machine operator winds yarn/thread onto spools - completely different equipment.",
+    "isco_unit_group_code": "8111"
+  },
+  {
+    "nos_title": "Professional Driver",
+    "nos_sector": "Transport",
+    "zqf_level": 3,
+    "preferred_label": "professional driver",
+    "description": "Professional drivers operate vehicles to transport passengers or goods to specified destinations. They ensure the safe and efficient operation of their vehicle by performing pre- and post-trip inspections, adhering to traffic laws, and planning optimal routes. These drivers may also perform minor maintenance, manage incidents, and provide customer service.",
+    "alt_labels": [
+      "driver",
+      "chauffeur",
+      "transport driver",
+      "commercial driver",
+      "delivery driver",
+      "passenger transport driver",
+      "goods transport driver"
+    ],
+    "nos_description": "A Professional Driver is responsible for driving safely and competently, ensuring roadworthiness of the vehicle by conducting pre-drive checks, managing incidences, conducting or recommending vehicle maintenance, applying customer care skills, demonstrating defensive driving skills, ensuring fuel efficiency, and economic driving habits. He/she must follow traffic laws and correctly route themselves",
+    "nos_purpose": "A Professional Driver’s job is to safely and efficiently transport either cargo and/or passengers from one location to another",
+    "reason_new_local": "NOS role covers both cargo and passenger transport with general driving competency. All ESCO driver occupations are specialized (cargo, bus, taxi, etc). No generic professional driver exists in ESCO.",
+    "isco_unit_group_code": "8322"
+  },
+  {
+    "nos_title": "Transportant",
+    "nos_sector": "Transport",
+    "zqf_level": 7,
+    "preferred_label": "transport manager",
+    "description": "Transport managers oversee the efficient and safe movement of goods or people. They are responsible for planning, coordinating, and supervising transport operations, ensuring compliance with regulations and company policies. Their duties include managing vehicle fleets, scheduling staff, and implementing safety protocols to optimize transport services and minimize costs.",
+    "alt_labels": [
+      "transportation manager",
+      "fleet manager",
+      "logistics manager",
+      "transport supervisor",
+      "transport coordinator",
+      "transport operations manager",
+      "logistics supervisor"
+    ],
+    "nos_description": "A Transportant ensures the smooth running of transport services by maintaining vehicles, as well as allocating of staff and vehicles to provide optimal services through planning, managing, administrating, and controlling resources",
+    "nos_purpose": "A Transportant can work in a variety of industries and would be responsible for managing transport organisation, vehicle fleet management, staff transport management, transport operations, and occupational health and safety",
+    "reason_new_local": "The NOS occupation 'Transportant' is broader than the ESCO options, encompassing vehicle maintenance, staff management, and overall transport operations. ESCO options are more specific roles.",
+    "isco_unit_group_code": "1324"
+  }
+]
