@@ -1,0 +1,601 @@
+ID,ORIGINURI,UUIDHISTORY,OCCUPATIONGROUPCODE,CODE,DEFINITION,SCOPENOTE,REGULATEDPROFESSIONNOTE,OCCUPATIONTYPE,ISLOCALIZED,PREFERREDLABEL,ALTLABELS,DESCRIPTION
+,,7b6a4da0-a901-4f7b-8066-3553f295914b,1112,1112_1,,,,localoccupation,True,auditor general,"Chief Government Auditor
+Comptroller and Auditor General
+Head of Supreme Audit Institution
+National Auditor General","Auditor generals oversee the independent auditing of government accounts and public sector entities. They ensure accountability, efficiency, and legality in the use of public funds, reporting findings to the legislature."
+,,2a5c3c12-c595-43ff-a711-e6e05baea248,1112,1112_2,,,,localoccupation,True,head of government,"Chancellor
+Deputy President
+First Minister
+Premier
+President
+Prime Minister
+Taoiseach
+Vice President","Heads of government lead the executive branch, formulate and implement national policies, direct domestic and foreign affairs, and represent the country on the international stage."
+,,8174da62-4d2f-4aad-9ce7-25fa8f8b2c80,1112,1112_3,,,,localoccupation,True,senior judiciary member,"Attorney General
+Chief Justice
+Chief Public Defender
+Chief Registrar Judiciary
+Director of Public Prosecution
+High Court Judge
+Judge Advocate General
+Lord Chief Justice
+President of the Supreme Court
+Prosecutor General
+Solicitor General
+Supreme Court Justice","Senior judiciary members lead national judicial systems or high-level legal offices, interpret laws, administer justice, and provide legal counsel to governments, ensuring legal and constitutional integrity."
+,,25f4030a-0014-404a-b17d-cae68c6414d6,1112,1112_4,,,,localoccupation,True,senior local government official,"Chief Executive, Local Authority
+Councillor
+County Assembly clerk
+County Executive Committee Member
+County Governor
+Deputy Mayor
+Deputy Speaker of the County Assembly
+District Commissioner
+Mayor
+Member of County assembly
+Municipal Manager
+Speaker County Assembly
+Town Clerk","Senior local government officials direct and coordinate the formulation and implementation of public policies, laws, and services at the sub-national or regional administrative level, ensuring effective governance and resource management."
+,,8320ae51-0f49-47ee-a87c-c8ec95e7bade,1113,1113_1,,,,localoccupation,True,village chief,"Community Chief
+Head of Village
+Local Chieftain
+Village Administrators
+Village Elder
+Village Headman","Village chiefs lead and govern local communities, mediating disputes, managing communal resources, and representing their village in external matters. They uphold traditional laws and customs."
+,,37427fc7-56c1-4b1f-ba20-5c1fdc1705ee,1114,1114_1,,,,localoccupation,True,political party leader,"Convenor
+First Secretary
+Leader of Majority
+Leader of Minority
+Leader of the Opposition
+Party Chairman
+Party Chairperson
+Party President","Political party leaders guide party strategy, articulate policy positions, and campaign to win elections and influence government policy or form a ruling administration. They represent their party publicly and lead parliamentary groups."
+,,aa29e1bb-c69f-4b8c-897f-003d84502fe3,2352,2352_1,,,,localoccupation,True,special needs teacher,"Exceptional Student Education Teacher
+Inclusion Teacher
+Learning Disability Teacher
+Resource Teacher
+SEN Teacher
+Special Education Teacher
+Special Needs Educator
+Teacher, migrant education","Special needs teachers instruct students with diverse physical, intellectual, emotional, or learning disabilities. They adapt curricula and employ specialized pedagogical approaches to meet individual educational goals."
+,,374f2fcd-802e-44d2-97b7-0521a8a22156,2529,2529_1,,,,localoccupation,True,digital currency miner,"Blockchain Miner
+Crypto Miner
+Cryptocurrency Miner
+Digital Miner
+Mining Farm Technician
+Mining Rig Operator","Digital currency miners configure and operate specialized computing systems to validate blockchain transactions and generate new digital currency units, often receiving rewards."
+,,13f9a33a-34fc-45d0-9b57-2c92c8231175,2641,2641_1,,,,localoccupation,True,indexer,"Back-of-book indexer
+Book indexer
+Database indexer
+Periodical indexer
+Professional indexer
+Subject indexer","Indexers analyse the content of books, journals, and other documents to identify key terms and concepts. They create comprehensive indexes, assigning relevant headings and page locators to facilitate efficient information retrieval for users."
+,,5c5d1161-6ef7-4d1f-8d63-fb1f707445fe,3119,3119_1,,,,localoccupation,True,impression taker,"Casting Technician
+Dental Impression Technician
+Earmold Technician
+Impression Specialist
+Moulding Technician
+Orthotic Impression Technician
+Prosthetic Impression Technician","Impression takers prepare materials and subjects, then accurately capture physical impressions using specialised techniques and materials, often for crafting custom devices or models."
+,,f6648c66-ad0f-4d78-b92f-22e27ac4d978,3122,3122_1,,,,localoccupation,True,musical instrument technician,"Chief Piano Technician
+Instrument Manufacturing Supervisor
+Lead Luthier
+Manufacturing Team Leader, Musical Instruments
+Master Instrument Builder
+Musical Instrument Production Coordinator
+Production Supervisor, Musical Instruments
+Supervisor and Foreman, Musical Instrument Making
+Workshop Supervisor, Musical Instruments","Musical instrument technicians oversee the crafting, assembly, tuning, and repair of musical instruments, coordinating production and ensuring adherence to precise specifications and quality standards."
+,,49dfb2fe-92a4-450e-9bce-47393966c3b0,3230,3230_1,,,,localoccupation,True,bone-setter,"Folk bone setter
+Indigenous bone setter
+Setter, bone
+Traditional bone setter
+Traditional fracture healer
+Traditional orthopaedic manipulator","Bone-setters diagnose and treat musculoskeletal injuries like fractures, dislocations, and sprains using traditional, non-surgical manipulation techniques to restore alignment and function, often employing local remedies."
+,,229201a0-257c-433e-acf5-39f09fd478c2,3230,3230_2,,,,localoccupation,True,village healer,"Community healer
+Folk healer
+Healer, village
+Indigenous healer
+Local healer
+Medicine man
+Medicine woman
+Traditional healer
+Traditional medicine practitioner","Village healers provide traditional and culturally-specific healthcare services to their communities, integrating herbal remedies, spiritual practices, and traditional counseling to address physical, mental, and social well-being."
+,,1de777e4-6b1c-4730-9e57-6dbe7faa3577,3259,3259_1,,,,localoccupation,True,trichologist,"Clinical trichologist
+Hair and scalp consultant
+Hair and scalp specialist
+Hair loss specialist
+Scalp therapist","Trichologists diagnose and treat disorders and diseases of the hair and scalp. They conduct consultations, recommend treatments, and provide advice on hair care and scalp health."
+,,00a940d2-4dad-450d-b0bc-5f96476278ff,3413,3413_1,,,,localoccupation,True,faith healer,"Curandero
+Folk healer
+Healer, faith
+Indigenous healer
+Medicine person
+Root doctor
+Shaman
+Spiritual healer
+Traditional healer","Faith healers provide spiritual and traditional healing services to individuals seeking relief from physical, mental, or spiritual ailments. They often use prayer, rituals, and traditional remedies rooted in their belief systems."
+,,97e6037f-ae11-4dea-9e3b-b64772fa21d8,4229,4229_1,,,,localoccupation,True,eligibility consultant,"Benefits Advisor
+Consultant, eligibility
+Eligibility Assessor
+Eligibility Screener
+Financial Aid Advisor
+Intake Specialist
+Program Eligibility Officer
+Specialist, eligibility","Eligibility consultants assess client information to determine qualification for specific programs or services, advise applicants on criteria, required documentation, and application processes, ensuring compliance with regulations and facilitating access to support."
+,,5991683d-c268-43df-a22d-4a80873b0730,4414,4414_1,,,,localoccupation,True,public writer,"Administrative document writer
+Application writer
+Correspondence writer
+Ecrivain public
+Letter writer
+Personal document preparer
+Writer, public","Public writers assist individuals by drafting, reviewing, and correcting personal, administrative, and legal documents. They help clients overcome literacy barriers or navigate bureaucratic processes by providing professional writing support."
+,,32893e18-1092-4644-aead-8517d8bace15,4419,4419_1,,,,localoccupation,True,press clipper,"Article Clipper
+Clipper, press
+Clippings Assistant
+Media Monitor
+News Clipper
+Print Media Monitor","Press clippers meticulously identify, cut, and compile relevant articles and mentions from print and digital media sources. They provide media monitoring and information gathering services for public relations, archival, or client-specific needs."
+,,b9ba2009-00e4-4b44-9bb6-baea08d85912,5112,5112_1,,,,localoccupation,True,ferryboat conductor,"Conductor, ferryboat
+Ferry attendant
+Ferry conductor
+Ferry passenger assistant
+Ferry ticket collector","Ferryboat conductors manage passenger movement, ensure safety protocols are followed on board ferries, collect fares, and provide information to travelers during waterborne journeys."
+,,c81dc31e-962c-408d-8eb8-f29878b998ae,5112,5112_2,,,,localoccupation,True,hovercraft conductor,"Conductor, hovercraft
+Hovercraft attendant
+Hovercraft steward","Hovercraft conductors ensure the safety and comfort of passengers on hovercrafts. They collect fares, check tickets, provide information, and assist with boarding and disembarking, maintaining order and responding to emergencies."
+,,9f19b17e-6265-4fd5-ae18-7d4bb9d68f16,5169,5169_1,,,,localoccupation,True,traditional medicine practitioner,"Folk healer
+Herbalist
+Indigenous healer
+Spiritual healer
+Traditional Medicine Women
+Traditional doctor
+Traditional healer","Traditional medicine practitioners diagnose and treat ailments using indigenous knowledge, herbal remedies, and traditional healing practices. They provide culturally specific health advice and support, distinct from social or companionship services."
+,,f86086c8-1720-42c3-aba4-8c0075607d63,5242,5242_1,,,,localoccupation,True,party plan sales demonstrator,"Consultant, party plan
+Home demonstrator
+Home party consultant
+Host, party plan
+Hostess, party plan
+Party sales representative
+Product demonstrator, home party
+Salesperson, party plan
+Social selling demonstrator","Party plan sales demonstrators present products to groups at social gatherings, often in a private home setting, demonstrating features and facilitating direct sales. They encourage attendees to host future parties or join as consultants."
+,,d21aa1ce-998a-473b-af69-dae3c7283d24,5249,5249_1,,,,localoccupation,True,online seller,"Digital Sales Associate
+E-commerce Specialist
+E-tailer
+Marketplace Seller
+Online Retailer
+Trader, eBay
+Web Store Manager","Online sellers market, list, and sell goods or services through e-commerce platforms, social media, or dedicated websites. They manage inventory, process orders, handle customer communication, and arrange shipping, ensuring efficient online sales operations."
+,,d3cd5f75-3667-4f45-b266-686f38dc1aa3,6111,6111_1,,,,localoccupation,True,field crop farmer,"Agricultural Crop Producer
+Arable Farmer
+Arboriculturist
+Commercial Crop Producer
+Crop Farmer
+Crop Producer
+Farmer, cereal
+Farmer, cereal: market production
+Farmer, corn
+Farmer, corn: market production
+Farmer, cotton
+Farmer, crop field crops
+Farmer, field crop
+Farmer, field crop (market production)
+Farmer, flax
+Farmer, grain
+Farmer, grain: market production
+Farmer, groundnut
+Farmer, groundnut: market production
+Farmer, jute
+Farmer, maize
+Farmer, maize: market production
+Farmer, potato
+Farmer, rice
+Farmer, rice: market production
+Farmer, soya-bean
+Farmer, sugar-beet
+Farmer, sugar-cane
+Farmer, tobacco
+Farmer, wheat
+Farmer, wheat: market production
+Field Cropper
+Grower, potato
+Grower, soya-bean
+Grower, sugar-beet
+Grower, sugar-cane
+Planter, cotton
+Planter, sugar-cane
+Planter, tobacco
+Worker, farm: skilled (flax)
+Worker, farm: skilled (jute)
+Worker, plantation: skilled (cotton)","Field crop farmers cultivate various field crops such as cereals, grains, tubers, and industrial crops. They prepare soil, plant seeds, apply fertilisers and pesticides, irrigate, monitor crop health, harvest, and maintain farm equipment, ensuring optimal yields."
+,,0dda14c7-f4c6-4db0-86c2-53a10615d0bc,6111,6111_2,,,,localoccupation,True,vegetable farmer,"Farmer, field vegetable
+Farmer, field vegetable: (market production)
+Farmer, vegetable
+Farmer, vegetable: market production
+Field Vegetable Producer
+Horticultural Farmer
+Market Gardener
+Organic Vegetable Farmer
+Small-scale Vegetable Farmer
+Truck Farmer
+Vegetable Cultivator
+Vegetable Grower","Vegetable farmers cultivate and harvest various types of vegetables for commercial sale. They prepare soil, plant, irrigate, fertilise, manage pests and diseases, and perform post-harvest handling, often operating small-scale farms."
+,,16c73604-0b40-45a1-923b-62ae0f9cef26,6112,6112_1,,,,localoccupation,True,shrub crop farmer,"Berry Farmer
+Budder-grafter, shrubs
+Bush Fruit Farmer
+Farmer, shrub crop
+Farmer, tea
+Grower, shrub crop
+Grower, tea
+Horticultural Shrub Farmer
+Perennial Shrub Grower
+Planter, tea
+Pruner, shrub: crops
+Tea Cultivator
+Tea Estate Farmer
+Worker, farm: skilled (tea)
+Worker, plantation: skilled (shrub crop)
+Worker, plantation: skilled (tea","Shrub crop farmers cultivate, grow, and harvest various shrub-based crops like tea, berries, or ornamental shrubs. They manage all aspects of production, from soil preparation and planting to pest control and harvesting, ensuring crop health and yield."
+,,2fe18b3c-f8d0-4312-a899-12a16b653cb8,6112,6112_2,,,,localoccupation,True,tree crop farmer,"Budder-grafter, fruit tree
+Commercial tree crop grower
+Farmer, cocoa
+Farmer, coconut
+Farmer, coffee
+Farmer, copra
+Farmer, fruit
+Farmer, hop
+Farmer, nut
+Farmer, orchard
+Farmer, rubber
+Farmer, tree crop
+Fruit tree grower
+Nut tree grower
+Orchardist
+Perennial crop farmer
+Plantation grower
+Planter, copra
+Pruner, fruit trees
+Tapper, maple: syrup
+Tapper, pine: resin
+Tapper, rubber
+Tapper, toddy
+Tree crop cultivator
+Worker, farm: skilled (cocoa)
+Worker, farm: skilled (coffee)
+Worker, farm: skilled (rubber)
+Worker, plantation: skilled (rubber)","Tree crop farmers cultivate and harvest a variety of crops from trees and shrubs, applying agricultural techniques for soil preparation, planting, pruning, disease control, and harvesting to ensure optimal yield and quality."
+,,357bf847-2d73-467e-811d-69194de8a852,6112,6112_3,,,,localoccupation,True,vineyard farmer,"Farmer, vineyard
+Farmer, viniculture
+Grape farmer
+Grape grower
+Vigneron
+Vine grower
+Viticulturist","Vineyard farmers cultivate grapevines, performing tasks from planting and pruning to pest control and harvesting, ensuring high-quality grape production for wine or table consumption."
+,,d329da1d-8e8d-4060-9948-f1541557b17b,6113,6113_1,,,,localoccupation,True,flower farmer,"Commercial flower grower
+Cut flower grower
+Floral grower
+Floriculturist
+Greenhouse flower grower
+Grower, bulbs: nursery
+Grower, carnation
+Grower, rose
+Grower, tulip","Flower farmers cultivate and harvest various types of flowers for commercial sale, managing soil, irrigation, pest control, and post-harvest handling for wholesale or retail distribution."
+,,7719b4b5-73df-4af5-b70e-46008bfa1e51,6113,6113_2,,,,localoccupation,True,mushroom farmer,"Commercial Mushroom Grower
+Cultivator, mushroom
+Edible Mushroom Grower
+Fungal Cultivator
+Grower, mushroom
+Indoor Mushroom Farmer
+Mushroom Cultivation Specialist
+Mushroom Production Technician
+Mycocultivator
+Worker, farm: skilled (mushroom)","Mushroom farmers cultivate various mushroom species in controlled environments, managing substrate preparation, spawning, environmental conditions, and harvesting for commercial sale."
+,,f300ef72-2333-40f2-bc5f-a895a2a44775,6113,6113_3,,,,localoccupation,True,nursery grower,"Bedding Plant Grower
+Container Plant Grower
+Grower, seeds: nursery
+Grower, spices: nursery
+Horticultural Technician (Nursery)
+Ornamental Plant Grower
+Plant Propagator
+Seedling Grower
+Tree Nursery Grower","Nursery growers cultivate and propagate plants, trees, and shrubs in controlled nursery environments for commercial sale or eventual transplanting. They prepare growing media, sow seeds, take cuttings, and manage plant health through watering, fertilizing, and pest control."
+,,b1ecba40-afd0-456c-8fb0-b23b6bc61f80,6113,6113_4,,,,localoccupation,True,reed grower,"Grower, osier
+Grower, reed
+Osier Cultivator
+Reed Farmer
+Thatch Reed Producer
+Willow Grower","Reed growers cultivate and harvest specific wetland plants like reeds, osiers, and willows for commercial purposes such as thatch, basketry, or biomass, managing their plots and harvesting cycles."
+,,e2d2d710-26f5-4844-99a9-24991c598c9d,6114,6114_1,,,,localoccupation,True,mixed crop farmer,"Commercial mixed crop producer
+Diversified crop farmer
+Farmer, mixed crop
+Farmer, mixed crop: market production
+Mixed arable farmer
+Multi-crop farmer
+Smallholder mixed crop farmer","Mixed crop farmers cultivate, tend, and harvest diverse crops on a single farm for market production. They manage all stages from land preparation and planting to harvesting, ensuring optimal yield and quality."
+,,6cd4bf29-e6bc-4524-ab1a-62c574397e3f,6121,6121_1,,,,localoccupation,True,dairy farmer,"Dairy cattle farmer
+Dairy farm operator
+Dairy producer
+Dairyman
+Milk producer
+Worker, farm: skilled (dairy)","Dairy farmers manage the operations of dairy farms, overseeing the breeding, feeding, health, and milking of dairy cattle to produce milk and dairy products."
+,,71413da8-6f86-407f-a6c1-4fd6eb85fa5b,6121,6121_2,,,,localoccupation,True,livestock farmer,"Cattle farmer
+Dairy farmer
+Livestock farm manager
+Pig farmer
+Poultry farmer
+Producer, animals
+Rancher
+Sheep farmer
+Stock farmer","Livestock farmers manage farms dedicated to raising various animals (e.g., cattle, sheep, pigs) for agricultural production. They oversee animal husbandry, feeding, health, welfare, and farm business operations."
+,,edbd0cec-1ff1-4fc9-ba29-1f197a23b595,6122,6122_1,,,,localoccupation,True,farm incubator operator,"Egg Incubation Technician
+Hatching Machine Operator
+Operator, incubator: farm
+Poultry Incubation Operator","Farm incubator operators manage and operate incubation equipment on poultry farms, monitoring environmental conditions for eggs to ensure optimal development and successful hatching of chicks."
+,,dd288162-7d57-4b06-8d34-32dc6e324c9a,6123,6123_1,,,,localoccupation,True,sericulturist,"Farmer, sericulture
+Farmer, silk
+Farmer, silkworm raising
+Raiser, silkworm
+Sericulture specialist
+Sericulture technician
+Silk farm manager
+Silk grower
+Silkworm producer
+Worker, sericultural: skilled","Sericulturists cultivate silkworms for raw silk production. They manage the entire life cycle, including feeding, disease prevention, and maintaining optimal environmental conditions for silkworm health and cocoon yield. Their expertise lies in efficient silk fibre harvesting."
+,,36fb23d1-b725-40d1-8baa-d52a81fc20dc,6129,6129_1,,,,localoccupation,True,exotic animals breeder,"Breeder, lion
+Breeder, reptile
+Breeder, snail
+Conservation Breeder
+Farmer, crocodile
+Farmer, non-domesticated animals
+Farmer, ostrich
+Game Animal Breeder
+Invertebrate Breeder
+Non-Domestic Animal Breeder
+Raiser, ostrich
+Reptile Farmer
+Specialty Animal Breeder
+Wild Animal Breeder
+Zoological Breeder","Exotic animals breeders breed and raise various non-domesticated or wild animal species for purposes such as conservation, zoological display, commercial products (e.g., meat, skin), or specialty pet markets, ensuring their health and welfare."
+,,0aa88987-304e-4086-a9dc-27d41f00cf01,6210,6210_1,,,,localoccupation,True,charcoal burner,"Burner, charcoal
+Charcoal kiln operator
+Charcoal maker
+Charcoal manufacturing worker
+Charcoal producer
+Wood carbonizer","Charcoal burners carbonize wood in traditional kilns or pits, carefully managing the burning process to produce charcoal for fuel. They select and prepare timber, construct the burning structures, and monitor conditions to ensure efficient conversion, distinguishing their production role from forest conservation."
+,,dd665093-76ee-46a8-b586-6be070e6c31d,6210,6210_2,,,,localoccupation,True,logging and timber harvesting worker,"Chainsaw Operator (logging)
+Climber, high: logging
+Cruiser, timber
+Cutter, pole and pile
+Cutter, railway tie
+Cutter, sleeper
+Delimber Operator
+Driver, raft: logging
+Feller-bucker, tree
+Logger
+Maker, log-raft
+Marker, timber
+Marker, tree
+Rider, timber
+Scaler, log
+Skidder Operator
+Stripper, cork bark
+Timber Faller
+Topper, logging
+Woodcutter","Logging and timber harvesting workers fell, delimb, buck, and transport trees and timber. They mark trees, scale logs, and prepare forest products for transport, distinguishing their role from conservation-focused forest rangers."
+,,df841a9b-e89b-4d67-bd40-99cdea163816,6210,6210_3,,,,localoccupation,True,logging worker,"Assembler, raft: logging
+Feller buncher operator
+Logger
+Lumberjack
+Processor operator
+Skidder operator
+Timber cutter
+Tree feller","Logging workers fell, delimb, and buck trees, and load logs for transport. They operate chainsaws and heavy machinery, performing the physical work of timber harvesting and initial land clearing."
+,,69fe6ef2-64c0-4ee6-b618-9bd99af0edc0,6221,6221_1,,,,localoccupation,True,fish farmer,"Aquaculturalist
+Aquaculture farmer
+Aquaculture producer
+Farmer, fish
+Fish culturist
+Pisciculturist","Fish farmers cultivate aquatic organisms in ponds, tanks, or other systems. They feed and monitor the health of fish and shellfish, manage water quality, maintain facilities, and participate in harvesting activities."
+,,1c3f30d9-6515-44d9-9334-e8bb939d9c3b,6221,6221_2,,,,localoccupation,True,oyster farmer,"Farmer, oyster
+Oyster aquaculturist
+Oyster culturist
+Oyster grower
+Oysterman","Oyster farmers cultivate, nurture, and harvest oysters in aquatic environments. They prepare beds or deploy growing structures, monitor oyster health and growth, manage water quality, and conduct harvesting operations, ensuring product quality and market readiness."
+,,042581e5-c2eb-4827-97bd-c9894afaa000,6221,6221_3,,,,localoccupation,True,seafood farmer,"Aquaculture farmer
+Aquaculture operative
+Aquaculturist
+Farmer, seafood
+Fish farmer
+Mariculture farmer
+Shellfish farmer","Seafood farmers cultivate and rear aquatic organisms, monitoring their health, water quality, and environmental conditions in various aquaculture systems to ensure optimal growth and production."
+,,cb5501a0-bf69-4744-9cc3-246d278a456e,6310,6310_1,,,,localoccupation,True,field crop subsistence farmer,"Arable subsistence farmer
+Farmer, cereal: subsistence farming
+Farmer, field: crop (subsistence farming)
+Farmer, grain: subsistence farming
+Farmer, groundnut: subsistence farming
+Farmer, maize: subsistence farming
+Farmer, rice: subsistence farming
+Farmer, wheat: subsistence farming
+Food crop subsistence farmer
+Smallholder farmer","Field crop subsistence farmers cultivate staple crops like cereals, legumes, and tubers primarily for their household's direct consumption. They manage all stages from planting to harvesting, often employing traditional methods with limited commercial inputs."
+,,1a2b932b-a0b9-409c-963b-0d9249a7489b,6310,6310_2,,,,localoccupation,True,vegetable subsistence farmer,"Backyard vegetable farmer
+Family vegetable farmer (subsistence)
+Farmer, field: vegetable (subsistence farming)
+Farmer, vegetable: subsistence farming
+Grower, vegetable: subsistence
+Home vegetable grower
+Kitchen garden farmer
+Non-commercial vegetable farmer
+Smallholder vegetable farmer
+Subsistence gardener","Vegetable subsistence farmers cultivate small plots of land, planting, tending, and harvesting various vegetables primarily to feed their own households, often using traditional techniques and producing little commercial surplus."
+,,8c9d690a-6219-4758-83f4-66b6b880217b,6320,6320_1,,,,localoccupation,True,livestock subsistence farmer,"Backyard Livestock Keeper
+Family Livestock Farmer
+Farmer, cattle: subsistence
+Farmer, goat: subsistence farming
+Farmer, livestock: subsistence farming
+Farmer, mixed-animal: subsistence farming
+Farmer, pig: subsistence farming
+Farmer, sheep: subsistence farming
+Homestead Livestock Farmer
+Household Animal Raiser
+Smallholder Livestock Farmer","Livestock subsistence farmers raise various animals like cattle, goats, pigs, and poultry primarily for their own household's food consumption and basic needs, often selling small surpluses locally. They manage feeding, breeding, and health, relying on traditional methods."
+,,7a89ab84-8cb6-4dca-b332-8b89452c44d7,6320,6320_2,,,,localoccupation,True,poultry subsistence farmer,"Backyard poultry farmer
+Farmer, poultry
+Homestead poultry farmer
+Poultry keeper
+Subsistence poultry raiser
+Traditional poultry farmer
+Village poultry keeper","Poultry subsistence farmers raise birds (chickens, ducks, geese) primarily for their household's own consumption of meat and eggs. They manage small flocks, providing feed, water, and basic health care using traditional methods."
+,,ea59f8d3-9312-49e6-a702-d50a5b1a59f8,6330,6330_1,,,,localoccupation,True,mixed crop subsistence farmer,"Family farmer
+Farmer, mixed crop: subsistence farming
+Farmer, mixed: subsistence
+Farmer, subsistence
+Polyculture farmer
+Self-sufficient farmer
+Smallholder farmer
+Subsistence crop producer","Mixed crop subsistence farmers cultivate a variety of crops on small plots, primarily for their household's food consumption and direct local exchange, employing traditional farming techniques."
+,,3540360f-a629-4193-9b8c-e5cde8f262e2,6340,6340_1,,,,localoccupation,True,subsistence collector,"Collector, subsistence
+Forager
+Gatherer, subsistence
+Natural resource gatherer (subsistence)
+Subsistence forager
+Wild food gatherer
+Wild plant gatherer","Subsistence collectors gather wild flora and fauna, such as plants, fruits, nuts, insects, and other natural resources directly from the environment, primarily for personal or family consumption."
+,,02a9ce6a-ae85-4f12-bdff-470bfa74b18f,6340,6340_2,,,,localoccupation,True,subsistence fisherman,"Artisanal fisherman
+Fisherman, Subsistence Fishing
+Small-scale fisher
+Traditional fisherman","Subsistence fishermen catch fish using traditional or simple methods, primarily for their own and their family's consumption, or for direct exchange within their local community, rather than for commercial sale."
+,,4413cdec-078a-44dc-9948-d71db9e38819,6340,6340_3,,,,localoccupation,True,subsistence food gatherer,"Bush food gatherer
+Forager
+Gatherer, Food
+Gatherer, subsistence
+Traditional forager
+Wild edibles collector
+Wild food gatherer
+Wild plant collector","Subsistence food gatherers forage for wild plants, fruits, nuts, roots, and other natural resources directly from their environment to feed themselves and their families, often using traditional methods and tools, primarily for personal or community consumption rather than commercial sale."
+,,dc5b666c-4b98-4157-a1b7-8864d5f2cf55,7119,7119_1,,,,localoccupation,True,pool installer,"Hot tub installer
+Installer, pool
+Pool builder
+Pool construction worker
+Spa installer
+Swimming pool builder
+Swimming pool construction worker
+Swimming pool installer","Pool installers excavate sites, lay foundations, assemble and install swimming pool structures, liners, and shells. They connect plumbing, filtration systems, and finish surrounding areas, ensuring functionality and safety."
+,,b5e6be7b-6d76-4b1e-aac6-337146ea118f,7214,7214_1,,,,localoccupation,True,structural metal marker,"Layout Fitter
+Loft Worker
+Mark-off Worker
+Marker, structural metal
+Metal Layout Worker
+Steel Layout Marker","Structural metal markers lay out and mark reference lines, points, and dimensions on structural metal components, guiding cutting, shaping, and assembly processes according to technical drawings."
+,,a4df8b54-c369-4d32-8e09-615f4b9c9a79,7318,7318_1,,,,localoccupation,True,artificial flower maker,"Fabric flower maker
+Faux flower maker
+Floral crafter
+Handmade flower artisan
+Maker, artificial flower
+Paper flower maker
+Silk flower maker","Artificial flower makers craft lifelike botanical arrangements and individual flowers using various materials like fabric, paper, and wire. They meticulously cut, shape, and assemble components to replicate natural flora for decorative purposes."
+,,767b2500-0233-431e-a7a6-60245e05b07d,7318,7318_2,,,,localoccupation,True,textile fibre preparer,"Bleacher, fibre: textile
+Carder, fibre: textile
+Classer, fibre: textile
+Comber, fibre: textile
+Cotton preparer
+Fiber preparer
+Scourer, fibre: textile
+Wool preparer","Textile fibre preparers clean, sort, and disentangle raw natural or synthetic fibres using manual techniques, making them ready for spinning, weaving, or felting by handicraft workers."
+,,8c9a8583-c644-47ed-9758-b16f1cd9f321,7318,7318_3,,,,localoccupation,True,wool scourer,"Fleece scourer
+Fleece washer
+Raw wool preparer
+Scourer, wool
+Wool cleaner
+Wool washer","Wool scourers clean and prepare raw wool by washing and drying it to remove impurities such as grease and dirt, making it suitable for spinning and weaving."
+,,f8c62aac-6828-4417-8c11-68861985fbcd,7319,7319_1,,,,localoccupation,True,bead accessories maker,"Bead artisan
+Beader
+Beadwork crafter
+Costume jewellery maker
+Fashion jewellery maker
+Handmade jewellery maker
+Maker, bead belts
+Maker, bead necklace/synthetic
+Maker, metallic necklace/traditional","Bead accessories makers design, string, and assemble beads and other materials to create or repair decorative items such as necklaces, bracelets, earrings, and belts. They meticulously select components and apply handcrafting techniques to produce unique accessories."
+,,48fafdfc-b442-48be-b2aa-98c7fd6eeab2,7319,7319_2,,,,localoccupation,True,bone articles maker,"Bone Carver
+Bone Craftsman
+Handicraft worker, bone articles
+Horn Carver
+Scrimshaw Artist","Bone articles makers carve, shape, and polish bone, horn, or similar animal-derived materials to create decorative, functional, or cultural artefacts. They use hand tools or small machines for intricate designs and finishing."
+,,6ebee7ef-ddd6-4996-a240-505fee20933c,7544,7544_1,,,,localoccupation,True,weed controller,"Controller, weed
+Herbicide applicator
+Vegetation management technician
+Weed control technician
+Weed specialist","Weed controllers identify, evaluate, and apply methods to control unwanted plant growth. They use herbicides, manual removal, mechanical tools, or biological approaches in various settings to eliminate weeds."
+,,bd04e55d-62c7-4811-8145-6139b8216d31,7549,7549_1,,,,localoccupation,True,florist,"Arranger, flower
+Floral artist
+Floral designer
+Florist, arranging flowers
+Flower stylist","Florists arrange and display fresh, dried, and artificial flowers, foliage, and other materials into decorative bouquets, wreaths, and floral arrangements. They consult with customers, advise on plant care, and manage sales."
+,,81e3a47b-9bbd-4ae5-aa50-7677e5bbe285,8121,8121_1,,,,localoccupation,True,metal grading and sorting operator,"Classifier, aluminum
+Metal Classification Operator
+Metal Grader
+Metal Material Sorter
+Metal Sorter
+Operator, uranium classifier
+Scrap Metal Sorter","Metal grading and sorting operators inspect, classify, and separate metal materials based on quality, type, and size. They ensure metals meet specifications for further processing or recycling, often using automated or manual methods."
+,,1c987c89-0b93-44c3-a75d-83fdde6c9bc6,8121,8121_2,,,,localoccupation,True,metal refining operator,"Electrolysis Operator, Metal
+Furnace Operator, Refining
+Primary Refiner
+Refiner, Copper
+Refiner, lead
+Refiner, metal
+Refiner, steel
+Refining Process Operator
+Secondary Refiner
+Smelter Operator","Metal refining operators operate and monitor equipment to purify and process crude or scrap metals, removing impurities to achieve specified grades and compositions for further use."
+,,3cffe9e9-4649-4d99-a420-535955650e27,8160,8160_1,,,,localoccupation,True,food sterilising machine operator,"Autoclave Operator (Food Processing)
+Cannery Sterilizer Operator
+Food Sterilization Machine Operator
+Operator, machine: sterilising (fruit)
+Operator, machine: sterilising (vegetables)
+Retort Operator
+Sterilizer Operator
+Thermal Processing Operator
+UHT Processing Operator","Food sterilising machine operators operate and monitor machinery designed to sterilise food products, ensuring compliance with food safety and quality standards, and maintaining product shelf-life."
+,,c7b65c41-044d-4f63-a474-434794b1f144,8160,8160_2,,,,localoccupation,True,tea processing machine operator,"Operator, machine: tea-leaf processing
+Tea dryer operator
+Tea factory machine operator
+Tea machine operator
+Tea packaging machine operator
+Tea processing plant operator
+Tea production machine operator
+Tea sorter operator","Tea processing machine operators tend and operate machines that wither, roll, ferment, dry, sort, and pack tea leaves. They monitor machine performance and ensure quality standards are met throughout the tea production process."
+,,c04f67cf-5cca-4c1d-b699-334cd9bd6cde,8189,8189_1,,,,localoccupation,True,stationery manufacturing machine operator,"Envelope Machine Operator
+Machine Operator, Stationery
+Notebook Machine Operator
+Operator, machine: pencil production
+Paper Converting Machine Operator
+Pencil Machine Operator
+Stationery Production Operator
+Writing Instrument Machine Operator","Stationery manufacturing machine operators set up, operate, and monitor machinery producing various finished stationery items like pencils, pens, or notebooks, ensuring quality and efficiency."
+,,9df15531-f55f-4634-b6ed-cd63e2abba8b,8321,8321_1,,,,localoccupation,True,motorcycle driver,"Auto Rickshaw Driver
+Bajaj Driver
+Driver, motor tricycle
+Driver, rickshaw: motorized
+Driver, tricycle: motorized
+Moped Driver
+Motorcycle Taxi Driver
+Pillion Driver
+Scooter Driver
+Tuk-tuk Driver","Motorcycle drivers operate two- or three-wheeled motorized vehicles, such as motorcycles, motor tricycles, or motorized rickshaws, to transport passengers or goods, excluding specialized parcel delivery services."
+,,08c4f6c2-07a2-4bb4-9dd6-09b185764c63,8343,8343_1,,,,localoccupation,True,canal lock operator,"Keeper, lock: canal or port
+Lock Attendant
+Lock Master
+Lock Tender
+Operator, lock: canal or port
+Operator, sluice: dock
+Sluice Gate Operator
+Sluice man, dock
+Sluice woman, dock","Canal lock operators manage and control the operation of canal and port locks, sluice gates, and associated mechanisms to regulate water levels and enable the safe passage of vessels."
+,,f2693ae8-a525-496f-9c33-c54f19ba7c3c,8350,8350_1,,,,localoccupation,True,ferry driver,"Boatman
+Driver, ferry
+Ferry Captain
+Ferry Master
+Ferry Operator","Ferry drivers operate passenger and vehicle ferries, navigating waterways according to schedules and safety regulations. They are responsible for the safe transport of people and goods, overseeing the vessel's movement and adherence to maritime rules."

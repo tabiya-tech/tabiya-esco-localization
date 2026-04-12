@@ -1,75 +1,105 @@
 # Kenya (KeSCO) Session Context
 
 ## Session Date
-2026-02-02
+2026-03-12
 
 ## Current State
-- **Phase**: Human review COMPLETE; Translation QA in progress
-- **Status**: All 975 review items completed (100%); Swahili occupations translation done (3,074 records)
+- **Phase**: Skill assignment complete - combined ISCO + O*NET approach
+- **Status**: All 69 new local occupations have skills assigned; taxonomy files updated
 
 ## What Was Accomplished This Session
 
-### 1. Human Review Completion Verified
-- Checked Supabase review status: 975/975 items reviewed (100%)
-- Exported review decisions to `kenya_kesco_matches_final.json` and `.xlsx`
+### Ran Full O*NET Skill Assignment Pipeline
+- Upgraded LLM from Gemini 2.0 Flash to Gemini 3 Flash (much tighter distribution: 39-54 vs 9-101)
+- Ran on all 69 occupations: 3,357 skill relations exported
+- Added "Selected" filter column to onet_skill_comparison.xlsx
 
-### 2. Taxonomy Merge Completed
-- Ran `03_merge_taxonomy.py` to add KESCO titles as alt labels to ESCO occupations
-- 2,760 alt labels added to 955 unique ESCO occupations
-- Output: `outputs/taxonomy/occupations.csv`
+### Developed ISCO Group Pooling Approach
+- Alternative to O*NET: LLM selects relevant ISCO 4-digit groups, pools ESCO skills from those groups
+- Advantage: stays entirely within ESCO, no external crosswalk dependency
+- Tested on 4 occupations; qualitative analysis showed more practical, contextually relevant skills for Kenya
 
-### 3. Fixed NEW_LOCAL Parent Selection Bug
-- Discovered bug: `hideNewLocalModal()` was clearing `selectedParent` before submit
-- All 154 NEW_LOCAL items have no parent codes due to this bug
-- Fixed by copying parent object before hiding modal
-- Fix committed and pushed to GitHub (deploys automatically)
+### Combined ISCO + O*NET Approach (Final)
+- Merges candidate pools from both ISCO group pooling and O*NET task crosswalk
+- Deduplicated candidates; skills in both pools get stronger signal (~65% of selected skills came from both)
+- Refined LLM prompt with:
+  - Home ISCO group awareness (seniority level: leadership vs practitioner skills)
+  - Professional values inclusion (ethics, impartiality, confidentiality)
+  - Domain knowledge at strategic level (not hands-on practitioner skills for senior roles)
+  - Redundancy avoidance guidance
+- Final run: 3,964 skill relations for 69 occupations (avg 57, range 46-63)
 
-### Review Decision Breakdown
-| Decision | Count | Description |
-|----------|-------|-------------|
-| APPROVE | 470 | Accepted pipeline's suggestion |
-| MATCH | 291 | Human selected different ESCO (6 actually changed) |
-| NEW_LOCAL | 154 | Confirmed as new local occupation |
-| SKIP | 60 | Skipped (remain in review queue for later) |
+### Archived Deprecated Scripts
+- Moved `06_assign_skills.py` (skill-group approach) to archive
+- Renumbered: `07_onet_skill_assignment.py` -> `06_onet_skill_assignment.py`, `08` -> `07`
 
-### Final Matching Status
-| Category | Count |
-|----------|-------|
-| not_required (auto-approved) | 4,940 |
-| completed (human reviewed) | 915 |
-| pending (skipped) | 62 |
-| **Total occupations** | **5,917** |
+### Generated Documentation
+- Word document: `docs/Kenya_KESCO_Localization_v2.docx` for website
 
-## Previous Session (2026-01-23)
+## Current File Structure
 
-### Translation Work Completed
-- Swahili occupations translation complete (3,074 records)
-- 4-model comparison done for QA (gemini-2.5-flash, 2.5-pro, 3-flash-preview, 3-pro-preview)
-- Translation data cleanup: fixed duplicates, missing labels, errors
-- Core translation pipeline enhanced with validation auto-fix, back-translation QA, model comparison tools
+### Scripts (Active)
+```
+scripts/
+├── 00_prepare_data.py
+├── 01_generate_embeddings.py
+├── 02_run_matching.py
+├── 03_merge_taxonomy.py
+├── 04_sync_from_supabase.py
+├── 05_create_new_local.py
+├── 06_onet_skill_assignment.py       # O*NET-only approach (superseded by 06c)
+├── 06b_isco_skill_assignment.py      # ISCO-only approach (experimental)
+├── 06c_combined_skill_assignment.py  # FINAL: Combined ISCO + O*NET
+├── 07_skill_relevance_scoring.py
+└── archive/
+```
 
-## Output Files
-- `outputs/kenya_kesco_matches_final.json` - All matches with review decisions
-- `outputs/kenya_kesco_matches_final.xlsx` - Excel export (20 columns, 2 sheets with README)
-- `outputs/translations/sw/occupations_translated_sw_FINAL.csv` - 3,074 Swahili translations
-- `outputs/taxonomy/occupations.csv` - Localized English taxonomy (3,074 records)
+### Output Files
+```
+outputs/
+├── kenya_kesco_matches_final.json
+├── kenya_kesco_matches_final.xlsx
+├── new_local_working.xlsx
+├── new_local_occupations.csv          # 69 occupations
+├── new_local_embeddings.json
+├── new_local_skill_relations.csv      # 3,964 relations (combined approach)
+├── onet_skill_comparison.xlsx         # O*NET-only results (for reference)
+├── isco_skill_comparison.xlsx         # ISCO-only results (for reference)
+├── combined_skill_comparison.xlsx     # Combined results (final)
+└── taxonomy/
+    ├── occupations.csv                # 3,143 total (69 new local)
+    ├── occupation_hierarchy.csv       # 3,777 entries
+    └── occupation_to_skill_relations.csv  # 134,786 total
+```
 
-## Translation Status
-| Metric | Value |
+## Current Taxonomy Stats
+| Metric | Count |
 |--------|-------|
-| Total records | 3,074 |
-| ISLOCALIZED=True | 3,074 (100%) |
-| Missing translations | 0 |
+| Total occupations | 3,143 |
+| ESCO occupations | 3,007 |
+| Local occupations | 136 |
+| - Pre-existing (Tabiya) | 67 |
+| - New (Kenya) | 69 |
+| Hierarchy entries | 3,777 |
+| Total skill relations | 134,786 |
+| New local skill relations | 3,964 |
+| Avg skills per new local | 57 |
 
 ## Next Steps
-1. **Re-review NEW_LOCAL items** - 154 items need parent codes (run `05_reset_incomplete_newlocal.py` to reset in Supabase)
-2. **Address SKIP items** - 60 items skipped during review need resolution
-3. **Review 4-model comparison** - Decide if current 2.5-flash translations are acceptable
-4. **Translate skills** - Run translation pipeline on skills.csv (next major file)
+
+### IMMEDIATE
+1. Update model_info.csv with Kenya localization metadata
+2. Clean up experimental scripts (06b could be removed or kept for reference)
+
+### FUTURE
+- Kenya-specific alt labels (Swahili/Sheng terms)
+- Skills translation to Swahili (localized_strings.csv)
+- Final validation and export to complete 9-file Tabiya format
+- Commit and push to deploy review app to GitHub Pages
 
 ## Notes
-- Human review phase took approximately 6 weeks (started 2025-12-30)
-- 6 ESCO codes were changed during MATCH decisions (out of 291 MATCH items)
-- Translation scripts at `core/translation/` (framework level, shared)
-- Country outputs at `countries/kenya_kesco/outputs/translations/sw/`
-- NEW_LOCAL parent selection bug fixed 2026-02-02; items need re-review
+- Combined approach (06c) is the definitive skill assignment method
+- Gemini 3 Flash used for both ISCO group selection and skill filtering
+- O*NET crosswalk uses different skill IDs than ESCO taxonomy; mapping done via label matching
+- The home ISCO group prompt refinement is critical for senior/leadership roles
+- Review app runs locally via `python -m http.server`

@@ -197,8 +197,11 @@ def main():
     print("\nMerging alt labels...")
     merged_df = merge_alt_labels(esco_df, alt_labels_by_esco)
 
-    # Mark as localized
-    merged_df['ISLOCALIZED'] = True
+    # Mark as localized only where alt labels were actually changed
+    changed_codes = set(alt_labels_by_esco.keys())
+    merged_df['ISLOCALIZED'] = merged_df['CODE'].isin(changed_codes)
+    localized_count = merged_df['ISLOCALIZED'].sum()
+    print(f"\nISLOCALIZED=True for {localized_count} occupations (out of {len(merged_df)})")
 
     if args.dry_run:
         print("\n[DRY RUN] Would save to:")

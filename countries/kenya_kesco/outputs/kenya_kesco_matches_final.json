@@ -17,7 +17,9 @@
       "skipped": 0,
       "not_found": 0,
       "esco_changed": 0
-    }
+    },
+    "last_updated": "2026-02-04T11:14:28.227663",
+    "supabase_sync": "2026-02-04T09:24:48.895146"
   },
   "matches": [
     {
@@ -29,7 +31,7 @@
       "esco_label": "chief executive officer",
       "matched_label": "president",
       "similarity": 0.9990247424752263,
-      "category": "exact_upgraded",
+      "category": "new_local",
       "search_strategy": "unconstrained_upgrade",
       "upgraded": true,
       "crosswalk_mismatch": true,
@@ -37,7 +39,11 @@
       "original_esco_label": "city councillor",
       "original_similarity": 0.8814199600091247,
       "llm_decision": "AUTO_APPROVED",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "1112",
+      "parent_esco_label": "Senior government officials",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:21:09.731+00:00"
     },
     {
       "kesco_code": "1110-12",
@@ -48,7 +54,7 @@
       "esco_label": "business manager",
       "matched_label": "vice-president",
       "similarity": 0.9523368073711048,
-      "category": "exact_upgraded",
+      "category": "new_local",
       "search_strategy": "unconstrained_upgrade",
       "upgraded": true,
       "crosswalk_mismatch": true,
@@ -56,7 +62,11 @@
       "original_esco_label": "city councillor",
       "original_similarity": 0.8735472053272592,
       "llm_decision": "AUTO_APPROVED",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "1112",
+      "parent_esco_label": "Senior government officials",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:21:31.04+00:00"
     },
     {
       "kesco_code": "1110-13",
@@ -67,7 +77,7 @@
       "esco_label": "business manager",
       "matched_label": "vice-president",
       "similarity": 0.9962800495509921,
-      "category": "exact_upgraded",
+      "category": "new_local",
       "search_strategy": "unconstrained_upgrade",
       "upgraded": true,
       "crosswalk_mismatch": true,
@@ -75,18 +85,22 @@
       "original_esco_label": "governor",
       "original_similarity": 0.8835753268645303,
       "llm_decision": "AUTO_APPROVED",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "1112",
+      "parent_esco_label": "Senior government officials",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:21:46.846+00:00"
     },
     {
       "kesco_code": "1110-14",
       "kesco_title": "Cabinet Secretary",
       "isco_code": 1110,
       "unit_group": 1110,
-      "esco_code": "1111.1",
-      "esco_label": "city councillor",
+      "esco_code": "1111.6",
+      "esco_label": "secretario de estado",
       "matched_label": "cabinet member",
       "similarity": 0.9549297941046604,
-      "category": "exact",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -94,18 +108,20 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "AUTO_APPROVED",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:23:05.818+00:00"
     },
     {
       "kesco_code": "1110-15",
       "kesco_title": "Cabinet Minister",
       "isco_code": 1110,
       "unit_group": 1110,
-      "esco_code": "1111.1",
-      "esco_label": "city councillor",
+      "esco_code": "1111.2",
+      "esco_label": "ministro de gobierno",
       "matched_label": "cabinet member",
       "similarity": 0.9784148870542235,
-      "category": "exact",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -113,7 +129,9 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "AUTO_APPROVED",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:22:06.117+00:00"
     },
     {
       "kesco_code": "1110-16",
@@ -124,7 +142,7 @@
       "esco_label": "government minister",
       "matched_label": "government minister",
       "similarity": 0.9334718656410551,
-      "category": "llm_approved",
+      "category": "human_approved",
       "search_strategy": "isco_constrained_111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -132,7 +150,9 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "APPROVE",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:24:00.075+00:00"
     },
     {
       "kesco_code": "1110-17",
@@ -360,7 +380,9 @@
       "reviewed_at": "2025-12-28T00:53:50.086+00:00",
       "review_status": "completed",
       "parent_isco_code": "1114",
-      "parent_isco_label": "Senior officials of special-interest organisations"
+      "parent_isco_label": "Senior officials of special-interest organisations",
+      "parent_esco_code": "1114",
+      "parent_esco_label": "Senior officials of special-interest organisations"
     },
     {
       "kesco_code": "1110-31",
@@ -386,7 +408,9 @@
       "reviewed_at": "2025-12-28T00:54:17.443+00:00",
       "review_status": "completed",
       "parent_isco_code": "1114",
-      "parent_isco_label": "Senior officials of special-interest organisations"
+      "parent_isco_label": "Senior officials of special-interest organisations",
+      "parent_esco_code": "1114",
+      "parent_esco_label": "Senior officials of special-interest organisations"
     },
     {
       "kesco_code": "1110-32",
@@ -397,7 +421,7 @@
       "esco_label": "senator",
       "matched_label": "senator",
       "similarity": 0.9275716161788851,
-      "category": "llm_approved",
+      "category": "human_approved",
       "search_strategy": "isco_constrained_111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -405,7 +429,9 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "APPROVE",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:27:55.053+00:00"
     },
     {
       "kesco_code": "1110-33",
@@ -513,7 +539,7 @@
       "esco_label": "city councillor",
       "matched_label": "county councillor",
       "similarity": 0.9323439052838901,
-      "category": "llm_approved",
+      "category": "new_local",
       "search_strategy": "isco_constrained_111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -521,7 +547,11 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "APPROVE",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "1112",
+      "parent_esco_label": "Senior government officials",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:31:18.667+00:00"
     },
     {
       "kesco_code": "1110-41",
@@ -532,7 +562,7 @@
       "esco_label": "member of parliament",
       "matched_label": "assembly member",
       "similarity": 0.9178386794648211,
-      "category": "llm_approved",
+      "category": "new_local",
       "search_strategy": "isco_constrained_111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -540,7 +570,11 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "APPROVE",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "1112",
+      "parent_esco_label": "Senior government officials",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:31:39.749+00:00"
     },
     {
       "kesco_code": "1110-42",
@@ -566,7 +600,7 @@
       "parent_esco_code": "1112",
       "parent_esco_label": "Senior government officials",
       "reviewer": "Afsana",
-      "reviewed_at": "2026-02-03T00:47:54.451+00:00"
+      "reviewed_at": "2026-02-03T18:31:59.21+00:00"
     },
     {
       "kesco_code": "1110-43",
@@ -577,7 +611,7 @@
       "esco_label": "member of parliament",
       "matched_label": "assembly member",
       "similarity": 0.9453830477424391,
-      "category": "llm_approved",
+      "category": "new_local",
       "search_strategy": "isco_constrained_111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -585,7 +619,11 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "APPROVE",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "1112",
+      "parent_esco_label": "Senior government officials",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:32:14.622+00:00"
     },
     {
       "kesco_code": "1110-44",
@@ -596,7 +634,7 @@
       "esco_label": "court clerk",
       "matched_label": "court clerk",
       "similarity": 0.9183628462092255,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -606,7 +644,11 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "1112",
+      "parent_esco_label": "Senior government officials",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:36:25.88+00:00"
     },
     {
       "kesco_code": "1110-45",
@@ -617,7 +659,7 @@
       "esco_label": "supreme court judge",
       "matched_label": "supreme court judge",
       "similarity": 0.924634314749952,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -627,7 +669,11 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "1112",
+      "parent_esco_label": "Senior government officials",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:37:25.221+00:00"
     },
     {
       "kesco_code": "1110-46",
@@ -653,7 +699,9 @@
       "reviewed_at": "2025-12-28T00:55:55.752+00:00",
       "review_status": "completed",
       "parent_isco_code": "1112",
-      "parent_isco_label": "Senior government officials"
+      "parent_isco_label": "Senior government officials",
+      "parent_esco_code": "1112",
+      "parent_esco_label": "Senior government officials"
     },
     {
       "kesco_code": "1110-47",
@@ -664,7 +712,7 @@
       "esco_label": "prosecutor",
       "matched_label": "state attorney",
       "similarity": 0.9031603907451192,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -674,7 +722,11 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "1112",
+      "parent_esco_label": "Senior government officials",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:37:42.117+00:00"
     },
     {
       "kesco_code": "1110-48",
@@ -700,18 +752,20 @@
       "reviewed_at": "2025-12-28T00:56:25.236+00:00",
       "review_status": "completed",
       "parent_isco_code": "1112",
-      "parent_isco_label": "Senior government officials"
+      "parent_isco_label": "Senior government officials",
+      "parent_esco_code": "1112",
+      "parent_esco_label": "Senior government officials"
     },
     {
       "kesco_code": "1110-51",
       "kesco_title": "Controller of Budget",
       "isco_code": 1110,
       "unit_group": 1110,
-      "esco_code": "2411.1.4",
-      "esco_label": "budget analyst",
+      "esco_code": "1112.6",
+      "esco_label": "gerente de administración pública",
       "matched_label": "budget officer",
       "similarity": 0.934921589462044,
-      "category": "step_2b_matched",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -721,18 +775,20 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:38:31.41+00:00"
     },
     {
       "kesco_code": "1110-52",
       "kesco_title": "Commissioner of Revenue Allocation",
       "isco_code": 1110,
       "unit_group": 1110,
-      "esco_code": "1112.5",
-      "esco_label": "police commissioner",
+      "esco_code": "1112.6",
+      "esco_label": "gerente de administración pública",
       "matched_label": "commissaire",
       "similarity": 0.8828578981166884,
-      "category": "new_local",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -744,7 +800,7 @@
       "step_2b_decision": "NONE",
       "review_decision": "NEW_LOCAL",
       "reviewer": "Afsana",
-      "reviewed_at": "2025-12-28T00:56:54.463+00:00",
+      "reviewed_at": "2026-02-03T18:38:51.143+00:00",
       "review_status": "completed",
       "parent_isco_code": "1112",
       "parent_isco_label": "Senior government officials"
@@ -758,7 +814,7 @@
       "esco_label": "prosecutor",
       "matched_label": "public prosecutor",
       "similarity": 0.9490258101979102,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -768,7 +824,11 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "1112",
+      "parent_esco_label": "Senior government officials",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:39:08.663+00:00"
     },
     {
       "kesco_code": "1110-54",
@@ -794,11 +854,11 @@
       "kesco_title": "Chief Whip",
       "isco_code": 1110,
       "unit_group": 1110,
-      "esco_code": "2432.7",
-      "esco_label": "political party agent",
+      "esco_code": "1112.6",
+      "esco_label": "gerente de administración pública",
       "matched_label": "chief whip",
       "similarity": 0.9912597551584147,
-      "category": "exact_upgraded",
+      "category": "human_matched",
       "search_strategy": "unconstrained_upgrade",
       "upgraded": true,
       "crosswalk_mismatch": true,
@@ -806,7 +866,9 @@
       "original_esco_label": "public administration manager",
       "original_similarity": 0.8970569419688341,
       "llm_decision": "AUTO_APPROVED",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:40:31.327+00:00"
     },
     {
       "kesco_code": "1110-56",
@@ -1120,8 +1182,8 @@
       "kesco_title": "Chairperson and members of Commission of Administrative Justice",
       "isco_code": 1121,
       "unit_group": 1121,
-      "esco_code": "1120.3",
-      "esco_label": "chief executive officer",
+      "esco_code": "1219.1",
+      "esco_label": "business service manager",
       "matched_label": "chairman",
       "similarity": 0.853410771075587,
       "category": "human_matched",
@@ -1135,7 +1197,9 @@
       "step_2b_reason": "rejected",
       "step_2b_decision": "NONE",
       "review_status": "completed",
-      "review_decision": "MATCH"
+      "review_decision": "MATCH",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T12:27:40.481+00:00"
     },
     {
       "kesco_code": "1121-25",
@@ -1800,18 +1864,20 @@
       "reviewed_at": "2025-12-28T01:02:06.629+00:00",
       "review_status": "completed",
       "parent_isco_code": "1113",
-      "parent_isco_label": "Traditional chiefs and heads of village"
+      "parent_isco_label": "Traditional chiefs and heads of village",
+      "parent_esco_code": "1113",
+      "parent_esco_label": "Traditional chiefs and heads of village"
     },
     {
       "kesco_code": "1123-24",
       "kesco_title": "Administrators",
       "isco_code": 1123,
       "unit_group": 1123,
-      "esco_code": "1213.2.1",
-      "esco_label": "social security administrator",
+      "esco_code": "1112.6",
+      "esco_label": "gerente de administración pública",
       "matched_label": "administrative officer",
       "similarity": 0.9224137982392009,
-      "category": "step_2b_matched",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_112",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -1821,7 +1887,9 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T19:31:17.342+00:00"
     },
     {
       "kesco_code": "1123-25",
@@ -1954,11 +2022,11 @@
       "kesco_title": "Other Government Administrators",
       "isco_code": 1123,
       "unit_group": 1123,
-      "esco_code": "2422.1",
-      "esco_label": "civil service administrative officer",
+      "esco_code": "1112.6",
+      "esco_label": "gerente de administración pública",
       "matched_label": "government administrative officer",
       "similarity": 0.9120825170522527,
-      "category": "step_2b_matched",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_112",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -1968,7 +2036,9 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T19:31:47.444+00:00"
     },
     {
       "kesco_code": "1124-11",
@@ -2206,7 +2276,9 @@
       "reviewed_at": "2025-12-28T01:03:51.513+00:00",
       "review_status": "completed",
       "parent_isco_code": "1113",
-      "parent_isco_label": "Traditional chiefs and heads of village"
+      "parent_isco_label": "Traditional chiefs and heads of village",
+      "parent_esco_code": "1113",
+      "parent_esco_label": "Traditional chiefs and heads of village"
     },
     {
       "kesco_code": "1124-24",
@@ -2523,11 +2595,11 @@
       "kesco_title": "Executive Secretary",
       "isco_code": 1140,
       "unit_group": 1140,
-      "esco_code": "1112.7",
-      "esco_label": "secretary general",
+      "esco_code": "1120.4",
+      "esco_label": "director de operaciones",
       "matched_label": "general secretary",
       "similarity": 0.9507550315330319,
-      "category": "exact",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_11",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -2535,18 +2607,20 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "AUTO_APPROVED",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-04T16:08:58.354+00:00"
     },
     {
       "kesco_code": "1140-14",
       "kesco_title": "Company Secretary",
       "isco_code": 1140,
       "unit_group": 1140,
-      "esco_code": "4226.1",
-      "esco_label": "receptionist",
+      "esco_code": "1120.4",
+      "esco_label": "director de operaciones",
       "matched_label": "company secretary",
       "similarity": 0.9955042816638524,
-      "category": "exact_upgraded",
+      "category": "human_matched",
       "search_strategy": "unconstrained_upgrade",
       "upgraded": true,
       "crosswalk_mismatch": true,
@@ -2554,7 +2628,9 @@
       "original_esco_label": "secretary general",
       "original_similarity": 0.916186201932589,
       "llm_decision": "AUTO_APPROVED",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-04T16:09:09.421+00:00"
     },
     {
       "kesco_code": "1140-15",
@@ -2704,11 +2780,11 @@
       "kesco_title": "University Registrar",
       "isco_code": 1140,
       "unit_group": 1140,
-      "esco_code": "3343.1.2",
-      "esco_label": "education administrator",
+      "esco_code": "1345.1.5",
+      "esco_label": "Director de instituciones de educación superior",
       "matched_label": "university administrator",
       "similarity": 0.9174373856093725,
-      "category": "step_2b_matched",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_11",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -2718,7 +2794,9 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-04T16:07:28.192+00:00"
     },
     {
       "kesco_code": "1140-25",
@@ -2822,11 +2900,11 @@
       "kesco_title": "University President",
       "isco_code": 1140,
       "unit_group": 1140,
-      "esco_code": "1120.3",
-      "esco_label": "chief executive officer",
+      "esco_code": "1345.1.5",
+      "esco_label": "Director de instituciones de educación superior",
       "matched_label": "president",
       "similarity": 0.9439315662565629,
-      "category": "llm_approved",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_11",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -2834,18 +2912,20 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "APPROVE",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-04T16:05:47.271+00:00"
     },
     {
       "kesco_code": "1140-33",
       "kesco_title": "Director, Educational Institution",
       "isco_code": 1140,
       "unit_group": 1140,
-      "esco_code": "1345.1.4",
-      "esco_label": "further education principal",
+      "esco_code": "1120.3",
+      "esco_label": "director ejecutivo",
       "matched_label": "post-secondary school director",
       "similarity": 0.9568361867971131,
-      "category": "exact_upgraded",
+      "category": "human_matched",
       "search_strategy": "unconstrained_upgrade",
       "upgraded": true,
       "crosswalk_mismatch": true,
@@ -2853,7 +2933,9 @@
       "original_esco_label": "public administration manager",
       "original_similarity": 0.9476398522552958,
       "llm_decision": "AUTO_APPROVED",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-04T16:06:50.97+00:00"
     },
     {
       "kesco_code": "1140-34",
@@ -4012,11 +4094,11 @@
       "kesco_title": "Manager, Park",
       "isco_code": 1312,
       "unit_group": 1312,
-      "esco_code": "2133.3",
-      "esco_label": "conservation scientist",
+      "esco_code": "1431.2",
+      "esco_label": "gerente de instalaciones recreativas",
       "matched_label": "park ranger",
       "similarity": 0.9227376340969895,
-      "category": "step_2b_matched",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_1312",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -4026,18 +4108,20 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-04T16:11:50.516+00:00"
     },
     {
       "kesco_code": "1312-14",
       "kesco_title": "Manager, Wildlife Services",
       "isco_code": 1312,
       "unit_group": 1312,
-      "esco_code": "3141.2.5",
-      "esco_label": "zoology technician",
+      "esco_code": "1431.2.6",
+      "esco_label": "curador de zoológico",
       "matched_label": "wildlife manager",
       "similarity": 0.9629190199752461,
-      "category": "exact_upgraded",
+      "category": "human_matched",
       "search_strategy": "unconstrained_upgrade",
       "upgraded": true,
       "crosswalk_mismatch": true,
@@ -4045,18 +4129,20 @@
       "original_esco_label": "aquaculture husbandry manager",
       "original_similarity": 0.8727817811082855,
       "llm_decision": "AUTO_APPROVED",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-04T16:13:00.925+00:00"
     },
     {
       "kesco_code": "1312-15",
       "kesco_title": "Manager, Wildlife Conservancy",
       "isco_code": 1312,
       "unit_group": 1312,
-      "esco_code": "3141.2.5",
-      "esco_label": "zoology technician",
+      "esco_code": "1431.2.6",
+      "esco_label": "curador de zoológico",
       "matched_label": "wildlife manager",
       "similarity": 0.9628287894082161,
-      "category": "exact_upgraded",
+      "category": "human_matched",
       "search_strategy": "unconstrained_upgrade",
       "upgraded": true,
       "crosswalk_mismatch": true,
@@ -4064,7 +4150,9 @@
       "original_esco_label": "aquaculture husbandry manager",
       "original_similarity": 0.8663452758978782,
       "llm_decision": "AUTO_APPROVED",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-04T16:13:13.183+00:00"
     },
     {
       "kesco_code": "1312-16",
@@ -14817,7 +14905,9 @@
       "reviewed_at": "2026-01-06T19:30:55.848+00:00",
       "review_status": "completed",
       "parent_isco_code": "2352",
-      "parent_isco_label": "Special needs teachers"
+      "parent_isco_label": "Special needs teachers",
+      "parent_esco_code": "2352",
+      "parent_esco_label": "Special needs teachers"
     },
     {
       "kesco_code": "2353-14",
@@ -17772,7 +17862,9 @@
       "reviewed_at": "2026-01-06T19:34:01.866+00:00",
       "review_status": "completed",
       "parent_isco_code": "2529",
-      "parent_isco_label": "Database and network professionals not elsewhere classified"
+      "parent_isco_label": "Database and network professionals not elsewhere classified",
+      "parent_esco_code": "2529",
+      "parent_esco_label": "Database and network professionals not elsewhere classified"
     },
     {
       "kesco_code": "2531-12",
@@ -25549,7 +25641,9 @@
       "reviewed_at": "2026-01-06T22:35:38.686+00:00",
       "review_status": "completed",
       "parent_isco_code": "3122",
-      "parent_isco_label": "Manufacturing supervisors"
+      "parent_isco_label": "Manufacturing supervisors",
+      "parent_esco_code": "3122",
+      "parent_esco_label": "Manufacturing supervisors"
     },
     {
       "kesco_code": "3122-54",
@@ -29610,7 +29704,9 @@
       "reviewed_at": "2026-01-06T22:47:54.505+00:00",
       "review_status": "completed",
       "parent_isco_code": "3230",
-      "parent_isco_label": "Traditional and complementary medicine associate professionals"
+      "parent_isco_label": "Traditional and complementary medicine associate professionals",
+      "parent_esco_code": "3230",
+      "parent_esco_label": "Traditional and complementary medicine associate professionals"
     },
     {
       "kesco_code": "3230-15",
@@ -29674,7 +29770,9 @@
       "reviewed_at": "2026-01-06T22:47:41.979+00:00",
       "review_status": "completed",
       "parent_isco_code": "3230",
-      "parent_isco_label": "Traditional and complementary medicine associate professionals"
+      "parent_isco_label": "Traditional and complementary medicine associate professionals",
+      "parent_esco_code": "3230",
+      "parent_esco_label": "Traditional and complementary medicine associate professionals"
     },
     {
       "kesco_code": "3230-18",
@@ -31271,7 +31369,9 @@
       "reviewed_at": "2026-01-06T22:50:15.657+00:00",
       "review_status": "completed",
       "parent_isco_code": "3259",
-      "parent_isco_label": "Health associate professionals not elsewhere classified"
+      "parent_isco_label": "Health associate professionals not elsewhere classified",
+      "parent_esco_code": "3259",
+      "parent_esco_label": "Health associate professionals not elsewhere classified"
     },
     {
       "kesco_code": "3311-11",
@@ -37005,7 +37105,9 @@
       "reviewed_at": "2026-01-06T22:55:53.906+00:00",
       "review_status": "completed",
       "parent_isco_code": "3413",
-      "parent_isco_label": "Religious associate professionals"
+      "parent_isco_label": "Religious associate professionals",
+      "parent_esco_code": "3413",
+      "parent_esco_label": "Religious associate professionals"
     },
     {
       "kesco_code": "3413-15",
@@ -48270,7 +48372,9 @@
       "reviewed_at": "2026-01-07T01:34:12.421+00:00",
       "review_status": "completed",
       "parent_isco_code": "4414",
-      "parent_isco_label": "Scribes and related workers"
+      "parent_isco_label": "Scribes and related workers",
+      "parent_esco_code": "4414",
+      "parent_esco_label": "Scribes and related workers"
     },
     {
       "kesco_code": "4415-11",
@@ -49236,7 +49340,9 @@
       "reviewed_at": "2026-01-14T21:02:03.447+00:00",
       "review_status": "completed",
       "parent_isco_code": "5112",
-      "parent_isco_label": "Transport conductors"
+      "parent_isco_label": "Transport conductors",
+      "parent_esco_code": "5112",
+      "parent_esco_label": "Transport conductors"
     },
     {
       "kesco_code": "5112-16",
@@ -49262,7 +49368,9 @@
       "reviewed_at": "2026-01-14T21:02:13.728+00:00",
       "review_status": "completed",
       "parent_isco_code": "5112",
-      "parent_isco_label": "Transport conductors"
+      "parent_isco_label": "Transport conductors",
+      "parent_esco_code": "5112",
+      "parent_esco_label": "Transport conductors"
     },
     {
       "kesco_code": "5112-17",
@@ -53499,7 +53607,9 @@
       "reviewed_at": "2026-01-14T21:14:13.236+00:00",
       "review_status": "completed",
       "parent_isco_code": "5242",
-      "parent_isco_label": "Sales demonstrators"
+      "parent_isco_label": "Sales demonstrators",
+      "parent_esco_code": "5242",
+      "parent_esco_label": "Sales demonstrators"
     },
     {
       "kesco_code": "5243-13",
@@ -53584,7 +53694,9 @@
       "reviewed_at": "2026-01-14T21:13:54.204+00:00",
       "review_status": "completed",
       "parent_isco_code": "5242",
-      "parent_isco_label": "Sales demonstrators"
+      "parent_isco_label": "Sales demonstrators",
+      "parent_esco_code": "5242",
+      "parent_esco_label": "Sales demonstrators"
     },
     {
       "kesco_code": "5243-17",
@@ -53610,7 +53722,9 @@
       "reviewed_at": "2026-01-14T21:14:24.935+00:00",
       "review_status": "completed",
       "parent_isco_code": "5242",
-      "parent_isco_label": "Sales demonstrators"
+      "parent_isco_label": "Sales demonstrators",
+      "parent_esco_code": "5242",
+      "parent_esco_label": "Sales demonstrators"
     },
     {
       "kesco_code": "5243-18",
@@ -53674,7 +53788,9 @@
       "reviewed_at": "2026-01-14T21:14:33.942+00:00",
       "review_status": "completed",
       "parent_isco_code": "5242",
-      "parent_isco_label": "Sales demonstrators"
+      "parent_isco_label": "Sales demonstrators",
+      "parent_esco_code": "5242",
+      "parent_esco_label": "Sales demonstrators"
     },
     {
       "kesco_code": "5244-11",
@@ -54106,7 +54222,9 @@
       "reviewed_at": "2026-01-14T21:15:45.384+00:00",
       "review_status": "completed",
       "parent_isco_code": "5249",
-      "parent_isco_label": "Sales workers not elsewhere classified"
+      "parent_isco_label": "Sales workers not elsewhere classified",
+      "parent_esco_code": "5249",
+      "parent_esco_label": "Sales workers not elsewhere classified"
     },
     {
       "kesco_code": "5244-37",
@@ -57033,7 +57151,7 @@
       "esco_label": "arboriculturist",
       "matched_label": "crop growing team leader",
       "similarity": 0.825152757236293,
-      "category": "human_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_6111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -57044,7 +57162,11 @@
       "step_2b_reason": "rejected",
       "step_2b_decision": "NONE",
       "review_status": "completed",
-      "review_decision": "MATCH"
+      "review_decision": "MATCH",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T12:27:50.999+00:00"
     },
     {
       "kesco_code": "6111-11",
@@ -57081,7 +57203,7 @@
       "esco_label": "crop production manager",
       "matched_label": "crop producer",
       "similarity": 0.9050394182107443,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_6111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -57091,7 +57213,11 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:41:16.409+00:00"
     },
     {
       "kesco_code": "6111-13",
@@ -57102,7 +57228,7 @@
       "esco_label": "crop production worker",
       "matched_label": "farm worker",
       "similarity": 0.9033245566402937,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_6111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -57112,7 +57238,11 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:41:25.323+00:00"
     },
     {
       "kesco_code": "6111-14",
@@ -57138,7 +57268,9 @@
       "reviewed_at": "2026-01-15T02:46:07.018+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-15",
@@ -57164,7 +57296,9 @@
       "reviewed_at": "2026-01-15T02:46:23.194+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-16",
@@ -57175,7 +57309,7 @@
       "esco_label": "crop production worker",
       "matched_label": "crop growing worker",
       "similarity": 0.9374929476029117,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_6111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -57185,7 +57319,11 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:41:35.063+00:00"
     },
     {
       "kesco_code": "6111-17",
@@ -57196,7 +57334,7 @@
       "esco_label": "crop production worker",
       "matched_label": "crop worker",
       "similarity": 0.935229422938994,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_6111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -57206,7 +57344,11 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:41:41.514+00:00"
     },
     {
       "kesco_code": "6111-18",
@@ -57217,7 +57359,7 @@
       "esco_label": "crop production manager",
       "matched_label": "crop producer",
       "similarity": 0.9262133276624013,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_6111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -57227,7 +57369,11 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:41:47.749+00:00"
     },
     {
       "kesco_code": "6111-21",
@@ -57238,7 +57384,7 @@
       "esco_label": "crop production worker",
       "matched_label": "crop growing worker",
       "similarity": 0.9055301840706147,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_6111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -57248,7 +57394,11 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:41:59.634+00:00"
     },
     {
       "kesco_code": "6111-22",
@@ -57274,7 +57424,9 @@
       "reviewed_at": "2026-01-15T02:46:35.293+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-23",
@@ -57297,10 +57449,12 @@
       "step_2b_decision": "SELECT",
       "review_decision": "NEW_LOCAL",
       "reviewer": "Afsana",
-      "reviewed_at": "2026-01-15T02:46:44.144+00:00",
+      "reviewed_at": "2026-02-03T18:42:09.753+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-24",
@@ -57311,7 +57465,7 @@
       "esco_label": "crop production worker",
       "matched_label": "farm worker",
       "similarity": 0.9006826265009358,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_6111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -57321,7 +57475,11 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:42:17.608+00:00"
     },
     {
       "kesco_code": "6111-25",
@@ -57332,7 +57490,7 @@
       "esco_label": "crop production manager",
       "matched_label": "crop producer",
       "similarity": 0.9014998405027955,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_6111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -57342,7 +57500,11 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:42:23.89+00:00"
     },
     {
       "kesco_code": "6111-26",
@@ -57368,7 +57530,9 @@
       "reviewed_at": "2026-01-15T02:46:53.683+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-27",
@@ -57394,7 +57558,9 @@
       "reviewed_at": "2026-01-15T02:46:59.032+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-28",
@@ -57420,7 +57586,9 @@
       "reviewed_at": "2026-01-15T02:47:06.023+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-31",
@@ -57446,7 +57614,9 @@
       "reviewed_at": "2026-01-15T02:47:11.027+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-32",
@@ -57472,7 +57642,9 @@
       "reviewed_at": "2026-01-15T02:47:15.871+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-33",
@@ -57498,7 +57670,9 @@
       "reviewed_at": "2026-01-15T02:47:20.303+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-34",
@@ -57524,7 +57698,9 @@
       "reviewed_at": "2026-01-15T02:47:25.142+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-35",
@@ -57550,7 +57726,9 @@
       "reviewed_at": "2026-01-15T02:47:29.798+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-36",
@@ -57576,7 +57754,9 @@
       "reviewed_at": "2026-01-15T02:47:35.681+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-37",
@@ -57602,7 +57782,9 @@
       "reviewed_at": "2026-01-15T02:47:42.475+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-38",
@@ -57628,7 +57810,9 @@
       "reviewed_at": "2026-01-15T02:47:47.278+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-41",
@@ -57654,7 +57838,9 @@
       "reviewed_at": "2026-01-15T02:47:52.072+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-42",
@@ -57665,7 +57851,7 @@
       "esco_label": "crop production worker",
       "matched_label": "crop growing worker",
       "similarity": 0.9045578458437156,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_6111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -57675,7 +57861,11 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:42:31.706+00:00"
     },
     {
       "kesco_code": "6111-43",
@@ -57701,7 +57891,9 @@
       "reviewed_at": "2026-01-15T02:47:57.367+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-44",
@@ -57712,7 +57904,7 @@
       "esco_label": "crop production worker",
       "matched_label": "farm worker",
       "similarity": 0.9031109032149263,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_6111",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -57722,7 +57914,11 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:42:37.716+00:00"
     },
     {
       "kesco_code": "6111-45",
@@ -57748,7 +57944,9 @@
       "reviewed_at": "2026-01-15T02:48:02.886+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-46",
@@ -57856,7 +58054,9 @@
       "reviewed_at": "2026-01-15T02:48:32.797+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-53",
@@ -57903,7 +58103,9 @@
       "reviewed_at": "2026-01-15T02:48:40.346+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-55",
@@ -57929,7 +58131,9 @@
       "reviewed_at": "2026-01-15T02:48:50.113+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-56",
@@ -57955,7 +58159,9 @@
       "reviewed_at": "2026-01-15T02:49:25.119+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-57",
@@ -57981,7 +58187,9 @@
       "reviewed_at": "2026-01-15T02:49:32.198+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-58",
@@ -58007,7 +58215,9 @@
       "reviewed_at": "2026-01-15T02:49:39.621+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-61",
@@ -58033,7 +58243,9 @@
       "reviewed_at": "2026-01-15T02:49:45.708+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-62",
@@ -58101,7 +58313,9 @@
       "reviewed_at": "2026-01-15T02:50:20.106+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-65",
@@ -58167,7 +58381,9 @@
       "reviewed_at": "2026-01-15T02:50:25.342+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6111-68",
@@ -58359,7 +58575,9 @@
       "reviewed_at": "2026-01-15T02:50:29.434+00:00",
       "review_status": "completed",
       "parent_isco_code": "6111",
-      "parent_isco_label": "Field crop and vegetable growers"
+      "parent_isco_label": "Field crop and vegetable growers",
+      "parent_esco_code": "6111",
+      "parent_esco_label": "Field crop and vegetable growers"
     },
     {
       "kesco_code": "6112-12",
@@ -58385,7 +58603,9 @@
       "reviewed_at": "2026-01-15T02:51:01.587+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6112-13",
@@ -58411,7 +58631,9 @@
       "reviewed_at": "2026-01-15T02:51:09.729+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6112-14",
@@ -58437,7 +58659,9 @@
       "reviewed_at": "2026-01-15T02:51:15.23+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6112-15",
@@ -58463,7 +58687,9 @@
       "reviewed_at": "2026-01-15T02:51:20.937+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6112-16",
@@ -58489,7 +58715,9 @@
       "reviewed_at": "2026-01-15T02:51:27.751+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6112-17",
@@ -58515,7 +58743,9 @@
       "reviewed_at": "2026-01-15T02:51:47.776+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6112-18",
@@ -58526,7 +58756,7 @@
       "esco_label": "fruit production team leader",
       "matched_label": "fruit farmer",
       "similarity": 0.9851878824134495,
-      "category": "exact",
+      "category": "new_local",
       "search_strategy": "isco_constrained_6112",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -58534,7 +58764,11 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "AUTO_APPROVED",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:42:47.302+00:00"
     },
     {
       "kesco_code": "6112-21",
@@ -58545,7 +58779,7 @@
       "esco_label": "hop farmer",
       "matched_label": "hop farmer",
       "similarity": 0.9762499733056498,
-      "category": "exact",
+      "category": "new_local",
       "search_strategy": "isco_constrained_6112",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -58553,7 +58787,11 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "AUTO_APPROVED",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:43:00.54+00:00"
     },
     {
       "kesco_code": "6112-22",
@@ -58579,7 +58817,9 @@
       "reviewed_at": "2026-01-15T02:52:03.981+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6112-23",
@@ -58590,7 +58830,7 @@
       "esco_label": "fruit production team leader",
       "matched_label": "apple farmer",
       "similarity": 0.9454210501265036,
-      "category": "llm_approved",
+      "category": "new_local",
       "search_strategy": "isco_constrained_6112",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -58598,7 +58838,11 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "APPROVE",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:43:07.423+00:00"
     },
     {
       "kesco_code": "6112-24",
@@ -58609,7 +58853,7 @@
       "esco_label": "farm manager",
       "matched_label": "farmer",
       "similarity": 0.9111912506970787,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_6112",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -58619,7 +58863,11 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:43:12.907+00:00"
     },
     {
       "kesco_code": "6112-25",
@@ -58645,7 +58893,9 @@
       "reviewed_at": "2026-01-15T02:52:08.181+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6112-26",
@@ -58671,7 +58921,9 @@
       "reviewed_at": "2026-01-15T02:52:12.261+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6112-27",
@@ -58682,7 +58934,7 @@
       "esco_label": "fruit production team leader",
       "matched_label": "fruit farmer",
       "similarity": 0.9200538189597725,
-      "category": "llm_approved",
+      "category": "new_local",
       "search_strategy": "isco_constrained_6112",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -58690,7 +58942,11 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "APPROVE",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:43:20.42+00:00"
     },
     {
       "kesco_code": "6112-28",
@@ -58701,7 +58957,7 @@
       "esco_label": "vineyard worker",
       "matched_label": "vineyard worker",
       "similarity": 0.9597661401456672,
-      "category": "exact_upgraded",
+      "category": "new_local",
       "search_strategy": "unconstrained_upgrade",
       "upgraded": true,
       "crosswalk_mismatch": true,
@@ -58709,7 +58965,11 @@
       "original_esco_label": "vineyard manager",
       "original_similarity": 0.9353075812417389,
       "llm_decision": "AUTO_APPROVED",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:51:08.02+00:00"
     },
     {
       "kesco_code": "6112-31",
@@ -58720,7 +58980,7 @@
       "esco_label": "viticulture adviser",
       "matched_label": "viniculturist",
       "similarity": 0.9521033910777543,
-      "category": "exact_upgraded",
+      "category": "new_local",
       "search_strategy": "unconstrained_upgrade",
       "upgraded": true,
       "crosswalk_mismatch": true,
@@ -58728,7 +58988,11 @@
       "original_esco_label": "vineyard cellar master",
       "original_similarity": 0.9405126525748675,
       "llm_decision": "AUTO_APPROVED",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:51:17.955+00:00"
     },
     {
       "kesco_code": "6112-41",
@@ -58754,7 +59018,9 @@
       "reviewed_at": "2026-01-15T02:52:22.725+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6112-42",
@@ -58780,7 +59046,9 @@
       "reviewed_at": "2026-01-15T02:52:26.733+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6112-43",
@@ -58903,7 +59171,9 @@
       "reviewed_at": "2026-01-15T02:52:31.614+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6112-51",
@@ -58929,7 +59199,9 @@
       "reviewed_at": "2026-01-15T02:52:35.179+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6112-52",
@@ -58955,7 +59227,9 @@
       "reviewed_at": "2026-01-15T02:52:39.857+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6112-53",
@@ -58981,7 +59255,9 @@
       "reviewed_at": "2026-01-15T02:52:47.496+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6112-54",
@@ -59007,7 +59283,9 @@
       "reviewed_at": "2026-01-15T02:53:02.671+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6112-55",
@@ -59033,7 +59311,9 @@
       "reviewed_at": "2026-01-15T02:53:07.488+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6112-56",
@@ -59059,7 +59339,9 @@
       "reviewed_at": "2026-01-15T02:53:12.022+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6112-57",
@@ -59085,7 +59367,9 @@
       "reviewed_at": "2026-01-15T02:53:16.177+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6112-58",
@@ -59168,7 +59452,9 @@
       "reviewed_at": "2026-01-15T02:54:05.238+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6112-64",
@@ -59194,7 +59480,9 @@
       "reviewed_at": "2026-01-15T02:54:20.579+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6112-65",
@@ -59296,7 +59584,9 @@
       "reviewed_at": "2026-01-15T02:53:32.082+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6112-72",
@@ -59343,7 +59633,9 @@
       "reviewed_at": "2026-01-15T02:54:38.207+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6112-74",
@@ -59407,7 +59699,9 @@
       "reviewed_at": "2026-01-15T02:54:44.403+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6112-77",
@@ -59433,7 +59727,9 @@
       "reviewed_at": "2026-01-15T02:54:49.302+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6112-78",
@@ -59459,7 +59755,9 @@
       "reviewed_at": "2026-01-15T02:54:55.291+00:00",
       "review_status": "completed",
       "parent_isco_code": "6112",
-      "parent_isco_label": "Tree and shrub crop growers"
+      "parent_isco_label": "Tree and shrub crop growers",
+      "parent_esco_code": "6112",
+      "parent_esco_label": "Tree and shrub crop growers"
     },
     {
       "kesco_code": "6113-11",
@@ -59523,7 +59821,9 @@
       "reviewed_at": "2026-01-15T02:55:51.941+00:00",
       "review_status": "completed",
       "parent_isco_code": "6113",
-      "parent_isco_label": "Gardeners, horticultural and nursery growers"
+      "parent_isco_label": "Gardeners, horticultural and nursery growers",
+      "parent_esco_code": "6113",
+      "parent_esco_label": "Gardeners, horticultural and nursery growers"
     },
     {
       "kesco_code": "6113-14",
@@ -59684,7 +59984,9 @@
       "reviewed_at": "2026-01-15T02:55:59.159+00:00",
       "review_status": "completed",
       "parent_isco_code": "6113",
-      "parent_isco_label": "Gardeners, horticultural and nursery growers"
+      "parent_isco_label": "Gardeners, horticultural and nursery growers",
+      "parent_esco_code": "6113",
+      "parent_esco_label": "Gardeners, horticultural and nursery growers"
     },
     {
       "kesco_code": "6113-24",
@@ -59710,7 +60012,9 @@
       "reviewed_at": "2026-01-15T02:56:05.42+00:00",
       "review_status": "completed",
       "parent_isco_code": "6113",
-      "parent_isco_label": "Gardeners, horticultural and nursery growers"
+      "parent_isco_label": "Gardeners, horticultural and nursery growers",
+      "parent_esco_code": "6113",
+      "parent_esco_label": "Gardeners, horticultural and nursery growers"
     },
     {
       "kesco_code": "6113-25",
@@ -59793,7 +60097,9 @@
       "reviewed_at": "2026-01-15T02:56:09.821+00:00",
       "review_status": "completed",
       "parent_isco_code": "6113",
-      "parent_isco_label": "Gardeners, horticultural and nursery growers"
+      "parent_isco_label": "Gardeners, horticultural and nursery growers",
+      "parent_esco_code": "6113",
+      "parent_esco_label": "Gardeners, horticultural and nursery growers"
     },
     {
       "kesco_code": "6113-31",
@@ -59838,7 +60144,9 @@
       "reviewed_at": "2026-01-15T02:56:15.274+00:00",
       "review_status": "completed",
       "parent_isco_code": "6113",
-      "parent_isco_label": "Gardeners, horticultural and nursery growers"
+      "parent_isco_label": "Gardeners, horticultural and nursery growers",
+      "parent_esco_code": "6113",
+      "parent_esco_label": "Gardeners, horticultural and nursery growers"
     },
     {
       "kesco_code": "6113-33",
@@ -59864,7 +60172,9 @@
       "reviewed_at": "2026-01-15T02:56:19.816+00:00",
       "review_status": "completed",
       "parent_isco_code": "6113",
-      "parent_isco_label": "Gardeners, horticultural and nursery growers"
+      "parent_isco_label": "Gardeners, horticultural and nursery growers",
+      "parent_esco_code": "6113",
+      "parent_esco_label": "Gardeners, horticultural and nursery growers"
     },
     {
       "kesco_code": "6113-34",
@@ -59890,7 +60200,9 @@
       "reviewed_at": "2026-01-15T02:56:23.6+00:00",
       "review_status": "completed",
       "parent_isco_code": "6113",
-      "parent_isco_label": "Gardeners, horticultural and nursery growers"
+      "parent_isco_label": "Gardeners, horticultural and nursery growers",
+      "parent_esco_code": "6113",
+      "parent_esco_label": "Gardeners, horticultural and nursery growers"
     },
     {
       "kesco_code": "6113-35",
@@ -59916,7 +60228,9 @@
       "reviewed_at": "2026-01-15T02:56:37.755+00:00",
       "review_status": "completed",
       "parent_isco_code": "6113",
-      "parent_isco_label": "Gardeners, horticultural and nursery growers"
+      "parent_isco_label": "Gardeners, horticultural and nursery growers",
+      "parent_esco_code": "6113",
+      "parent_esco_label": "Gardeners, horticultural and nursery growers"
     },
     {
       "kesco_code": "6113-36",
@@ -59942,7 +60256,9 @@
       "reviewed_at": "2026-01-15T02:56:42.532+00:00",
       "review_status": "completed",
       "parent_isco_code": "6113",
-      "parent_isco_label": "Gardeners, horticultural and nursery growers"
+      "parent_isco_label": "Gardeners, horticultural and nursery growers",
+      "parent_esco_code": "6113",
+      "parent_esco_label": "Gardeners, horticultural and nursery growers"
     },
     {
       "kesco_code": "6113-37",
@@ -59968,7 +60284,9 @@
       "reviewed_at": "2026-01-15T02:56:48.295+00:00",
       "review_status": "completed",
       "parent_isco_code": "6113",
-      "parent_isco_label": "Gardeners, horticultural and nursery growers"
+      "parent_isco_label": "Gardeners, horticultural and nursery growers",
+      "parent_esco_code": "6113",
+      "parent_esco_label": "Gardeners, horticultural and nursery growers"
     },
     {
       "kesco_code": "6113-38",
@@ -60089,7 +60407,9 @@
       "reviewed_at": "2026-01-15T02:56:55.904+00:00",
       "review_status": "completed",
       "parent_isco_code": "6113",
-      "parent_isco_label": "Gardeners, horticultural and nursery growers"
+      "parent_isco_label": "Gardeners, horticultural and nursery growers",
+      "parent_esco_code": "6113",
+      "parent_esco_label": "Gardeners, horticultural and nursery growers"
     },
     {
       "kesco_code": "6113-46",
@@ -60182,7 +60502,7 @@
       "esco_label": "mixed farmer",
       "matched_label": "mixed farmer",
       "similarity": 0.9587196891665452,
-      "category": "exact_upgraded",
+      "category": "new_local",
       "search_strategy": "unconstrained_upgrade",
       "upgraded": true,
       "crosswalk_mismatch": true,
@@ -60190,7 +60510,11 @@
       "original_esco_label": "crop production manager",
       "original_similarity": 0.9201633779377605,
       "llm_decision": "AUTO_APPROVED",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6114",
+      "parent_esco_label": "Mixed crop growers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:51:25.695+00:00"
     },
     {
       "kesco_code": "6114-12",
@@ -60201,7 +60525,7 @@
       "esco_label": "crop production manager",
       "matched_label": "crop producer",
       "similarity": 0.9144275528006821,
-      "category": "llm_approved",
+      "category": "new_local",
       "search_strategy": "isco_constrained_6114",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -60209,7 +60533,11 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "APPROVE",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6114",
+      "parent_esco_label": "Mixed crop growers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:51:38.223+00:00"
     },
     {
       "kesco_code": "6114-13",
@@ -60292,11 +60620,11 @@
       "kesco_title": "Farmer, livestock",
       "isco_code": 6121,
       "unit_group": 6121,
-      "esco_code": "9212.4",
-      "esco_label": "livestock worker",
+      "esco_code": "6121.1",
+      "esco_label": "ganadero de ganado vacuno",
       "matched_label": "livestock worker",
       "similarity": 0.9594991748404109,
-      "category": "exact_upgraded",
+      "category": "human_matched",
       "search_strategy": "unconstrained_upgrade",
       "upgraded": true,
       "crosswalk_mismatch": true,
@@ -60304,18 +60632,20 @@
       "original_esco_label": "cattle breeder",
       "original_similarity": 0.9220775347607257,
       "llm_decision": "AUTO_APPROVED",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:52:13.605+00:00"
     },
     {
       "kesco_code": "6121-38",
       "kesco_title": "Farmer, livestock: market production",
       "isco_code": 6121,
       "unit_group": 6121,
-      "esco_code": "9212.4",
-      "esco_label": "livestock worker",
+      "esco_code": "6121.1",
+      "esco_label": "ganadero de ganado vacuno",
       "matched_label": "livestock worker",
       "similarity": 0.9105632378557393,
-      "category": "step_2b_matched",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_6121",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -60325,7 +60655,9 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:52:40.336+00:00"
     },
     {
       "kesco_code": "6121-41",
@@ -60360,7 +60692,7 @@
       "esco_label": "mixed farmer",
       "matched_label": "mixed farmer",
       "similarity": 0.9505257927120278,
-      "category": "exact_upgraded",
+      "category": "human_approved",
       "search_strategy": "unconstrained_upgrade",
       "upgraded": true,
       "crosswalk_mismatch": true,
@@ -60368,7 +60700,9 @@
       "original_esco_label": "cattle breeder",
       "original_similarity": 0.8850795206875961,
       "llm_decision": "AUTO_APPROVED",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:53:28.626+00:00"
     },
     {
       "kesco_code": "6121-43",
@@ -60724,7 +61058,9 @@
       "reviewed_at": "2026-01-15T02:57:59.729+00:00",
       "review_status": "completed",
       "parent_isco_code": "6121",
-      "parent_isco_label": "Livestock and dairy producers"
+      "parent_isco_label": "Livestock and dairy producers",
+      "parent_esco_code": "6121",
+      "parent_esco_label": "Livestock and dairy producers"
     },
     {
       "kesco_code": "6121-64",
@@ -61002,7 +61338,9 @@
       "reviewed_at": "2026-01-15T02:58:34.366+00:00",
       "review_status": "completed",
       "parent_isco_code": "6121",
-      "parent_isco_label": "Livestock and dairy producers"
+      "parent_isco_label": "Livestock and dairy producers",
+      "parent_esco_code": "6121",
+      "parent_esco_label": "Livestock and dairy producers"
     },
     {
       "kesco_code": "6121-82",
@@ -61227,7 +61565,9 @@
       "reviewed_at": "2026-01-15T02:59:12.419+00:00",
       "review_status": "completed",
       "parent_isco_code": "6122",
-      "parent_isco_label": "Poultry producers"
+      "parent_isco_label": "Poultry producers",
+      "parent_esco_code": "6122",
+      "parent_esco_label": "Poultry producers"
     },
     {
       "kesco_code": "6122-25",
@@ -61410,7 +61750,9 @@
       "reviewed_at": "2026-01-15T03:00:14.728+00:00",
       "review_status": "completed",
       "parent_isco_code": "6123",
-      "parent_isco_label": "Apiarists and sericulturists"
+      "parent_isco_label": "Apiarists and sericulturists",
+      "parent_esco_code": "6123",
+      "parent_esco_label": "Apiarists and sericulturists"
     },
     {
       "kesco_code": "6123-16",
@@ -61436,7 +61778,9 @@
       "reviewed_at": "2026-01-15T03:00:25.397+00:00",
       "review_status": "completed",
       "parent_isco_code": "6123",
-      "parent_isco_label": "Apiarists and sericulturists"
+      "parent_isco_label": "Apiarists and sericulturists",
+      "parent_esco_code": "6123",
+      "parent_esco_label": "Apiarists and sericulturists"
     },
     {
       "kesco_code": "6123-17",
@@ -61462,7 +61806,9 @@
       "reviewed_at": "2026-01-15T03:00:30.717+00:00",
       "review_status": "completed",
       "parent_isco_code": "6123",
-      "parent_isco_label": "Apiarists and sericulturists"
+      "parent_isco_label": "Apiarists and sericulturists",
+      "parent_esco_code": "6123",
+      "parent_esco_label": "Apiarists and sericulturists"
     },
     {
       "kesco_code": "6123-18",
@@ -61488,7 +61834,9 @@
       "reviewed_at": "2026-01-15T03:00:36.246+00:00",
       "review_status": "completed",
       "parent_isco_code": "6123",
-      "parent_isco_label": "Apiarists and sericulturists"
+      "parent_isco_label": "Apiarists and sericulturists",
+      "parent_esco_code": "6123",
+      "parent_esco_label": "Apiarists and sericulturists"
     },
     {
       "kesco_code": "6123-21",
@@ -61514,7 +61862,9 @@
       "reviewed_at": "2026-01-15T03:00:42.473+00:00",
       "review_status": "completed",
       "parent_isco_code": "6123",
-      "parent_isco_label": "Apiarists and sericulturists"
+      "parent_isco_label": "Apiarists and sericulturists",
+      "parent_esco_code": "6123",
+      "parent_esco_label": "Apiarists and sericulturists"
     },
     {
       "kesco_code": "6123-22",
@@ -61578,7 +61928,9 @@
       "reviewed_at": "2026-01-15T03:00:49.3+00:00",
       "review_status": "completed",
       "parent_isco_code": "6123",
-      "parent_isco_label": "Apiarists and sericulturists"
+      "parent_isco_label": "Apiarists and sericulturists",
+      "parent_esco_code": "6123",
+      "parent_esco_label": "Apiarists and sericulturists"
     },
     {
       "kesco_code": "6124-11",
@@ -61663,7 +62015,9 @@
       "reviewed_at": "2026-01-15T03:01:13.951+00:00",
       "review_status": "completed",
       "parent_isco_code": "6129",
-      "parent_isco_label": "Animal producers not elsewhere classified"
+      "parent_isco_label": "Animal producers not elsewhere classified",
+      "parent_esco_code": "6129",
+      "parent_esco_label": "Animal producers not elsewhere classified"
     },
     {
       "kesco_code": "6124-15",
@@ -61689,7 +62043,9 @@
       "reviewed_at": "2026-01-15T03:01:30.277+00:00",
       "review_status": "completed",
       "parent_isco_code": "6129",
-      "parent_isco_label": "Animal producers not elsewhere classified"
+      "parent_isco_label": "Animal producers not elsewhere classified",
+      "parent_esco_code": "6129",
+      "parent_esco_label": "Animal producers not elsewhere classified"
     },
     {
       "kesco_code": "6124-16",
@@ -61715,7 +62071,9 @@
       "reviewed_at": "2026-01-15T03:01:43.558+00:00",
       "review_status": "completed",
       "parent_isco_code": "6129",
-      "parent_isco_label": "Animal producers not elsewhere classified"
+      "parent_isco_label": "Animal producers not elsewhere classified",
+      "parent_esco_code": "6129",
+      "parent_esco_label": "Animal producers not elsewhere classified"
     },
     {
       "kesco_code": "6124-17",
@@ -61741,7 +62099,9 @@
       "reviewed_at": "2026-01-15T03:01:55.785+00:00",
       "review_status": "completed",
       "parent_isco_code": "6129",
-      "parent_isco_label": "Animal producers not elsewhere classified"
+      "parent_isco_label": "Animal producers not elsewhere classified",
+      "parent_esco_code": "6129",
+      "parent_esco_label": "Animal producers not elsewhere classified"
     },
     {
       "kesco_code": "6124-18",
@@ -61810,7 +62170,9 @@
       "reviewed_at": "2026-01-15T03:02:17.233+00:00",
       "review_status": "completed",
       "parent_isco_code": "6129",
-      "parent_isco_label": "Animal producers not elsewhere classified"
+      "parent_isco_label": "Animal producers not elsewhere classified",
+      "parent_esco_code": "6129",
+      "parent_esco_label": "Animal producers not elsewhere classified"
     },
     {
       "kesco_code": "6124-23",
@@ -61833,10 +62195,12 @@
       "step_2b_decision": "SELECT",
       "review_decision": "NEW_LOCAL",
       "reviewer": "Afsana",
-      "reviewed_at": "2026-01-15T03:02:32.619+00:00",
+      "reviewed_at": "2026-02-03T18:55:26.286+00:00",
       "review_status": "completed",
       "parent_isco_code": "6129",
-      "parent_isco_label": "Animal producers not elsewhere classified"
+      "parent_isco_label": "Animal producers not elsewhere classified",
+      "parent_esco_code": "6129",
+      "parent_esco_label": "Animal producers not elsewhere classified"
     },
     {
       "kesco_code": "6124-24",
@@ -61881,7 +62245,9 @@
       "reviewed_at": "2026-01-15T03:02:45.466+00:00",
       "review_status": "completed",
       "parent_isco_code": "6129",
-      "parent_isco_label": "Animal producers not elsewhere classified"
+      "parent_isco_label": "Animal producers not elsewhere classified",
+      "parent_esco_code": "6129",
+      "parent_esco_label": "Animal producers not elsewhere classified"
     },
     {
       "kesco_code": "6124-26",
@@ -61928,11 +62294,11 @@
       "kesco_title": "Farmer, livestock and crops",
       "isco_code": 6130,
       "unit_group": 6130,
-      "esco_code": "6130.1",
-      "esco_label": "farm manager",
+      "esco_code": "6130.2",
+      "esco_label": "agricultor mixto",
       "matched_label": "farmer",
       "similarity": 0.9316138728786965,
-      "category": "llm_approved",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_6130",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -61940,7 +62306,9 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "APPROVE",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:55:40.32+00:00"
     },
     {
       "kesco_code": "6130-12",
@@ -62042,7 +62410,9 @@
       "reviewed_at": "2026-01-15T03:27:04.972+00:00",
       "review_status": "completed",
       "parent_isco_code": "6210",
-      "parent_isco_label": "Forestry and related workers"
+      "parent_isco_label": "Forestry and related workers",
+      "parent_esco_code": "6210",
+      "parent_esco_label": "Forestry and related workers"
     },
     {
       "kesco_code": "6210-12",
@@ -62089,7 +62459,9 @@
       "reviewed_at": "2026-01-15T03:27:11.706+00:00",
       "review_status": "completed",
       "parent_isco_code": "6210",
-      "parent_isco_label": "Forestry and related workers"
+      "parent_isco_label": "Forestry and related workers",
+      "parent_esco_code": "6210",
+      "parent_esco_label": "Forestry and related workers"
     },
     {
       "kesco_code": "6210-14",
@@ -62115,7 +62487,9 @@
       "reviewed_at": "2026-01-15T03:27:16.741+00:00",
       "review_status": "completed",
       "parent_isco_code": "6210",
-      "parent_isco_label": "Forestry and related workers"
+      "parent_isco_label": "Forestry and related workers",
+      "parent_esco_code": "6210",
+      "parent_esco_label": "Forestry and related workers"
     },
     {
       "kesco_code": "6210-15",
@@ -62183,7 +62557,9 @@
       "reviewed_at": "2026-01-15T03:27:22.349+00:00",
       "review_status": "completed",
       "parent_isco_code": "6210",
-      "parent_isco_label": "Forestry and related workers"
+      "parent_isco_label": "Forestry and related workers",
+      "parent_esco_code": "6210",
+      "parent_esco_label": "Forestry and related workers"
     },
     {
       "kesco_code": "6210-18",
@@ -62209,7 +62585,9 @@
       "reviewed_at": "2026-01-15T03:27:26.585+00:00",
       "review_status": "completed",
       "parent_isco_code": "6210",
-      "parent_isco_label": "Forestry and related workers"
+      "parent_isco_label": "Forestry and related workers",
+      "parent_esco_code": "6210",
+      "parent_esco_label": "Forestry and related workers"
     },
     {
       "kesco_code": "6210-21",
@@ -62235,7 +62613,9 @@
       "reviewed_at": "2026-01-15T03:27:30.688+00:00",
       "review_status": "completed",
       "parent_isco_code": "6210",
-      "parent_isco_label": "Forestry and related workers"
+      "parent_isco_label": "Forestry and related workers",
+      "parent_esco_code": "6210",
+      "parent_esco_label": "Forestry and related workers"
     },
     {
       "kesco_code": "6210-22",
@@ -62261,7 +62641,9 @@
       "reviewed_at": "2026-01-15T03:27:36.393+00:00",
       "review_status": "completed",
       "parent_isco_code": "6210",
-      "parent_isco_label": "Forestry and related workers"
+      "parent_isco_label": "Forestry and related workers",
+      "parent_esco_code": "6210",
+      "parent_esco_label": "Forestry and related workers"
     },
     {
       "kesco_code": "6210-23",
@@ -62329,7 +62711,9 @@
       "reviewed_at": "2026-01-15T03:27:41.019+00:00",
       "review_status": "completed",
       "parent_isco_code": "6210",
-      "parent_isco_label": "Forestry and related workers"
+      "parent_isco_label": "Forestry and related workers",
+      "parent_esco_code": "6210",
+      "parent_esco_label": "Forestry and related workers"
     },
     {
       "kesco_code": "6210-26",
@@ -62397,7 +62781,9 @@
       "reviewed_at": "2026-01-15T03:27:48.005+00:00",
       "review_status": "completed",
       "parent_isco_code": "6210",
-      "parent_isco_label": "Forestry and related workers"
+      "parent_isco_label": "Forestry and related workers",
+      "parent_esco_code": "6210",
+      "parent_esco_label": "Forestry and related workers"
     },
     {
       "kesco_code": "6210-31",
@@ -62480,7 +62866,9 @@
       "reviewed_at": "2026-01-15T03:27:55.087+00:00",
       "review_status": "completed",
       "parent_isco_code": "6210",
-      "parent_isco_label": "Forestry and related workers"
+      "parent_isco_label": "Forestry and related workers",
+      "parent_esco_code": "6210",
+      "parent_esco_label": "Forestry and related workers"
     },
     {
       "kesco_code": "6210-35",
@@ -62506,7 +62894,9 @@
       "reviewed_at": "2026-01-15T03:28:14.706+00:00",
       "review_status": "completed",
       "parent_isco_code": "6210",
-      "parent_isco_label": "Forestry and related workers"
+      "parent_isco_label": "Forestry and related workers",
+      "parent_esco_code": "6210",
+      "parent_esco_label": "Forestry and related workers"
     },
     {
       "kesco_code": "6210-36",
@@ -62532,7 +62922,9 @@
       "reviewed_at": "2026-01-15T03:28:19.779+00:00",
       "review_status": "completed",
       "parent_isco_code": "6210",
-      "parent_isco_label": "Forestry and related workers"
+      "parent_isco_label": "Forestry and related workers",
+      "parent_esco_code": "6210",
+      "parent_esco_label": "Forestry and related workers"
     },
     {
       "kesco_code": "6210-37",
@@ -62657,7 +63049,9 @@
       "reviewed_at": "2026-01-15T03:28:26.958+00:00",
       "review_status": "completed",
       "parent_isco_code": "6210",
-      "parent_isco_label": "Forestry and related workers"
+      "parent_isco_label": "Forestry and related workers",
+      "parent_esco_code": "6210",
+      "parent_esco_label": "Forestry and related workers"
     },
     {
       "kesco_code": "6210-45",
@@ -62683,7 +63077,9 @@
       "reviewed_at": "2026-01-15T03:28:33.097+00:00",
       "review_status": "completed",
       "parent_isco_code": "6210",
-      "parent_isco_label": "Forestry and related workers"
+      "parent_isco_label": "Forestry and related workers",
+      "parent_esco_code": "6210",
+      "parent_esco_label": "Forestry and related workers"
     },
     {
       "kesco_code": "6210-46",
@@ -62709,7 +63105,9 @@
       "reviewed_at": "2026-01-15T03:28:38.006+00:00",
       "review_status": "completed",
       "parent_isco_code": "6210",
-      "parent_isco_label": "Forestry and related workers"
+      "parent_isco_label": "Forestry and related workers",
+      "parent_esco_code": "6210",
+      "parent_esco_label": "Forestry and related workers"
     },
     {
       "kesco_code": "6210-47",
@@ -62735,7 +63133,9 @@
       "reviewed_at": "2026-01-15T03:28:41.992+00:00",
       "review_status": "completed",
       "parent_isco_code": "6210",
-      "parent_isco_label": "Forestry and related workers"
+      "parent_isco_label": "Forestry and related workers",
+      "parent_esco_code": "6210",
+      "parent_esco_label": "Forestry and related workers"
     },
     {
       "kesco_code": "6210-48",
@@ -62956,7 +63356,7 @@
       "esco_label": "aquaculture rearing technician",
       "matched_label": "fish culturist",
       "similarity": 0.919253199279854,
-      "category": "llm_approved",
+      "category": "new_local",
       "search_strategy": "isco_constrained_6221",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -62964,7 +63364,11 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "APPROVE",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6221",
+      "parent_esco_label": "Aquaculture workers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:56:39.938+00:00"
     },
     {
       "kesco_code": "6221-14",
@@ -62975,7 +63379,7 @@
       "esco_label": "water-based aquaculture worker",
       "matched_label": "water-based aquaculture worker",
       "similarity": 0.8877808322585494,
-      "category": "human_approved",
+      "category": "new_local",
       "search_strategy": "isco_constrained_6221",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -62987,8 +63391,10 @@
       "step_2b_decision": "SELECT",
       "review_decision": "APPROVE",
       "reviewer": "Afsana",
-      "reviewed_at": "2026-01-15T03:29:27.084+00:00",
-      "review_status": "completed"
+      "reviewed_at": "2026-02-03T18:56:50.894+00:00",
+      "review_status": "completed",
+      "parent_esco_code": "6221",
+      "parent_esco_label": "Aquaculture workers"
     },
     {
       "kesco_code": "6221-15",
@@ -62999,7 +63405,7 @@
       "esco_label": "water-based aquaculture worker",
       "matched_label": "water-based fisheries worker",
       "similarity": 0.9066197056891155,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_6221",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -63009,7 +63415,11 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6221",
+      "parent_esco_label": "Aquaculture workers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:57:09.869+00:00"
     },
     {
       "kesco_code": "6221-16",
@@ -63924,7 +64334,9 @@
       "reviewed_at": "2026-01-15T03:33:34.13+00:00",
       "review_status": "completed",
       "parent_isco_code": "6310",
-      "parent_isco_label": "Subsistence crop farmers"
+      "parent_isco_label": "Subsistence crop farmers",
+      "parent_esco_code": "6310",
+      "parent_esco_label": "Subsistence crop farmers"
     },
     {
       "kesco_code": "6310-12",
@@ -63950,7 +64362,9 @@
       "reviewed_at": "2026-01-15T03:34:19.208+00:00",
       "review_status": "completed",
       "parent_isco_code": "6310",
-      "parent_isco_label": "Subsistence crop farmers"
+      "parent_isco_label": "Subsistence crop farmers",
+      "parent_esco_code": "6310",
+      "parent_esco_label": "Subsistence crop farmers"
     },
     {
       "kesco_code": "6310-13",
@@ -63961,7 +64375,7 @@
       "esco_label": "crop production worker",
       "matched_label": "crop growing worker",
       "similarity": 0.9147888804852331,
-      "category": "llm_approved",
+      "category": "new_local",
       "search_strategy": "unconstrained",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -63969,7 +64383,11 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "APPROVE",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6310",
+      "parent_esco_label": "Subsistence crop farmers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:57:30.522+00:00"
     },
     {
       "kesco_code": "6310-14",
@@ -63995,7 +64413,9 @@
       "reviewed_at": "2026-01-15T03:34:27.869+00:00",
       "review_status": "completed",
       "parent_isco_code": "6310",
-      "parent_isco_label": "Subsistence crop farmers"
+      "parent_isco_label": "Subsistence crop farmers",
+      "parent_esco_code": "6310",
+      "parent_esco_label": "Subsistence crop farmers"
     },
     {
       "kesco_code": "6310-15",
@@ -64021,7 +64441,9 @@
       "reviewed_at": "2026-01-15T03:34:32.284+00:00",
       "review_status": "completed",
       "parent_isco_code": "6310",
-      "parent_isco_label": "Subsistence crop farmers"
+      "parent_isco_label": "Subsistence crop farmers",
+      "parent_esco_code": "6310",
+      "parent_esco_label": "Subsistence crop farmers"
     },
     {
       "kesco_code": "6310-16",
@@ -64047,7 +64469,9 @@
       "reviewed_at": "2026-01-15T03:34:36.588+00:00",
       "review_status": "completed",
       "parent_isco_code": "6310",
-      "parent_isco_label": "Subsistence crop farmers"
+      "parent_isco_label": "Subsistence crop farmers",
+      "parent_esco_code": "6310",
+      "parent_esco_label": "Subsistence crop farmers"
     },
     {
       "kesco_code": "6310-17",
@@ -64058,7 +64482,7 @@
       "esco_label": "mixed farmer",
       "matched_label": "mixed farmer",
       "similarity": 0.9260501925095979,
-      "category": "llm_approved",
+      "category": "new_local",
       "search_strategy": "unconstrained",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -64066,7 +64490,11 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "APPROVE",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6330",
+      "parent_esco_label": "Subsistence mixed crop and livestock farmers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:58:09.63+00:00"
     },
     {
       "kesco_code": "6310-18",
@@ -64092,7 +64520,9 @@
       "reviewed_at": "2026-01-15T03:34:40.5+00:00",
       "review_status": "completed",
       "parent_isco_code": "6310",
-      "parent_isco_label": "Subsistence crop farmers"
+      "parent_isco_label": "Subsistence crop farmers",
+      "parent_esco_code": "6310",
+      "parent_esco_label": "Subsistence crop farmers"
     },
     {
       "kesco_code": "6310-21",
@@ -64118,7 +64548,9 @@
       "reviewed_at": "2026-01-15T03:34:44.459+00:00",
       "review_status": "completed",
       "parent_isco_code": "6310",
-      "parent_isco_label": "Subsistence crop farmers"
+      "parent_isco_label": "Subsistence crop farmers",
+      "parent_esco_code": "6310",
+      "parent_esco_label": "Subsistence crop farmers"
     },
     {
       "kesco_code": "6310-22",
@@ -64144,7 +64576,9 @@
       "reviewed_at": "2026-01-16T00:09:36.174+00:00",
       "review_status": "completed",
       "parent_isco_code": "6310",
-      "parent_isco_label": "Subsistence crop farmers"
+      "parent_isco_label": "Subsistence crop farmers",
+      "parent_esco_code": "6310",
+      "parent_esco_label": "Subsistence crop farmers"
     },
     {
       "kesco_code": "6310-23",
@@ -64189,7 +64623,9 @@
       "reviewed_at": "2026-01-16T00:09:45.855+00:00",
       "review_status": "completed",
       "parent_isco_code": "6310",
-      "parent_isco_label": "Subsistence crop farmers"
+      "parent_isco_label": "Subsistence crop farmers",
+      "parent_esco_code": "6310",
+      "parent_esco_label": "Subsistence crop farmers"
     },
     {
       "kesco_code": "6320-11",
@@ -64200,7 +64636,7 @@
       "esco_label": "cattle breeder",
       "matched_label": "cattle rearer",
       "similarity": 0.9181158276128631,
-      "category": "llm_approved",
+      "category": "new_local",
       "search_strategy": "unconstrained",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -64208,7 +64644,11 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "APPROVE",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6320",
+      "parent_esco_label": "Subsistence livestock farmers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:58:24.255+00:00"
     },
     {
       "kesco_code": "6320-12",
@@ -64234,7 +64674,9 @@
       "reviewed_at": "2026-01-16T00:09:53.264+00:00",
       "review_status": "completed",
       "parent_isco_code": "6320",
-      "parent_isco_label": "Subsistence livestock farmers"
+      "parent_isco_label": "Subsistence livestock farmers",
+      "parent_esco_code": "6320",
+      "parent_esco_label": "Subsistence livestock farmers"
     },
     {
       "kesco_code": "6320-13",
@@ -64245,7 +64687,7 @@
       "esco_label": "livestock worker",
       "matched_label": "livestock worker",
       "similarity": 0.917420479282786,
-      "category": "llm_approved",
+      "category": "new_local",
       "search_strategy": "unconstrained",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -64253,7 +64695,11 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "APPROVE",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6320",
+      "parent_esco_label": "Subsistence livestock farmers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:58:35.003+00:00"
     },
     {
       "kesco_code": "6320-14",
@@ -64264,7 +64710,7 @@
       "esco_label": "mixed farmer",
       "matched_label": "mixed farmer",
       "similarity": 0.929249987485731,
-      "category": "llm_approved",
+      "category": "new_local",
       "search_strategy": "unconstrained",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -64272,7 +64718,11 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "APPROVE",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6320",
+      "parent_esco_label": "Subsistence livestock farmers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:58:44.976+00:00"
     },
     {
       "kesco_code": "6320-15",
@@ -64283,7 +64733,7 @@
       "esco_label": "pig breeder",
       "matched_label": "pig rearer",
       "similarity": 0.918918532425375,
-      "category": "llm_approved",
+      "category": "new_local",
       "search_strategy": "unconstrained",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -64291,7 +64741,11 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "APPROVE",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6320",
+      "parent_esco_label": "Subsistence livestock farmers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:58:58.216+00:00"
     },
     {
       "kesco_code": "6320-16",
@@ -64302,7 +64756,7 @@
       "esco_label": "sheep breeder",
       "matched_label": "sheep rearer",
       "similarity": 0.9179167862484054,
-      "category": "llm_approved",
+      "category": "new_local",
       "search_strategy": "unconstrained",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -64310,7 +64764,11 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "APPROVE",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6320",
+      "parent_esco_label": "Subsistence livestock farmers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:59:04.959+00:00"
     },
     {
       "kesco_code": "6320-17",
@@ -64340,7 +64798,7 @@
       "esco_label": "poultry breeder",
       "matched_label": "poultry rearer",
       "similarity": 0.9640144996920358,
-      "category": "exact",
+      "category": "new_local",
       "search_strategy": "unconstrained",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -64348,7 +64806,11 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "AUTO_APPROVED",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6320",
+      "parent_esco_label": "Subsistence livestock farmers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:59:11.393+00:00"
     },
     {
       "kesco_code": "6330-11",
@@ -64359,7 +64821,7 @@
       "esco_label": "mixed farmer",
       "matched_label": "mixed farmer",
       "similarity": 0.9507491881369488,
-      "category": "exact",
+      "category": "new_local",
       "search_strategy": "unconstrained",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -64367,7 +64829,11 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "AUTO_APPROVED",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "parent_esco_code": "6330",
+      "parent_esco_label": "Subsistence mixed crop and livestock farmers",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-03T18:59:23.143+00:00"
     },
     {
       "kesco_code": "6330-12",
@@ -64393,7 +64859,9 @@
       "reviewed_at": "2026-01-16T00:10:16.981+00:00",
       "review_status": "completed",
       "parent_isco_code": "6330",
-      "parent_isco_label": "Subsistence mixed crop and livestock farmers"
+      "parent_isco_label": "Subsistence mixed crop and livestock farmers",
+      "parent_esco_code": "6330",
+      "parent_esco_label": "Subsistence mixed crop and livestock farmers"
     },
     {
       "kesco_code": "6330-13",
@@ -64438,7 +64906,9 @@
       "reviewed_at": "2026-01-16T00:10:28.368+00:00",
       "review_status": "completed",
       "parent_isco_code": "6340",
-      "parent_isco_label": "Subsistence fishers, hunters, trappers and gatherers"
+      "parent_isco_label": "Subsistence fishers, hunters, trappers and gatherers",
+      "parent_esco_code": "6340",
+      "parent_esco_label": "Subsistence fishers, hunters, trappers and gatherers"
     },
     {
       "kesco_code": "6340-12",
@@ -64525,7 +64995,9 @@
       "reviewed_at": "2026-01-16T00:10:33.883+00:00",
       "review_status": "completed",
       "parent_isco_code": "6340",
-      "parent_isco_label": "Subsistence fishers, hunters, trappers and gatherers"
+      "parent_isco_label": "Subsistence fishers, hunters, trappers and gatherers",
+      "parent_esco_code": "6340",
+      "parent_esco_label": "Subsistence fishers, hunters, trappers and gatherers"
     },
     {
       "kesco_code": "6340-16",
@@ -64608,7 +65080,9 @@
       "reviewed_at": "2026-01-16T00:10:39.512+00:00",
       "review_status": "completed",
       "parent_isco_code": "6340",
-      "parent_isco_label": "Subsistence fishers, hunters, trappers and gatherers"
+      "parent_isco_label": "Subsistence fishers, hunters, trappers and gatherers",
+      "parent_esco_code": "6340",
+      "parent_esco_label": "Subsistence fishers, hunters, trappers and gatherers"
     },
     {
       "kesco_code": "6340-22",
@@ -64634,7 +65108,9 @@
       "reviewed_at": "2026-01-16T00:10:44.7+00:00",
       "review_status": "completed",
       "parent_isco_code": "6340",
-      "parent_isco_label": "Subsistence fishers, hunters, trappers and gatherers"
+      "parent_isco_label": "Subsistence fishers, hunters, trappers and gatherers",
+      "parent_esco_code": "6340",
+      "parent_esco_label": "Subsistence fishers, hunters, trappers and gatherers"
     },
     {
       "kesco_code": "6340-23",
@@ -66165,7 +66641,9 @@
       "reviewed_at": "2026-01-16T00:14:12.095+00:00",
       "review_status": "completed",
       "parent_isco_code": "7119",
-      "parent_isco_label": "Building frame and related trades workers not elsewhere classified"
+      "parent_isco_label": "Building frame and related trades workers not elsewhere classified",
+      "parent_esco_code": "7119",
+      "parent_esco_label": "Building frame and related trades workers not elsewhere classified"
     },
     {
       "kesco_code": "7119-18",
@@ -69096,7 +69574,9 @@
       "reviewed_at": "2026-01-16T00:22:03.116+00:00",
       "review_status": "completed",
       "parent_isco_code": "7214",
-      "parent_isco_label": "Structural-metal preparers and erectors"
+      "parent_isco_label": "Structural-metal preparers and erectors",
+      "parent_esco_code": "7214",
+      "parent_esco_label": "Structural-metal preparers and erectors"
     },
     {
       "kesco_code": "7214-18",
@@ -73612,11 +74092,11 @@
       "kesco_title": "Balancer, scale",
       "isco_code": 7311,
       "unit_group": 7311,
-      "esco_code": "3113.1.1",
-      "esco_label": "calibration technician",
+      "esco_code": "7543.10.3",
+      "esco_label": "inspector de dispositivos de precisión",
       "matched_label": "calibrator",
       "similarity": 0.8916264769926946,
-      "category": "new_local",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_7311",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -73628,21 +74108,23 @@
       "step_2b_decision": "SELECT",
       "review_decision": "NEW_LOCAL",
       "reviewer": "Afsana",
-      "reviewed_at": "2026-01-16T00:28:45.391+00:00",
+      "reviewed_at": "2026-02-04T14:59:12.913+00:00",
       "review_status": "completed",
       "parent_isco_code": "7311",
-      "parent_isco_label": "Precision-instrument makers and repairers"
+      "parent_isco_label": "Precision-instrument makers and repairers",
+      "parent_esco_code": "7311",
+      "parent_esco_label": "Precision-instrument makers and repairers"
     },
     {
       "kesco_code": "7311-14",
       "kesco_title": "Calibrator, precision instrument",
       "isco_code": 7311,
       "unit_group": 7311,
-      "esco_code": "7311.4",
-      "esco_label": "precision instrument assembler",
+      "esco_code": "7543.10.3",
+      "esco_label": "inspector de dispositivos de precisión",
       "matched_label": "precision instrument calibrator",
       "similarity": 0.9836378948064413,
-      "category": "exact",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_7311",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -73650,18 +74132,20 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "AUTO_APPROVED",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-04T14:59:26.565+00:00"
     },
     {
       "kesco_code": "7311-15",
       "kesco_title": "Calibrator, weights and measures",
       "isco_code": 7311,
       "unit_group": 7311,
-      "esco_code": "3359.8",
-      "esco_label": "weights and measures inspector",
+      "esco_code": "7543.10.3",
+      "esco_label": "inspector de dispositivos de precisión",
       "matched_label": "weights and measures tester",
       "similarity": 0.9582352652991876,
-      "category": "exact_upgraded",
+      "category": "human_matched",
       "search_strategy": "unconstrained_upgrade",
       "upgraded": true,
       "crosswalk_mismatch": true,
@@ -73669,7 +74153,9 @@
       "original_esco_label": "precision instrument assembler",
       "original_similarity": 0.9368572437905044,
       "llm_decision": "AUTO_APPROVED",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-04T14:59:37.261+00:00"
     },
     {
       "kesco_code": "7311-16",
@@ -76747,7 +77233,9 @@
       "reviewed_at": "2026-01-16T00:39:00.441+00:00",
       "review_status": "completed",
       "parent_isco_code": "7318",
-      "parent_isco_label": "Handicraft workers in textile, leather and related materials"
+      "parent_isco_label": "Handicraft workers in textile, leather and related materials",
+      "parent_esco_code": "7318",
+      "parent_esco_label": "Handicraft workers in textile, leather and related materials"
     },
     {
       "kesco_code": "7318-12",
@@ -76840,7 +77328,9 @@
       "reviewed_at": "2026-01-16T00:39:59.304+00:00",
       "review_status": "completed",
       "parent_isco_code": "7318",
-      "parent_isco_label": "Handicraft workers in textile, leather and related materials"
+      "parent_isco_label": "Handicraft workers in textile, leather and related materials",
+      "parent_esco_code": "7318",
+      "parent_esco_label": "Handicraft workers in textile, leather and related materials"
     },
     {
       "kesco_code": "7318-16",
@@ -76866,7 +77356,9 @@
       "reviewed_at": "2026-01-16T00:40:12.726+00:00",
       "review_status": "completed",
       "parent_isco_code": "7318",
-      "parent_isco_label": "Handicraft workers in textile, leather and related materials"
+      "parent_isco_label": "Handicraft workers in textile, leather and related materials",
+      "parent_esco_code": "7318",
+      "parent_esco_label": "Handicraft workers in textile, leather and related materials"
     },
     {
       "kesco_code": "7318-17",
@@ -76975,7 +77467,9 @@
       "reviewed_at": "2026-01-16T00:41:05.747+00:00",
       "review_status": "completed",
       "parent_isco_code": "7318",
-      "parent_isco_label": "Handicraft workers in textile, leather and related materials"
+      "parent_isco_label": "Handicraft workers in textile, leather and related materials",
+      "parent_esco_code": "7318",
+      "parent_esco_label": "Handicraft workers in textile, leather and related materials"
     },
     {
       "kesco_code": "7318-24",
@@ -77205,7 +77699,9 @@
       "reviewed_at": "2026-01-16T00:41:35.75+00:00",
       "review_status": "completed",
       "parent_isco_code": "7318",
-      "parent_isco_label": "Handicraft workers in textile, leather and related materials"
+      "parent_isco_label": "Handicraft workers in textile, leather and related materials",
+      "parent_esco_code": "7318",
+      "parent_esco_label": "Handicraft workers in textile, leather and related materials"
     },
     {
       "kesco_code": "7318-37",
@@ -77625,7 +78121,9 @@
       "reviewed_at": "2026-01-16T00:43:41.871+00:00",
       "review_status": "completed",
       "parent_isco_code": "7319",
-      "parent_isco_label": "Handicraft workers not elsewhere classified"
+      "parent_isco_label": "Handicraft workers not elsewhere classified",
+      "parent_esco_code": "7319",
+      "parent_esco_label": "Handicraft workers not elsewhere classified"
     },
     {
       "kesco_code": "7319-18",
@@ -77636,7 +78134,7 @@
       "esco_label": "jewellery assembler",
       "matched_label": "necklace assembler",
       "similarity": 0.9147266936662808,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_7319",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -77646,7 +78144,11 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-04T15:36:13.456+00:00",
+      "parent_esco_code": "7319",
+      "parent_esco_label": "Handicraft workers not elsewhere classified"
     },
     {
       "kesco_code": "7319-21",
@@ -77657,7 +78159,7 @@
       "esco_label": "jewellery assembler",
       "matched_label": "jewelry craftsperson",
       "similarity": 0.9153301505143336,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_7319",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -77667,7 +78169,11 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-04T15:36:29.333+00:00",
+      "parent_esco_code": "7319",
+      "parent_esco_label": "Handicraft workers not elsewhere classified"
     },
     {
       "kesco_code": "7319-22",
@@ -77731,7 +78237,9 @@
       "reviewed_at": "2026-01-16T00:43:48.366+00:00",
       "review_status": "completed",
       "parent_isco_code": "7319",
-      "parent_isco_label": "Handicraft workers not elsewhere classified"
+      "parent_isco_label": "Handicraft workers not elsewhere classified",
+      "parent_esco_code": "7319",
+      "parent_esco_label": "Handicraft workers not elsewhere classified"
     },
     {
       "kesco_code": "7321-11",
@@ -89141,11 +89649,11 @@
       "kesco_title": "Dehairer, hide and skin",
       "isco_code": 7535,
       "unit_group": 7535,
-      "esco_code": "7535.1",
-      "esco_label": "leather sorter",
+      "esco_code": "7535.2",
+      "esco_label": "curtir",
       "matched_label": "leather grader",
       "similarity": 0.8593748254831288,
-      "category": "new_local",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_7535",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -89157,10 +89665,12 @@
       "step_2b_decision": "SELECT",
       "review_decision": "NEW_LOCAL",
       "reviewer": "Afsana",
-      "reviewed_at": "2026-01-21T17:01:15.196+00:00",
+      "reviewed_at": "2026-02-04T15:39:22.012+00:00",
       "review_status": "completed",
       "parent_isco_code": "7535",
-      "parent_isco_label": "Pelt dressers, tanners and fellmongers"
+      "parent_isco_label": "Pelt dressers, tanners and fellmongers",
+      "parent_esco_code": "7535",
+      "parent_esco_label": "Pelt dressers, tanners and fellmongers"
     },
     {
       "kesco_code": "7535-17",
@@ -95065,7 +95575,7 @@
       "esco_label": "mineral processing operator",
       "matched_label": "mineral processing operator",
       "similarity": 0.9008641502875928,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_8121",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -95075,7 +95585,11 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-04T15:47:05.268+00:00",
+      "parent_esco_code": "8121",
+      "parent_esco_label": "Metal processing plant operators"
     },
     {
       "kesco_code": "8121-63",
@@ -95141,7 +95655,9 @@
       "reviewed_at": "2026-01-21T17:26:11.945+00:00",
       "review_status": "completed",
       "parent_isco_code": "8121",
-      "parent_isco_label": "Metal processing plant operators"
+      "parent_isco_label": "Metal processing plant operators",
+      "parent_esco_code": "8121",
+      "parent_esco_label": "Metal processing plant operators"
     },
     {
       "kesco_code": "8121-66",
@@ -95152,7 +95668,7 @@
       "esco_label": "metal annealer",
       "matched_label": "metal annealer",
       "similarity": 0.9280625736736277,
-      "category": "llm_approved",
+      "category": "new_local",
       "search_strategy": "isco_constrained_8121",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -95160,7 +95676,11 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "APPROVE",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-04T15:45:54.296+00:00",
+      "parent_esco_code": "8121",
+      "parent_esco_label": "Metal processing plant operators"
     },
     {
       "kesco_code": "8121-67",
@@ -95171,7 +95691,7 @@
       "esco_label": "metal furnace operator",
       "matched_label": "steel furnace operator",
       "similarity": 0.903546557026338,
-      "category": "step_2b_matched",
+      "category": "new_local",
       "search_strategy": "isco_constrained_8121",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -95181,7 +95701,11 @@
       "llm_decision": "REJECT",
       "step_2b_reason": "rejected",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-04T15:46:18.417+00:00",
+      "parent_esco_code": "8121",
+      "parent_esco_label": "Metal processing plant operators"
     },
     {
       "kesco_code": "8121-68",
@@ -101632,7 +102156,9 @@
       "reviewer": "Afsana",
       "reviewed_at": "2026-01-21T23:45:10.895+00:00",
       "parent_isco_code": "8160",
-      "parent_isco_label": "Food and related products machine operators"
+      "parent_isco_label": "Food and related products machine operators",
+      "parent_esco_code": "8160",
+      "parent_esco_label": "Food and related products machine operators"
     },
     {
       "kesco_code": "8160-72",
@@ -101677,7 +102203,9 @@
       "reviewer": "Afsana",
       "reviewed_at": "2026-01-21T23:45:20.904+00:00",
       "parent_isco_code": "8160",
-      "parent_isco_label": "Food and related products machine operators"
+      "parent_isco_label": "Food and related products machine operators",
+      "parent_esco_code": "8160",
+      "parent_esco_label": "Food and related products machine operators"
     },
     {
       "kesco_code": "8160-74",
@@ -101722,7 +102250,9 @@
       "reviewer": "Afsana",
       "reviewed_at": "2026-01-21T23:46:43.904+00:00",
       "parent_isco_code": "8160",
-      "parent_isco_label": "Food and related products machine operators"
+      "parent_isco_label": "Food and related products machine operators",
+      "parent_esco_code": "8160",
+      "parent_esco_label": "Food and related products machine operators"
     },
     {
       "kesco_code": "8160-76",
@@ -104682,7 +105212,9 @@
       "reviewer": "Afsana",
       "reviewed_at": "2026-01-21T23:49:30.3+00:00",
       "parent_isco_code": "8189",
-      "parent_isco_label": "Stationary plant and machine operators not elsewhere classified"
+      "parent_isco_label": "Stationary plant and machine operators not elsewhere classified",
+      "parent_esco_code": "8189",
+      "parent_esco_label": "Stationary plant and machine operators not elsewhere classified"
     },
     {
       "kesco_code": "8184-12",
@@ -106771,7 +107303,9 @@
       "reviewer": "Afsana",
       "reviewed_at": "2026-01-21T23:55:33.776+00:00",
       "parent_isco_code": "8321",
-      "parent_isco_label": "Motorcycle drivers"
+      "parent_isco_label": "Motorcycle drivers",
+      "parent_esco_code": "8321",
+      "parent_esco_label": "Motorcycle drivers"
     },
     {
       "kesco_code": "8321-16",
@@ -106797,7 +107331,9 @@
       "reviewer": "Afsana",
       "reviewed_at": "2026-01-21T23:55:26.035+00:00",
       "parent_isco_code": "8321",
-      "parent_isco_label": "Motorcycle drivers"
+      "parent_isco_label": "Motorcycle drivers",
+      "parent_esco_code": "8321",
+      "parent_esco_label": "Motorcycle drivers"
     },
     {
       "kesco_code": "8321-17",
@@ -106844,7 +107380,9 @@
       "reviewer": "Afsana",
       "reviewed_at": "2026-01-21T23:55:45.245+00:00",
       "parent_isco_code": "8321",
-      "parent_isco_label": "Motorcycle drivers"
+      "parent_isco_label": "Motorcycle drivers",
+      "parent_esco_code": "8321",
+      "parent_esco_label": "Motorcycle drivers"
     },
     {
       "kesco_code": "8321-21",
@@ -108305,11 +108843,11 @@
       "kesco_title": "Banksman, mine",
       "isco_code": 8343,
       "unit_group": 8343,
-      "esco_code": "7215.2",
-      "esco_label": "rigger",
+      "esco_code": "8343.4",
+      "esco_label": "operador de grúa de planta de producción",
       "matched_label": "rigger/banksman",
       "similarity": 0.9035198817047008,
-      "category": "step_2b_matched",
+      "category": "human_matched",
       "search_strategy": "isco_constrained_8343",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -108319,7 +108857,9 @@
       "llm_decision": "APPROVE",
       "step_2b_reason": "low_similarity",
       "step_2b_decision": "SELECT",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-04T16:03:31.741+00:00"
     },
     {
       "kesco_code": "8343-13",
@@ -108887,7 +109427,7 @@
       "esco_label": "container crane operator",
       "matched_label": "dock crane operator",
       "similarity": 0.9172551827747977,
-      "category": "llm_approved",
+      "category": "new_local",
       "search_strategy": "isco_constrained_8343",
       "upgraded": false,
       "crosswalk_mismatch": false,
@@ -108895,7 +109435,11 @@
       "original_esco_label": NaN,
       "original_similarity": NaN,
       "llm_decision": "APPROVE",
-      "review_status": "not_required"
+      "review_status": "completed",
+      "reviewer": "Afsana",
+      "reviewed_at": "2026-02-04T16:04:44.247+00:00",
+      "parent_esco_code": "8343",
+      "parent_esco_label": "Crane, hoist and related plant operators"
     },
     {
       "kesco_code": "8343-46",
@@ -109192,7 +109736,9 @@
       "reviewer": "Afsana",
       "reviewed_at": "2026-01-21T23:59:32.798+00:00",
       "parent_isco_code": "8350",
-      "parent_isco_label": "Ships’ deck crews and related workers"
+      "parent_isco_label": "Ships’ deck crews and related workers",
+      "parent_esco_code": "8350",
+      "parent_esco_label": "Ships’ deck crews and related workers"
     },
     {
       "kesco_code": "8350-17",

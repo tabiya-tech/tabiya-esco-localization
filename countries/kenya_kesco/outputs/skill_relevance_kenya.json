@@ -1,0 +1,123 @@
+{
+  "metadata": {
+    "date": "2026-03-12T11:29:16.927533",
+    "model": "gemini-3-flash-preview",
+    "country": "Kenya",
+    "prompt_version": "b530bdb30df8",
+    "config_file": "config/relevance_prompt.md",
+    "total_groups": 1,
+    "total_skill_pairs": 12,
+    "distribution": {
+      "High": 6,
+      "Moderate": 5,
+      "Low": 1
+    }
+  },
+  "groups": {
+    "9510": {
+      "label": "Street and related service workers",
+      "description": "Street and related services workers provide a variety of services on streets and in other public places, including cleaning shoes, washing car windows, running errands, handing out leaflets, looking after property, and providing other on-the-spot street services.\nTasks include -\n(a)  obtaining the materials necessary to perform services;\n(b)  approaching people on the street to offer services;\n(c)  cleaning and polishing shoes;\n(d)  cleaning and polishing car windows;\n(e)  running errands;\n(f)  assisting car drivers to find a parking place and ensuring that the car is not damaged during the driver’s absence;\n(g)  handing out leaflets and free newspapers;\n(h)  receiving immediate payment.\nExamples of the occupations classified here:\n- Car window washer\n- Car guard\n- Errand boy\n- Free newspaper distributor\n- Leaflet distributor\n- Shoe-polisher\n\nSome related occupations classified elsewhere:\n- Service station attendant - 5245\n- Leaflet and newspaper deliverer - 9621",
+      "occupations": [
+        "leaflet distributor"
+      ],
+      "skills": [
+        {
+          "skill_id": "687671b5ebd2bf665349a910",
+          "skill_label": "geographic areas",
+          "skill_type": "knowledge",
+          "relevance_score": "High",
+          "reasoning_economist": "Navigating high-traffic zones like matatu stages, markets, and CBD intersections is critical for maximizing reach in a street-based service economy.",
+          "kenyan_adaptation": "N/A"
+        },
+        {
+          "skill_id": "687671b5ebd2bf665349a92c",
+          "skill_label": "work in outdoor conditions",
+          "skill_type": "skill/competence",
+          "relevance_score": "High",
+          "reasoning_economist": "Street work in Kenya involves constant exposure to equatorial sun, dust, and seasonal heavy rains, making physical resilience a core productivity factor.",
+          "kenyan_adaptation": "N/A"
+        },
+        {
+          "skill_id": "687671b5ebd2bf665349aab2",
+          "skill_label": "characteristics of products",
+          "skill_type": "knowledge",
+          "relevance_score": "Moderate",
+          "reasoning_economist": "Workers are often expected to act as informal brand ambassadors; however, deep technical knowledge is secondary to basic utility and price points.",
+          "kenyan_adaptation": "Knowledge is typically acquired through verbal briefings or WhatsApp group updates rather than formal product manuals."
+        },
+        {
+          "skill_id": "687671b5ebd2bf665349b080",
+          "skill_label": "hang advertising posters",
+          "skill_type": "skill/competence",
+          "relevance_score": "High",
+          "reasoning_economist": "Physical poster placement on walls, kiosks, and utility poles remains a dominant form of local marketing for SMEs and political campaigns.",
+          "kenyan_adaptation": "N/A"
+        },
+        {
+          "skill_id": "687671b5ebd2bf665349b2e5",
+          "skill_label": "set up advertising material",
+          "skill_type": "skill/competence",
+          "relevance_score": "Moderate",
+          "reasoning_economist": "While formal urban furniture exists, most street advertising involves temporary setups like roll-up banners or placards at busy roundabouts.",
+          "kenyan_adaptation": "Focuses on the rapid setup and teardown of mobile banners and placards at temporary high-traffic locations."
+        },
+        {
+          "skill_id": "687671b5ebd2bf665349b610",
+          "skill_label": "demonstrate professional attitude to clients",
+          "skill_type": "skill/competence",
+          "relevance_score": "High",
+          "reasoning_economist": "In a crowded informal market, interpersonal trust and 'customer care' are essential for securing repeat business and avoiding harassment from authorities.",
+          "kenyan_adaptation": "N/A"
+        },
+        {
+          "skill_id": "687671b5ebd2bf665349b860",
+          "skill_label": "follow written instructions",
+          "skill_type": "skill/competence",
+          "relevance_score": "Moderate",
+          "reasoning_economist": "Basic literacy is high, but the workflow is rarely governed by formal manuals; instructions are usually dynamic and task-oriented.",
+          "kenyan_adaptation": "Instructions are primarily received and followed via WhatsApp messages, voice notes, or SMS rather than printed documents."
+        },
+        {
+          "skill_id": "687671b9ebd2bf665349b9f4",
+          "skill_label": "deliver leaflets",
+          "skill_type": "skill/competence",
+          "relevance_score": "Moderate",
+          "reasoning_economist": "The lack of a standardized residential mailbox system in many areas makes traditional 'mailbox' delivery less common than direct hand-to-hand distribution.",
+          "kenyan_adaptation": "Leaflets are distributed hand-to-hand in traffic, at bus stops, or slipped under shop doors in commercial hubs."
+        },
+        {
+          "skill_id": "687671b9ebd2bf665349c015",
+          "skill_label": "liaise with advertising agencies",
+          "skill_type": "skill/competence",
+          "relevance_score": "Low",
+          "reasoning_economist": "Street workers are typically hired through informal networks or small-scale supervisors, rarely interacting with high-level agency structures.",
+          "kenyan_adaptation": "N/A"
+        },
+        {
+          "skill_id": "687671baebd2bf665349c5b5",
+          "skill_label": "hand out flyers",
+          "skill_type": "skill/competence",
+          "relevance_score": "High",
+          "reasoning_economist": "This is a primary entry-level role in the urban informal sector, particularly for promoting retail offers, religious events, or educational services.",
+          "kenyan_adaptation": "N/A"
+        },
+        {
+          "skill_id": "687671baebd2bf665349c6c6",
+          "skill_label": "operate GPS systems",
+          "skill_type": "skill/competence",
+          "relevance_score": "Moderate",
+          "reasoning_economist": "Specialized GPS hardware is rare; however, the use of Google Maps on smartphones is increasingly common for navigating unfamiliar estates.",
+          "kenyan_adaptation": "Utilizing Google Maps or WhatsApp 'Live Location' features on a standard smartphone."
+        },
+        {
+          "skill_id": "687671bdebd2bf665349d543",
+          "skill_label": "demonstrate products' features",
+          "skill_type": "skill/competence",
+          "relevance_score": "High",
+          "reasoning_economist": "Street workers often perform hybrid roles where they must explain the value of a product (e.g., a solar lamp or a mobile app) to convert a passer-by into a lead.",
+          "kenyan_adaptation": "N/A"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,978 @@
+{
+  "occupations": [
+    {
+      "code": "1112_1",
+      "label": "auditor general",
+      "description": "Auditor generals oversee the independent auditing of government accounts and public sector entities. They ensure accountability, efficiency, and legality in the use of public funds, reporting findings",
+      "parent_group": "1112"
+    },
+    {
+      "code": "1112_2",
+      "label": "head of government",
+      "description": "Heads of government lead the executive branch, formulate and implement national policies, direct domestic and foreign affairs, and represent the country on the international stage.",
+      "parent_group": "1112"
+    },
+    {
+      "code": "1112_3",
+      "label": "senior judiciary member",
+      "description": "Senior judiciary members lead national judicial systems or high-level legal offices, interpret laws, administer justice, and provide legal counsel to governments, ensuring legal and constitutional int",
+      "parent_group": "1112"
+    },
+    {
+      "code": "1112_4",
+      "label": "senior local government official",
+      "description": "Senior local government officials direct and coordinate the formulation and implementation of public policies, laws, and services at the sub-national or regional administrative level, ensuring effecti",
+      "parent_group": "1112"
+    },
+    {
+      "code": "1113_1",
+      "label": "village chief",
+      "description": "Village chiefs lead and govern local communities, mediating disputes, managing communal resources, and representing their village in external matters. They uphold traditional laws and customs.",
+      "parent_group": "1113"
+    },
+    {
+      "code": "1114_1",
+      "label": "political party leader",
+      "description": "Political party leaders guide party strategy, articulate policy positions, and campaign to win elections and influence government policy or form a ruling administration. They represent their party pub",
+      "parent_group": "1114"
+    },
+    {
+      "code": "2352_1",
+      "label": "special needs teacher",
+      "description": "Special needs teachers instruct students with diverse physical, intellectual, emotional, or learning disabilities. They adapt curricula and employ specialized pedagogical approaches to meet individual",
+      "parent_group": "2352"
+    },
+    {
+      "code": "2529_1",
+      "label": "digital currency miner",
+      "description": "Digital currency miners configure and operate specialized computing systems to validate blockchain transactions and generate new digital currency units, often receiving rewards.",
+      "parent_group": "2529"
+    },
+    {
+      "code": "2641_1",
+      "label": "indexer",
+      "description": "Indexers analyse the content of books, journals, and other documents to identify key terms and concepts. They create comprehensive indexes, assigning relevant headings and page locators to facilitate ",
+      "parent_group": "2641"
+    },
+    {
+      "code": "3119_1",
+      "label": "impression taker",
+      "description": "Impression takers prepare materials and subjects, then accurately capture physical impressions using specialised techniques and materials, often for crafting custom devices or models.",
+      "parent_group": "3119"
+    },
+    {
+      "code": "3122_1",
+      "label": "musical instrument technician",
+      "description": "Musical instrument technicians oversee the crafting, assembly, tuning, and repair of musical instruments, coordinating production and ensuring adherence to precise specifications and quality standards",
+      "parent_group": "3122"
+    },
+    {
+      "code": "3230_1",
+      "label": "bone-setter",
+      "description": "Bone-setters diagnose and treat musculoskeletal injuries like fractures, dislocations, and sprains using traditional, non-surgical manipulation techniques to restore alignment and function, often empl",
+      "parent_group": "3230"
+    },
+    {
+      "code": "3230_2",
+      "label": "village healer",
+      "description": "Village healers provide traditional and culturally-specific healthcare services to their communities, integrating herbal remedies, spiritual practices, and traditional counseling to address physical, ",
+      "parent_group": "3230"
+    },
+    {
+      "code": "3259_1",
+      "label": "trichologist",
+      "description": "Trichologists diagnose and treat disorders and diseases of the hair and scalp. They conduct consultations, recommend treatments, and provide advice on hair care and scalp health.",
+      "parent_group": "3259"
+    },
+    {
+      "code": "3413_1",
+      "label": "faith healer",
+      "description": "Faith healers provide spiritual and traditional healing services to individuals seeking relief from physical, mental, or spiritual ailments. They often use prayer, rituals, and traditional remedies ro",
+      "parent_group": "3413"
+    },
+    {
+      "code": "4229_1",
+      "label": "eligibility consultant",
+      "description": "Eligibility consultants assess client information to determine qualification for specific programs or services, advise applicants on criteria, required documentation, and application processes, ensuri",
+      "parent_group": "4229"
+    },
+    {
+      "code": "4414_1",
+      "label": "public writer",
+      "description": "Public writers assist individuals by drafting, reviewing, and correcting personal, administrative, and legal documents. They help clients overcome literacy barriers or navigate bureaucratic processes ",
+      "parent_group": "4414"
+    },
+    {
+      "code": "4419_1",
+      "label": "press clipper",
+      "description": "Press clippers meticulously identify, cut, and compile relevant articles and mentions from print and digital media sources. They provide media monitoring and information gathering services for public ",
+      "parent_group": "4419"
+    },
+    {
+      "code": "5112_1",
+      "label": "ferryboat conductor",
+      "description": "Ferryboat conductors manage passenger movement, ensure safety protocols are followed on board ferries, collect fares, and provide information to travelers during waterborne journeys.",
+      "parent_group": "5112"
+    },
+    {
+      "code": "5112_2",
+      "label": "hovercraft conductor",
+      "description": "Hovercraft conductors ensure the safety and comfort of passengers on hovercrafts. They collect fares, check tickets, provide information, and assist with boarding and disembarking, maintaining order a",
+      "parent_group": "5112"
+    },
+    {
+      "code": "5169_1",
+      "label": "traditional medicine practitioner",
+      "description": "Traditional medicine practitioners diagnose and treat ailments using indigenous knowledge, herbal remedies, and traditional healing practices. They provide culturally specific health advice and suppor",
+      "parent_group": "5169"
+    },
+    {
+      "code": "5242_1",
+      "label": "party plan sales demonstrator",
+      "description": "Party plan sales demonstrators present products to groups at social gatherings, often in a private home setting, demonstrating features and facilitating direct sales. They encourage attendees to host ",
+      "parent_group": "5242"
+    },
+    {
+      "code": "5249_1",
+      "label": "online seller",
+      "description": "Online sellers market, list, and sell goods or services through e-commerce platforms, social media, or dedicated websites. They manage inventory, process orders, handle customer communication, and arr",
+      "parent_group": "5249"
+    },
+    {
+      "code": "6111_1",
+      "label": "field crop farmer",
+      "description": "Field crop farmers cultivate various field crops such as cereals, grains, tubers, and industrial crops. They prepare soil, plant seeds, apply fertilisers and pesticides, irrigate, monitor crop health,",
+      "parent_group": "6111"
+    },
+    {
+      "code": "6111_2",
+      "label": "vegetable farmer",
+      "description": "Vegetable farmers cultivate and harvest various types of vegetables for commercial sale. They prepare soil, plant, irrigate, fertilise, manage pests and diseases, and perform post-harvest handling, of",
+      "parent_group": "6111"
+    },
+    {
+      "code": "6112_1",
+      "label": "shrub crop farmer",
+      "description": "Shrub crop farmers cultivate, grow, and harvest various shrub-based crops like tea, berries, or ornamental shrubs. They manage all aspects of production, from soil preparation and planting to pest con",
+      "parent_group": "6112"
+    },
+    {
+      "code": "6112_2",
+      "label": "tree crop farmer",
+      "description": "Tree crop farmers cultivate and harvest a variety of crops from trees and shrubs, applying agricultural techniques for soil preparation, planting, pruning, disease control, and harvesting to ensure op",
+      "parent_group": "6112"
+    },
+    {
+      "code": "6112_3",
+      "label": "vineyard farmer",
+      "description": "Vineyard farmers cultivate grapevines, performing tasks from planting and pruning to pest control and harvesting, ensuring high-quality grape production for wine or table consumption.",
+      "parent_group": "6112"
+    },
+    {
+      "code": "6113_1",
+      "label": "flower farmer",
+      "description": "Flower farmers cultivate and harvest various types of flowers for commercial sale, managing soil, irrigation, pest control, and post-harvest handling for wholesale or retail distribution.",
+      "parent_group": "6113"
+    },
+    {
+      "code": "6113_2",
+      "label": "mushroom farmer",
+      "description": "Mushroom farmers cultivate various mushroom species in controlled environments, managing substrate preparation, spawning, environmental conditions, and harvesting for commercial sale.",
+      "parent_group": "6113"
+    },
+    {
+      "code": "6113_3",
+      "label": "nursery grower",
+      "description": "Nursery growers cultivate and propagate plants, trees, and shrubs in controlled nursery environments for commercial sale or eventual transplanting. They prepare growing media, sow seeds, take cuttings",
+      "parent_group": "6113"
+    },
+    {
+      "code": "6113_4",
+      "label": "reed grower",
+      "description": "Reed growers cultivate and harvest specific wetland plants like reeds, osiers, and willows for commercial purposes such as thatch, basketry, or biomass, managing their plots and harvesting cycles.",
+      "parent_group": "6113"
+    },
+    {
+      "code": "6114_1",
+      "label": "mixed crop farmer",
+      "description": "Mixed crop farmers cultivate, tend, and harvest diverse crops on a single farm for market production. They manage all stages from land preparation and planting to harvesting, ensuring optimal yield an",
+      "parent_group": "6114"
+    },
+    {
+      "code": "6121_1",
+      "label": "dairy farmer",
+      "description": "Dairy farmers manage the operations of dairy farms, overseeing the breeding, feeding, health, and milking of dairy cattle to produce milk and dairy products.",
+      "parent_group": "6121"
+    },
+    {
+      "code": "6121_2",
+      "label": "livestock farmer",
+      "description": "Livestock farmers manage farms dedicated to raising various animals (e.g., cattle, sheep, pigs) for agricultural production. They oversee animal husbandry, feeding, health, welfare, and farm business ",
+      "parent_group": "6121"
+    },
+    {
+      "code": "6122_1",
+      "label": "farm incubator operator",
+      "description": "Farm incubator operators manage and operate incubation equipment on poultry farms, monitoring environmental conditions for eggs to ensure optimal development and successful hatching of chicks.",
+      "parent_group": "6122"
+    },
+    {
+      "code": "6123_1",
+      "label": "sericulturist",
+      "description": "Sericulturists cultivate silkworms for raw silk production. They manage the entire life cycle, including feeding, disease prevention, and maintaining optimal environmental conditions for silkworm heal",
+      "parent_group": "6123"
+    },
+    {
+      "code": "6129_1",
+      "label": "exotic animals breeder",
+      "description": "Exotic animals breeders breed and raise various non-domesticated or wild animal species for purposes such as conservation, zoological display, commercial products (e.g., meat, skin), or specialty pet ",
+      "parent_group": "6129"
+    },
+    {
+      "code": "6210_1",
+      "label": "charcoal burner",
+      "description": "Charcoal burners carbonize wood in traditional kilns or pits, carefully managing the burning process to produce charcoal for fuel. They select and prepare timber, construct the burning structures, and",
+      "parent_group": "6210"
+    },
+    {
+      "code": "6210_2",
+      "label": "logging and timber harvesting worker",
+      "description": "Logging and timber harvesting workers fell, delimb, buck, and transport trees and timber. They mark trees, scale logs, and prepare forest products for transport, distinguishing their role from conserv",
+      "parent_group": "6210"
+    },
+    {
+      "code": "6210_3",
+      "label": "logging worker",
+      "description": "Logging workers fell, delimb, and buck trees, and load logs for transport. They operate chainsaws and heavy machinery, performing the physical work of timber harvesting and initial land clearing.",
+      "parent_group": "6210"
+    },
+    {
+      "code": "6221_1",
+      "label": "fish farmer",
+      "description": "Fish farmers cultivate aquatic organisms in ponds, tanks, or other systems. They feed and monitor the health of fish and shellfish, manage water quality, maintain facilities, and participate in harves",
+      "parent_group": "6221"
+    },
+    {
+      "code": "6221_2",
+      "label": "oyster farmer",
+      "description": "Oyster farmers cultivate, nurture, and harvest oysters in aquatic environments. They prepare beds or deploy growing structures, monitor oyster health and growth, manage water quality, and conduct harv",
+      "parent_group": "6221"
+    },
+    {
+      "code": "6221_3",
+      "label": "seafood farmer",
+      "description": "Seafood farmers cultivate and rear aquatic organisms, monitoring their health, water quality, and environmental conditions in various aquaculture systems to ensure optimal growth and production.",
+      "parent_group": "6221"
+    },
+    {
+      "code": "6310_1",
+      "label": "field crop subsistence farmer",
+      "description": "Field crop subsistence farmers cultivate staple crops like cereals, legumes, and tubers primarily for their household's direct consumption. They manage all stages from planting to harvesting, often em",
+      "parent_group": "6310"
+    },
+    {
+      "code": "6310_2",
+      "label": "vegetable subsistence farmer",
+      "description": "Vegetable subsistence farmers cultivate small plots of land, planting, tending, and harvesting various vegetables primarily to feed their own households, often using traditional techniques and produci",
+      "parent_group": "6310"
+    },
+    {
+      "code": "6320_1",
+      "label": "livestock subsistence farmer",
+      "description": "Livestock subsistence farmers raise various animals like cattle, goats, pigs, and poultry primarily for their own household's food consumption and basic needs, often selling small surpluses locally. T",
+      "parent_group": "6320"
+    },
+    {
+      "code": "6320_2",
+      "label": "poultry subsistence farmer",
+      "description": "Poultry subsistence farmers raise birds (chickens, ducks, geese) primarily for their household's own consumption of meat and eggs. They manage small flocks, providing feed, water, and basic health car",
+      "parent_group": "6320"
+    },
+    {
+      "code": "6330_1",
+      "label": "mixed crop subsistence farmer",
+      "description": "Mixed crop subsistence farmers cultivate a variety of crops on small plots, primarily for their household's food consumption and direct local exchange, employing traditional farming techniques.",
+      "parent_group": "6330"
+    },
+    {
+      "code": "6340_1",
+      "label": "subsistence collector",
+      "description": "Subsistence collectors gather wild flora and fauna, such as plants, fruits, nuts, insects, and other natural resources directly from the environment, primarily for personal or family consumption.",
+      "parent_group": "6340"
+    },
+    {
+      "code": "6340_2",
+      "label": "subsistence fisherman",
+      "description": "Subsistence fishermen catch fish using traditional or simple methods, primarily for their own and their family's consumption, or for direct exchange within their local community, rather than for comme",
+      "parent_group": "6340"
+    },
+    {
+      "code": "6340_3",
+      "label": "subsistence food gatherer",
+      "description": "Subsistence food gatherers forage for wild plants, fruits, nuts, roots, and other natural resources directly from their environment to feed themselves and their families, often using traditional metho",
+      "parent_group": "6340"
+    },
+    {
+      "code": "7119_1",
+      "label": "pool installer",
+      "description": "Pool installers excavate sites, lay foundations, assemble and install swimming pool structures, liners, and shells. They connect plumbing, filtration systems, and finish surrounding areas, ensuring fu",
+      "parent_group": "7119"
+    },
+    {
+      "code": "7214_1",
+      "label": "structural metal marker",
+      "description": "Structural metal markers lay out and mark reference lines, points, and dimensions on structural metal components, guiding cutting, shaping, and assembly processes according to technical drawings.",
+      "parent_group": "7214"
+    },
+    {
+      "code": "7318_1",
+      "label": "artificial flower maker",
+      "description": "Artificial flower makers craft lifelike botanical arrangements and individual flowers using various materials like fabric, paper, and wire. They meticulously cut, shape, and assemble components to rep",
+      "parent_group": "7318"
+    },
+    {
+      "code": "7318_2",
+      "label": "textile fibre preparer",
+      "description": "Textile fibre preparers clean, sort, and disentangle raw natural or synthetic fibres using manual techniques, making them ready for spinning, weaving, or felting by handicraft workers.",
+      "parent_group": "7318"
+    },
+    {
+      "code": "7318_3",
+      "label": "wool scourer",
+      "description": "Wool scourers clean and prepare raw wool by washing and drying it to remove impurities such as grease and dirt, making it suitable for spinning and weaving.",
+      "parent_group": "7318"
+    },
+    {
+      "code": "7319_1",
+      "label": "bead accessories maker",
+      "description": "Bead accessories makers design, string, and assemble beads and other materials to create or repair decorative items such as necklaces, bracelets, earrings, and belts. They meticulously select componen",
+      "parent_group": "7319"
+    },
+    {
+      "code": "7319_2",
+      "label": "bone articles maker",
+      "description": "Bone articles makers carve, shape, and polish bone, horn, or similar animal-derived materials to create decorative, functional, or cultural artefacts. They use hand tools or small machines for intrica",
+      "parent_group": "7319"
+    },
+    {
+      "code": "7544_1",
+      "label": "weed controller",
+      "description": "Weed controllers identify, evaluate, and apply methods to control unwanted plant growth. They use herbicides, manual removal, mechanical tools, or biological approaches in various settings to eliminat",
+      "parent_group": "7544"
+    },
+    {
+      "code": "7549_1",
+      "label": "florist",
+      "description": "Florists arrange and display fresh, dried, and artificial flowers, foliage, and other materials into decorative bouquets, wreaths, and floral arrangements. They consult with customers, advise on plant",
+      "parent_group": "7549"
+    },
+    {
+      "code": "8121_1",
+      "label": "metal grading and sorting operator",
+      "description": "Metal grading and sorting operators inspect, classify, and separate metal materials based on quality, type, and size. They ensure metals meet specifications for further processing or recycling, often ",
+      "parent_group": "8121"
+    },
+    {
+      "code": "8121_2",
+      "label": "metal refining operator",
+      "description": "Metal refining operators operate and monitor equipment to purify and process crude or scrap metals, removing impurities to achieve specified grades and compositions for further use.",
+      "parent_group": "8121"
+    },
+    {
+      "code": "8160_1",
+      "label": "food sterilising machine operator",
+      "description": "Food sterilising machine operators operate and monitor machinery designed to sterilise food products, ensuring compliance with food safety and quality standards, and maintaining product shelf-life.",
+      "parent_group": "8160"
+    },
+    {
+      "code": "8160_2",
+      "label": "tea processing machine operator",
+      "description": "Tea processing machine operators tend and operate machines that wither, roll, ferment, dry, sort, and pack tea leaves. They monitor machine performance and ensure quality standards are met throughout ",
+      "parent_group": "8160"
+    },
+    {
+      "code": "8189_1",
+      "label": "stationery manufacturing machine operator",
+      "description": "Stationery manufacturing machine operators set up, operate, and monitor machinery producing various finished stationery items like pencils, pens, or notebooks, ensuring quality and efficiency.",
+      "parent_group": "8189"
+    },
+    {
+      "code": "8321_1",
+      "label": "motorcycle driver",
+      "description": "Motorcycle drivers operate two- or three-wheeled motorized vehicles, such as motorcycles, motor tricycles, or motorized rickshaws, to transport passengers or goods, excluding specialized parcel delive",
+      "parent_group": "8321"
+    },
+    {
+      "code": "8343_1",
+      "label": "canal lock operator",
+      "description": "Canal lock operators manage and control the operation of canal and port locks, sluice gates, and associated mechanisms to regulate water levels and enable the safe passage of vessels.",
+      "parent_group": "8343"
+    },
+    {
+      "code": "8350_1",
+      "label": "ferry driver",
+      "description": "Ferry drivers operate passenger and vehicle ferries, navigating waterways according to schedules and safety regulations. They are responsible for the safe transport of people and goods, overseeing the",
+      "parent_group": "8350"
+    }
+  ],
+  "skill_groups": {
+    "S": [
+      {
+        "code": "S",
+        "label": "skills",
+        "level": 1
+      },
+      {
+        "code": "S1",
+        "label": "communication, collaboration and creativity",
+        "level": 2
+      },
+      {
+        "code": "S1.0",
+        "label": "communication, collaboration and creativity",
+        "level": 4
+      },
+      {
+        "code": "S1.1",
+        "label": "negotiating",
+        "level": 4
+      },
+      {
+        "code": "S1.2",
+        "label": "liaising and networking",
+        "level": 4
+      },
+      {
+        "code": "S1.3",
+        "label": "teaching and training",
+        "level": 4
+      },
+      {
+        "code": "S1.4",
+        "label": "presenting information",
+        "level": 4
+      },
+      {
+        "code": "S1.5",
+        "label": "advising and consulting",
+        "level": 4
+      },
+      {
+        "code": "S1.6",
+        "label": "promoting, selling and purchasing",
+        "level": 4
+      },
+      {
+        "code": "S1.7",
+        "label": "obtaining information verbally",
+        "level": 4
+      },
+      {
+        "code": "S1.8",
+        "label": "working with others",
+        "level": 4
+      },
+      {
+        "code": "S1.9",
+        "label": "solving problems",
+        "level": 4
+      },
+      {
+        "code": "S2",
+        "label": "information skills",
+        "level": 2
+      },
+      {
+        "code": "S2.0",
+        "label": "information skills",
+        "level": 4
+      },
+      {
+        "code": "S2.1",
+        "label": "conducting studies, investigations and examinations",
+        "level": 4
+      },
+      {
+        "code": "S2.2",
+        "label": "documenting and recording information",
+        "level": 4
+      },
+      {
+        "code": "S2.3",
+        "label": "managing information",
+        "level": 4
+      },
+      {
+        "code": "S2.4",
+        "label": "processing information",
+        "level": 4
+      },
+      {
+        "code": "S2.5",
+        "label": "measuring physical properties",
+        "level": 4
+      },
+      {
+        "code": "S2.6",
+        "label": "calculating and estimating",
+        "level": 4
+      },
+      {
+        "code": "S2.7",
+        "label": "analysing and evaluating information and data",
+        "level": 4
+      },
+      {
+        "code": "S2.8",
+        "label": "monitoring, inspecting and testing",
+        "level": 4
+      },
+      {
+        "code": "S2.9",
+        "label": "monitoring developments in area of expertise",
+        "level": 4
+      },
+      {
+        "code": "S3",
+        "label": "assisting and caring",
+        "level": 2
+      },
+      {
+        "code": "S3.0",
+        "label": "assisting and caring",
+        "level": 4
+      },
+      {
+        "code": "S3.1",
+        "label": "counselling",
+        "level": 4
+      },
+      {
+        "code": "S3.2",
+        "label": "providing health care or medical treatments",
+        "level": 4
+      },
+      {
+        "code": "S3.3",
+        "label": "protecting and enforcing",
+        "level": 4
+      },
+      {
+        "code": "S3.4",
+        "label": "providing information and support to the public and clients",
+        "level": 4
+      },
+      {
+        "code": "S3.5",
+        "label": "preparing and serving food and drinks",
+        "level": 4
+      },
+      {
+        "code": "S3.6",
+        "label": "providing general personal care",
+        "level": 4
+      },
+      {
+        "code": "S4",
+        "label": "management skills",
+        "level": 2
+      },
+      {
+        "code": "S4.0",
+        "label": "management skills",
+        "level": 4
+      },
+      {
+        "code": "S4.1",
+        "label": "developing objectives and strategies",
+        "level": 4
+      },
+      {
+        "code": "S4.2",
+        "label": "organising, planning and scheduling work and activities",
+        "level": 4
+      },
+      {
+        "code": "S4.3",
+        "label": "allocating and controlling resources",
+        "level": 4
+      },
+      {
+        "code": "S4.4",
+        "label": "performing administrative activities",
+        "level": 4
+      },
+      {
+        "code": "S4.5",
+        "label": "leading and motivating",
+        "level": 4
+      },
+      {
+        "code": "S4.6",
+        "label": "building and developing teams",
+        "level": 4
+      },
+      {
+        "code": "S4.7",
+        "label": "recruiting and hiring",
+        "level": 4
+      },
+      {
+        "code": "S4.8",
+        "label": "supervising people",
+        "level": 4
+      },
+      {
+        "code": "S4.9",
+        "label": "making decisions",
+        "level": 4
+      },
+      {
+        "code": "S5",
+        "label": "working with computers",
+        "level": 2
+      },
+      {
+        "code": "S5.0",
+        "label": "working with computers",
+        "level": 4
+      },
+      {
+        "code": "S5.1",
+        "label": "programming computer systems",
+        "level": 4
+      },
+      {
+        "code": "S5.2",
+        "label": "setting up and protecting computer systems",
+        "level": 4
+      },
+      {
+        "code": "S5.5",
+        "label": "accessing and analysing digital data",
+        "level": 4
+      },
+      {
+        "code": "S5.6",
+        "label": "using digital tools for collaboration, content creation and problem solving",
+        "level": 4
+      },
+      {
+        "code": "S5.7",
+        "label": "using digital tools to control machinery",
+        "level": 4
+      },
+      {
+        "code": "S6",
+        "label": "handling and moving",
+        "level": 2
+      },
+      {
+        "code": "S6.0",
+        "label": "handling and moving",
+        "level": 4
+      },
+      {
+        "code": "S6.1",
+        "label": "sorting and packaging goods and materials",
+        "level": 4
+      },
+      {
+        "code": "S6.2",
+        "label": "moving and lifting",
+        "level": 4
+      },
+      {
+        "code": "S6.3",
+        "label": "transforming and blending materials",
+        "level": 4
+      },
+      {
+        "code": "S6.4",
+        "label": "tending plants and crops",
+        "level": 4
+      },
+      {
+        "code": "S6.5",
+        "label": "assembling and fabricating products",
+        "level": 4
+      },
+      {
+        "code": "S6.6",
+        "label": "making moulds, casts, models and patterns",
+        "level": 4
+      },
+      {
+        "code": "S6.7",
+        "label": "using hand tools",
+        "level": 4
+      },
+      {
+        "code": "S6.9",
+        "label": "handling animals",
+        "level": 4
+      },
+      {
+        "code": "S7",
+        "label": "constructing",
+        "level": 2
+      },
+      {
+        "code": "S7.0",
+        "label": "constructing",
+        "level": 4
+      },
+      {
+        "code": "S7.1",
+        "label": "building and repairing structures",
+        "level": 4
+      },
+      {
+        "code": "S7.2",
+        "label": "installing interior or exterior infrastructure",
+        "level": 4
+      },
+      {
+        "code": "S7.3",
+        "label": "finishing interior or exterior of structures",
+        "level": 4
+      },
+      {
+        "code": "S8",
+        "label": "working with machinery and specialised equipment",
+        "level": 2
+      },
+      {
+        "code": "S8.0",
+        "label": "working with machinery and specialised equipment",
+        "level": 4
+      },
+      {
+        "code": "S8.1",
+        "label": "operating mobile plant",
+        "level": 4
+      },
+      {
+        "code": "S8.2",
+        "label": "driving vehicles",
+        "level": 4
+      },
+      {
+        "code": "S8.3",
+        "label": "operating watercraft",
+        "level": 4
+      },
+      {
+        "code": "S8.4",
+        "label": "operating machinery for the extraction and processing of raw materials",
+        "level": 4
+      },
+      {
+        "code": "S8.5",
+        "label": "operating machinery for the manufacture of products",
+        "level": 4
+      },
+      {
+        "code": "S8.6",
+        "label": "using precision instrumentation and equipment",
+        "level": 4
+      },
+      {
+        "code": "S8.7",
+        "label": "installing, maintaining and repairing mechanical equipment",
+        "level": 4
+      },
+      {
+        "code": "S8.8",
+        "label": "installing, maintaining and repairing electrical, electronic and precision equipment",
+        "level": 4
+      },
+      {
+        "code": "S8.9",
+        "label": "operating aircraft",
+        "level": 4
+      }
+    ],
+    "T": [
+      {
+        "code": "T",
+        "label": "transversal skills and competences",
+        "level": 1
+      },
+      {
+        "code": "T1",
+        "label": "core skills and competences",
+        "level": 2
+      },
+      {
+        "code": "T1.1",
+        "label": "mastering languages",
+        "level": 4
+      },
+      {
+        "code": "T1.2",
+        "label": "working with numbers and measures",
+        "level": 4
+      },
+      {
+        "code": "T1.3",
+        "label": "working with digital devices and applications",
+        "level": 4
+      },
+      {
+        "code": "T2",
+        "label": "thinking skills and competences",
+        "level": 2
+      },
+      {
+        "code": "T2.1",
+        "label": "processing information, ideas and concepts",
+        "level": 4
+      },
+      {
+        "code": "T2.2",
+        "label": "planning and organising",
+        "level": 4
+      },
+      {
+        "code": "T2.3",
+        "label": "dealing with problems",
+        "level": 4
+      },
+      {
+        "code": "T2.4",
+        "label": "thinking creatively and innovatively",
+        "level": 4
+      },
+      {
+        "code": "T3",
+        "label": "self-management skills and competences",
+        "level": 2
+      },
+      {
+        "code": "T3.1",
+        "label": "working efficiently",
+        "level": 4
+      },
+      {
+        "code": "T3.2",
+        "label": "taking a proactive approach",
+        "level": 4
+      },
+      {
+        "code": "T3.3",
+        "label": "maintaining a positive attitude",
+        "level": 4
+      },
+      {
+        "code": "T3.4",
+        "label": "demonstrating willingness to learn",
+        "level": 4
+      },
+      {
+        "code": "T4",
+        "label": "social and communication skills and competences",
+        "level": 2
+      },
+      {
+        "code": "T4.1",
+        "label": "communicating",
+        "level": 4
+      },
+      {
+        "code": "T4.2",
+        "label": "supporting others",
+        "level": 4
+      },
+      {
+        "code": "T4.3",
+        "label": "collaborating in teams and networks",
+        "level": 4
+      },
+      {
+        "code": "T4.4",
+        "label": "leading others",
+        "level": 4
+      },
+      {
+        "code": "T4.5",
+        "label": "following ethical code of conduct",
+        "level": 4
+      },
+      {
+        "code": "T5",
+        "label": "physical and manual skills and competences",
+        "level": 2
+      },
+      {
+        "code": "T5.1",
+        "label": "manipulating and controlling objects and equipment",
+        "level": 4
+      },
+      {
+        "code": "T5.2",
+        "label": "responding to physical circumstances",
+        "level": 4
+      },
+      {
+        "code": "T6",
+        "label": "life skills and competences",
+        "level": 2
+      },
+      {
+        "code": "T6.1",
+        "label": "applying health-related skills and competences",
+        "level": 4
+      },
+      {
+        "code": "T6.2",
+        "label": "applying environmental skills and competences",
+        "level": 4
+      },
+      {
+        "code": "T6.3",
+        "label": "applying civic skills and competences",
+        "level": 4
+      },
+      {
+        "code": "T6.4",
+        "label": "applying cultural skills and competences",
+        "level": 4
+      },
+      {
+        "code": "T6.5",
+        "label": "applying entrepreneurial and financial skills and competences",
+        "level": 4
+      },
+      {
+        "code": "T6.6",
+        "label": "applying general knowledge",
+        "level": 4
+      }
+    ],
+    "L": [
+      {
+        "code": "L",
+        "label": "language skills and knowledge",
+        "level": 1
+      },
+      {
+        "code": "L1",
+        "label": "languages",
+        "level": 2
+      },
+      {
+        "code": "L2",
+        "label": "classical languages",
+        "level": 2
+      }
+    ],
+    "K": [
+      {
+        "code": "K",
+        "label": "knowledge",
+        "level": 1
+      }
+    ]
+  }
+}

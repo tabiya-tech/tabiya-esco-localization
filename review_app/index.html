@@ -351,6 +351,83 @@
     .selected-parent h3 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--accent-orange); margin-bottom: 10px; }
     .selected-parent .label { font-weight: 500; color: var(--text-primary); }
     .selected-parent .code { font-family: 'DM Mono', monospace; color: var(--text-muted); font-size: 11px; margin-top: 6px; }
+
+    /* Skill Assignment Styles */
+    .skill-assignment-container { display: grid; grid-template-columns: 350px 1fr; gap: 20px; height: calc(100vh - 140px); }
+    .occupation-list { border: 2px solid var(--border-light); overflow-y: auto; background: var(--bg-white); }
+    .occupation-item {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border-light);
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .occupation-item:hover { background: var(--bg-light); }
+    .occupation-item.active { background: var(--tabiya-gray); border-left: 3px solid var(--tabiya-green); }
+    .occupation-item .occ-code { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--text-muted); }
+    .occupation-item .occ-label { font-size: 13px; font-weight: 500; margin-top: 2px; }
+    .occupation-item .occ-parent { font-size: 11px; color: var(--text-muted); margin-top: 4px; }
+    .occupation-item .occ-badge {
+      display: inline-block;
+      padding: 2px 6px;
+      font-size: 10px;
+      font-weight: 600;
+      border-radius: 2px;
+      margin-top: 6px;
+    }
+    .occupation-item .occ-badge.complete { background: var(--tabiya-green); color: var(--oxford-blue); }
+    .occupation-item .occ-badge.pending { background: var(--bg-light); color: var(--text-muted); border: 1px solid var(--border-light); }
+
+    .skill-picker-panel { display: flex; flex-direction: column; }
+    .skill-picker-header { padding: 16px 0; border-bottom: 2px solid var(--border-light); margin-bottom: 16px; }
+    .skill-picker-header h3 { font-size: 16px; margin-bottom: 4px; }
+    .skill-picker-header .description { font-size: 12px; color: var(--text-muted); line-height: 1.5; max-height: 60px; overflow-y: auto; }
+
+    .skill-groups-container { flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; }
+    .skill-groups-row { display: flex; gap: 12px; }
+    .skill-groups-row > .skill-category { flex: 1; min-width: 0; }
+
+    .skill-category { background: var(--bg-white); border: 2px solid var(--border-light); padding: 10px 12px; }
+    .skill-category.two-column .skill-category-content { column-count: 2; column-gap: 20px; }
+    .skill-category.two-column .skill-group-header { break-after: avoid; }
+    .skill-category.two-column .skill-group-item { break-inside: avoid; }
+    .skill-category h4 {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--oxford-blue);
+      margin-bottom: 8px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .skill-group-header {
+      font-weight: 600;
+      margin-top: 8px !important;
+      margin-bottom: 4px !important;
+      font-size: 11px;
+    }
+    .skill-group-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+      padding: 3px 0;
+      cursor: pointer;
+      line-height: 1.3;
+    }
+    .skill-group-item:hover { background: var(--bg-light); margin: 0 -6px; padding: 3px 6px; }
+    .skill-group-item input[type="checkbox"] {
+      margin-top: 1px;
+      width: 14px;
+      height: 14px;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    .skill-group-item .sg-code { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text-muted); min-width: 32px; flex-shrink: 0; }
+    .skill-group-item .sg-label { font-size: 11px; flex: 1; }
+    .skill-group-item.level-2 { font-weight: 600; }
+    .skill-group-item.level-3 { padding-left: 8px; }
+
+    .skill-picker-actions { padding-top: 16px; border-top: 2px solid var(--border-light); margin-top: 16px; display: flex; gap: 12px; align-items: center; }
+    .selection-count { font-size: 13px; color: var(--text-secondary); flex: 1; }
   </style>
 </head>
 <body>
@@ -376,6 +453,7 @@
       <input type="text" id="reviewer-name" placeholder="Enter your name to start">
       <button class="btn btn-primary" style="width: 100%; margin-top: 8px;" onclick="startReview()">Start Reviewing</button>
       <button class="btn" style="width: 100%; margin-top: 8px; background: var(--bg-light); border: 1px solid var(--border-light); color: var(--text-primary);" onclick="startBrowse()">Browse & Edit All</button>
+      <button class="btn" style="width: 100%; margin-top: 8px; background: var(--tabiya-orange); color: white;" onclick="startSkillAssignment()">Skill Assignment</button>
     </div>
   </div>
 
@@ -404,6 +482,46 @@
         </div>
         <div id="browse-results" style="max-height: 600px; overflow-y: auto;">
           <div class="loading">Loading items...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skill Assignment Screen -->
+  <div id="skill-assignment-screen" class="hidden">
+    <div class="header">
+      <h1>Skill Assignment - New Local Occupations</h1>
+      <div class="user-info">
+        <span id="skill-header-project"></span> | <span id="skill-header-user"></span>
+        <button onclick="exitSkillAssignment()" style="margin-left: 12px; padding: 4px 10px; background: rgba(255,255,255,0.15); border: none; color: white; cursor: pointer; font-size: 12px;">Back</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="progress-bar"><div class="progress-fill" id="skill-progress-fill"></div></div>
+      <div class="progress-text" id="skill-progress-text">Loading...</div>
+
+      <div class="skill-assignment-container">
+        <!-- Left: Occupation List -->
+        <div class="occupation-list" id="occupation-list">
+          <div class="loading">Loading occupations...</div>
+        </div>
+
+        <!-- Right: Skill Group Picker -->
+        <div class="skill-picker-panel">
+          <div class="skill-picker-header" id="skill-picker-header">
+            <h3>Select an occupation to assign skill groups</h3>
+            <div class="description">Click an occupation on the left to begin assigning skill groups.</div>
+          </div>
+
+          <div class="skill-groups-container" id="skill-groups-container">
+            <!-- Will be populated dynamically -->
+          </div>
+
+          <div class="skill-picker-actions" id="skill-picker-actions" style="display: none;">
+            <span class="selection-count" id="selection-count">0 skill groups selected</span>
+            <button class="btn btn-skip" onclick="clearSkillSelections()">Clear All</button>
+            <button class="btn btn-primary" onclick="saveSkillSelections()">Save & Next</button>
+          </div>
         </div>
       </div>
     </div>
@@ -1844,6 +1962,305 @@
         await originalLoadNextItem();
       }
     };
+
+    // ========================================
+    // SKILL ASSIGNMENT MODE
+    // ========================================
+    let skillPickerData = null;
+    let currentSkillOccupation = null;
+    let skillSelectionsByOccupation = {}; // occupation_code -> Set of skill_group_codes
+    let skillAssignmentUser = '';
+
+    // Skill groups data - will be loaded from skill_groups_full.json
+    let SKILL_GROUPS = null;
+
+    // New local occupations data (will be loaded from skill_picker_data.json or embedded)
+    let NEW_LOCAL_OCCUPATIONS = [];
+
+    async function startSkillAssignment() {
+      const projectSelect = document.getElementById('project-select');
+      const projectId = projectSelect.value;
+      skillAssignmentUser = document.getElementById('reviewer-name').value.trim();
+
+      if (!projectId) { alert('Please select a project'); return; }
+      if (!skillAssignmentUser) { alert('Please enter your name'); return; }
+
+      currentProject = { id: projectId, name: projectSelect.options[projectSelect.selectedIndex].text };
+      document.getElementById('skill-header-project').textContent = currentProject.name;
+      document.getElementById('skill-header-user').textContent = skillAssignmentUser;
+
+      document.getElementById('setup-screen').classList.add('hidden');
+      document.getElementById('skill-assignment-screen').classList.remove('hidden');
+
+      await loadSkillAssignmentData();
+    }
+
+    async function loadSkillAssignmentData() {
+      // Load occupations from skill_picker_data.json
+      try {
+        const response = await fetch('skill_picker_data.json');
+        if (response.ok) {
+          const data = await response.json();
+          NEW_LOCAL_OCCUPATIONS = data.occupations || [];
+        }
+      } catch (e) {
+        console.log('Could not load skill_picker_data.json');
+      }
+
+      // Load full skill groups from taxonomy
+      try {
+        const response = await fetch('skill_groups_full.json');
+        if (response.ok) {
+          SKILL_GROUPS = await response.json();
+          console.log('Loaded skill groups:', Object.keys(SKILL_GROUPS).map(k => `${k}: ${SKILL_GROUPS[k].length}`).join(', '));
+        }
+      } catch (e) {
+        console.log('Could not load skill_groups_full.json');
+      }
+
+      // Load existing selections from Supabase
+      await loadExistingSelections();
+
+      // Render UI
+      renderOccupationList();
+      renderSkillGroups();
+      updateSkillProgress();
+    }
+
+    async function loadExistingSelections() {
+      skillSelectionsByOccupation = {};
+
+      const { data, error } = await db.from('skill_group_selections')
+        .select('occupation_code, skill_group_code')
+        .eq('project_id', currentProject.id);
+
+      if (error) {
+        console.error('Error loading selections:', error);
+        return;
+      }
+
+      if (data) {
+        for (const row of data) {
+          if (!skillSelectionsByOccupation[row.occupation_code]) {
+            skillSelectionsByOccupation[row.occupation_code] = new Set();
+          }
+          skillSelectionsByOccupation[row.occupation_code].add(row.skill_group_code);
+        }
+      }
+    }
+
+    function renderOccupationList() {
+      const container = document.getElementById('occupation-list');
+
+      if (NEW_LOCAL_OCCUPATIONS.length === 0) {
+        container.innerHTML = '<div style="padding: 20px; color: var(--text-muted);">No occupations loaded. Make sure skill_picker_data.json is available.</div>';
+        return;
+      }
+
+      let html = '';
+      for (const occ of NEW_LOCAL_OCCUPATIONS) {
+        const selections = skillSelectionsByOccupation[occ.code];
+        const count = selections ? selections.size : 0;
+        const isActive = currentSkillOccupation && currentSkillOccupation.code === occ.code;
+        const badgeClass = count > 0 ? 'complete' : 'pending';
+        const badgeText = count > 0 ? `${count} groups` : 'Pending';
+
+        html += `<div class="occupation-item ${isActive ? 'active' : ''}" onclick="selectSkillOccupation('${occ.code}')">
+          <div class="occ-code">${occ.code}</div>
+          <div class="occ-label">${occ.label}</div>
+          <div class="occ-parent">Parent: ${occ.parent_group}</div>
+          <span class="occ-badge ${badgeClass}">${badgeText}</span>
+        </div>`;
+      }
+
+      container.innerHTML = html;
+    }
+
+    function selectSkillOccupation(code) {
+      currentSkillOccupation = NEW_LOCAL_OCCUPATIONS.find(o => o.code === code);
+      if (!currentSkillOccupation) return;
+
+      // Update header
+      const header = document.getElementById('skill-picker-header');
+      header.innerHTML = `
+        <h3>${currentSkillOccupation.label}</h3>
+        <div style="font-family: 'DM Mono', monospace; font-size: 11px; color: var(--text-muted); margin: 4px 0;">${currentSkillOccupation.code} | Parent: ${currentSkillOccupation.parent_group}</div>
+        <div class="description">${currentSkillOccupation.description || 'No description available.'}</div>
+      `;
+
+      // Show actions
+      document.getElementById('skill-picker-actions').style.display = 'flex';
+
+      // Update checkboxes
+      updateSkillCheckboxes();
+      updateSelectionCount();
+      renderOccupationList(); // Re-render to show active state
+    }
+
+    function renderSkillGroups() {
+      const container = document.getElementById('skill-groups-container');
+
+      if (!SKILL_GROUPS) {
+        container.innerHTML = '<div class="loading">Loading skill groups...</div>';
+        return;
+      }
+
+      function renderCategory(cat) {
+        const groups = SKILL_GROUPS[cat.key] || [];
+        const headers = groups.filter(g => g.level === cat.headerLevel);
+        const items = groups.filter(g => g.level === cat.itemLevel);
+        const selectableCount = cat.headerLevel === cat.itemLevel ? headers.length : items.length;
+
+        let html = `<div class="skill-category ${cat.twoColumn ? 'two-column' : ''}">
+          <h4>${cat.title} (${selectableCount} groups)</h4>
+          <div class="skill-category-content">`;
+
+        for (const h of headers) {
+          let children;
+          if (cat.key === 'K') {
+            children = items.filter(i => i.code.startsWith(h.code));
+          } else {
+            children = items.filter(i => i.code.startsWith(h.code + '.'));
+          }
+
+          html += `<div class="skill-group-item level-2" onclick="toggleSkillGroup('${h.code}')" style="font-weight: 600; margin-top: 8px; color: var(--oxford-blue);">
+            <input type="checkbox" id="sg-${h.code}" data-code="${h.code}" onclick="event.stopPropagation(); toggleSkillGroup('${h.code}')">
+            <span class="sg-code" style="min-width: 32px;">${h.code}</span>
+            <span class="sg-label">${h.label}</span>
+          </div>`;
+          for (const sg of children) {
+            html += `<div class="skill-group-item level-3" onclick="toggleSkillGroup('${sg.code}')">
+              <input type="checkbox" id="sg-${sg.code}" data-code="${sg.code}" onclick="event.stopPropagation(); toggleSkillGroup('${sg.code}')">
+              <span class="sg-code">${sg.code}</span>
+              <span class="sg-label">${sg.label}</span>
+            </div>`;
+          }
+        }
+
+        html += '</div></div>';
+        return html;
+      }
+
+      // Row 1: Skills and Knowledge side by side
+      let html = '<div class="skill-groups-row">';
+      html += renderCategory({ key: 'S', title: 'Skills (S)', headerLevel: 2, itemLevel: 3 });
+      html += renderCategory({ key: 'K', title: 'Knowledge (K)', headerLevel: 2, itemLevel: 3 });
+      html += '</div>';
+
+      // Row 2: Transversal in 2-column layout
+      html += '<div class="skill-groups-row">';
+      html += renderCategory({ key: 'T', title: 'Transversal (T)', headerLevel: 2, itemLevel: 3, twoColumn: true });
+      html += '</div>';
+
+      container.innerHTML = html;
+    }
+
+    function toggleSkillGroup(code) {
+      if (!currentSkillOccupation) {
+        alert('Please select an occupation first');
+        return;
+      }
+
+      const occCode = currentSkillOccupation.code;
+      if (!skillSelectionsByOccupation[occCode]) {
+        skillSelectionsByOccupation[occCode] = new Set();
+      }
+
+      const selections = skillSelectionsByOccupation[occCode];
+      if (selections.has(code)) {
+        selections.delete(code);
+      } else {
+        selections.add(code);
+      }
+
+      updateSkillCheckboxes();
+      updateSelectionCount();
+    }
+
+    function updateSkillCheckboxes() {
+      if (!currentSkillOccupation) return;
+
+      const selections = skillSelectionsByOccupation[currentSkillOccupation.code] || new Set();
+
+      // Update all checkboxes
+      document.querySelectorAll('#skill-groups-container input[type="checkbox"]').forEach(cb => {
+        cb.checked = selections.has(cb.dataset.code);
+      });
+    }
+
+    function updateSelectionCount() {
+      if (!currentSkillOccupation) return;
+
+      const selections = skillSelectionsByOccupation[currentSkillOccupation.code] || new Set();
+      const count = selections.size;
+      document.getElementById('selection-count').textContent = `${count} skill group${count !== 1 ? 's' : ''} selected`;
+    }
+
+    function clearSkillSelections() {
+      if (!currentSkillOccupation) return;
+
+      skillSelectionsByOccupation[currentSkillOccupation.code] = new Set();
+      updateSkillCheckboxes();
+      updateSelectionCount();
+    }
+
+    async function saveSkillSelections() {
+      if (!currentSkillOccupation) return;
+
+      const occCode = currentSkillOccupation.code;
+      const selections = skillSelectionsByOccupation[occCode] || new Set();
+
+      try {
+        // Delete existing selections for this occupation
+        await db.from('skill_group_selections')
+          .delete()
+          .eq('project_id', currentProject.id)
+          .eq('occupation_code', occCode);
+
+        // Insert new selections
+        if (selections.size > 0) {
+          const rows = Array.from(selections).map(sgCode => ({
+            project_id: currentProject.id,
+            occupation_code: occCode,
+            skill_group_code: sgCode,
+            selected_by: skillAssignmentUser
+          }));
+
+          const { error } = await db.from('skill_group_selections').insert(rows);
+          if (error) throw error;
+        }
+
+        // Move to next occupation
+        const currentIndex = NEW_LOCAL_OCCUPATIONS.findIndex(o => o.code === occCode);
+        if (currentIndex < NEW_LOCAL_OCCUPATIONS.length - 1) {
+          selectSkillOccupation(NEW_LOCAL_OCCUPATIONS[currentIndex + 1].code);
+        }
+
+        updateSkillProgress();
+        renderOccupationList();
+
+      } catch (err) {
+        console.error('Error saving selections:', err);
+        alert('Error saving selections. Please try again.');
+      }
+    }
+
+    function updateSkillProgress() {
+      const total = NEW_LOCAL_OCCUPATIONS.length;
+      const completed = Object.values(skillSelectionsByOccupation).filter(s => s.size > 0).length;
+      const percent = total > 0 ? Math.round((completed / total) * 100) : 0;
+
+      document.getElementById('skill-progress-fill').style.width = `${percent}%`;
+      document.getElementById('skill-progress-text').textContent = `${completed} / ${total} occupations with skill groups assigned (${percent}%)`;
+    }
+
+    function exitSkillAssignment() {
+      currentSkillOccupation = null;
+      skillSelectionsByOccupation = {};
+      NEW_LOCAL_OCCUPATIONS = [];
+      document.getElementById('skill-assignment-screen').classList.add('hidden');
+      document.getElementById('setup-screen').classList.remove('hidden');
+    }
   </script>
 </body>
 </html>
