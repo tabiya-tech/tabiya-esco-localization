@@ -1,13 +1,14 @@
 # Tabiya ESCO Localization Framework
 
-A framework for mapping national occupational taxonomies to the Tabiya ESCO taxonomy in low- and middle-income countries (LMICs).
+A framework for localizing the Tabiya ESCO taxonomy for low- and middle-income countries (LMICs). Supports two approaches: mapping existing national taxonomies to ESCO, or adapting ESCO using national occupational standards (NOS) where no national taxonomy exists.
 
 ## Overview
 
-This framework provides a repeatable pipeline for localizing ESCO to national contexts. It combines:
+This framework provides repeatable pipelines for localizing ESCO to national contexts. It combines:
 - **Semantic matching** using Gemini embeddings
-- **ISCO crosswalk constraints** to improve accuracy
-- **LLM validation** for uncertain matches
+- **LLM validation** for occupation and skill matching decisions
+- **Skills vs tasks distinction** following ESCO conventions (see [Skill Definitions](docs/SKILL_DEFINITIONS_AND_CONTEXTUALIZATION.md))
+- **Skill contextualisation** adding country-specific alt labels and new skills in ESCO style
 - **Human review** for items needing manual decision
 
 ## Quick Start
@@ -20,16 +21,15 @@ pip install -r requirements.txt
 cp .env.example .env
 # Edit .env to add your GEMINI_API_KEY and Supabase credentials
 
-# Run a country pipeline (example: Kenya)
+# Run a country pipeline (example: Kenya - national taxonomy approach)
 python countries/kenya_kesco/scripts/00_prepare_data.py
 python countries/kenya_kesco/scripts/01_generate_embeddings.py
 python countries/kenya_kesco/scripts/02_run_matching.py
 
-# Load review items to Supabase (auto-discovers countries)
-python review_app/scripts/load_project_data.py
-
-# After human review, export results back
-python review_app/scripts/export_review_results.py
+# Run a country pipeline (example: Zambia - NOS-based approach)
+python countries/zambia/scripts/01_extract_nos_skills.py
+python countries/zambia/scripts/02_match_occupations.py
+# ... (see countries/zambia/docs/METHODOLOGY.md for full pipeline)
 ```
 
 ## Project Structure
@@ -38,77 +38,69 @@ python review_app/scripts/export_review_results.py
 TabiyaESCO_Localization/
 ├── .env.example               # Environment template
 ├── countries/                 # Country implementations
-│   ├── argentina_cno2017/     # Argentina CNO-2017
-│   │   ├── config.json        # Country metadata
-│   │   ├── data/              # Source data + embeddings
-│   │   ├── outputs/           # Pipeline outputs
-│   │   └── scripts/           # Pipeline scripts
-│   ├── kenya_kesco/           # Kenya KESCO
+│   ├── argentina_cno2017/     # Argentina CNO-2017 (national taxonomy)
+│   ├── kenya_kesco/           # Kenya KESCO (national taxonomy)
+│   ├── zambia/                # Zambia (NOS-based, no national taxonomy)
 │   └── _template/             # Template for new countries
 ├── shared_data/               # Shared resources
-│   ├── esco_taxonomy/         # English ESCO files
-│   ├── esco_taxonomy_es/      # Spanish ESCO files
-│   ├── esco_embeddings_en_gemini.json
-│   └── esco_embeddings_es_gemini.json
-├── review_app/                # Human review tool
-│   ├── scripts/               # Load/export scripts
-│   ├── sql/                   # Database schema
-│   └── index.html             # Web interface
+│   ├── esco_taxonomy/         # English ESCO v2.0.1 (9-file format)
+│   └── esco_taxonomy_es/      # Spanish ESCO
+├── review_app/                # Human review tool (web-based)
 └── docs/                      # Framework documentation
 ```
 
-## Country Pipeline
+## Two Localization Approaches
 
-Each country follows this pipeline:
+### Approach 1: National Taxonomy Mapping (Kenya, Argentina)
+
+For countries with an existing national occupational classification:
+
+| Step | Description |
+|------|-------------|
+| Prepare data | Extract, clean, translate (if needed) |
+| Generate embeddings | Gemini embeddings for national taxonomy |
+| Semantic matching | ISCO-constrained + unconstrained matching |
+| LLM validation | Binary validation + multi-candidate selection |
+| Human review | Web-based review tool via Supabase |
+| Skill assignment | Map skills to new local occupations |
+| Taxonomy output | Generate Tabiya 9-file CSV format |
+
+See [docs/LOCALIZATION_PIPELINE.md](docs/LOCALIZATION_PIPELINE.md) for details.
+
+### Approach 2: NOS-based Adaptation (Zambia)
+
+For countries without a national taxonomy, using National Occupational Standards:
 
 | Step | Script | Description |
 |------|--------|-------------|
-| 0 | `00_prepare_data.py` | Prepare source data, build group crosswalk |
-| 1 | `01_generate_embeddings.py` | Generate Gemini embeddings for local taxonomy |
-| 2 | `02_run_matching.py` | Run matching pipeline, produce outputs |
+| 01 | `01_extract_nos_skills.py` | Extract skill phrases from NOS PDFs |
+| 02 | `02_match_occupations.py` | Embedding match occupations to ESCO |
+| 03 | `03_validate_occupation_matches.py` | LLM validate occupation matches |
+| 03b | `03b_finalize_new_occupations.py` | Descriptions + alt labels + ISCO codes for new occupations |
+| 04 | `04_match_and_validate_tier1.py` | Knowledge matching (TK+RK) - embedding + LLM |
+| 05 | `05_match_and_validate_tier2.py` | Skill matching (CS+PS) - embedding + LLM |
+| 06 | `06_pc_gap_analysis.py` | Task-based skill gap analysis |
+| 07 | `07_consolidate_skills.py` | Deduplicate and assemble all results |
+| 08 | `08_finalize_skills.py` | Generate descriptions, place in hierarchy, map to occupations |
+| 09 | `09_generate_taxonomy.py` | Generate Tabiya 9-file CSV output |
 
-### Outputs
+See [countries/zambia/docs/METHODOLOGY.md](countries/zambia/docs/METHODOLOGY.md) for details.
 
-Each country produces:
-- `{prefix}_matches_final.json/xlsx` - All matches
-- `{prefix}_review_items.json/xlsx` - Items for human review
-- `{prefix}_group_crosswalk.csv/xlsx` - ISCO group mapping
+## Taxonomy Output Format
 
-## Review Workflow
+All localizations produce Tabiya 9-file CSV format:
+- `occupations.csv`, `occupation_groups.csv`, `occupation_hierarchy.csv`
+- `skills.csv`, `skill_groups.csv`, `skill_hierarchy.csv`
+- `occupation_to_skill_relations.csv`, `skill_to_skill_relations.csv`
+- `model_info.csv`
 
-```
-Pipeline outputs → Supabase → Human Review → Export back to country
-```
+## Localizations
 
-1. **Load**: `python review_app/scripts/load_project_data.py`
-   - Auto-discovers countries with `config.json`
-   - Shows status, prompts for selection
-
-2. **Review**: Use web app to make decisions (MATCH, NEW_LOCAL, SKIP)
-
-3. **Export**: `python review_app/scripts/export_review_results.py`
-   - Pulls decisions from Supabase
-   - Merges into `matches_final.json/xlsx`
-
-## Adding a New Country
-
-Use the setup script to create a new country project:
-
-```bash
-python scripts/setup_new_country.py
-```
-
-This will prompt for country details and create:
-- Folder structure (`data/`, `scripts/`, `outputs/`, `docs/`)
-- `config.json` with country metadata
-- Template pipeline scripts
-- Session context documents
-
-Then:
-1. Add source taxonomy data to `data/`
-2. Customize the pipeline scripts for your data format
-3. Run the pipeline
-4. Load to review app: `python review_app/scripts/load_project_data.py`
+| Country | Source | Approach | Occupations | Skills | Status |
+|---------|--------|----------|-------------|--------|--------|
+| Argentina | CNO-2017 | National taxonomy | 5,690 | - | In Progress |
+| Kenya | KESCO | National taxonomy | 5,917 (69 new local) | 3,964 new relations | Complete |
+| Zambia | ZAQA NOS | NOS-based | 73 NOS (16 new local) | 683 new, 9,772 alt labels | Complete |
 
 ## Environment Variables
 
@@ -120,25 +112,21 @@ SUPABASE_SERVICE_KEY=your_service_role_key
 SUPABASE_ANON_KEY=your_anon_key
 ```
 
-## Completed Localizations
-
-| Country | Taxonomy | Occupations | Status |
-|---------|----------|-------------|--------|
-| Argentina | CNO-2017 | 5,690 | Complete |
-| Kenya | KESCO | 5,917 | Complete |
-
 ## Technologies
 
 - **Python 3.11+**
 - **Gemini API** for embeddings and LLM validation
-- **pandas/numpy** for data processing
+- **pandas/numpy/scikit-learn** for data processing and similarity matching
+- **pdfplumber** for PDF extraction (NOS-based approach)
 - **Supabase** for review tool backend
 
 ## Documentation
 
-- [docs/LOCALIZATION_PIPELINE.md](docs/LOCALIZATION_PIPELINE.md) - Matching process details
+- [docs/LOCALIZATION_PIPELINE.md](docs/LOCALIZATION_PIPELINE.md) - National taxonomy matching pipeline
+- [docs/SKILL_DEFINITIONS_AND_CONTEXTUALIZATION.md](docs/SKILL_DEFINITIONS_AND_CONTEXTUALIZATION.md) - Skills vs tasks, ESCO phrasing conventions
 - [docs/PROJECT_BRIEF.md](docs/PROJECT_BRIEF.md) - Vision and principles
 - [docs/CODING_STANDARDS.md](docs/CODING_STANDARDS.md) - Development standards
+- [docs/COUNTRY_ACTIVITY_LOG.md](docs/COUNTRY_ACTIVITY_LOG.md) - Cross-country updates
 
 ## License
 
