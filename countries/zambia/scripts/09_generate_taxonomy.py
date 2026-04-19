@@ -171,7 +171,17 @@ def main() -> None:
         isco_code = str(finalized.get("isco_unit_group_code", "")).strip()
         if isco_code == "nan":
             isco_code = ""
-        code = f"{isco_code}.ZM.{occ_id[:4]}" if isco_code else f"ZM_{occ_id[:8]}"
+
+        # Generate sequential code in Kenya format: {ISCO}_{seq}
+        # Count how many locals already use this ISCO group
+        if isco_code:
+            existing_count = sum(1 for r in new_occ_rows if str(r.get("OCCUPATIONGROUPCODE", "")) == isco_code)
+            # Also count existing ESCO occupations in this group
+            esco_in_group = len(esco_occs[esco_occs["OCCUPATIONGROUPCODE"].astype(str) == isco_code])
+            seq = esco_in_group + existing_count + 1
+            code = f"{isco_code}_{seq}"
+        else:
+            code = f"ZM_{occ_id[:8]}"
 
         new_occ_rows.append({
             "ID": occ_id,
@@ -417,11 +427,31 @@ def main() -> None:
     # 5. OCCUPATION HIERARCHY
     # ==================================================================
     print("\n--- OCCUPATION HIERARCHY ---")
-    # New local occupations need to be placed in the occupation hierarchy
-    # For now, they don't have ISCO group codes, so we skip hierarchy placement
-    # They'll appear as top-level occupations
-    all_occ_hier = esco_occ_hier.copy()
-    print(f"  Occupation hierarchy: {len(all_occ_hier)} (no new entries for local occupations)")
+
+    # Build ISCO group code -> group ID lookup
+    occ_group_id_by_code = dict(zip(
+        esco_occ_groups["CODE"].astype(str),
+        esco_occ_groups["ID"]
+    ))
+
+    # Add new local occupations to hierarchy under their ISCO unit group
+    new_occ_hier_rows = []
+    for row in new_occ_rows:
+        isco_code = str(row.get("OCCUPATIONGROUPCODE", ""))
+        occ_id = row["ID"]
+        parent_id = occ_group_id_by_code.get(isco_code, "")
+        if parent_id:
+            new_occ_hier_rows.append({
+                "PARENTOBJECTTYPE": "iscogroup",
+                "PARENTID": parent_id,
+                "CHILDID": occ_id,
+                "CHILDOBJECTTYPE": "localoccupation",
+            })
+
+    df_new_occ_hier = pd.DataFrame(new_occ_hier_rows)
+    all_occ_hier = pd.concat([esco_occ_hier, df_new_occ_hier], ignore_index=True)
+    print(f"  New locals placed in hierarchy: {len(new_occ_hier_rows)}/{len(new_occ_rows)}")
+    print(f"  Total occupation hierarchy: {len(all_occ_hier)}")
 
     # ==================================================================
     # 6. WRITE OUTPUT FILES
