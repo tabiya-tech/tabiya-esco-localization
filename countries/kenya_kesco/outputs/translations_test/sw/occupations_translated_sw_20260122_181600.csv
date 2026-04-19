@@ -1,0 +1,102 @@
+﻿ID,ORIGINURI,UUIDHISTORY,OCCUPATIONGROUPCODE,CODE,DEFINITION,SCOPENOTE,REGULATEDPROFESSIONNOTE,OCCUPATIONTYPE,ISLOCALIZED,PREFERREDLABEL,ALTLABELS,DESCRIPTION,PREFERREDLABEL_SW,ALTLABELS_SW,DESCRIPTION_SW,DEFINITION_SW,SCOPENOTE_SW,HAS_DUPLICATE_ALTLABELS_SW,PREFERREDLABEL_NOT_IN_ALTLABELS_SW,POSSIBLY_TRUNCATED_SW
+687671c0ebd2bf665349dc7c,http://data.europa.eu/esco/occupation/f2cc5978-e45c-4f28-b859-7f89221b0505,"2b1925d6-9bc1-4569-9eaa-32838c42f899
+e9915884-9253-4f44-b66c-85ee15bd49cc
+baf4e950-0686-4d1d-8efd-b55c90c55a93
+24fd8541-da16-4761-a2b8-07ee45d09c94
+b7da05d5-5d29-443e-aa7f-2de6b3451552",110,110.1,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,air force officer,"royal airforce officer
+flight lieutenant
+flight officer
+air commodore
+air force officer
+military group captain
+command and control officer
+pilot officer
+squadron leader","Air force officers specialise in flying or ground duties, and supervise a team of air force personnel. They coordinate their team's training and welfare, and perform duties specific to their area of specialisation.",ofisa wa jeshi la anga,"ofisa wa jeshi la anga la kifalme
+luteni wa urubani
+ofisa wa urubani
+komodo wa anga
+ofisa wa jeshi la anga
+kepteni wa kikundi cha kijeshi
+ofisa wa amri na udhibiti
+ofisa rubani
+kiongozi wa skwadroni","Maofisa wa jeshi la anga hubobea katika majukumu ya urubani au ya ardhini, na kusimamia timu ya wafanyakazi wa jeshi la anga. Wanaratibu mafunzo na ustawi wa timu yao, na kutekeleza majukumu mahususi kwa eneo lao la utaalamu.",,,False,False,False
+687671c0ebd2bf665349dc7d,http://data.europa.eu/esco/occupation/b223f402-0318-4e27-8691-df6e7f7295d2,"aa4577ca-ba2a-410e-b988-f9a58d78ad6b
+6df014a1-962d-4982-9a99-485fa21ace42
+97867224-7209-46a9-bdc2-d57a3d085cd9
+036eb333-b91c-41a7-b5ad-eafd8636f64f
+741deb41-8b83-475d-8c86-4e714fd049fc",110,110.1,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,lieutenant,"police lieutenant
+lieutenant
+armed forces lieutenant","Lieutenants command troops of platoons of soldiers and lead them in training and discipline exercises. They also perform administrative duties, and function as advisers.",luteni,"luteni wa polisi
+luteni
+luteni wa majeshi","Maluteni huongoza vikosi vya askari na kuwaongoza katika mazoezi ya mafunzo na nidhamu. Pia hutekeleza majukumu ya kiutawala, na kufanya kazi kama washauri.",,,False,False,False
+687671c0ebd2bf665349dc7e,http://data.europa.eu/esco/occupation/262f21a3-ae78-46f4-a5f9-5a1f502caa90,"9655dbaf-2393-4ca6-b853-ff33f2d3273c
+1e9a0807-5b98-4200-96b0-1356635f006d
+661a6453-b104-4c5d-9565-a1a5f0338154
+ab3ba361-9246-4ce3-8a6c-b986ec828a40
+2e91be82-26db-48f8-8c9e-b3a87e6773b6",110,110.11,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,navy officer,"Observer, navy
+midshipman
+navy officer
+ship-of-the-line ensign
+sub-lieutenant","Navy officers command missions during conflict and peace times, and supervise training and development of their teams. They supervise combat operations of their team, as well as aid missions, and patrolling missions to ensure peace-keeping. Often they collaborate on a regular basis with the HR department of the HQCS for the best planning of the future needs.",ofisa wa jeshi la majini,"mwangalizi, jeshi la majini
+kadeti wa jeshi la majini
+ofisa wa jeshi la majini
+ensaini wa meli ya kivita
+luteni usu","Maofisa wa jeshi la majini huongoza misheni wakati wa migogoro na nyakati za amani, na kusimamia mafunzo na maendeleo ya timu zao. Wanasimamia operesheni za mapigano za timu yao, pamoja na misheni ya misaada, na misheni ya doria ili kuhakikisha udumishaji wa amani. Mara nyingi wao hushirikiana mara kwa mara na idara ya rasilimali watu ya HQCS kwa ajili ya upangaji bora wa mahitaji ya baadaye.",,,False,False,False
+687671c0ebd2bf665349dc7f,http://data.europa.eu/esco/occupation/e44b2459-af5e-492d-9c57-d9c2e62944e7,"104170d6-2be3-4b6e-9b6b-3c155480288d
+d879ec35-53d6-494a-80e9-8c91cfe2c12d
+636484fb-1a16-425c-8a56-362b0165bccc
+53ee3d1e-e966-47cf-b991-df411bdb61b9
+a04ce143-6d38-43d7-b711-b8721d137670",110,110.12,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,squadron leader,"air force commandant
+squadron commander
+air force squadron leader
+squadron leader
+air force squadron team leader","Squadron leaders command a squadron specialising in different operations, such as aircraft squadrons, ground operations squadrons, or armoured fighting vehicles squadrons.",kiongozi wa skwadroni,"kamanda wa jeshi la anga
+kamanda wa skwadroni
+kiongozi wa skwadroni ya jeshi la anga
+kiongozi wa skwadroni
+kiongozi wa timu ya skwadroni ya jeshi la anga","Viongozi wa skwadroni huongoza skwadroni inayobobea katika operesheni tofauti, kama vile skwadroni za ndege, skwadroni za operesheni za ardhini, au skwadroni za magari ya kivita ya deraya.",,,False,False,False
+687671c0ebd2bf665349dc80,http://data.europa.eu/esco/occupation/c6a26e11-bdf1-47a1-849d-fdcf819d458d,"35b86e1b-3919-4c7b-baeb-20caa0f04f75
+3b1d8c6f-7db7-40c1-846f-7e1f9c0f2a81
+8e60b194-a31d-46b4-af3e-f8425157f5b6
+e3564dd7-1b7f-41c9-a3e5-690f253ccd85
+11392d6a-7beb-4255-9750-dfcc624e6699",110,110.2,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,armed forces officer,"major
+lieutenant general
+Roal Air Force officer
+second lieutenant
+general
+lieutenant
+military officer
+air force officer
+Royal Navy officer
+major general
+RAF officer
+armed forces officer
+captain
+officer cadet
+colonel
+naval officer
+army officer
+Royal Marines officer
+navy officer
+lieutenant colonel
+brigadier","Armed forces officers supervise operations and manoeuvres, assign duties, and command subordinate staff. They ensure efficient communication within and between units and perform training duties. They also operate equipment and supervise equipment maintenance.",ofisa wa majeshi,"meja
+luteni jenerali
+ofisa wa Jeshi la Anga la Kifalme
+luteni wa pili
+jenerali
+luteni
+ofisa wa kijeshi
+ofisa wa jeshi la anga
+ofisa wa Jeshi la Majini la Kifalme
+meja jenerali
+ofisa wa RAF
+ofisa wa majeshi
+kepteni
+kadeti wa ofisa
+kanali
+ofisa wa majini
+ofisa wa jeshi la nchi kavu
+ofisa wa Wanamaji wa Kifalme
+ofisa wa jeshi la majini
+luteni kanali
+brigedia","Maofisa wa majeshi husimamia operesheni na manuva, kugawa majukumu, na kuongoza wafanyakazi walio chini yao. Wanahakikisha mawasiliano bora ndani na kati ya vitengo na kutekeleza majukumu ya mafunzo. Pia huendesha vifaa na kusimamia matengenezo ya vifaa.",,,False,False,False

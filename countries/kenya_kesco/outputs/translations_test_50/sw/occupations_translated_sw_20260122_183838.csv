@@ -1,0 +1,1111 @@
+﻿ID,ORIGINURI,UUIDHISTORY,OCCUPATIONGROUPCODE,CODE,DEFINITION,SCOPENOTE,REGULATEDPROFESSIONNOTE,OCCUPATIONTYPE,ISLOCALIZED,PREFERREDLABEL,ALTLABELS,DESCRIPTION,PREFERREDLABEL_SW,ALTLABELS_SW,DESCRIPTION_SW,DEFINITION_SW,SCOPENOTE_SW,HAS_DUPLICATE_ALTLABELS_SW,PREFERREDLABEL_NOT_IN_ALTLABELS_SW,POSSIBLY_TRUNCATED_SW
+687671c0ebd2bf665349dc7c,http://data.europa.eu/esco/occupation/f2cc5978-e45c-4f28-b859-7f89221b0505,"2b1925d6-9bc1-4569-9eaa-32838c42f899
+e9915884-9253-4f44-b66c-85ee15bd49cc
+baf4e950-0686-4d1d-8efd-b55c90c55a93
+24fd8541-da16-4761-a2b8-07ee45d09c94
+b7da05d5-5d29-443e-aa7f-2de6b3451552",110,0110.1,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,air force officer,"royal airforce officer
+flight lieutenant
+flight officer
+air commodore
+air force officer
+military group captain
+command and control officer
+pilot officer
+squadron leader","Air force officers specialise in flying or ground duties, and supervise a team of air force personnel. They coordinate their team's training and welfare, and perform duties specific to their area of specialisation.",afisa wa jeshi la anga,"afisa wa jeshi la anga la kifalme
+luteni wa urubani
+afisa wa urubani
+komodo wa anga
+afisa wa jeshi la anga
+kepteni wa kikundi cha kijeshi
+afisa wa amri na udhibiti
+afisa rubani
+kiongozi wa kikosi cha ndege","Maafisa wa jeshi la anga wamebobea katika majukumu ya urubani au ya ardhini, na husimamia timu ya wafanyakazi wa jeshi la anga. Wanaratibu mafunzo na ustawi wa timu yao, na kutekeleza majukumu mahususi katika eneo lao la utaalamu.",,,False,False,False
+687671c0ebd2bf665349dc7d,http://data.europa.eu/esco/occupation/b223f402-0318-4e27-8691-df6e7f7295d2,"aa4577ca-ba2a-410e-b988-f9a58d78ad6b
+6df014a1-962d-4982-9a99-485fa21ace42
+97867224-7209-46a9-bdc2-d57a3d085cd9
+036eb333-b91c-41a7-b5ad-eafd8636f64f
+741deb41-8b83-475d-8c86-4e714fd049fc",110,0110.10,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,lieutenant,"police lieutenant
+lieutenant
+armed forces lieutenant","Lieutenants command troops of platoons of soldiers and lead them in training and discipline exercises. They also perform administrative duties, and function as advisers.",luteni,"luteni wa polisi
+luteni
+luteni wa majeshi ya ulinzi","Maluteni huongoza vikosi vya askari na kuwaongoza katika mazoezi ya mafunzo na nidhamu. Pia hutekeleza majukumu ya kiutawala, na kufanya kazi kama washauri.",,,False,False,False
+687671c0ebd2bf665349dc7e,http://data.europa.eu/esco/occupation/262f21a3-ae78-46f4-a5f9-5a1f502caa90,"9655dbaf-2393-4ca6-b853-ff33f2d3273c
+1e9a0807-5b98-4200-96b0-1356635f006d
+661a6453-b104-4c5d-9565-a1a5f0338154
+ab3ba361-9246-4ce3-8a6c-b986ec828a40
+2e91be82-26db-48f8-8c9e-b3a87e6773b6",110,0110.11,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,navy officer,"Observer, navy
+midshipman
+navy officer
+ship-of-the-line ensign
+sub-lieutenant","Navy officers command missions during conflict and peace times, and supervise training and development of their teams. They supervise combat operations of their team, as well as aid missions, and patrolling missions to ensure peace-keeping. Often they collaborate on a regular basis with the HR department of the HQCS for the best planning of the future needs.",afisa wa jeshi la majini,"mwangalizi wa jeshi la majini
+kadeti wa jeshi la majini
+afisa wa jeshi la majini
+ensaini wa meli za kivita
+luteni msaidizi","Maafisa wa jeshi la majini huongoza misheni wakati wa migogoro na nyakati za amani, na kusimamia mafunzo na maendeleo ya timu zao. Husimamia operesheni za kivita za timu yao, pamoja na misheni ya misaada, na misheni ya doria ili kuhakikisha udumishaji wa amani. Mara nyingi wao hushirikiana mara kwa mara na idara ya rasilimali watu ya makao makuu kwa ajili ya upangaji bora wa mahitaji ya baadaye.",,,False,False,False
+687671c0ebd2bf665349dc7f,http://data.europa.eu/esco/occupation/e44b2459-af5e-492d-9c57-d9c2e62944e7,"104170d6-2be3-4b6e-9b6b-3c155480288d
+d879ec35-53d6-494a-80e9-8c91cfe2c12d
+636484fb-1a16-425c-8a56-362b0165bccc
+53ee3d1e-e966-47cf-b991-df411bdb61b9
+a04ce143-6d38-43d7-b711-b8721d137670",110,0110.12,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,squadron leader,"air force commandant
+squadron commander
+air force squadron leader
+squadron leader
+air force squadron team leader","Squadron leaders command a squadron specialising in different operations, such as aircraft squadrons, ground operations squadrons, or armoured fighting vehicles squadrons.",kiongozi wa kikosi cha ndege,"kamanda wa jeshi la anga
+kamanda wa kikosi
+kiongozi wa kikosi cha jeshi la anga
+kiongozi wa kikosi cha ndege
+kiongozi wa timu ya kikosi cha jeshi la anga","Viongozi wa vikosi huongoza kikosi kilichobobea katika operesheni tofauti, kama vile vikosi vya ndege, vikosi vya operesheni za ardhini, au vikosi vya magari ya kivita ya deraya.",,,False,False,False
+687671c0ebd2bf665349dc80,http://data.europa.eu/esco/occupation/c6a26e11-bdf1-47a1-849d-fdcf819d458d,"35b86e1b-3919-4c7b-baeb-20caa0f04f75
+3b1d8c6f-7db7-40c1-846f-7e1f9c0f2a81
+8e60b194-a31d-46b4-af3e-f8425157f5b6
+e3564dd7-1b7f-41c9-a3e5-690f253ccd85
+11392d6a-7beb-4255-9750-dfcc624e6699",110,0110.2,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,armed forces officer,"major
+lieutenant general
+Roal Air Force officer
+second lieutenant
+general
+lieutenant
+military officer
+air force officer
+Royal Navy officer
+major general
+RAF officer
+armed forces officer
+captain
+officer cadet
+colonel
+naval officer
+army officer
+Royal Marines officer
+navy officer
+lieutenant colonel
+brigadier","Armed forces officers supervise operations and manoeuvres, assign duties, and command subordinate staff. They ensure efficient communication within and between units and perform training duties. They also operate equipment and supervise equipment maintenance.",afisa wa majeshi ya ulinzi,"meja
+luteni jenerali
+afisa wa jeshi la anga la kifalme
+luteni wa pili
+jenerali
+luteni
+afisa wa kijeshi
+afisa wa jeshi la anga
+afisa wa jeshi la majini la kifalme
+meja jenerali
+afisa wa RAF
+afisa wa majeshi ya ulinzi
+kepteni
+kadeti wa afisa
+kanali
+afisa wa majini
+afisa wa jeshi la nchi kavu
+afisa wa wanamaji wa kifalme
+afisa wa jeshi la majini
+luteni kanali
+brigedia","Maafisa wa majeshi ya ulinzi husimamia operesheni na manuva, hupanga majukumu, na kuongoza wafanyakazi walio chini yao. Wanahakikisha mawasiliano madhubuti ndani na kati ya vitengo na kutekeleza majukumu ya mafunzo. Pia huendesha vifaa na kusimamia matengenezo ya vifaa.",,,False,False,False
+687671c0ebd2bf665349dc81,http://data.europa.eu/esco/occupation/9bf4c8ea-e814-4772-ae31-0f29672dc497,"b4fefaf0-f542-40f0-ba57-62e2fd2a25c3
+8234b8c7-fb59-44fe-b62f-514a0c9c2fbc
+4649a77c-5302-4080-b664-2ced453fd1fd
+86e07c7d-e126-4f5e-a5b1-efe5610869c9
+d47e18f7-76ae-4cef-94c5-56b3d7f42729",110,0110.3,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,army captain,"captain armed forces
+company commander
+captain armed services
+troop commander
+army chief officer
+army captain
+armed services captain
+armed forces captain
+battery commander
+captain royal marines","Army captains aid in the supervision of large units of soldiers, as well as perform planning and strategic duties in tactical operations. They also ensure equipment maintenance and provide support in logistic matters as well as support during operations.",kepteni wa jeshi la nchi kavu,"kepteni wa majeshi ya ulinzi
+kamanda wa kampuni
+kepteni wa huduma za kijeshi
+kamanda wa kikosi cha askari
+afisa mkuu wa jeshi la nchi kavu
+kepteni wa jeshi la nchi kavu
+kepteni wa huduma za ulinzi
+kepteni wa majeshi ya ulinzi
+kamanda wa betri
+kepteni wa wanamaji wa kifalme","Makepteni wa jeshi la nchi kavu husaidia katika usimamizi wa vitengo vikubwa vya askari, pamoja na kutekeleza majukumu ya upangaji na kimkakati katika operesheni za mbinu. Pia wanahakikisha matengenezo ya vifaa na kutoa msaada katika masuala ya usafirishaji pamoja na msaada wakati wa operesheni.",,,True,False,False
+687671c0ebd2bf665349dc82,http://data.europa.eu/esco/occupation/c6e5e0e7-fa99-4f71-9fc1-9889d85282a5,"342adbcc-7669-457f-9f15-bc1ea1152621
+e7b35394-be1a-4f1b-bd53-999622d7290a
+a0ea8745-0e9f-4637-8676-35a1dd264660
+60942b0c-7d5b-4fec-9dce-9739e91d172e
+82782635-cabf-4611-9786-d555e93fa41c",110,0110.4,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,army general,"lieutenant general
+military general
+major general
+general
+general military
+army general
+armed forces general","Army generals command large divisions of the army. They perform management duties, administrative duties, and planning and strategic duties. They develop policies for the improvement of the military and general defence, and ensure the nation's safety.",jenerali wa jeshi la nchi kavu,"luteni jenerali
+jenerali wa kijeshi
+meja jenerali
+jenerali
+jenerali wa kijeshi
+jenerali wa jeshi la nchi kavu
+jenerali wa majeshi ya ulinzi","Majenerali wa jeshi la nchi kavu huongoza divisheni kubwa za jeshi. Wanatekeleza majukumu ya usimamizi, majukumu ya kiutawala, na majukumu ya upangaji na kimkakati. Wanatengeneza sera za uboreshaji wa jeshi na ulinzi wa jumla, na kuhakikisha usalama wa taifa.",,,True,False,False
+687671c0ebd2bf665349dc83,http://data.europa.eu/esco/occupation/e4c915ff-6c9c-4fa9-a8fb-09d0c67e30d4,"522b2ed8-38a5-45c5-b4f9-fd066f276c96
+9fc2a2d2-3f97-4ccb-9b4d-1e327c6e9d81
+f5f21808-3bf6-4633-9b1b-8fafd8a3900b
+3925d910-3073-4a3f-8c9e-a771d6749188
+d836cd16-419b-427f-81b8-6f1956b94365",110,0110.5,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,army major,"battalion commandant
+army commandant
+armed forces major
+lieutenant commander
+military major
+major
+army major","Army majors command large units of officers and soldiers, supervise their training, and oversee their wellfare. They also supervise their administration, and equipment management.",meja wa jeshi la nchi kavu,"kamanda wa batalioni
+kamanda wa jeshi
+meja wa majeshi ya ulinzi
+luteni kamanda
+meja wa kijeshi
+meja
+meja wa jeshi la nchi kavu","Mameja wa jeshi la nchi kavu huongoza vitengo vikubwa vya maafisa na askari, kusimamia mafunzo yao, na kusimamia ustawi wao. Pia husimamia utawala wao, na usimamizi wa vifaa.",,,False,False,False
+687671c0ebd2bf665349dc84,http://data.europa.eu/esco/occupation/7696b15a-c52e-4ac5-b38d-9eeb010c5fa3,"8050a38c-30e0-4c63-864c-5c46629ce2da
+e99ad2a0-570d-482b-9dab-80199697ecad
+5de00a64-2dc3-40ac-804d-0c2462a24bbd
+ecd581a1-301a-4172-aae6-45b2516e4eba
+b4cae094-6195-4131-9037-4fe35a7011f7",110,0110.6,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,artillery officer,"munitions officer
+infantry officer
+gunner
+artillery technician
+artillery officer","Artillery officers offer support in battle in the fields of target acquisition, coordination of information, surveillance and weaponry. They are in charge of tactics, and deployment of weaponry on the field. They also lead soldiers.",afisa wa mizinga,"afisa wa zana za kivita
+afisa wa watembea kwa miguu
+mfyatuaji mizinga
+fundi wa mizinga
+afisa wa mizinga","Maafisa wa mizinga hutoa msaada katika vita katika nyanja za utambuzi wa shabaha, uratibu wa habari, ufuatiliaji na silaha. Wanahusika na mbinu, na uwekaji wa silaha uwanjani. Pia huongoza askari.",,,False,False,False
+687671c0ebd2bf665349dc85,http://data.europa.eu/esco/occupation/bbd1fe06-1b55-4937-9317-fc162311ab38,"06f8d619-ffd3-4313-a53d-b02677245a72
+bf9059ae-d124-4578-8166-431001db229f
+c97d8ea0-082c-433c-8a37-e58fda766056
+a94d1368-8e08-4ae3-b298-3e46de7d9a52
+d52d2d4e-fd44-43a6-953a-0cf737e8bc05",110,0110.7,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,brigadier,"director of staff
+brigadier
+military brigadier
+army brigadier
+field officer
+brigadier general","Brigadiers command large units of troops called brigades, oversee strategic and tactical planning, and monitor operations of their brigade. They manage the headquarters of the brigade's division and ensure correct operations of the division on base and in the field.",brigedia,"mkurugenzi wa wafanyakazi
+brigedia
+brigedia wa kijeshi
+brigedia wa jeshi la nchi kavu
+afisa wa nyanjani
+brigedia jenerali","Mabrigedia huongoza vitengo vikubwa vya vikosi vinavyoitwa brigedi, husimamia upangaji wa kimkakati na mbinu, na kufuatilia operesheni za brigedi yao. Wanadhibiti makao makuu ya divisheni ya brigedi na kuhakikisha operesheni sahihi za divisheni hiyo kambini na uwanjani.",,,False,False,False
+687671c0ebd2bf665349dc86,http://data.europa.eu/esco/occupation/b864c9a3-ef6e-46a0-a40c-66188f74dfa7,"70e063c3-f955-4915-bb0e-dfc3986fb604
+ef4a246b-ee62-4b4f-b74d-d13baeb6a2d3
+5db5f43a-b2d6-487f-85ba-f2685e3e44ec
+0f93b439-df31-4c09-b29e-6d4580b69c62
+ab0cdc73-4ff8-480d-ab6c-a0aa107b1980",110,0110.8,,"Includes:
+- battalion commander
+- wing commander",http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,colonel,"wing commander
+colonel
+lieutenant colonel
+battalion commander","Colonels serve in the staff of a military commander, and function as primary advisers in operational and strategic decision-making to senior officers.",kanali,"kamanda wa mrengo
+kanali
+luteni kanali
+kamanda wa kikosi","Makanali huhudumu katika wafanyakazi wa kamanda wa kijeshi, na hufanya kazi kama washauri wakuu katika ufanyaji maamuzi wa kioperesheni na kimkakati kwa maafisa wakuu.",,"Inajumuisha:
+- kamanda wa kikosi
+- kamanda wa mrengo",False,False,False
+687671c0ebd2bf665349dc87,http://data.europa.eu/esco/occupation/0b1d8dcb-d941-4d79-99bf-fc10c1806c43,"32fdac12-2edb-4b72-bde0-f8fdabc3ec2e
+26ad2217-e2b1-44d3-895c-264a6695cc0f
+7a146b51-bdeb-463d-9c28-0359d8dd2102
+b916dfb9-236f-4b8e-b20a-0e9def8d6dda
+e7173c2d-5d2e-4157-bfb1-82da994caac3",110,0110.9,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,fleet commander,"deputy chief of naval staff
+navy commander
+commander of fleet
+fleet commander
+naval commander
+royal navy commander","Fleet commanders ensure that naval vessels are ready for inclusion in operations, and are maintained in compliance with rules and regulations. They also supervise naval personnel and are responsible for the operations of the naval service.",kamanda wa meli za kivita,"naibu mkuu wa wafanyakazi wa wanamaji
+kamanda wa wanamaji
+kamanda wa kundi la meli
+kamanda wa meli za kivita
+kamanda wa jeshi la majini
+kamanda wa jeshi la majini la kifalme","Makamanda wa meli za kivita huhakikisha kuwa vyombo vya majini viko tayari kwa ajili ya kujumuishwa katika operesheni, na vinatunzwa kwa kuzingatia sheria na kanuni. Pia husimamia wafanyakazi wa wanamaji na wanawajibika kwa operesheni za huduma ya wanamaji.",,,False,False,False
+687671c0ebd2bf665349dc88,http://data.europa.eu/esco/occupation/4a3f40a8-0587-494c-b8d3-7098b8c5992f,"dac44bb3-151a-4d11-a75b-eae685742be3
+96a2b2db-f7d0-417e-8354-a05bc7c5244c
+5bcb120f-249c-44ee-b230-c0d6ded1f8a1
+ca848e5a-3f2f-4f69-aefb-e05350d109cd
+ae5c01b9-2b64-4578-b6aa-304f8595b092",210,0210.1,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,army corporal,"special forces corporal
+regimental corporal
+corporal
+lance corporal
+batallion corporal
+master corporal
+army corporal
+royal marines corporal
+armed forces corporal",Army corporals supervise sections of soldiers and perform instruction duties. They also command equipment such as heavy machinery and weaponry.,koplo wa jeshi,"koplo wa kikosi maalum
+koplo wa rejimenti
+koplo
+lensi koplo
+koplo wa kikosi
+koplo mkuu
+koplo wa jeshi
+koplo wa wanamaji wa kifalme
+koplo wa majeshi ya ulinzi",Makoplo wa jeshi husimamia sehemu za askari na kutekeleza majukumu ya mafunzo. Pia huongoza vifaa kama vile mitambo mizito na silaha.,,,False,False,False
+687671c0ebd2bf665349dc89,http://data.europa.eu/esco/occupation/cb3b2662-774a-4e6f-841e-f120244d7031,"757c885b-ad65-447c-8793-d4ca209b3afb
+a8845dd5-5e30-464e-8cdb-63801cfdf518
+850c3dbb-fb16-47e7-8159-5744e11f1c43
+276a8afb-739e-4cfb-a3cb-feb848046559
+7004cde5-a6c0-4b91-bf6e-c1395e8fe2b8",210,0210.2,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,sergeant,"station sergeant
+drill sergeant
+police sargeant
+lance sergeant
+warrant officer
+ordnance sergeants
+commissary sergeant
+adjutant
+army sargeant
+quartermaster sergeant
+colour sergeant
+petty officer
+sergeant
+staff sergeant
+chief petty officer
+chief non-commissioned officer","Sergeants command squads as a second in command. They allocate tasks and duties, supervise equipment, and ensure proper training of staff. They also advise commanding officers and perform support duties.",sajenti,"sajenti wa kituo
+sajenti wa gwaride
+sajenti wa polisi
+lensi sajenti
+afisa mteule
+masajenti wa zana za kivita
+sajenti wa ugavi
+adjutanti
+sajenti wa jeshi
+sajenti wa robo mkuu
+sajenti wa rangi
+afisa mdogo wa majini
+sajenti
+sajenti wa wafanyakazi
+afisa mkuu mdogo wa majini
+afisa mkuu asiye na kamisheni","Masajenti huongoza vikosi kama makamanda wasaidizi. Wanagawa kazi na majukumu, kusimamia vifaa, na kuhakikisha mafunzo sahihi ya wafanyakazi. Pia huwashauri maafisa wakuu na kutekeleza majukumu ya usaidizi.",,,False,False,False
+687671c0ebd2bf665349dc8a,http://data.europa.eu/esco/occupation/1de91afd-9da2-47ab-a7e7-19bf931709a4,"72fd9d00-fd03-4ea1-a5bd-a1d4064e6f5d
+03aaa40f-2279-4602-9983-b8a5f7728bf9
+10126e8e-2ef1-454a-81e3-fe426b1da0e2
+1da0013b-6dc2-4f74-b049-681860a82e82
+ca68bdd4-1136-4810-bef3-cb5fe04863b1",210,0210.3,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,special forces officer,"rapid response operative
+counter-insurgency officer
+air force officer
+airborne operations officer
+commando
+special forces officer
+unconventional warfare officer
+marine
+counter-terrorism officer","Special forces officers operate in specialised missions such as counter terrorism missions. They perform combat and intelligence missions in order to impede with enemy equipment and installations, and to gather information on enemy strategy and movement.",afisa wa kikosi maalum,"mtekelezaji wa majibu ya haraka
+afisa wa kupambana na uasi
+afisa wa jeshi la anga
+afisa wa operesheni za angani
+komando
+afisa wa kikosi maalum
+afisa wa vita visivyo vya kawaida
+mwanamaji
+afisa wa kupambana na ugaidi","Maafisa wa kikosi maalum hufanya kazi katika misheni maalum kama vile misheni za kupambana na ugaidi. Wanatekeleza misheni za mapigano na ujasusi ili kuzuia vifaa na mitambo ya adui, na kukusanya taarifa kuhusu mkakati na mienendo ya adui.",,,False,False,False
+687671c0ebd2bf665349dc8b,http://data.europa.eu/esco/occupation/86c892cf-09a3-44c8-b9d1-814d93dbcbb4,"5dc1deeb-9335-45fb-9111-f77bc99c6bfa
+fe9ad581-230a-4382-8263-8efc7ee3b426
+2fa71417-2447-458c-af0d-fdb530421aac
+25b82e6e-97fc-4f90-9652-aa2fc2e7f305
+a1d50efd-9310-4a0b-8103-5274233e0440",210,0210.4,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,warfare specialist,"warfare specialist
+electronic warfare operator
+surveillance operator
+defence specialist
+defence analyst
+electronic warfare specialist","Warfare specialist perform strategic duties, such as making tactical decisions, detecting and identifying potential threats, and locating targets and objectives. They communicate with their and other teams to ensure the efficiency of the operation, and also oversee the safety of the team.",mtaalamu wa vita,"mtaalamu wa vita
+opereta wa vita vya kielektroniki
+opereta wa ufuatiliaji
+mtaalamu wa ulinzi
+mchambuzi wa ulinzi
+mtaalamu wa vita vya kielektroniki","Wataalamu wa vita hutekeleza majukumu ya kimkakati, kama vile kufanya maamuzi ya mbinu, kugundua na kutambua vitisho vinavyoweza kutokea, na kutafuta maeneo ya shabaha na malengo. Wanawasiliana na timu zao na timu nyingine ili kuhakikisha ufanisi wa operesheni, na pia kusimamia usalama wa timu.",,,False,False,False
+687671c0ebd2bf665349dc8c,http://data.europa.eu/esco/occupation/c94dc5b2-6b23-4915-8de5-a4e6ae86d802,"6d6b8b94-6c29-4697-ae9c-35456247ce0d
+b5070bb1-2188-4a32-a1be-9d18b62ba074
+4e5abf28-7f04-4a34-a09b-9be8168087f1
+57c803ce-61fd-4af7-9562-e037d53074ab
+a63a40a6-8289-4476-be8d-2343f89b239c",310,0310.1,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,air force pilot,"military pilot
+navy pilot
+armed forces pilot
+naval pilot
+air force pilot
+aircrew pilot
+military aircraft driver","Air force pilots operate aircrafts in combat missions, patrol missions, or search and rescue missions. They ensure aircraft maintenance, and communicate with air force bases and other vessels to ensure safety and efficiency in operations.",rubani wa jeshi la anga,"rubani wa kijeshi
+rubani wa jeshi la majini
+rubani wa majeshi ya ulinzi
+rubani wa wanamaji
+rubani wa jeshi la anga
+rubani wa wafanyakazi wa ndege
+dereva wa ndege ya kijeshi","Marubani wa jeshi la anga huendesha ndege katika misheni za mapigano, misheni za doria, au misheni za utafutaji na uokoaji. Wanahakikisha matengenezo ya ndege, na kuwasiliana na vituo vya jeshi la anga na vyombo vingine ili kuhakikisha usalama na ufanisi katika operesheni.",,,False,False,False
+687671c0ebd2bf665349dc8d,http://data.europa.eu/esco/occupation/fdc8adfb-1807-4146-98ae-3a26fbe19996,"2a8a930c-a4d1-49c0-8f8e-0525f31f5ed3
+16feefda-6fe8-48e2-9b8b-13a783cfc751
+4c9646c0-9af0-4a4f-adeb-d9ddf857542e
+cd33fb92-0e02-4c32-b569-21c36c03c96e
+1a0cb2d2-739f-4e74-a36a-fe50add49fea",310,0310.2,,"Includes:
+- marine minesweepers
+- people working underwater",http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,bomb disposal technician,"bomb disposal technician
+bomb disposal expert
+bomb disposal officer
+armed forces soldier
+sapper
+mine disposal technician
+minesweeper
+ordnance technician","Bomb disposal technicians search areas using special equipment such as metal detectors, or using trained animals, for the presence of land mines and bombs, and remove the explosive materials according to safety regulations. After the search for and location of mines and bombs, they disarm them aiming to avoid any risk of detonation, and ensure the area is cleared before disarming and removal procedures.",fundi wa kutegua mabomu,"fundi wa kutegua mabomu
+mtaalamu wa kutegua mabomu
+ofisa wa kutegua mabomu
+askari wa majeshi ya ulinzi
+sapa
+fundi wa kutegua mabomu ya ardhini
+mfagia mabomu ya ardhini
+fundi wa zana za kivita","Mafundi wa kutegua mabomu hupekua maeneo kwa kutumia vifaa maalum kama vile vigunduzi vya chuma, au kwa kutumia wanyama waliofunzwa, ili kubaini uwepo wa mabomu ya ardhini na mabomu mengine, na kuondoa vifaa vya milipuko kulingana na kanuni za usalama. Baada ya kutafuta na kupata eneo la mabomu ya ardhini na mabomu mengine, wanayategua kwa lengo la kuepuka hatari yoyote ya mlipuko, na kuhakikisha eneo hilo limesafishwa kabla ya taratibu za kutegua na kuondoa.",,"Inajumuisha:
+- wafagia mabomu ya majini
+- watu wanaofanya kazi chini ya maji",False,False,False
+687671c0ebd2bf665349dc8e,http://data.europa.eu/esco/occupation/bd5a2f44-fc06-45fd-909b-3a4001c8b8a3,"945eb527-bba1-4a76-816e-697bdd347bfe
+756ecc55-e354-44e0-ba4c-06a885a30700
+2e73e8f1-9c94-4e6c-8428-fb0f6373fcc5
+b13ac0f7-130a-4369-b327-9928f1a4a642
+19f24575-0279-4b9b-bd4e-a55bfcdbe1ad",310,0310.3,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,infantry soldier,"foot soldier
+military ranger
+infantryman
+army soldier
+sniper
+rifleman
+infantry soldier","Infantry soldiers fight in combat missions or provide aid in peacekeeping missions and other humanitarian services. They handle weapons and provide defence services where they are required, and attempt to complete missions while causing minimal harm.",askari wa miguu,"askari wa miguu
+renja wa kijeshi
+mwanajeshi wa miguu
+askari wa jeshi la nchi kavu
+mdunguaji
+mpiga bunduki
+askari wa miguu","Askari wa miguu hupigana katika misheni za mapigano au kutoa msaada katika misheni za kulinda amani na huduma nyingine za kibinadamu. Wanashika silaha na kutoa huduma za ulinzi pale zinapohitajika, na hujaribu kukamilisha misheni huku wakisababisha madhara madogo iwezekanavyo.",,,True,False,False
+687671c0ebd2bf665349dc8f,http://data.europa.eu/esco/occupation/35e67944-231e-4bc9-8c69-560f203167ff,"0c751a6a-216e-4824-83be-e2ecc5471ce1
+e94ac76e-1b02-492c-8845-c8e35244dbf1
+c0efe802-017b-43f4-ba45-a0578d56cecd
+4a8fb95a-ad9f-4ea6-b432-b207ce050097
+e249fad4-5ca0-47c6-823b-1b1363c75506",310,0310.4,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,intelligence communications interceptor,"signal intelligence voice interceptor
+communications intelligence intercept operator
+communications interceptor, intelligence analyst
+communications interceptor
+electronic intelligence intercept operator
+intelligence intercept operator
+military intelligence communications interceptor
+intelligence communications interceptor
+communications locator",Intelligence communications interceptors work in the air force in the development of intelligence in places like headquarters and command posts. They search and intercept electromagnetic traffic transmitted in different languages.,mnasa mawasiliano ya kijasusi,"mnasa sauti wa kijasusi wa ishara
+opereta wa kunasa mawasiliano ya kijasusi
+mnasa mawasiliano, mchambuzi wa kijasusi
+mnasa mawasiliano
+opereta wa kunasa ujasusi wa kielektroniki
+opereta wa kunasa ujasusi
+mnasa mawasiliano ya kijasusi ya kijeshi
+mnasa mawasiliano ya kijasusi
+mtafuta eneo la mawasiliano",Wanasa mawasiliano ya kijasusi hufanya kazi katika jeshi la anga katika ukuzaji wa ujasusi katika maeneo kama makao makuu na vituo vya amri. Wanatafuta na kunasa mawasiliano ya sumakuumeme yanayotumwa katika lugha tofauti.,,,False,False,False
+687671c0ebd2bf665349dc90,http://data.europa.eu/esco/occupation/555235ce-8c45-409b-a6c9-83e69c2d2bce,"ec33da98-b136-4565-8c18-936b9e93e6d2
+2fa7f370-6af3-440d-9a6e-26443561f769
+0ad0696d-c80d-4cfd-96d9-4f4b921154b5
+e8ab4759-a5d6-4ec3-9a90-095788ddbfa8
+16b96d4d-e754-46e4-8894-f2d70a954b9f",310,0310.5,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,military engineer,"defence technology engineering adviser
+ballistics engineer
+defence technology engineering consultant
+army engineer
+defence engineering expert
+defence technology engineer
+weaponary developer
+army engineer officer
+defence engineering consultant
+combat technician
+military engineer
+defense engineer
+field engineer
+defence technology engineering specialist
+defence engineering adviser
+defence engineering specialist
+combat engineer
+defence technology engineering expert
+defence technician","Military engineers perform technical and scientific functions in the military, such as the development of concepts for military technical equipment, support of the manufacturing of military equipment, and technical research, maintenance, and quality assurance.",mhandisi wa kijeshi,"mshauri wa uhandisi wa teknolojia ya ulinzi
+mhandisi wa balistiki
+mshauri wa uhandisi wa teknolojia ya ulinzi
+mhandisi wa jeshi
+mtaalamu wa uhandisi wa ulinzi
+mhandisi wa teknolojia ya ulinzi
+msanidi wa silaha
+ofisa mhandisi wa jeshi
+mshauri wa uhandisi wa ulinzi
+fundi wa mapambano
+mhandisi wa kijeshi
+mhandisi wa ulinzi
+mhandisi wa nyanjani
+mtaalamu wa uhandisi wa teknolojia ya ulinzi
+mshauri wa uhandisi wa ulinzi
+mtaalamu wa uhandisi wa ulinzi
+mhandisi wa mapambano
+mtaalamu wa uhandisi wa teknolojia ya ulinzi
+fundi wa kijeshi","Wahandisi wa kijeshi hutekeleza majukumu ya kiufundi na kisayansi jeshini, kama vile uundaji wa dhana za vifaa vya kiufundi vya kijeshi, usaidizi wa utengenezaji wa vifaa vya kijeshi, na utafiti wa kiufundi, matengenezo, na uhakikisho wa ubora.",,,True,False,False
+687671c0ebd2bf665349dc91,http://data.europa.eu/esco/occupation/7226c10f-701b-4711-8843-140aace12c6f,"00127a1e-a7b8-488b-b01b-f7ffe15c2a46
+576da681-173c-44fb-a755-a1944667b036
+54d975ec-ae65-4485-81a3-99abc78e4e12
+6155d7e9-974c-4540-8c55-fde8c9c327e1
+81c2c6f2-031a-4120-ae41-0c08dface80b",1111,1111.1,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,city councillor,"County Clerk
+County Executive Committee Member
+Town Clerk
+Village Council Member
+cabinet member
+city councillor
+city councilor
+councillor
+county councillor
+elected representative
+local councillor
+local government councillor
+town councillor","City councillors represent residents of a city in the city's council and perform local legislative duties. They examine the concerns of the residents and respond to them in an appropriate manner, and represent their political party's policies and programs in the city council as well. They communicate with governmental officials to ensure the city and its agenda are represented and supervise all operations which fall under the city council's responsibility.",diwani wa jiji,"Karani wa Kaunti
+Mjumbe wa Kamati ya Utendaji ya Kaunti
+Karani wa Mji
+Mjumbe wa Baraza la Kijiji
+mjumbe wa baraza la mawaziri
+diwani wa jiji
+diwani wa jiji
+diwani
+diwani wa kaunti
+mwakilishi aliyechaguliwa
+diwani wa serikali za mitaa
+diwani wa serikali ya mitaa
+diwani wa mji","Madiwani wa jiji huwakilisha wakazi wa jiji katika baraza la jiji na kutekeleza majukumu ya kisheria ya eneo husika. Wanachunguza kero za wakazi na kuzishughulikia kwa njia inayofaa, na pia huwakilisha sera na programu za vyama vyao vya kisiasa katika baraza la jiji. Wanawasiliana na maafisa wa serikali ili kuhakikisha jiji na ajenda zake zinawakilishwa na kusimamia shughuli zote zilizo chini ya majukumu ya baraza la jiji.",,,True,False,False
+687671c0ebd2bf665349dc92,http://data.europa.eu/esco/occupation/404a50e9-61ce-448d-a695-bbfc697a0727,"a523a068-4b45-4200-83cb-41bbe9b596fc
+1cc17ce9-238a-4ad9-adb6-918fc34a6ffa
+db16acef-2796-4723-af5e-666f4ec31c8c
+a392fbd5-021c-42a5-986d-c501f933564f
+8be482a7-2b20-482b-a8ba-7e51a56ff1e7",1111,1111.2,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,government minister,"Assistant Minister
+assembley minister
+government minister
+member of parliament
+minister
+minister of state
+prime minister
+secretary of state","Government ministers function as decision-makers in national or regional governments, and head government ministries. They perform legislative duties and supervise the operation of their department.",waziri wa serikali,"Naibu Waziri
+waziri wa bunge
+waziri wa serikali
+mbunge
+waziri
+waziri wa nchi
+waziri mkuu
+katibu wa nchi","Mawaziri wa serikali hufanya kazi kama wafanya maamuzi katika serikali za kitaifa au kikanda, na huongoza wizara za serikali. Wanatekeleza majukumu ya kisheria na kusimamia uendeshaji wa idara zao.",,,False,False,False
+687671c0ebd2bf665349dc93,http://data.europa.eu/esco/occupation/d63789ac-74b5-40e3-b890-685513c38e12,"89bbdd0e-9b0e-4183-a1a5-be2730abcf39
+839232d9-d743-4ddb-8d83-7803af9cd595
+6a39b4f1-cbeb-4abe-9906-fea4ff386bfc
+0bdfb482-7159-40da-ac7e-5ef3b786af19
+594ff3ff-a13f-497b-bb53-18a5df182a26",1111,1111.3,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,governor,"Deputy Governor
+governor
+prefect
+provincial governor
+regional governor
+state governor
+viceroy","Governors are the main legislators of a nation's unit such as a state or province. They supervise staff, perform administrative and ceremonial duties, and function as the main representative for their governed region. They regulate local governments in their region.",gavana,"Naibu Gavana
+gavana
+mkuu wa mkoa
+gavana wa mkoa
+gavana wa kikanda
+gavana wa jimbo
+makamu wa mfalme","Magavana ndio watunga sheria wakuu wa kitengo cha taifa kama vile jimbo au mkoa. Wanasimamia wafanyakazi, hutekeleza majukumu ya kiutawala na ya kisherehe, na hufanya kazi kama mwakilishi mkuu wa eneo wanalotawala. Wanadhibiti serikali za mitaa katika maeneo yao.",,,False,False,False
+687671c0ebd2bf665349dc94,http://data.europa.eu/esco/occupation/6cee3765-2b3b-48b0-af2b-1eb512d071fd,"32751c60-0c14-4281-a13c-209745087d9e
+66f5cf4d-96e4-46ea-b006-418a4b38524d
+8743b6e5-426a-4b4b-b101-7966cc9a00f0
+b7ff389d-48b4-4922-904d-8d2120e679b0
+a49b4391-e2bf-44e5-ac34-f291b15a636a",1111,1111.4,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,mayor,"County Municipality Board Chairperson
+cabinet leader
+civic leader
+council leader
+lady mayoress
+leader of the council
+lord mayor
+mayor
+mayoress","Mayors chair their jurisdiction's council meetings and act as main supervisor of the local government's administrative and operational policies. They also represent their jurisdiction in ceremonial and official events and promote activities and events. They, together with the council, hold the local or regional legislative power and oversee development and implementation of policies. They also supervise staff and perform administrative duties.",meya,"Mwenyekiti wa Bodi ya Manispaa ya Kaunti
+kiongozi wa baraza la mawaziri
+kiongozi wa kiraia
+kiongozi wa baraza
+mke wa meya
+kiongozi wa baraza
+meya mkuu
+meya
+mke wa meya","Meya huongoza mikutano ya baraza la mamlaka yake na hufanya kazi kama msimamizi mkuu wa sera za kiutawala na kioperesheni za serikali ya mitaa. Pia huwakilisha mamlaka yake katika matukio ya kisherehe na rasmi na kukuza shughuli na matukio. Wao, pamoja na baraza, wanashikilia mamlaka ya kisheria ya eneo au kanda na kusimamia uundaji na utekelezaji wa sera. Pia wanasimamia wafanyakazi na kutekeleza majukumu ya kiutawala.",,,True,False,False
+687671c0ebd2bf665349dc95,http://data.europa.eu/esco/occupation/5bca96fd-4203-400b-be58-9e9b50bc98da,"f470e2d8-1fcb-4cf9-832f-da73ff197da1
+a0a3c44f-8a55-49b7-825c-6e8ac7dd5b3e
+625dc4e6-8e37-4bc5-a419-70410e481a5e
+74ef21cc-b666-4a53-ab05-0ddb727352ca
+0628b2f9-cbd7-4550-b59a-caa40c4a257e",1111,1111.5,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,member of parliament,"Deputy Speaker of the National Assembly
+Member National Assembly
+Member of County assembly
+Speaker County Assembly
+Speaker of the National Assembly
+assembly member
+legislative member
+member of european parliament
+member of parliament","Members of parliament represent their political party's interests in parliaments. They perform legislative duties, developing and proposing new laws, and communicate with government officials to assess current issues and government operations. They oversee the implementation of laws and policies and function as government representatives to the public to ensure transparency.",mbunge,"Naibu Spika wa Bunge la Kitaifa
+Mbunge wa Bunge la Kitaifa
+Mjumbe wa Bunge la Kaunti
+Spika wa Bunge la Kaunti
+Spika wa Bunge la Kitaifa
+mjumbe wa bunge
+mjumbe wa kisheria
+mbunge wa bunge la ulaya
+mbunge","Wabunge huwakilisha maslahi ya vyama vyao vya kisiasa bungeni. Wanatekeleza majukumu ya kisheria, kuandaa na kupendekeza sheria mpya, na kuwasiliana na maafisa wa serikali ili kutathmini masuala ya sasa na shughuli za serikali. Wanasimamia utekelezaji wa sheria na sera na hufanya kazi kama wawakilishi wa serikali kwa umma ili kuhakikisha uwazi.",,,False,False,False
+687671c0ebd2bf665349dc96,http://data.europa.eu/esco/occupation/0ee67d5e-8de9-48f0-97c5-ba23d486b1e9,"c14d3958-fa76-4d65-ac85-1a0e236c0cb6
+db19986c-626d-4d02-b4bc-782d4be4ada3
+af8ae0b9-b7d2-4daa-86e8-8c8077e8f4c3
+c039e5f4-f4a2-4159-adf3-7b94dc35270b
+f4781439-4221-4c2a-bfef-1f58c702af4f",1111,1111.6,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,secretary of state,"County Secretary
+Financial Secretary
+Permanent Secretary
+Principal Secretary
+Secretary to the Cabinet
+Secretary, Commission on Revenue Allocation
+Secretary, Ethics and Anti-Corruption Commission
+Secretary, Independent Electoral and Boundaries Commission
+Secretary, Kenya National Human Rights and Equality Commission
+Secretary, National Land Commission
+Secretary, Parliamentary Service Commission
+Secretary, of Commission of Administrative Justice
+minister of state
+secretary of state
+senior minister
+state secretary
+under secretary of state
+undersecretary of state","Secretaries of state assist heads of government departments, such as ministers, and aid in the supervision of proceedings in the department. They assist in the direction of policies, operations, and department staff, and perform planning, resource allocation, and decision-making duties.",katibu wa nchi,"Katibu wa Kaunti
+Katibu wa Fedha
+Katibu Mkuu
+Katibu Mkuu
+Katibu wa Baraza la Mawaziri
+Katibu, Tume ya Ugavi wa Mapato
+Katibu, Tume ya Maadili na Kupambana na Ufisadi
+Katibu, Tume Huru ya Uchaguzi na Mipaka
+Katibu, Tume ya Kitaifa ya Kenya ya Haki za Binadamu na Usawa
+Katibu, Tume ya Kitaifa ya Ardhi
+Katibu, Tume ya Huduma za Bunge
+Katibu, wa Tume ya Haki ya Utawala
+waziri wa nchi
+katibu wa nchi
+waziri mwandamizi
+katibu wa nchi
+naibu katibu wa nchi
+naibu katibu wa nchi","Makatibu wa nchi huwasaidia wakuu wa idara za serikali, kama vile mawaziri, na kusaidia katika usimamizi wa shughuli katika idara. Wanasaidia katika uongozi wa sera, shughuli, na wafanyakazi wa idara, na kutekeleza majukumu ya kupanga, ugavi wa rasilimali, na kufanya maamuzi.",,,True,False,False
+687671c0ebd2bf665349dc97,http://data.europa.eu/esco/occupation/73c3f018-71ce-4dc1-abdd-14cea7873717,"1872e35c-5aa1-4af7-aeca-7bd58f7628ae
+5b99c32f-5322-4aee-98ae-de2758a87e23
+db71e9cb-88f1-46da-8dc5-44035da8eb7d
+192ef14b-d941-4e11-a119-d6aa3cbe7722
+4e9f88d4-ba79-4ada-a544-7046eadde7c0",1111,1111.7,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,senator,"Deputy Speaker Senate
+Speaker of Senate
+senator","Senators perform legislative duties on a central government level, such as working on constitutional reforms, negotiating on bills of law, and settling conflicts between other governmental institutions.",seneta,"Naibu Spika wa Seneti
+Spika wa Seneti
+seneta","Maseneta hutekeleza majukumu ya kisheria katika ngazi ya serikali kuu, kama vile kufanya kazi katika mageuzi ya kikatiba, kujadili miswada ya sheria, na kusuluhisha migogoro kati ya taasisi nyingine za kiserikali.",,,False,False,False
+687671c0ebd2bf665349dc98,http://data.europa.eu/esco/occupation/9e4269d5-e10e-4f49-ac99-65c833f933a2,"5043d0ce-c9f8-4560-96d0-d4583a50b44c
+b2725c3b-9cc2-4118-b804-50abd30b9ee1
+530c828b-1efa-4469-8734-3f70f5e63609
+f10ada0f-f581-4c18-bfde-48a00339c0db
+ca389c55-54ba-4a5a-92ea-8a593e1bde74",1112,1112.1,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,central bank governor,"central bank managers
+central bank directors
+central bank manager
+central bank governor
+national bank governors
+main bank governor
+central banker
+central bank director
+central bankers
+national bank governor","Central bank governors set the monetary and regulatory policy, determine interest rates, maintain price stability, control the national money supply and issuance and foreign exchange currency rates and gold reserves. They oversee and control the banking industry.",gavana wa benki kuu,"mameneja wa benki kuu
+wakurugenzi wa benki kuu
+meneja wa benki kuu
+gavana wa benki kuu
+magavana wa benki za kitaifa
+gavana mkuu wa benki
+mfanyakazi wa benki kuu
+mkurugenzi wa benki kuu
+wafanyakazi wa benki kuu
+gavana wa benki ya kitaifa","Magavana wa benki kuu huweka sera ya fedha na udhibiti, huamua viwango vya riba, hudumisha utulivu wa bei, hudhibiti usambazaji na utoaji wa fedha za kitaifa na viwango vya kubadilisha fedha za kigeni na akiba ya dhahabu. Wanasimamia na kudhibiti sekta ya benki.",,,False,False,False
+687671c0ebd2bf665349dc99,http://data.europa.eu/esco/occupation/a8d05b64-f60b-4dd9-91c2-e2e63d82f2f5,"e38216b3-9cd7-4492-b72e-100f6e55ee73
+7a5421c3-9191-41b3-86ce-aab33e77f83b
+af776366-150a-41de-993e-17f707d66674
+f9440201-abb1-45cb-9a5f-35262f054ec8
+392ce5e6-a19a-4968-95eb-96c36683a465",1112,1112.2,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,consul,"consul-general
+consul
+honorary consul
+attaché
+chargé d'affaires",Consuls represent governments in foreign institutions such as embassies in order to facilitate economic and political cooperation between the two nations. They protect the interests of their home nation and provide bureaucratic assistance to citizens living as expatriates or travelling in the host country.,balozi mdogo,"balozi mdogo mkuu
+balozi mdogo
+balozi mdogo wa heshima
+mshauri wa ubalozi
+kaimu balozi",Mabalozi wadogo huwakilisha serikali katika taasisi za kigeni kama vile balozi ili kuwezesha ushirikiano wa kiuchumi na kisiasa kati ya mataifa mawili. Wanatunza maslahi ya nchi yao na kutoa msaada wa kiofisi kwa raia wanaoishi kama wageni au wanaosafiri katika nchi mwenyeji.,,,False,False,False
+687671c0ebd2bf665349dc9a,http://data.europa.eu/esco/occupation/1fb92021-9576-4c85-8759-f6918e9f0ad4,"ed3f20c4-a3d9-410e-99bc-ee5fa803c7db
+462cad86-0449-4906-a545-04879a5ba6db
+14fed09f-208b-405c-b781-b32a9a5e4d9c
+a8f545e8-34e0-4ec4-a784-dc16b79ef313
+068125a5-9b96-4251-8ad1-e81b39a43fd7",1112,1112.3,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,diplomat,"Courier, diplomatic
+UN diplomat
+diplomat
+diplomatic agent
+diplomatic service officer
+envoy
+foreign service officer
+her majesty's diplomat","Diplomats represent their home nation and government in international organisations. They negotiate with the organisation's officials to ensure the home nation's interests are protected, as well as facilitate productive and friendly communication between the home nation and the international organisation.",mwanadiplomasia,"Mjumbe, wa kidiplomasia
+mwanadiplomasia wa UN
+mwanadiplomasia
+wakala wa kidiplomasia
+ofisa wa huduma za kidiplomasia
+mjumbe
+ofisa wa huduma za kigeni
+mwanadiplomasia wa malkia","Wanakadiplomasia wanawakilisha mataifa yao ya nyumbani na serikali katika mashirika ya kimataifa. Wanajadiliana na maafisa wa shirika ili kuhakikisha maslahi ya taifa la nyumbani yanalindwa, pamoja na kuwezesha mawasiliano yenye tija na ya kirafiki kati ya taifa la nyumbani na shirika la kimataifa.",,[TUPU],False,False,False
+687671c0ebd2bf665349dc9b,http://data.europa.eu/esco/occupation/190ec9a5-938c-45a5-bd9c-c12b1af33353,"c5a75e35-6a37-414d-af0b-dc4cc688df5a
+0f7fa8e8-b9b4-4335-98cc-317b21d767f5
+d4903873-8c02-4711-92e0-9029b39f9e23
+04dc0369-a9f3-440c-a03b-ebd20a4ddeff
+3ea057a9-11ba-4d90-8d10-3dbeba0548ca",1112,1112.3.1,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,ambassador,"resident ambassador
+diplomatic ambassador
+high commissioner
+ordinary ambassador
+ambassador",Ambassadors represent their own government in foreign countries for diplomatic and peace-keeping purposes. They deal with political negotiation between the country of origin and the country where they are stationed and ensure the protection of citizens from their home nation in the nation they are stationed. They facilitate communication between the two nations and perform advisory functions to the home government to help develop foreign policy.,balozi,"balozi mkazi
+balozi wa kidiplomasia
+kamishna mkuu
+balozi wa kawaida
+balozi",Mabalozi wanawakilisha serikali zao katika nchi za kigeni kwa madhumuni ya kidiplomasia na kudumisha amani. Wanashughulikia mazungumzo ya kisiasa kati ya nchi asilia na nchi walikopangiwa na kuhakikisha ulinzi wa raia kutoka taifa lao la nyumbani katika taifa walikopangiwa. Wanawezesha mawasiliano kati ya mataifa hayo mawili na kufanya kazi za ushauri kwa serikali ya nyumbani ili kusaidia kuendeleza sera za kigeni.,,[TUPU],False,False,False
+687671c0ebd2bf665349dc9c,http://data.europa.eu/esco/occupation/a2494c65-11a8-4853-9371-c89333c33be1,"54dd76a0-3769-4792-97ec-3919da880a47
+f1edf730-728b-4385-acc4-409934df8cfa
+dd3df574-d1e0-439d-8359-02ee11301295
+578ef529-4582-462e-9670-720771aabe19
+e0241687-34be-46a2-bd91-497a7292551d",1112,1112.3.2,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,embassy counsellor,"embassy counselor
+defence attache
+embassy officer
+political attache
+economic attache
+counsellor of embassy
+attache
+cultural attache
+embassy counsellor","Embassy counsellors supervise specific sections in an embassy, such as economics, defence or political affairs. They perform advisory functions for the ambassador, and perform diplomatic functions in their section or specialty. They develop policies and implementation methods and supervise the embassy section's staff.",mshauri wa ubalozi,"mshauri wa ubalozi
+mshauri wa ulinzi
+ofisa wa ubalozi
+mshauri wa kisiasa
+mshauri wa kiuchumi
+mshauri wa ubalozi
+mshauri
+mshauri wa kitamaduni
+mshauri wa ubalozi","Washauri wa ubalozi husimamia sehemu maalum katika ubalozi, kama vile uchumi, ulinzi au masuala ya kisiasa. Wanafanya kazi za ushauri kwa balozi, na kufanya kazi za kidiplomasia katika sehemu au utaalamu wao. Wanatengeneza sera na mbinu za utekelezaji na kusimamia wafanyakazi wa sehemu ya ubalozi.",,[TUPU],True,False,False
+687671c0ebd2bf665349dc9d,http://data.europa.eu/esco/occupation/f2413988-f76a-4636-a4b1-9952517aa21f,"df2085ba-a517-4ee6-bc51-1f2e98f62c71
+a6719b26-b105-45f4-b41d-c4a98a278dfe
+ae47ca14-ddad-413f-bdc4-99f757b6bffe
+dbbd987a-5a7f-4ae7-b909-f1a550adea2e
+4c5ab17d-f9e7-48c5-a3f1-1bca34751f4e",1112,1112.4,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,fire commissioner,"brigade manager
+fire brigade commissioner
+fire service commissioner
+chief fire officer
+fire commissioner
+area manager",Fire commissioners oversee the activity of the fire department making sure the services supplied are effective and the necessary equipment is provided. They develop and manage the business policies ensuring the legislation in the field is followed. Fire commissioners perform safety inspections and promotes fire prevention education.,kamishna wa zimamoto,"meneja wa kikosi
+kamishna wa kikosi cha zimamoto
+kamishna wa huduma ya zimamoto
+mkuu wa zimamoto
+kamishna wa zimamoto
+meneja wa eneo",Makamishna wa zimamoto husimamia shughuli za idara ya zimamoto wakihakikisha huduma zinazotolewa ni bora na vifaa vinavyohitajika vinapatikana. Wanatengeneza na kusimamia sera za biashara wakihakikisha sheria katika nyanja hiyo inafuatwa. Makamishna wa zimamoto hufanya ukaguzi wa usalama na kukuza elimu ya kuzuia moto.,,[TUPU],False,False,False
+687671c0ebd2bf665349dc9e,http://data.europa.eu/esco/occupation/2ae275fe-4f11-4a38-9e95-d466d74b42a3,"b18012e1-b2b4-4c04-ae77-e9de5a9edec0
+53bca00d-6351-4021-9faa-b05dbd4afc29
+056f9f2e-1a17-4a17-86fb-20a47fc34ba5
+ac087737-10cc-4e31-9589-fc9454098fcf
+bf46c441-28c1-4618-b4fb-17fa5c28dd65",1112,1112.5,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,police commissioner,"Inspector General of Police
+Provincial Commissioner
+Secretary, Police Service Commission
+chief constable
+chief police constable
+chief police officer
+commissaire
+police & crime commissioner
+police and crime commissioner
+police chief
+police chief constable
+police commissioner
+police woman
+sheriff","Police commissioners supervise an entire police department by monitoring and regulating the administrative and operational activities of a police department, as well as developing policies and procedural methods. They are responsible for the cooperation between the various divisions in the department, and overseeing the employees' performance.",kamishna wa polisi,"Inspekta Jenerali wa Polisi
+Kamishna wa Mkoa
+Katibu, Tume ya Huduma ya Polisi
+mkuu wa polisi
+mkuu wa polisi wa wilaya
+ofisa mkuu wa polisi
+kamishna
+kamishna wa polisi na uhalifu
+kamishna wa polisi na uhalifu
+mkuu wa polisi
+mkuu wa polisi wa wilaya
+kamishna wa polisi
+mwanamke wa polisi
+sharifu","Makamishna wa polisi husimamia idara nzima ya polisi kwa kufuatilia na kudhibiti shughuli za kiutawala na kioperesheni za idara ya polisi, pamoja na kutengeneza sera na mbinu za kiutaratibu. Wanawajibika kwa ushirikiano kati ya vitengo mbalimbali katika idara, na kusimamia utendaji wa wafanyakazi.",,[TUPU],True,False,False
+687671c0ebd2bf665349dc9f,http://data.europa.eu/esco/occupation/0752ed49-03e7-4d75-8314-a051b3771a1d,"62dadbf9-b2d3-467a-9c83-83d6f8b5c3b3
+8cc8aea5-1a16-4170-a173-33c7ecc0fbbf
+9d4cad03-7c4d-422d-b104-004e67c3fadd
+92b73e80-4e21-465b-bb5e-112502d407f2
+8d386b06-48a5-4c2b-9283-f16195c0d1fc",1112,1112.6,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,public administration manager,"Assistant County Commissioner
+Chairperson Ethics and Anti-Corruption Commission
+Chairperson and Members Council of Governors
+Chairperson and Members of Police Service Commission
+Chairperson and Members of Salaries and Remuneration Commission
+Chairperson and Members of the Commission on Revenue Allocation
+Chairperson and Members of the Independent Electoral and Boundaries
+Commission
+Chairperson and Members of the Judicial Service Commission
+Chairperson and Members of the Kenya National Human Rights and
+Equality Commission
+Chairperson and Members of the National Land Commission
+Chairperson and Members of the Parliamentary Service Commission
+Chairperson and Members of the Public Service Commission
+Chairperson and Members of the Teachers Service Commission
+Chief County Officer
+Chief of Staff and Head of Public Service
+County Chief of Staff
+County Commissioner
+Deputy County Commissioner
+District Officer
+District commissioner
+Manager Resource Mobilization
+Postmaster
+Regional Coordinators
+Secretary, County Public Service Board
+Secretary, Public Service Commission
+Secretary, Salaries and Remuneration Commission
+Secretary, Teachers Service Commission
+Sub County Administrator
+Town Manager
+Ward Administrators
+chief of staff
+city administrator
+civil service administrator
+county council manager
+district council manager
+government department manager
+local authority officer
+public administration director
+public administration manager
+public administrator
+public body administrator
+public body manager
+public institution director
+public service administrator
+public service director","Public administration managers direct, monitor and evaluate the implementation of government policies. They supervise staff and manage resources used for implementation, and write reports on the implementation process. They also communicate with government officials and the public to inform them on the policies. Public administration managers may also participate in the design and creation of public policies.",meneja wa utawala wa umma,"Naibu Kamishna wa Kaunti
+Mwenyekiti wa Tume ya Maadili na Kupambana na Ufisadi
+Mwenyekiti na Wanachama wa Baraza la Magavana
+Mwenyekiti na Wanachama wa Tume ya Huduma ya Polisi
+Mwenyekiti na Wanachama wa Tume ya Mishahara na Marupurupu
+Mwenyekiti na Wanachama wa Tume ya Ugavi wa Mapato
+Mwenyekiti na Wanachama wa Tume Huru ya Uchaguzi na Mipaka
+Mwenyekiti na Wanachama wa Tume ya Huduma za Mahakama
+Mwenyekiti na Wanachama wa Tume ya Kitaifa ya Kenya ya Haki za Binadamu na Usawa
+Mwenyekiti na Wanachama wa Tume ya Kitaifa ya Ardhi
+Mwenyekiti na Wanachama wa Tume ya Huduma za Bunge
+Mwenyekiti na Wanachama wa Tume ya Huduma za Umma
+Mwenyekiti na Wanachama wa Tume ya Huduma za Walimu
+Ofisa Mkuu wa Kaunti
+Mkuu wa Wafanyakazi na Mkuu wa Utumishi wa Umma
+Mkuu wa Wafanyakazi wa Kaunti
+Kamishna wa Kaunti
+Naibu Kamishna wa Kaunti
+Ofisa wa Wilaya
+Kamishna wa wilaya
+Meneja wa Uhamasishaji Rasilimali
+Postamasta
+Waratibu wa Kanda
+Katibu, Bodi ya Huduma za Umma ya Kaunti
+Katibu, Tume ya Huduma za Umma
+Katibu, Tume ya Mishahara na Marupurupu
+Katibu, Tume ya Huduma za Walimu
+Msimamizi wa Kaunti Ndogo
+Meneja wa Mji
+Wasimamizi wa Kata
+mkuu wa wafanyakazi
+msimamizi wa jiji
+msimamizi wa utumishi wa umma
+meneja wa baraza la kaunti
+meneja wa baraza la wilaya
+meneja wa idara ya serikali
+ofisa wa mamlaka ya mtaa
+mkurugenzi wa utawala wa umma
+meneja wa utawala wa umma
+msimamizi wa umma
+msimamizi wa chombo cha umma
+meneja wa chombo cha umma
+mkurugenzi wa taasisi ya umma
+msimamizi wa huduma za umma
+mkurugenzi wa huduma za umma","Meneja wa utawala wa umma huongoza, hufuatilia na kutathmini utekelezaji wa sera za serikali. Husimamia wafanyakazi na kusimamia rasilimali zinazotumiwa kwa utekelezaji, na kuandika ripoti kuhusu mchakato wa utekelezaji. Pia huwasiliana na maafisa wa serikali na umma ili kuwafahamisha kuhusu sera hizo. Meneja wa utawala wa umma anaweza pia kushiriki katika usanifu na uundaji wa sera za umma.",,[TUPU],True,False,False
+687671c0ebd2bf665349dca0,http://data.europa.eu/esco/occupation/5c5b153e-4bf8-4f3d-973d-12fabf306d12,"9d37d0bb-e401-46d7-b021-3deaac51a620
+d61dc6f7-ff56-4b94-afe1-2469c9d037d9
+64e0a068-dd3d-495c-940c-6b067566968e
+83baa965-084e-415f-887c-aa1fc2f87a08
+448adf96-beab-4a5d-82d5-e1bbe75d199e",1112,1112.7,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,secretary general,"Chief Secretary
+Secretary, Council of Governors
+first secretary
+general secretary
+international organisation chief officer
+secretary general
+secretary-general","Secretaries general head international governmental or nongovernmental organisations. They supervise staff, direct policy and strategy development, and function as main representative of the organisation.",katibu mkuu,"Katibu Mkuu Kiongozi
+Katibu, Baraza la Magavana
+katibu wa kwanza
+katibu mkuu
+ofisa mkuu wa shirika la kimataifa
+katibu mkuu
+katibu mkuu","Makatibu wakuu huongoza mashirika ya kimataifa ya kiserikali au yasiyo ya kiserikali. Husimamia wafanyakazi, huongoza uundaji wa sera na mikakati, na hufanya kazi kama mwakilishi mkuu wa shirika.",,[TUPU],True,False,False
+687671c0ebd2bf665349dca1,http://data.europa.eu/esco/occupation/e9cf8b24-6b8b-47cc-9dd3-b601aa135960,"3488307f-1097-4ecc-884b-a01e521a6193
+2bf12796-e25e-4967-9286-c7f0371f47da
+6912db6d-8e9e-4e58-8af7-91f56053a145
+76f0498a-13e0-4965-a83f-5b42c7e9c2ef
+d299cfa9-d833-4fcb-9d5d-11808a20c312",1114,1114.1,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,special-interest groups' official,"Senior Official of Council of Governors
+Senior Official of Humanitarian and Other Special Interest Organization
+Senior Official of Jua Kali Employers Association
+Senior Official of Political Party Organization
+Senior Official of Social and Welfare Society
+campaign group official
+employers organisation official
+humanitarian organisation official
+industry association official
+lobbying body official
+professional body official
+special-interest group official
+special-interest group staff member
+special-interest group worker
+special-interest groups' official
+special-interest groups' staff member
+special-interest groups' worker
+sport governing body official
+sports association official
+trade association official
+trades union official
+trades union research officer","Special-interest groups' officials represent and act on behalf of special-interest groups such as trade unions, employer organisations, trade and industry associations, sports associations and humanitarian organisations. They develop policies and ensure their implementation. Special-interest groups' officials speak for their members in negotiations about topics such as working conditions and safety.",ofisa wa vikundi vya maslahi maalum,"Ofisa Mwandamizi wa Baraza la Magavana
+Ofisa Mwandamizi wa Shirika la Kibinadamu na Maslahi Mengine Maalum
+Ofisa Mwandamizi wa Chama cha Waajiri wa Jua Kali
+Ofisa Mwandamizi wa Shirika la Chama cha Kisiasa
+Ofisa Mwandamizi wa Jumuiya ya Kijamii na Ustawi
+ofisa wa kikundi cha kampeni
+ofisa wa shirika la waajiri
+ofisa wa shirika la kibinadamu
+ofisa wa chama cha tasnia
+ofisa wa chombo cha ushawishi
+ofisa wa chombo cha kitaaluma
+ofisa wa kikundi cha maslahi maalum
+mfanyakazi wa kikundi cha maslahi maalum
+mfanyakazi wa kikundi cha maslahi maalum
+ofisa wa vikundi vya maslahi maalum
+mfanyakazi wa vikundi vya maslahi maalum
+mfanyakazi wa vikundi vya maslahi maalum
+ofisa wa chombo kinachosimamia michezo
+ofisa wa chama cha michezo
+ofisa wa chama cha biashara
+ofisa wa chama cha wafanyakazi
+ofisa utafiti wa chama cha wafanyakazi","Maafisa wa vikundi vya maslahi maalum huwakilisha na kutenda kwa niaba ya vikundi vya maslahi maalum kama vile vyama vya wafanyakazi, mashirika ya waajiri, vyama vya biashara na tasnia, vyama vya michezo na mashirika ya kibinadamu. Wanatengeneza sera na kuhakikisha utekelezaji wake. Maafisa wa vikundi vya maslahi maalum huzungumza kwa niaba ya wanachama wao katika mazungumzo kuhusu mada kama vile mazingira ya kazi na usalama.",,[TUPU],True,False,False
+687671c0ebd2bf665349dca2,http://data.europa.eu/esco/occupation/93dfef83-579c-4bef-b0ba-d41ee9cbda85,"ee4b7ced-4dfa-4ec0-b0f4-7322f4d18f71
+14e87f9c-9b8f-42ea-af37-e6b455de7c84
+3bd2022f-d85b-48e9-a1c1-fdef6c100b9f
+e2843602-0b27-448d-b37e-9c0f1a7e92ec
+e9adb6d2-261b-4457-87b5-8be5f895b97f",1120,1120.1,,"Excludes:
+- people working in animal research facilities",http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,animal facility manager,"aquarium CEO
+zoo chief executive officer
+zoo CEO
+aquarium managing director
+animal facility manager
+aquarium chief operating officer
+zoo managing director
+zoo chief operating officer
+zoo COO
+aquarium COO
+aquarium chief executive officer","Animal facility managers coordinate and plan all activities of a zoo. They formulate policies, manage daily operations, and plan the use of materials and human resources. They are the driving force and public face of their institution. This often involves representing their institution on a national, regional and global scale and taking part in coordinated zoo activities.",meneja wa kituo cha wanyama,"Mkurugenzi Mtendaji wa akwariamu
+ofisa mkuu mtendaji wa bustani ya wanyama
+Mkurugenzi Mtendaji wa bustani ya wanyama
+mkurugenzi mkuu wa akwariamu
+meneja wa kituo cha wanyama
+ofisa mkuu wa uendeshaji wa akwariamu
+mkurugenzi mkuu wa bustani ya wanyama
+ofisa mkuu wa uendeshaji wa bustani ya wanyama
+COO wa bustani ya wanyama
+COO wa akwariamu
+ofisa mkuu mtendaji wa akwariamu","Meneja wa kituo cha wanyama huratibu na kupanga shughuli zote za bustani ya wanyama. Wanatengeneza sera, kusimamia shughuli za kila siku, na kupanga matumizi ya vifaa na rasilimali watu. Wao ndio nguvu inayochochea na sura ya umma ya taasisi yao. Hii mara nyingi inahusisha kuwakilisha taasisi yao katika ngazi ya kitaifa, kikanda na kimataifa na kushiriki katika shughuli zilizoratibiwa za bustani ya wanyama.",,"Haijumuishi:
+- watu wanaofanya kazi katika vituo vya utafiti wa wanyama",False,False,False
+687671c0ebd2bf665349dca3,http://data.europa.eu/esco/occupation/6c3fd65e-2d24-47d8-bc22-9e93512bdcc2,"0b20f294-2438-472f-a3c4-6872d3dfef34
+7a616a81-0731-4498-bb2c-dd944c58d4dd
+cbcea8af-7a41-4726-af20-f2aa6af475de
+453a11c3-448f-42a6-af3f-11385301a66d
+eed36ec6-490d-4ba3-a58e-7d92135fb679",1120,1120.3,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,chief executive officer,"CEO
+Chairperson, Company
+Director-General, Corporation
+University Board Chairperson
+University President
+chairman
+chief executive officer
+managing director
+president
+senior executive officer","Chief executive officers hold the highest ranking in a pyramidal corporate structure. They are able to hold a complete idea of the functioning of the business, its departments, risks, and stakeholders. They analyse different kinds of information and create links among them for decision-making purposes. They serve as a communication link with the board of directors for reporting and implementation of the overall strategy.",ofisa mkuu mtendaji,"CEO
+Mwenyekiti, Kampuni
+Mkurugenzi Mkuu, Shirika
+Mwenyekiti wa Bodi ya Chuo Kikuu
+Rais wa Chuo Kikuu
+mwenyekiti
+ofisa mkuu mtendaji
+mkurugenzi mkuu
+rais
+ofisa mkuu mwandamizi","Maafisa wakuu watendaji wanashikilia nafasi ya juu zaidi katika muundo wa kampuni wa piramidi. Wana uwezo wa kuwa na wazo kamili la utendaji wa biashara, idara zake, hatari, na wadau. Wanachambua aina tofauti za habari na kuunda viungo kati yao kwa madhumuni ya kufanya maamuzi. Wanatumika kama kiungo cha mawasiliano na bodi ya wakurugenzi kwa ajili ya kuripoti na utekelezaji wa mkakati wa jumla.",,[TUPU],False,False,False
+687671c0ebd2bf665349dca4,http://data.europa.eu/esco/occupation/4be4ea31-1211-4f0c-82bb-f6fe10791f4d,"72f54177-a91d-4fff-ab95-b799ad25f873
+1f13fbe1-15d6-46b2-be2c-4332f120899a
+d657d13d-8f2f-453b-8054-00680160430b
+433f6614-08c0-4305-9c88-a63408bca658
+c4a6608b-9573-46dd-b016-8dd648d5ecb0",1120,1120.3.1,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,airport chief executive,"airport general manager
+airport manager
+airport chief executive
+airport CEO
+general director of airport
+airport chief operating officer",Airport chief executives lead a group of airport directors who are responsible for all areas of the airport. They envision and make decisions on the strategic direction of the airport based on the information provided by their team of managers.,mkurugenzi mkuu wa uwanja wa ndege,"meneja mkuu wa uwanja wa ndege
+meneja wa uwanja wa ndege
+mkurugenzi mkuu wa uwanja wa ndege
+CEO wa uwanja wa ndege
+mkurugenzi mkuu wa uwanja wa ndege
+afisa mkuu wa uendeshaji wa uwanja wa ndege",Wakurugenzi wakuu wa uwanja wa ndege huongoza kikundi cha wakurugenzi wa uwanja wa ndege ambao wanawajibika kwa maeneo yote ya uwanja wa ndege. Wanabuni na kufanya maamuzi juu ya mwelekeo wa kimkakati wa uwanja wa ndege kulingana na taarifa zinazotolewa na timu yao ya mameneja.,,,True,False,False
+687671c0ebd2bf665349dca5,http://data.europa.eu/esco/occupation/c64a6e4e-5b38-4f93-b26d-aded817aeaf3,"b5b4b2f1-8dbf-4f61-9b0f-3b1898f85d96
+722e85a0-6a27-42bb-89d2-113259d83339
+1173c493-d1cc-499c-9acd-ccd53a4c17bb
+e4eef8a9-3442-46f3-8931-59c677ed56f3
+4a21a5d2-cdfb-4df4-a3e7-24bebd9d6bdb",1120,1120.4,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,chief operating officer,"company deputy chief executive officer
+chief operations officer
+chief operating officer
+chief administrative officer
+deputy chief executive officer
+executive vice-president
+acting general manager
+managing director","Chief operating officers are the right hand and second in command of a company's chief executive officer. They ensure that the daily operations of the company run smoothly. Chief operating officers also develop company policies, rules and goals.",mkurugenzi mkuu wa uendeshaji,"naibu mkurugenzi mkuu wa kampuni
+afisa mkuu wa uendeshaji
+mkurugenzi mkuu wa uendeshaji
+afisa mkuu wa utawala
+naibu mkurugenzi mkuu mtendaji
+makamu wa rais mtendaji
+meneja mkuu kaimu
+mkurugenzi mtendaji","Wakurugenzi wakuu wa uendeshaji ni mkono wa kulia na wa pili katika uongozi wa mkurugenzi mkuu wa kampuni. Wanahakikisha kuwa shughuli za kila siku za kampuni zinaendeshwa vizuri. Wakurugenzi wakuu wa uendeshaji pia huandaa sera, sheria na malengo ya kampuni.",,,False,False,False
+687671c0ebd2bf665349dca6,http://data.europa.eu/esco/occupation/070e94a8-a933-4557-9b95-fefe7f4f1763,"d47438e9-1fc8-46c2-8d68-4a1b13cde3e3
+a7881620-d669-4d2f-8265-5156f2205fb8
+a2062e32-0b80-4df4-852a-48a09a77c238
+910582a7-1229-4453-b627-2c17b3732e44
+6af625a9-0733-4720-898e-a09407ea365a",1120,1120.5,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,public employment service manager,"jobcentre manager
+public employment service manager
+jobcentre plus manager
+employment service manager
+DWP manager
+national careers service manager
+careers advice manager
+department of work and pensions manager
+job centre manager",Public employment service managers supervise the operations of a public employment agency. They oversee the staff that helps people find employment or provide occupational guidance.,meneja wa huduma za ajira za umma,"meneja wa kituo cha kazi
+meneja wa huduma za ajira za umma
+meneja wa kituo cha kazi cha ziada
+meneja wa huduma za ajira
+meneja wa DWP
+meneja wa huduma ya kitaifa ya taaluma
+meneja wa ushauri wa taaluma
+meneja wa idara ya kazi na pensheni
+meneja wa kituo cha ajira",Mameneja wa huduma za ajira za umma husimamia shughuli za wakala wa ajira wa umma. Wanasimamia wafanyakazi wanaosaidia watu kupata ajira au kutoa mwongozo wa kikazi.,,,False,False,False
+687671c0ebd2bf665349dca7,http://data.europa.eu/esco/occupation/73b10c97-b003-45dc-a36d-c1d585c04be1,"6a37c418-7046-4c0f-babf-953152949042
+984460ad-d6ca-40ba-aa16-dff891039e66
+5c29f58b-a0fe-40db-a6a9-073d83b0668a
+7490270d-fffd-482c-b729-b04a5745be48
+1a6b966b-6ce5-44f4-91bb-43f268ef38c2",1120,1120.6,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,social entrepreneur,"green entrepreneur
+social business founder
+eco-entrepreneur
+social enterprise founder
+social business venture founder
+social entrepreneur","Social entrepreneurs create innovative products or service models to tackle social and environmental challenges, pursuing through their profits a social mission that benefits a wider community or the environment. They often use a more democratic decision-making system by involving closely their stakeholders, and strive to achieve change at a systems level, by influencing policies, market evolutions and even mentalities.",mjasiriamali wa kijamii,"mjasiriamali wa mazingira
+mwasisi wa biashara ya kijamii
+mjasiriamali wa ikolojia
+mwasisi wa shirika la kijamii
+mwasisi wa mradi wa biashara ya kijamii
+mjasiriamali wa kijamii","Wajasiriamali wa kijamii huunda bidhaa au mifumo ya huduma bunifu ili kukabiliana na changamoto za kijamii na kimazingira, wakifuatilia kupitia faida zao dhamira ya kijamii inayofaidi jamii pana au mazingira. Mara nyingi hutumia mfumo wa kufanya maamuzi wa kidemokrasia zaidi kwa kuwashirikisha kwa karibu wadau wao, na hujitahidi kufikia mabadiliko katika ngazi ya mifumo, kwa kushawishi sera, mabadiliko ya soko na hata mitazamo.",,,False,False,False
+687671c0ebd2bf665349dca8,http://data.europa.eu/esco/occupation/30f3ea93-882a-4525-841c-1d5b4b64076f,"d2aa03c8-f351-4e63-96af-5bbe22e41beb
+0eb172fd-8fbf-4385-b11c-682e8ab0de72
+b49dcaef-5347-4795-a5cb-95b84ba12b20
+8ca9f9d2-f36a-469b-a9e2-6c5df5e12e79
+2aa51a19-0e23-4c1d-8257-246ad70d2ac3",1211,1211.1,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,financial manager,"CFO
+Manager Finance and Administration
+Manager Financial Analysis
+chief financial officer
+corporate finance manager
+finance chief
+finance manager
+financial administrator
+financial director
+financial manager","Financial managers handle all the matters in reference to the finance and investments of a company. They manage financial operations of companies such as the assets, liabilities, equity and cash flow aiming to maintain the financial health of the company and operative viability. Financial managers evaluate the strategic plans of the company in financial terms, maintain transparent financial operations for taxation and auditing bodies, and create the financial statements of the company at the end of the fiscal year.",meneja wa fedha,"CFO
+Meneja wa Fedha na Utawala
+Meneja wa Uchambuzi wa Fedha
+mkurugenzi mkuu wa fedha
+meneja wa fedha za shirika
+kiongozi wa fedha
+meneja wa fedha
+mtawala wa fedha
+mkurugenzi wa fedha
+meneja wa fedha","Mameneja wa fedha hushughulikia masuala yote yanayohusu fedha na uwekezaji wa kampuni. Wanadhibiti shughuli za kifedha za makampuni kama vile rasilimali, madeni, usawa na mtiririko wa fedha kwa lengo la kudumisha afya ya kifedha ya kampuni na uwezo wa kujiendesha. Mameneja wa fedha hutathmini mipango ya kimkakati ya kampuni kwa masharti ya kifedha, hudumisha shughuli za kifedha zilizo wazi kwa vyombo vya kodi na ukaguzi, na huandaa taarifa za kifedha za kampuni mwishoni mwa mwaka wa fedha.",,,True,False,False
+687671c0ebd2bf665349dca9,http://data.europa.eu/esco/occupation/04f39bfa-bc03-4480-98bc-b18ce4fe4b4b,"6cc36c58-63f9-41b5-be17-cefd3dd4076f
+3a3f44e1-fb36-42fc-a473-a6201012b803
+216601a0-953a-4746-8551-262bb04cc5f7
+de324e0b-cb5d-4fa5-a873-10e441474409
+f9f6b89c-75c7-4fa9-83ae-b692542f359a",1211,1211.1.1,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,accounting manager,"financial director
+cost accounting manager
+accounting department manager
+group accounting manager
+accounting manager
+financial accounts supervisor
+accounting director
+financial accounting manager
+accounts payable manager
+head of accounts
+accounting office manager","Accounting managers assume responsibility for all accounting activities relating to financial reporting. They develop and maintain accounting principles and procedures to ensure timely and accurate financial statements, supervise accounting staff and manage the accounting activities within the appropriate time frame and budget.",meneja wa uhasibu,"mkurugenzi wa fedha
+meneja wa uhasibu wa gharama
+meneja wa idara ya uhasibu
+meneja wa uhasibu wa kikundi
+meneja wa uhasibu
+msimamizi wa hesabu za fedha
+mkurugenzi wa uhasibu
+meneja wa uhasibu wa kifedha
+meneja wa madeni
+mkuu wa hesabu
+meneja wa ofisi ya uhasibu","Mameneja wa uhasibu huchukua jukumu la shughuli zote za uhasibu zinazohusiana na ripoti za kifedha. Wanatengeneza na kudumisha kanuni na taratibu za uhasibu ili kuhakikisha taarifa za kifedha za wakati na sahihi, kusimamia wafanyakazi wa uhasibu na kudhibiti shughuli za uhasibu ndani ya muda na bajeti inayofaa.",,,False,False,False
+687671c0ebd2bf665349dcaa,http://data.europa.eu/esco/occupation/b680251e-b3c7-4029-9849-66a95081801c,"63347d75-7d99-48af-93ac-8fc550139cf9
+489b2882-d94f-4873-b5d8-be73493ed801
+ada8afe7-26f4-4710-82a5-3b94124005a5
+1616858c-e68f-487b-8544-9dc0aeb24be8
+091c93b3-9c7b-4a31-9e21-4959208fd6dc",1211,1211.1.2,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,bank treasurer,"CFO
+treasury clerk
+chief financial officer
+financial institution treasurer
+senior treasury analyst
+bank treasurer
+deputy bank treasurer","Bank treasurers oversee all aspects of the financial management of a bank. They manage the liquidity and solvency of the bank. They manage and present current budgets, revise financial forecasts, prepare accounts for audit, manage the bank's accounts and maintain accurate record-keeping of financial documentation.",mweka hazina wa benki,"CFO
+karani wa hazina
+mkurugenzi mkuu wa fedha
+mweka hazina wa taasisi ya kifedha
+mchambuzi mkuu wa hazina
+mweka hazina wa benki
+naibu mweka hazina wa benki","Waweka hazina wa benki husimamia vipengele vyote vya usimamizi wa kifedha wa benki. Wanadhibiti ukwasi na uwezo wa kulipa madeni wa benki. Wanadhibiti na kuwasilisha bajeti za sasa, kurekebisha utabiri wa kifedha, kuandaa hesabu kwa ajili ya ukaguzi, kudhibiti akaunti za benki na kudumisha uwekaji sahihi wa kumbukumbu za nyaraka za kifedha.",,,False,False,False
+687671c0ebd2bf665349dcab,http://data.europa.eu/esco/occupation/44e0c015-309d-4f67-98a3-1e036966ed7f,"d3b48397-eb41-489e-849b-8379860db2eb
+cdcd2303-c9ec-42e5-a46b-1eacd3b68c92
+da9a5ebc-741b-484f-b53b-5e6b791a4c8d
+f0f65514-0ae6-4d62-a320-7426778a5577
+52cfd658-75af-4ab4-aa17-8cf9d491a056",1211,1211.1.3,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,budget manager,"budget coordinator
+budget counselor
+money manager
+budget and planning manager
+budget and policy manager
+budget and analysis manager
+budgeting manager
+budget manager","Budget managers assess financial proposals of different departments before granting financial resources to projects. They monitor the implementation of budget policies and procedures. They work closely with other departments in the evaluation of programs, their impact in the organisation, the revenue that they can yield, and the financial efforts required.",meneja wa bajeti,"mratibu wa bajeti
+mshauri wa bajeti
+meneja wa pesa
+meneja wa bajeti na mipango
+meneja wa bajeti na sera
+meneja wa bajeti na uchambuzi
+meneja wa upangaji bajeti
+meneja wa bajeti","Mameneja wa bajeti hutathmini mapendekezo ya kifedha ya idara tofauti kabla ya kutoa rasilimali za kifedha kwa miradi. Wanatunza utekelezaji wa sera na taratibu za bajeti. Wanafanya kazi kwa karibu na idara nyingine katika tathmini ya programu, athari zake katika shirika, mapato yanayoweza kupatikana, na juhudi za kifedha zinazohitajika.",,,False,False,False
+687671c0ebd2bf665349dcac,http://data.europa.eu/esco/occupation/3e1a2f3c-20d6-4d33-aa6f-63cd2a32698d,"189617eb-78ec-4ab4-a741-3a03bd253166
+345d1e76-5117-434e-a641-7140450391db
+9771d3cf-5438-4307-86be-21bf3766d920
+4fd714f9-1021-4222-b660-386f9825a694
+eb6e2e4a-04a8-4502-8624-7453cfd37eef",1211,1211.1.4,,,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,corporate treasurer,"corporate treasury manager
+treasury analyst
+corporate financial officer and treasurer
+group treasurer
+corporate treasury officer
+foreign currency treasurer
+corporate treasury controller
+company treasurer
+corporate treasurer","Corporate treasurers determine and oversee the financial strategic policies of a company or organisation. They use cash management techniques like account organisation, cash flow monitoring, liquidity planning and control, risk management including currency and commodity risks and maintain close connection with banks and rating agencies.",mweka hazina wa shirika,"meneja wa hazina ya shirika
+mchambuzi wa hazina
+afisa wa fedha wa shirika na mweka hazina
+mweka hazina wa kikundi
+afisa wa hazina ya shirika
+mweka hazina wa sarafu za kigeni
+mdhibiti wa hazina ya shirika
+mweka hazina wa kampuni
+mweka hazina wa shirika","Waweka hazina wa shirika huamua na kusimamia sera za kimkakati za kifedha za kampuni au shirika. Wanatumia mbinu za usimamizi wa fedha kama vile mpangilio wa akaunti, ufuatiliaji wa mtiririko wa fedha, upangaji na udhibiti wa ukwasi, usimamizi wa hatari ikiwa ni pamoja na hatari za sarafu na bidhaa na kudumisha uhusiano wa karibu na benki na mashirika ya ukadiriaji.",,,False,False,False
+687671c0ebd2bf665349dcad,http://data.europa.eu/esco/occupation/96e88e86-f2c7-42e6-a2b2-17e4f08d4ee0,"2ee696ba-f18b-4fd5-8c8f-1b6cd29b4a7e
+80aa8e3d-323d-4845-a3cb-a7fec4b85be4
+fe177b61-4b44-4578-9dfd-381c7301cfba
+6271ff34-d4de-4418-ac2c-3adee443eb66
+24241774-080f-492a-ab76-da36e5c25816",1212,1212.1,,The employee volunteering programme coordinator does not usually manage the volunteers directly but rather acts as the interface between the employer and the volunteering organisation that the employees will volunteer with or vice versa.,http://data.europa.eu/esco/regulated-professions/unregulated,escooccupation,True,employee volunteering programme coordinator,"corporate volunteering coordinator
+corporate volunteering manager
+employee volunteering programme coordinator","Employee volunteering programme coordinators work across sectors and fields to coordinate and manage the employee volunteering (sometimes called corporate volunteering) programme for their employer. They are in charge of connecting with local community organisations to determine needs and arrange for volunteers from within the staff of the company to engage with local entities, such as local authorities or local civil society organisations, to meet those needs. Employee volunteering programme coordinators might also arrange for volunteers to undertake their duties online in collaboration with civil society initiatives meeting identified needs. These roles can exist in the company or setting where the employees are based and also in the civil society organisation who receives the volunteers from the employee or corporate volunteering scheme.",mratibu wa mpango wa kujitolea wa wafanyakazi,"mratibu wa kujitolea wa shirika
+meneja wa kujitolea wa shirika
+mratibu wa mpango wa kujitolea wa wafanyakazi","Waratibu wa mpango wa kujitolea wa wafanyakazi hufanya kazi katika sekta na nyanja mbalimbali ili kuratibu na kusimamia mpango wa kujitolea wa wafanyakazi (wakati mwingine huitwa kujitolea kwa shirika) kwa mwajiri wao. Wana jukumu la kuungana na mashirika ya jamii ya mahali hapo ili kubaini mahitaji na kupanga wafanyakazi wa kujitolea kutoka ndani ya kampuni ili kushirikiana na vyombo vya ndani, kama vile mamlaka za mitaa au mashirika ya kiraia ya mahali hapo, ili kukidhi mahitaji hayo. Waratibu wa mpango wa kujitolea wa wafanyakazi wanaweza pia kupanga wafanyakazi wa kujitolea kutekeleza majukumu yao mtandaoni kwa ushirikiano na mipango ya mashirika ya kiraia inayokidhi mahitaji yaliyobainishwa. Majukumu haya yanaweza kuwepo katika kampuni au mazingira ambapo wafanyakazi wapo na pia katika shirika la kiraia linalopokea wafanyakazi wa kujitolea kutoka kwa mpango wa kujitolea wa mfanyakazi au shirika.",,Mratibu wa mpango wa kujitolea wa wafanyakazi kwa kawaida hadhibiti wafanyakazi wa kujitolea moja kwa moja bali hufanya kazi kama kiunganishi kati ya mwajiri na shirika la kujitolea ambalo wafanyakazi watajitolea nalo au kinyume chake.,False,False,False
