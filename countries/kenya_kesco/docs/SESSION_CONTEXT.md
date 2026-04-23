@@ -1,11 +1,36 @@
 # Kenya (KeSCO) Session Context
 
 ## Session Date
-2026-03-12
+2026-04-21
 
 ## Current State
-- **Phase**: Skill assignment complete - combined ISCO + O*NET approach
-- **Status**: All 69 new local occupations have skills assigned; taxonomy files updated
+- **Phase**: Swahili translation outputs produced (pending review)
+- **Status**: All 69 new local occupations have skills assigned; Swahili translation pipeline run with multi-model comparison and back-translation QA
+
+## Latest Session (2026-04-19 to 2026-04-21) - Swahili Translation Pipeline
+
+### Accomplished
+- Built Swahili translation pipeline with multi-model comparison across 4 models
+- Ran back-translation QA for quality assurance (back_translation_qa_sw_20260123_103324.csv)
+- Iterated through retry cycles on error records (5 retry rounds for failing items)
+- Produced final flagged output: `outputs/translations/sw/occupations_translated_sw_FINAL_with_flags.csv`
+- Ran small-scale test batches (translations_test, translations_test_50) for validation
+- Committed shared O*NET embedding generator script to `shared_data/generate_onet_embeddings.py` with bundled source file
+
+### Output Files (Swahili)
+```
+outputs/translations/sw/
+├── model_comparison_sw_20260123_{104557,111446,115834}.{csv,xlsx}
+├── model_comparison_sw_4models.{csv,xlsx}
+├── back_translation_qa_sw_20260123_103324.{csv,xlsx}
+├── occupations_translated_sw_20260122_191458.csv                      # initial run
+├── occupations_translated_sw_20260122_191458_retried{,_retried...}.csv # 5 retry rounds
+├── occupations_translated_sw_FINAL_with_flags.csv                     # final with QA flags
+├── occupations_review_sw_20260122_191458.xlsx
+└── error_records_for_retry.csv
+```
+
+## Previous Session (2026-03-12) - Skill Assignment
 
 ## What Was Accomplished This Session
 
@@ -88,11 +113,12 @@ outputs/
 ## Next Steps
 
 ### IMMEDIATE
-1. Update model_info.csv with Kenya localization metadata
-2. Clean up experimental scripts (06b could be removed or kept for reference)
+1. Review Swahili translation flags and resolve remaining error records
+2. Update model_info.csv with Kenya localization metadata
+3. Clean up experimental scripts (06b could be removed or kept for reference)
 
 ### FUTURE
-- Kenya-specific alt labels (Swahili/Sheng terms)
+- Kenya-specific alt labels (Sheng terms)
 - Skills translation to Swahili (localized_strings.csv)
 - Final validation and export to complete 9-file Tabiya format
 - Commit and push to deploy review app to GitHub Pages

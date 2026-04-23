@@ -47,6 +47,12 @@ High-level updates across all localization efforts. For detailed session context
 - Added auto-hide for ES labels when same as EN (multi-language support)
 - Status: Milestone Reached - Review tool UI complete, ready for deployment
 
+### 2026-04-19 - Argentina
+- Added Spanish ESCO skills parent-column enrichment utility (shared_data/esco_taxonomy_es/add_parent_column.py)
+- Script picks closest parent for skills with multiple parents: skill parent when chain exists through shared skillgroup, else skillgroup as categorical home
+- Generated skills_with_parent.csv (130,594 rows) with PARENTID/PARENTOBJECTTYPE/PARENTLABEL columns
+- Status: In Progress - Enrichment utility available for downstream use
+
 ---
 
 ## Kenya (KESCO)
@@ -102,6 +108,13 @@ High-level updates across all localization efforts. For detailed session context
 - Test run: skill counts improved from 305/334/29/16 to 109/59/76/41 (target 25-50)
 - Status: In Progress - Pipeline ready for full run on 69 occupations
 
+### 2026-04-19 - Kenya
+- Built Swahili translation pipeline: multi-model comparison (4 models), back-translation QA, retry iterations
+- Generated final Swahili output with quality flags (occupations_translated_sw_FINAL_with_flags.csv)
+- Produced small test runs (translations_test, translations_test_50) for validation
+- Committed shared O*NET embedding generator script (shared_data/generate_onet_embeddings.py) with bundled source
+- Status: Milestone Reached - Swahili translation outputs produced, pending review
+
 ---
 
 ## Ethiopia
@@ -120,6 +133,12 @@ High-level updates across all localization efforts. For detailed session context
 - Generated Tabiya 9-file taxonomy output (3,090 occupations, 14,579 skills, 135,433 relations)
 - Created shared reference: docs/SKILL_DEFINITIONS_AND_CONTEXTUALIZATION.md
 - Status: Milestone Reached - Taxonomy output generated, pending human review and ISCO code assignment
+
+### 2026-04-19 - Zambia
+- Switched new local occupation code format from `{ISCO}.ZM.{suffix}` to Kenya-style sequential `{ISCO}_{seq}`
+- Placed new local occupations in occupation hierarchy under their ISCO unit group (was previously skipped, leaving locals top-level)
+- Regenerated 9-file taxonomy output with updated codes and hierarchy entries
+- Status: In Progress - Code format aligned with Kenya; pending human review of finalised outputs
 
 ---
 

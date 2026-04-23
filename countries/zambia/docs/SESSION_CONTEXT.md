@@ -3,7 +3,14 @@
 ## Current Phase
 **Phase 1: NOS-based localization complete (pending human review)**
 
-## Last Session (2026-04-09 to 2026-04-11)
+## Last Session (2026-04-21)
+
+### Accomplished
+- Switched new local occupation code format from `{ISCO}.ZM.{suffix}` to Kenya-style sequential `{ISCO}_{seq}` in script 09
+- Placed new local occupations in occupation hierarchy under their ISCO unit group (was previously skipped, leaving locals top-level)
+- Regenerated 9-file taxonomy output with updated codes and hierarchy entries
+
+## Previous Session (2026-04-09 to 2026-04-11)
 
 ### Accomplished
 - Set up Zambia project structure
@@ -40,17 +47,14 @@ Mining: Winding Engine Operator (mining)
 Transport: Professional Driver, Transport Manager (Transportant)
 
 ## Current State
-- 9-file taxonomy output generated at outputs/taxonomy/
-- ISCO unit group codes for 16 new occupations need human assignment
+- 9-file taxonomy output generated at outputs/taxonomy/ with Kenya-style codes and hierarchy placement
 - New occupation-skill relations have empty RELATIONTYPE/SIGNALLINGVALUE (to be assigned later)
 - 3 new skills missing hierarchy placement (out of 683)
 
 ## Next Steps
 1. Human review of Excel outputs (new skills, alt labels, occupation matches)
-2. Assign ISCO unit group codes for 16 new occupations (fill in new_occupations_finalized.xlsx)
-3. Run --apply-codes then re-run 09_generate_taxonomy.py
-4. Assign RELATIONTYPE/SIGNALLINGVALUE for new occupation-skill relations
-5. Import testing with Tabiya platform
+2. Assign RELATIONTYPE/SIGNALLINGVALUE for new occupation-skill relations
+3. Import testing with Tabiya platform
 
 ## Pipeline Scripts
 | # | Script | Purpose |

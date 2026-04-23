@@ -43,6 +43,8 @@ Unlike Kenya (KESCO) and Argentina (CNO-2017), Zambia does not have a national o
 2. **Skill Hierarchy Placement**: LLM-driven (embedding-based placement was 71% wrong).
 3. **Contextualization**: NOS phrases with different wording from ESCO are added as alternative labels, rephrased in ESCO style. Compound phrases are split into individual concepts.
 4. **Auto-accept Thresholds**: >=98% exact label = ACCEPT; 94-98% = CONTEXTUALIZE; <94% = LLM review.
+5. **Occupation Code Format**: New local occupations use Kenya-style sequential codes `{ISCO}_{seq}` (e.g., `2611_7`), where seq counts ESCO occupations in the group plus existing locals plus one. Falls back to `ZM_{id_prefix}` when no ISCO group code is assigned.
+6. **Occupation Hierarchy Placement**: New local occupations are placed under their ISCO unit group (`PARENTOBJECTTYPE=iscogroup`) in `occupation_hierarchy.csv`. Occupations without an ISCO group code remain unplaced.
 
 ## Results
 
