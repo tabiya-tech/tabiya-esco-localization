@@ -1,6 +1,6 @@
 # Taxonomy Review Tool
 
-A lightweight web app for reviewing occupation matches across Tabiya ESCO localizations.
+A lightweight web app for reviewing occupation matches across ESCO localizations.
 
 ## Features
 
@@ -13,12 +13,13 @@ A lightweight web app for reviewing occupation matches across Tabiya ESCO locali
 
 ### 1. Create Database Tables
 
-Run the SQL in Supabase:
+Run the SQL files in `sql/` in order, in Supabase's SQL Editor:
 
-1. Go to your [Supabase Dashboard](https://supabase.com/dashboard)
-2. Navigate to **SQL Editor**
-3. Copy contents of `sql/01_create_tables.sql`
-4. Click **Run**
+1. Go to your [Supabase Dashboard](https://supabase.com/dashboard) -> **SQL Editor**
+2. Run `sql/01_create_tables.sql` (base schema: `review_projects`, `review_items`, `review_locks`)
+3. Run later migrations as needed (e.g. `sql/04_add_cno_hierarchy.sql`, `sql/05_skill_group_selections.sql`, `sql/06_add_sector_columns.sql`)
+
+The migrations are idempotent (`IF NOT EXISTS` / `CREATE OR REPLACE` style) so re-running is safe.
 
 ### 2. Configure Environment
 

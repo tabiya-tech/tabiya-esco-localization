@@ -98,7 +98,9 @@ def load_review_items(review_file: Path, config: dict):
             'isco_code': sanitize_value(m.get('isco_code')),
             'suggested_esco_code': sanitize_value(m.get('esco_code')),
             'suggested_esco_label': sanitize_value(m.get('esco_label')),
-            'similarity': sanitize_value(m.get('similarity'))
+            'similarity': sanitize_value(m.get('similarity')),
+            'sector': sanitize_value(m.get('sector')),
+            'sub_sector': sanitize_value(m.get('sub_sector')),
         })
 
     return items

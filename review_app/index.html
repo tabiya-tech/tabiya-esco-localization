@@ -10,19 +10,20 @@
   <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
   <style>
     :root {
-      --oxford-blue: #002147;
+      --primary: #002147;
+      --primary-hover: #00305f;
       --text-primary: #002147;
-      --text-secondary: #4a5568;
-      --text-muted: #718096;
+      --text-secondary: #475569;
+      --text-muted: #94A3B8;
       --bg-white: #ffffff;
-      --bg-light: #f8f9fa;
-      --border-light: #e2e8f0;
+      --bg-light: #F8FAFC;
+      --border-light: #E2E8F0;
       --border-selected: #002147;
-      --tabiya-green: #00FF91;
-      --tabiya-green-dark: #00CC73;
-      --tabiya-orange: #FF6B35;
-      --tabiya-gray: #F8F5F0;
-      --accent-blue: #3b82f6;
+      --accent: #475569;
+      --accent-dark: #334155;
+      --accent-warm: #64748B;
+      --surface-soft: #F1F5F9;
+      --accent-blue: #3B82F6;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -42,7 +43,7 @@
     .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
 
     .header {
-      background: var(--oxford-blue);
+      background: var(--primary);
       color: white;
       padding: 12px 20px;
       display: flex;
@@ -53,7 +54,7 @@
     .header .user-info { font-size: 13px; opacity: 0.9; font-family: 'Inter', sans-serif; }
 
     .progress-bar { background: var(--border-light); height: 4px; overflow: hidden; margin: 20px 0 10px; }
-    .progress-fill { background: var(--tabiya-green); height: 100%; transition: width 0.3s; }
+    .progress-fill { background: var(--accent); height: 100%; transition: width 0.3s; }
     .progress-text { text-align: center; font-size: 13px; color: var(--text-muted); margin-bottom: 20px; }
 
     .card {
@@ -97,11 +98,11 @@
       justify-content: center;
       width: 18px;
       height: 18px;
-      background: var(--oxford-blue);
+      background: var(--primary);
       border-radius: 50%;
       font-size: 11px;
       font-weight: 600;
-      color: var(--tabiya-green);
+      color: white;
       cursor: pointer;
       margin-left: 8px;
       transition: all 0.15s;
@@ -112,8 +113,8 @@
       align-items: center;
       gap: 6px;
       padding: 8px 14px;
-      background: var(--oxford-blue);
-      color: var(--tabiya-green);
+      background: var(--primary);
+      color: white;
       border: none;
       cursor: pointer;
       font-size: 13px;
@@ -122,7 +123,7 @@
       transition: opacity 0.15s;
     }
     .help-button:hover { opacity: 0.85; }
-    .help-button img { filter: invert(73%) sepia(57%) saturate(652%) hue-rotate(93deg) brightness(101%) contrast(101%); }
+    .help-button img { filter: brightness(0) invert(1); }
     .help-modal {
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
@@ -141,8 +142,8 @@
       padding: 30px;
       position: relative;
     }
-    .help-modal-content h2 { font-size: 20px; margin-bottom: 20px; color: var(--oxford-blue); }
-    .help-modal-content h3 { font-size: 14px; margin: 20px 0 10px; color: var(--oxford-blue); text-transform: uppercase; letter-spacing: 0.5px; }
+    .help-modal-content h2 { font-size: 20px; margin-bottom: 20px; color: var(--primary); }
+    .help-modal-content h3 { font-size: 14px; margin: 20px 0 10px; color: var(--primary); text-transform: uppercase; letter-spacing: 0.5px; }
     .help-modal-content p { font-size: 14px; line-height: 1.6; color: var(--text-secondary); margin-bottom: 12px; }
     .help-modal-content ul { margin: 0 0 16px 20px; }
     .help-modal-content li { font-size: 14px; line-height: 1.8; color: var(--text-secondary); }
@@ -158,7 +159,7 @@
       color: var(--text-muted);
       line-height: 1;
     }
-    .help-close:hover { color: var(--oxford-blue); }
+    .help-close:hover { color: var(--primary); }
     .recent-item {
       display: flex;
       align-items: center;
@@ -173,12 +174,12 @@
     .recent-code { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--text-muted); min-width: 70px; }
     .recent-label { font-size: 13px; flex: 1; color: var(--text-primary); }
     .recent-decision { font-size: 11px; font-weight: 600; text-transform: uppercase; }
-    .btn-approve { background: white; color: var(--oxford-blue); border: 2px solid var(--oxford-blue); font-weight: 600; }
-    .btn-match { background: var(--tabiya-green); color: var(--oxford-blue); font-weight: 600; }
-    .btn-new-local { background: var(--oxford-blue); color: var(--tabiya-green); font-weight: 600; }
-    .btn-skip { background: var(--tabiya-gray); color: var(--oxford-blue); border: 2px solid var(--border-light); }
-    .btn-clear { background: var(--oxford-blue); color: var(--tabiya-green); font-weight: 600; }
-    .btn-primary { background: var(--oxford-blue); color: white; }
+    .btn-approve { background: white; color: var(--primary); border: 2px solid var(--primary); font-weight: 600; }
+    .btn-match { background: var(--primary); color: white; font-weight: 600; }
+    .btn-new-local { background: var(--accent-dark); color: white; font-weight: 600; }
+    .btn-skip { background: var(--surface-soft); color: var(--primary); border: 2px solid var(--border-light); }
+    .btn-clear { background: var(--primary); color: white; font-weight: 600; }
+    .btn-primary { background: var(--primary); color: white; }
     .btn-sm { padding: 5px 10px; font-size: 11px; }
 
     .notes-input {
@@ -190,10 +191,10 @@
       min-height: 50px;
       font-family: 'Inter', sans-serif;
     }
-    .notes-input:focus { outline: none; border-color: var(--oxford-blue); }
+    .notes-input:focus { outline: none; border-color: var(--primary); }
 
     .occupation-highlight {
-      color: var(--tabiya-green-dark);
+      color: var(--accent-dark);
       font-weight: 500;
     }
 
@@ -211,7 +212,7 @@
       margin-bottom: 12px;
       font-family: 'Inter', sans-serif;
     }
-    .setup-screen input:focus, .setup-screen select:focus { outline: none; border-color: var(--oxford-blue); }
+    .setup-screen input:focus, .setup-screen select:focus { outline: none; border-color: var(--primary); }
     .setup-screen label { display: block; margin-bottom: 4px; font-size: 12px; font-weight: 500; color: var(--text-secondary); }
 
     .loading { text-align: center; padding: 30px; color: var(--text-muted); font-size: 13px; }
@@ -222,7 +223,7 @@
       margin-bottom: 12px;
     }
     .loading-status .progress { background: var(--border-light); height: 4px; margin-top: 10px; overflow: hidden; }
-    .loading-status .progress-inner { background: var(--oxford-blue); height: 100%; transition: width 0.3s; }
+    .loading-status .progress-inner { background: var(--primary); height: 100%; transition: width 0.3s; }
 
     .empty-state { text-align: center; padding: 50px 20px; color: var(--text-secondary); }
     .empty-state h2 { margin-bottom: 8px; font-size: 18px; }
@@ -247,7 +248,7 @@
       user-select: none;
     }
     .tree-row:hover { background: var(--bg-light); }
-    .tree-row.selected { background: var(--tabiya-gray); border-left: 3px solid var(--tabiya-green); margin-left: -3px; }
+    .tree-row.selected { background: var(--surface-soft); border-left: 3px solid var(--accent); margin-left: -3px; }
     .tree-toggle {
       width: 18px;
       height: 18px;
@@ -259,7 +260,7 @@
       flex-shrink: 0;
     }
     .tree-toggle.has-children { cursor: pointer; }
-    .tree-toggle.has-children:hover { color: var(--oxford-blue); }
+    .tree-toggle.has-children:hover { color: var(--primary); }
     .tree-code { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text-muted); min-width: 45px; margin-right: 8px; }
     .tree-label { font-size: 12px; flex: 1; color: var(--text-primary); }
     .tree-badge {
@@ -274,8 +275,8 @@
     .tree-select-btn {
       padding: 3px 8px;
       font-size: 10px;
-      background: var(--tabiya-green);
-      color: var(--oxford-blue);
+      background: var(--primary);
+      color: white;
       border: none;
       cursor: pointer;
       opacity: 0;
@@ -313,7 +314,7 @@
       cursor: pointer;
       transition: border-color 0.15s;
     }
-    .hierarchy-item:hover { border-color: var(--oxford-blue); }
+    .hierarchy-item:hover { border-color: var(--primary); }
     .hierarchy-item .code { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text-muted); min-width: 50px; }
     .hierarchy-item .label { font-size: 12px; flex: 1; }
     .hierarchy-item.parent { border-left: 3px solid var(--accent-blue); }
@@ -362,7 +363,7 @@
       transition: background 0.15s;
     }
     .occupation-item:hover { background: var(--bg-light); }
-    .occupation-item.active { background: var(--tabiya-gray); border-left: 3px solid var(--tabiya-green); }
+    .occupation-item.active { background: var(--surface-soft); border-left: 3px solid var(--accent); }
     .occupation-item .occ-code { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--text-muted); }
     .occupation-item .occ-label { font-size: 13px; font-weight: 500; margin-top: 2px; }
     .occupation-item .occ-parent { font-size: 11px; color: var(--text-muted); margin-top: 4px; }
@@ -374,7 +375,7 @@
       border-radius: 2px;
       margin-top: 6px;
     }
-    .occupation-item .occ-badge.complete { background: var(--tabiya-green); color: var(--oxford-blue); }
+    .occupation-item .occ-badge.complete { background: var(--primary); color: white; }
     .occupation-item .occ-badge.pending { background: var(--bg-light); color: var(--text-muted); border: 1px solid var(--border-light); }
 
     .skill-picker-panel { display: flex; flex-direction: column; }
@@ -394,7 +395,7 @@
       font-size: 11px;
       text-transform: uppercase;
       letter-spacing: 0.5px;
-      color: var(--oxford-blue);
+      color: var(--primary);
       margin-bottom: 8px;
       padding-bottom: 6px;
       border-bottom: 1px solid var(--border-light);
@@ -446,14 +447,14 @@
   <div id="setup-screen" class="setup-screen hidden">
     <div class="card">
       <h2>Taxonomy Review Tool</h2>
-      <p style="color: var(--text-secondary); margin-bottom: 20px; font-size: 13px;">Review occupation matches for Tabiya ESCO localizations.</p>
+      <p style="color: var(--text-secondary); margin-bottom: 20px; font-size: 13px;">Review occupation matches for ESCO localizations.</p>
       <label>Select Project</label>
       <select id="project-select"><option value="">Loading projects...</option></select>
       <label>Your Name</label>
       <input type="text" id="reviewer-name" placeholder="Enter your name to start">
       <button class="btn btn-primary" style="width: 100%; margin-top: 8px;" onclick="startReview()">Start Reviewing</button>
       <button class="btn" style="width: 100%; margin-top: 8px; background: var(--bg-light); border: 1px solid var(--border-light); color: var(--text-primary);" onclick="startBrowse()">Browse & Edit All</button>
-      <button class="btn" style="width: 100%; margin-top: 8px; background: var(--tabiya-orange); color: white;" onclick="startSkillAssignment()">Skill Assignment</button>
+      <button class="btn" style="width: 100%; margin-top: 8px; background: var(--accent-warm); color: white;" onclick="startSkillAssignment()">Skill Assignment</button>
     </div>
   </div>
 
@@ -562,6 +563,9 @@
               <div style="margin-top: 8px;">
                 <div class="item-code"><span id="item-code" class="occupation-highlight"></span>: <span id="item-label-en" class="occupation-highlight"></span> <span class="search-icon" onclick="searchOccupation()" title="Search Google for this occupation">?</span></div>
                 <div class="item-code" id="item-label-es-row" style="margin-top: 4px;"><span class="lang-tag">ES</span><span id="item-label" style="color: var(--text-secondary);"></span></div>
+                <div class="item-code" id="item-sector-row" style="margin-top: 6px; color: var(--text-secondary); font-size: 11px;">
+                  <span id="item-sector"></span><span id="item-subsector-sep" style="margin: 0 6px; color: var(--text-muted);">|</span><span id="item-subsector"></span>
+                </div>
               </div>
             </div>
 
@@ -579,8 +583,8 @@
             </div>
 
             <!-- Card 3: Your Selection -->
-            <div class="card hidden" id="selected-esco" style="border: 2px solid var(--tabiya-green);">
-              <h2 style="color: var(--tabiya-green-dark);">Your Selection</h2>
+            <div class="card hidden" id="selected-esco" style="border: 2px solid var(--accent);">
+              <h2 style="color: var(--accent-dark);">Your Selection</h2>
               <div>
                 <div class="item-code"><span id="selected-code" class="occupation-highlight"></span>: <span id="selected-label-en" class="occupation-highlight"></span></div>
                 <div class="item-code" id="selected-label-es-row" style="margin-top: 4px;"><span class="lang-tag">ES</span><span id="selected-label-es" style="color: var(--text-secondary);"></span></div>
@@ -689,10 +693,10 @@
 
       <h3>Decision Buttons</h3>
       <ul>
-        <li><span class="btn-label" style="background: white; color: var(--oxford-blue); border: 2px solid var(--oxford-blue);">Approve</span> Accept the suggested ESCO match as-is</li>
-        <li><span class="btn-label" style="background: var(--tabiya-green); color: var(--oxford-blue);">Match</span> Use your own selection from the ESCO tree/search</li>
-        <li><span class="btn-label" style="background: var(--oxford-blue); color: var(--tabiya-green);">New Local</span> This occupation has no ESCO equivalent - mark as country-specific</li>
-        <li><span class="btn-label" style="background: var(--tabiya-gray); color: var(--oxford-blue);">Skip</span> Unsure - leave for another reviewer</li>
+        <li><span class="btn-label" style="background: white; color: var(--primary); border: 2px solid var(--primary);">Approve</span> Accept the suggested ESCO match as-is</li>
+        <li><span class="btn-label" style="background: var(--primary); color: white;">Match</span> Use your own selection from the ESCO tree/search</li>
+        <li><span class="btn-label" style="background: var(--accent-dark); color: white;">New Local</span> This occupation has no ESCO equivalent - mark as country-specific</li>
+        <li><span class="btn-label" style="background: var(--surface-soft); color: var(--primary);">Skip</span> Unsure - leave for another reviewer</li>
       </ul>
 
       <h3>Tips</h3>
@@ -1046,7 +1050,7 @@
 
       let html = '';
       for (const item of recentlyReviewed) {
-        const decisionColors = { 'APPROVE': 'tabiya-green', 'MATCH': 'tabiya-green', 'NEW_LOCAL': 'oxford-blue', 'SKIP': 'text-muted' };
+        const decisionColors = { 'APPROVE': 'accent', 'MATCH': 'accent', 'NEW_LOCAL': 'primary', 'SKIP': 'text-muted' };
         const decisionClass = decisionColors[item.decision] || 'text-muted';
         html += `<div class="recent-item" onclick="reReviewItem(${item.id})">
           <span class="recent-code">${item.local_code}</span>
@@ -1611,6 +1615,20 @@
       const showLocalEs = localLabelEs && localLabelEs !== localLabelEn;
       document.getElementById('item-label-es-row').classList.toggle('hidden', !showLocalEs);
 
+      // Sector / sub-sector context (if available)
+      const sector = item.sector || '';
+      const subSector = item.sub_sector || '';
+      const sectorRow = document.getElementById('item-sector-row');
+      const sectorSep = document.getElementById('item-subsector-sep');
+      if (sector || subSector) {
+        document.getElementById('item-sector').textContent = sector;
+        document.getElementById('item-subsector').textContent = subSector;
+        sectorSep.style.display = (sector && subSector) ? '' : 'none';
+        sectorRow.classList.remove('hidden');
+      } else {
+        sectorRow.classList.add('hidden');
+      }
+
       // CNO hierarchy context (if available)
       const cnoContext = document.getElementById('cno-context');
       if (item.cno_minor_code && item.cno_minor_title) {
@@ -1783,7 +1801,7 @@
       const pageSize = 1000;
       while (true) {
         const { data } = await db.from('review_items')
-          .select('id, local_code, local_label, isco_code, suggested_esco_code, suggested_esco_label, decision, selected_esco_code, selected_esco_label, selected_parent_code, reviewer_name')
+          .select('id, local_code, local_label, sector, sub_sector, isco_code, suggested_esco_code, suggested_esco_label, decision, selected_esco_code, selected_esco_label, selected_parent_code, reviewer_name')
           .eq('project_id', projectId)
           .order('local_code')
           .range(offset, offset + pageSize - 1);
@@ -1830,9 +1848,9 @@
       }
 
       const decisionColors = {
-        'APPROVE': 'var(--tabiya-green-dark)',
+        'APPROVE': 'var(--accent-dark)',
         'MATCH': 'var(--accent-blue)',
-        'NEW_LOCAL': 'var(--tabiya-orange)',
+        'NEW_LOCAL': 'var(--accent-warm)',
         'SKIP': 'var(--text-muted)'
       };
 
@@ -1856,7 +1874,7 @@
         html += `<td style="padding: 8px;">${item.local_label || ''}</td>`;
         html += `<td style="padding: 8px; color: ${decisionColor}; font-weight: 500;">${decision}</td>`;
         html += `<td style="padding: 8px; font-size: 12px;"><span style="font-family: 'DM Mono', monospace;">${escoMatch}</span> ${escoLabel ? '<br><span style="color: var(--text-muted);">' + escoLabel.substring(0, 30) + '</span>' : ''}</td>`;
-        html += `<td style="padding: 8px;"><button class="btn" style="padding: 4px 12px; font-size: 12px; background: var(--oxford-blue); color: white;" onclick="editBrowseItem('${item.id}')">Edit</button></td>`;
+        html += `<td style="padding: 8px;"><button class="btn" style="padding: 4px 12px; font-size: 12px; background: var(--primary); color: white;" onclick="editBrowseItem('${item.id}')">Edit</button></td>`;
         html += '</tr>';
       }
 
@@ -1949,7 +1967,7 @@
         const itemId = currentItem?.id;
         if (itemId) {
           const { data } = await db.from('review_items')
-            .select('id, local_code, local_label, isco_code, suggested_esco_code, suggested_esco_label, decision, selected_esco_code, selected_esco_label, selected_parent_code, reviewer_name')
+            .select('id, local_code, local_label, sector, sub_sector, isco_code, suggested_esco_code, suggested_esco_label, decision, selected_esco_code, selected_esco_label, selected_parent_code, reviewer_name')
             .eq('id', itemId)
             .single();
           if (data) {
@@ -2123,7 +2141,7 @@
             children = items.filter(i => i.code.startsWith(h.code + '.'));
           }
 
-          html += `<div class="skill-group-item level-2" onclick="toggleSkillGroup('${h.code}')" style="font-weight: 600; margin-top: 8px; color: var(--oxford-blue);">
+          html += `<div class="skill-group-item level-2" onclick="toggleSkillGroup('${h.code}')" style="font-weight: 600; margin-top: 8px; color: var(--primary);">
             <input type="checkbox" id="sg-${h.code}" data-code="${h.code}" onclick="event.stopPropagation(); toggleSkillGroup('${h.code}')">
             <span class="sg-code" style="min-width: 32px;">${h.code}</span>
             <span class="sg-label">${h.label}</span>

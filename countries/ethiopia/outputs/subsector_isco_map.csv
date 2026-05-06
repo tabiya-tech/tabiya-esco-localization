@@ -1,0 +1,1722 @@
+﻿"sector","sub_sector","n_titles","mapping_decision","isco_code","isco_label","fallback_isco_3digit","confidence","rationale","raw_response"
+"","","20","no_map","","","","low","Empty/None sub-sector; short-circuited without LLM call.",""
+"Business","Beverage retail business","1","no_map","","","","medium","The sub-sector describes a retail industry domain that encompasses multiple distinct occupational categories including management, sales assistants, and clerical support staff which span different ISCO Major Groups.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""medium"",
+  ""rationale"": ""The sub-sector describes a retail industry domain that encompasses multiple distinct occupational categories including management, sales assistants, and clerical support staff which span different ISCO Major Groups."",
+  ""fallback_isco_3digit"": null
+}"
+"Business","Business","1","no_map","","","","high","The label 'Business' is too broad and generic as it encompasses a vast range of occupational categories including management, professional services, finance, and administration across multiple ISCO major groups.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The label 'Business' is too broad and generic as it encompasses a vast range of occupational categories including management, professional services, finance, and administration across multiple ISCO major groups."",
+  ""fallback_isco_3digit"": null
+}"
+"Business","Components of motor vehicles and Accessories Wholesale (Vehicle Wholesale)","3","no_map","","","","high","The sub-sector refers to a wholesale industry domain which employs a broad range of occupations across different ISCO categories, including managers, sales representatives, and logistics staff, rather than a single unit group.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector refers to a wholesale industry domain which employs a broad range of occupations across different ISCO categories, including managers, sales representatives, and logistics staff, rather than a single unit group."",
+  ""fallback_isco_3digit"": null
+}"
+"Business","Food Products Retail","5","map","5223","Shop sales assistants","522","high","The sub-sector identifies the retail trade domain, which is most accurately represented by the shop salespersons minor group (522), covering assistants, supervisors, and small shopkeepers.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""5223"",
+  ""isco_label"": ""Shop sales assistants"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector identifies the retail trade domain, which is most accurately represented by the shop salespersons minor group (522), covering assistants, supervisors, and small shopkeepers."",
+  ""fallback_isco_3digit"": ""522""
+}"
+"Business","Food wholesale","2","no_map","","","","medium","The sub-sector 'Food wholesale' refers to an industry segment that encompasses a wide variety of unrelated ISCO roles, including management (1420), sales (3322, 5223), and logistics (4321, 9333).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""medium"",
+  ""rationale"": ""The sub-sector 'Food wholesale' refers to an industry segment that encompasses a wide variety of unrelated ISCO roles, including management (1420), sales (3322, 5223), and logistics (4321, 9333)."",
+  ""fallback_isco_3digit"": null
+}"
+"Business","Home and Office Furniture Decorations & Utilities Retail","4","no_map","","","","high","The sub-sector describes a retail industry domain which encompasses multiple distinct occupational categories including management, sales assistants, and specialized roles like interior decorators.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector describes a retail industry domain which encompasses multiple distinct occupational categories including management, sales assistants, and specialized roles like interior decorators."",
+  ""fallback_isco_3digit"": null
+}"
+"Business","Hypermarket","1","no_map","","","","low","Hypermarket is a retail industry setting that encompasses several distinct occupational groups such as managers, sales assistants, cashiers, and shelf fillers, making it too broad for a single ISCO unit group mapping.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""low"",
+  ""rationale"": ""Hypermarket is a retail industry setting that encompasses several distinct occupational groups such as managers, sales assistants, cashiers, and shelf fillers, making it too broad for a single ISCO unit group mapping."",
+  ""fallback_isco_3digit"": null
+}"
+"Business","Mini Market","2","map","5221","Shop keepers","522","high","A Mini Market is a small retail establishment, which aligns directly with the shop keepers and sales assistants domain represented by ISCO unit group 5221 and its parent group 522.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""5221"",
+  ""isco_label"": ""Shop keepers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""A Mini Market is a small retail establishment, which aligns directly with the shop keepers and sales assistants domain represented by ISCO unit group 5221 and its parent group 522."",
+  ""fallback_isco_3digit"": ""522""
+}"
+"Business","Other unspecified food products retail","7","map","5223","Shop sales assistants","522","high","The sub-sector identifies a specific retail trade domain, which is most accurately captured by the shop salespersons minor group (522).","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""5223"",
+  ""isco_label"": ""Shop sales assistants"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector identifies a specific retail trade domain, which is most accurately captured by the shop salespersons minor group (522)."",
+  ""fallback_isco_3digit"": ""522""
+}"
+"Business","Retail for agriculture, industry and construction and other utilities","3","no_map","","","","high","The sub-sector describes a broad commercial domain (retail) that encompasses diverse occupational groups including managers, sales assistants, clerks, and manual laborers, making it too broad for a single ISCO unit group mapping.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector describes a broad commercial domain (retail) that encompasses diverse occupational groups including managers, sales assistants, clerks, and manual laborers, making it too broad for a single ISCO unit group mapping."",
+  ""fallback_isco_3digit"": null
+}"
+"Business","Retail of chemical and related products","2","no_map","","","","low","The sub-sector refers to a retail industry niche which encompasses a wide variety of distinct occupational categories including sales staff, managers, logistics workers, and potentially technical specialists, making it too broad to map to a single ISCO unit group.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""low"",
+  ""rationale"": ""The sub-sector refers to a retail industry niche which encompasses a wide variety of distinct occupational categories including sales staff, managers, logistics workers, and potentially technical specialists, making it too broad to map to a single ISCO unit group."",
+  ""fallback_isco_3digit"": null
+}"
+"Business","Retail trade in specialized stores","45","no_map","","","","high","Retail trade in specialized stores is an industry category that encompasses diverse occupations including managers, sales assistants, cashiers, and stock clerks, making it too broad for a single ISCO unit group mapping.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""Retail trade in specialized stores is an industry category that encompasses diverse occupations including managers, sales assistants, cashiers, and stock clerks, making it too broad for a single ISCO unit group mapping."",
+  ""fallback_isco_3digit"": null
+}"
+"Business","Telecommunication Equipment Retail Computer, Computer Accessories, Accessories & Accessories","8","no_map","","","","low","The sub-sector describes a retail business domain that encompasses several distinct ISCO roles including managers, shop sales assistants, and ICT technicians, making it too broad for a single 4-digit unit group.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""low"",
+  ""rationale"": ""The sub-sector describes a retail business domain that encompasses several distinct ISCO roles including managers, shop sales assistants, and ICT technicians, making it too broad for a single 4-digit unit group."",
+  ""fallback_isco_3digit"": null
+}"
+"Business","Textile Clothing Shoes & Leather Products Retail","2","no_map","","","","high","The sub-sector defines an industry domain (retail) that encompasses multiple distinct ISCO functional groups such as retail managers (1420) and shop sales assistants (5223).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector defines an industry domain (retail) that encompasses multiple distinct ISCO functional groups such as retail managers (1420) and shop sales assistants (5223)."",
+  ""fallback_isco_3digit"": null
+}"
+"Business","Vehicle spare parts and accessories retail trade","12","map","5223","Shop sales assistants","522","high","The sub-sector identifies a specific retail trade domain, which is primarily staffed by shop salespersons and assistants categorized under ISCO minor group 522.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""5223"",
+  ""isco_label"": ""Shop sales assistants"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector identifies a specific retail trade domain, which is primarily staffed by shop salespersons and assistants categorized under ISCO minor group 522."",
+  ""fallback_isco_3digit"": ""522""
+}"
+"Business","Wholesale business in specialized stores","165","no_map","","","","low","The sub-sector describes an entire industry category (Wholesale) that encompasses diverse occupational groups including managers, sales representatives, buyers, and logistics workers, making it too broad for a single ISCO unit group.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""low"",
+  ""rationale"": ""The sub-sector describes an entire industry category (Wholesale) that encompasses diverse occupational groups including managers, sales representatives, buyers, and logistics workers, making it too broad for a single ISCO unit group."",
+  ""fallback_isco_3digit"": null
+}"
+"Business","Wholesale of Telecommunication Equipment Computer, Computer Accessories, Accessories and Equipment","4","no_map","","","","high","The sub-sector describes an entire industry (wholesale of ICT equipment) which involves diverse occupational domains such as management, technical sales, logistics, and IT support, making it too broad to map to a single ISCO unit group.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector describes an entire industry (wholesale of ICT equipment) which involves diverse occupational domains such as management, technical sales, logistics, and IT support, making it too broad to map to a single ISCO unit group."",
+  ""fallback_isco_3digit"": null
+}"
+"Business","Wholesale of agricultural products for raw materials","5","no_map","","","","high","The sub-sector refers to an industry activity (wholesale trade) that encompasses multiple unrelated ISCO occupational domains, including management, procurement, sales, and logistics.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector refers to an industry activity (wholesale trade) that encompasses multiple unrelated ISCO occupational domains, including management, procurement, sales, and logistics."",
+  ""fallback_isco_3digit"": null
+}"
+"Business","Wholesale of chemical and chemical products","7","no_map","","","","high","The sub-sector refers to an industry category (wholesale trade) that encompasses a diverse range of occupations across different ISCO domains, including management, technical sales, logistics, and clerical support.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector refers to an industry category (wholesale trade) that encompasses a diverse range of occupations across different ISCO domains, including management, technical sales, logistics, and clerical support."",
+  ""fallback_isco_3digit"": null
+}"
+"Business","Wholesale of paper, plastic and scratch packaging, paper products and stationery","4","no_map","","","","high","The sub-sector describes a specific wholesale trade industry activity which encompasses a wide variety of distinct occupational roles such as managers, sales representatives, stock clerks, and freight handlers, making it too broad for a single ISCO unit group mapping.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector describes a specific wholesale trade industry activity which encompasses a wide variety of distinct occupational roles such as managers, sales representatives, stock clerks, and freight handlers, making it too broad for a single ISCO unit group mapping."",
+  ""fallback_isco_3digit"": null
+}"
+"Business","Wholesale of ready-made agricultural products","1","no_map","","","","high","The sub-sector describes an industry activity (Wholesale Trade) which employs a wide range of distinct occupations across different ISCO major groups, including managers, sales representatives, stock clerks, and freight handlers.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector describes an industry activity (Wholesale Trade) which employs a wide range of distinct occupations across different ISCO major groups, including managers, sales representatives, stock clerks, and freight handlers."",
+  ""fallback_isco_3digit"": null
+}"
+"Business","Wholesale textiles, textiles, clothing, shoes and leather products","1","no_map","","","","high","This sub-sector refers to an entire industry segment that spans multiple distinct ISCO domains including management, sales, procurement, and logistics.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""This sub-sector refers to an entire industry segment that spans multiple distinct ISCO domains including management, sales, procurement, and logistics."",
+  ""fallback_isco_3digit"": null
+}"
+"Business","Wholesale trade in livestock and animal products (excluding foodstuffs)","1","no_map","","","","high","Wholesale trade is an industry sub-sector that encompasses multiple distinct occupational categories, including managers (1420), buyers (3323), trade brokers (3324), and sales assistants (5223), which are distributed across different ISCO minor groups.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""Wholesale trade is an industry sub-sector that encompasses multiple distinct occupational categories, including managers (1420), buyers (3323), trade brokers (3324), and sales assistants (5223), which are distributed across different ISCO minor groups."",
+  ""fallback_isco_3digit"": null
+}"
+"Business","Wildlife Businesses","1","no_map","","","","low","The sub-sector 'Wildlife Businesses' represents a broad industry domain covering scientific professionals, commercial managers, and skilled field workers like hunters and trappers, which are distributed across multiple unrelated ISCO major groups.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""low"",
+  ""rationale"": ""The sub-sector 'Wildlife Businesses' represents a broad industry domain covering scientific professionals, commercial managers, and skilled field workers like hunters and trappers, which are distributed across multiple unrelated ISCO major groups."",
+  ""fallback_isco_3digit"": null
+}"
+"Construction","Another unmentioned building Installation Work Contractor","1","no_map","","","","low","The sub-sector 'building installation' is too broad as it encompasses several distinct specialized trades such as plumbing, electrical installation, and HVAC, which map to different ISCO minor groups like 712 and 741.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""low"",
+  ""rationale"": ""The sub-sector 'building installation' is too broad as it encompasses several distinct specialized trades such as plumbing, electrical installation, and HVAC, which map to different ISCO minor groups like 712 and 741."",
+  ""fallback_isco_3digit"": null
+}"
+"Construction","Building Construction Contractor","18","no_map","","","","high","The sub-sector 'Building Construction Contractor' is too broad as it encompasses a wide range of distinct ISCO occupational groups across several major groups, including managers (1323), civil engineers (2142), construction supervisors (3123), various skilled trades (7111-7133), and laborers (9313).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Building Construction Contractor' is too broad as it encompasses a wide range of distinct ISCO occupational groups across several major groups, including managers (1323), civil engineers (2142), construction supervisors (3123), various skilled trades (7111-7133), and laborers (9313)."",
+  ""fallback_isco_3digit"": null
+}"
+"Construction","Building finishing works","6","map","7123","Plasterers","712","high","The sub-sector 'Building finishing works' aligns directly with the scope of ISCO Minor Group 712 (Building finishers and related trades workers).","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""7123"",
+  ""isco_label"": ""Plasterers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Building finishing works' aligns directly with the scope of ISCO Minor Group 712 (Building finishers and related trades workers)."",
+  ""fallback_isco_3digit"": ""712""
+}"
+"Construction","Carpenter, builder, and other similar construction works","5","map","7111","House builders","711","high","The sub-sector explicitly names carpenters and builders, which are both unit groups under the 711 Minor Group for building frame and related trades workers.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""7111"",
+  ""isco_label"": ""House builders"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector explicitly names carpenters and builders, which are both unit groups under the 711 Minor Group for building frame and related trades workers."",
+  ""fallback_isco_3digit"": ""711""
+}"
+"Construction","Construction land preparation","3","map","8342","Earthmoving and related plant operators","834","high","The sub-sector activities of land preparation are directly synonymous with the core tasks of excavating, grading, and leveling earth defined in ISCO unit group 8342.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""8342"",
+  ""isco_label"": ""Earthmoving and related plant operators"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector activities of land preparation are directly synonymous with the core tasks of excavating, grading, and leveling earth defined in ISCO unit group 8342."",
+  ""fallback_isco_3digit"": ""834""
+}"
+"Construction","Contractor of paint and decoration works","3","map","7131","Painters and related workers","713","high","The sub-sector refers specifically to the specialized construction trade of applying paint and decorative finishes, which corresponds exactly to ISCO unit group 7131.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""7131"",
+  ""isco_label"": ""Painters and related workers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector refers specifically to the specialized construction trade of applying paint and decorative finishes, which corresponds exactly to ISCO unit group 7131."",
+  ""fallback_isco_3digit"": ""713""
+}"
+"Construction","Electrical Works Contractor","4","map","7411","Building and related electricians","741","high","The sub-sector clearly identifies the domain of electrical installation and repair within the construction industry, which is the core function of the building and related electricians unit group.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""7411"",
+  ""isco_label"": ""Building and related electricians"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector clearly identifies the domain of electrical installation and repair within the construction industry, which is the core function of the building and related electricians unit group."",
+  ""fallback_isco_3digit"": ""741""
+}"
+"Construction","Electro-Mechanical Contractor","7","no_map","","","","high","The sub-sector encompasses both electrical and mechanical installation domains, which are represented by distinct and separate ISCO groups such as 741 (Electrical) and 712 (Mechanical/Plumbing/HVAC) across multiple skill levels.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector encompasses both electrical and mechanical installation domains, which are represented by distinct and separate ISCO groups such as 741 (Electrical) and 712 (Mechanical/Plumbing/HVAC) across multiple skill levels."",
+  ""fallback_isco_3digit"": null
+}"
+"Construction","General Contractor (Except for the from Water works contractor","38","no_map","","","","high","The sub-sector 'General Contractor' is an industry category that encompasses a wide range of distinct occupations across different ISCO major groups, including construction managers, supervisors, skilled trades workers, and laborers.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'General Contractor' is an industry category that encompasses a wide range of distinct occupations across different ISCO major groups, including construction managers, supervisors, skilled trades workers, and laborers."",
+  ""fallback_isco_3digit"": null
+}"
+"Construction","Irrigation system","4","no_map","","","","high","The sub-sector 'Irrigation system' within construction describes a domain that encompasses a wide range of distinct occupational levels including civil engineers, technicians, and manual laborers, which are located in separate ISCO Major Groups.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Irrigation system' within construction describes a domain that encompasses a wide range of distinct occupational levels including civil engineers, technicians, and manual laborers, which are located in separate ISCO Major Groups."",
+  ""fallback_isco_3digit"": null
+}"
+"Construction","Plumbing Contractor","14","map","7126","Plumbers and pipe fitters","712","high","The sub-sector 'Plumbing Contractor' clearly identifies a domain specific to the installation and maintenance of pipe systems and plumbing fixtures, which is encapsulated by ISCO unit group 7126.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""7126"",
+  ""isco_label"": ""Plumbers and pipe fitters"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Plumbing Contractor' clearly identifies a domain specific to the installation and maintenance of pipe systems and plumbing fixtures, which is encapsulated by ISCO unit group 7126."",
+  ""fallback_isco_3digit"": ""712""
+}"
+"Construction","Road Contractor","14","no_map","","","","high","The sub-sector 'Road Contractor' represents an industry domain that encompasses a wide variety of occupations across different skill levels, including managers, civil engineers, heavy equipment operators, and labourers.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Road Contractor' represents an industry domain that encompasses a wide variety of occupations across different skill levels, including managers, civil engineers, heavy equipment operators, and labourers."",
+  ""fallback_isco_3digit"": null
+}"
+"Construction","Sanitary Contractor and Expert","2","map","7126","Plumbers and pipe fitters","712","high","In the construction sector, 'sanitary' refers to the installation and maintenance of water supply, drainage, and sewerage systems, which is the primary domain of Plumbers and pipe fitters.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""7126"",
+  ""isco_label"": ""Plumbers and pipe fitters"",
+  ""confidence"": ""high"",
+  ""rationale"": ""In the construction sector, 'sanitary' refers to the installation and maintenance of water supply, drainage, and sewerage systems, which is the primary domain of Plumbers and pipe fitters."",
+  ""fallback_isco_3digit"": ""712""
+}"
+"Construction","Soil research work","5","map","2114","Geologists and geophysicists","211","high","Soil research work in the construction sector specifically involves geotechnical and geological investigations conducted by professionals in the physical and earth sciences.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2114"",
+  ""isco_label"": ""Geologists and geophysicists"",
+  ""confidence"": ""high"",
+  ""rationale"": ""Soil research work in the construction sector specifically involves geotechnical and geological investigations conducted by professionals in the physical and earth sciences."",
+  ""fallback_isco_3digit"": ""211""
+}"
+"Construction","Water Supply Prevention Service","2","no_map","","","","low","The sub-sector 'Water Supply Prevention Service' is ambiguous and potentially too broad, as the water supply domain within the construction sector encompasses multiple distinct ISCO groups including civil engineers (2142), water treatment plant operators (3132), and plumbers and pipe fitters (7126).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""low"",
+  ""rationale"": ""The sub-sector 'Water Supply Prevention Service' is ambiguous and potentially too broad, as the water supply domain within the construction sector encompasses multiple distinct ISCO groups including civil engineers (2142), water treatment plant operators (3132), and plumbers and pipe fitters (7126)."",
+  ""fallback_isco_3digit"": null
+}"
+"Economic Infrastructure","Building Construction","40","no_map","","","","high","Building Construction is a broad industrial sector encompassing a wide range of occupations across different ISCO major groups, including managers, engineers, skilled trades workers, and elementary laborers.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""Building Construction is a broad industrial sector encompassing a wide range of occupations across different ISCO major groups, including managers, engineers, skilled trades workers, and elementary laborers."",
+  ""fallback_isco_3digit"": null
+}"
+"Economic Infrastructure","Electro technology","7","no_map","","","","high","Electro technology is a broad technical domain spanning multiple ISCO major groups, including professionals (215), technicians (311), and craft/trade workers (741, 742).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""Electro technology is a broad technical domain spanning multiple ISCO major groups, including professionals (215), technicians (311), and craft/trade workers (741, 742)."",
+  ""fallback_isco_3digit"": null
+}"
+"Economic Infrastructure","Energy","9","no_map","","","","high","The sub-sector 'Energy' encompasses a broad range of distinct occupational functions across multiple ISCO categories, including managers, engineers, plant operators, and electrical trades workers.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Energy' encompasses a broad range of distinct occupational functions across multiple ISCO categories, including managers, engineers, plant operators, and electrical trades workers."",
+  ""fallback_isco_3digit"": null
+}"
+"Economic Infrastructure","ICT","10","no_map","","","","high","ICT is a broad economic domain covering multiple distinct ISCO-08 categories such as ICT managers, professional developers, network specialists, technicians, and installers.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""ICT is a broad economic domain covering multiple distinct ISCO-08 categories such as ICT managers, professional developers, network specialists, technicians, and installers."",
+  ""fallback_isco_3digit"": null
+}"
+"Economic Infrastructure","Land Administration & Management","1","no_map","","","","medium","Land administration and management encompasses distinct professional fields that are separated at the ISCO 4-digit level, specifically town and traffic planners (2164) and cartographers and surveyors (2165).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""medium"",
+  ""rationale"": ""Land administration and management encompasses distinct professional fields that are separated at the ISCO 4-digit level, specifically town and traffic planners (2164) and cartographers and surveyors (2165)."",
+  ""fallback_isco_3digit"": null
+}"
+"Economic Infrastructure","Legal Metrology","1","map","3359","Regulatory government associate professionals not elsewhere classified","335","high","Legal metrology involves the application of legal requirements to measurements and measuring instruments, typically performed by government inspectors and regulatory officials categorized under unit group 3359.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""3359"",
+  ""isco_label"": ""Regulatory government associate professionals not elsewhere classified"",
+  ""confidence"": ""high"",
+  ""rationale"": ""Legal metrology involves the application of legal requirements to measurements and measuring instruments, typically performed by government inspectors and regulatory officials categorized under unit group 3359."",
+  ""fallback_isco_3digit"": ""335""
+}"
+"Economic Infrastructure","Municipality","4","no_map","","","","high","A municipality is an organizational body encompassing a wide variety of diverse roles including urban planners, legislators, administrative clerks, and sanitation workers, making it too broad to map to a single ISCO unit group.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""A municipality is an organizational body encompassing a wide variety of diverse roles including urban planners, legislators, administrative clerks, and sanitation workers, making it too broad to map to a single ISCO unit group."",
+  ""fallback_isco_3digit"": null
+}"
+"Economic Infrastructure","Road Construction","11","no_map","","","","high","Road Construction is an industrial sub-sector that encompasses a wide range of occupations across different skill levels, including civil engineers (2142), construction managers (1323), earthmoving plant operators (8342), and civil engineering labourers (9312).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""Road Construction is an industrial sub-sector that encompasses a wide range of occupations across different skill levels, including civil engineers (2142), construction managers (1323), earthmoving plant operators (8342), and civil engineering labourers (9312)."",
+  ""fallback_isco_3digit"": null
+}"
+"Economic Infrastructure","Surveying & Drafting","13","no_map","","","","low","The sub-sector combines two distinct ISCO occupational categories—Cartographers and Surveyors (2165) and Draughtspersons (3118)—which are located in different major groups (Professionals vs. Technicians), making a single 4-digit map ambiguous.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""low"",
+  ""rationale"": ""The sub-sector combines two distinct ISCO occupational categories—Cartographers and Surveyors (2165) and Draughtspersons (3118)—which are located in different major groups (Professionals vs. Technicians), making a single 4-digit map ambiguous."",
+  ""fallback_isco_3digit"": null
+}"
+"Economic Infrastructure","Water construction","9","no_map","","","","medium","The sub-sector 'Water construction' is too broad as it encompasses various distinct occupational groups including civil engineers (2142), plumbers and pipe fitters (7126), and civil engineering labourers (9312).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""medium"",
+  ""rationale"": ""The sub-sector 'Water construction' is too broad as it encompasses various distinct occupational groups including civil engineers (2142), plumbers and pipe fitters (7126), and civil engineering labourers (9312)."",
+  ""fallback_isco_3digit"": null
+}"
+"Economic Infrastructure","solar","2","no_map","","","","medium","The sub-sector 'solar' refers to an industry domain that encompasses multiple distinct ISCO occupational groups, including electrical engineers (2151), power production plant operators (3131), and electricians (7411).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""medium"",
+  ""rationale"": ""The sub-sector 'solar' refers to an industry domain that encompasses multiple distinct ISCO occupational groups, including electrical engineers (2151), power production plant operators (3131), and electricians (7411)."",
+  ""fallback_isco_3digit"": null
+}"
+"Education","other","34","no_map","","","","high","The sub-sector 'other' is a residual category that is too generic and ambiguous to map to a specific ISCO domain within the education sector.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'other' is a residual category that is too generic and ambiguous to map to a specific ISCO domain within the education sector."",
+  ""fallback_isco_3digit"": null
+}"
+"Health","Health","250","no_map","","","","high","The sub-sector 'Health' is an industry-level category that encompasses multiple distinct ISCO domains, including managers, professionals, technicians, and support workers.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Health' is an industry-level category that encompasses multiple distinct ISCO domains, including managers, professionals, technicians, and support workers."",
+  ""fallback_isco_3digit"": null
+}"
+"ICT and digital work","Computer network cable installation works","3","map","7422","Information and communications technology installers and servicers","742","high","The sub-sector specifically describes the installation and maintenance of computer network cabling, which is the core function defined for ISCO unit group 7422.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""7422"",
+  ""isco_label"": ""Information and communications technology installers and servicers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector specifically describes the installation and maintenance of computer network cabling, which is the core function defined for ISCO unit group 7422."",
+  ""fallback_isco_3digit"": ""742""
+}"
+"ICT and digital work","Computer network design deployment and implementation tasks","40","map","2523","Computer network professionals","252","high","The sub-sector specifically focuses on network architecture, design, and implementation, which are the core duties defined for Computer network professionals in ISCO 2523.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2523"",
+  ""isco_label"": ""Computer network professionals"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector specifically focuses on network architecture, design, and implementation, which are the core duties defined for Computer network professionals in ISCO 2523."",
+  ""fallback_isco_3digit"": ""252""
+}"
+"ICT and digital work","Data Center Hosting Services","13","no_map","","","","high","The sub-sector describes a broad industry domain that encompasses multiple distinct ISCO functional levels including ICT service managers (1330), systems administrators (2522), and ICT operations technicians (3511).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector describes a broad industry domain that encompasses multiple distinct ISCO functional levels including ICT service managers (1330), systems administrators (2522), and ICT operations technicians (3511)."",
+  ""fallback_isco_3digit"": null
+}"
+"ICT and digital work","Database organization and data processing","50","map","2521","Database designers and administrators","252","high","The sub-sector's focus on database organization and data processing aligns directly with the core tasks of designing, developing, and maintaining databases described in ISCO unit group 2521.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2521"",
+  ""isco_label"": ""Database designers and administrators"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector's focus on database organization and data processing aligns directly with the core tasks of designing, developing, and maintaining databases described in ISCO unit group 2521."",
+  ""fallback_isco_3digit"": ""252""
+}"
+"ICT and digital work","General research and experimental development work","4","no_map","","","","high","The sub-sector 'General research and experimental development work' refers to a broad functional domain that includes a wide range of professionals, technicians, and managers across various scientific and technical fields, making it too broad for a single ISCO 4-digit unit group.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'General research and experimental development work' refers to a broad functional domain that includes a wide range of professionals, technicians, and managers across various scientific and technical fields, making it too broad for a single ISCO 4-digit unit group."",
+  ""fallback_isco_3digit"": null
+}"
+"ICT and digital work","Information Communication Technology Training Service","11","map","2356","Information technology trainers","235","high","The sub-sector directly corresponds to the specialized ISCO unit group for individuals and services providing ICT-specific training and education.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2356"",
+  ""isco_label"": ""Information technology trainers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector directly corresponds to the specialized ISCO unit group for individuals and services providing ICT-specific training and education."",
+  ""fallback_isco_3digit"": ""235""
+}"
+"ICT and digital work","Installation and maintenance of telecommunication external cable installation","1","map","7422","Information and communications technology installers and servicers","742","high","The sub-sector activities of installing and maintaining external telecommunication cables are specifically listed as the primary tasks for ISCO unit group 7422.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""7422"",
+  ""isco_label"": ""Information and communications technology installers and servicers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector activities of installing and maintaining external telecommunication cables are specifically listed as the primary tasks for ISCO unit group 7422."",
+  ""fallback_isco_3digit"": ""742""
+}"
+"ICT and digital work","Installation and maintenance of telecommunication turntables","1","map","7422","Information and communications technology installers and servicers","742","high","The sub-sector specifically describes the physical installation and maintenance of telecommunications equipment, which is the exact scope defined for ISCO unit group 7422.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""7422"",
+  ""isco_label"": ""Information and communications technology installers and servicers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector specifically describes the physical installation and maintenance of telecommunications equipment, which is the exact scope defined for ISCO unit group 7422."",
+  ""fallback_isco_3digit"": ""742""
+}"
+"ICT and digital work","Internet Cafe Service","3","map","3512","Information and communications technology user support technicians","351","high","Internet cafe services primarily involve providing technical assistance and system access to customers, which is the core domain of ICT user support and operations technicians within Minor Group 351.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""3512"",
+  ""isco_label"": ""Information and communications technology user support technicians"",
+  ""confidence"": ""high"",
+  ""rationale"": ""Internet cafe services primarily involve providing technical assistance and system access to customers, which is the core domain of ICT user support and operations technicians within Minor Group 351."",
+  ""fallback_isco_3digit"": ""351""
+}"
+"ICT and digital work","Software Design Development and Implementation Works","322","map","2512","Software developers","251","high","The sub-sector specifically addresses the lifecycle of software creation, which is the defining activity of ISCO Minor Group 251 and most closely aligns with Unit Group 2512.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2512"",
+  ""isco_label"": ""Software developers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector specifically addresses the lifecycle of software creation, which is the defining activity of ISCO Minor Group 251 and most closely aligns with Unit Group 2512."",
+  ""fallback_isco_3digit"": ""251""
+}"
+"ICT and digital work","Tele Center Service","4","no_map","","","","low","The sub-sector 'Tele Center Service' describes a service facility domain that encompasses multiple distinct occupational categories including ICT user support technicians (3512), telephone switchboard operators (4223), and information clerks (4222), making it too broad for a single ISCO-08 4-digit unit group.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""low"",
+  ""rationale"": ""The sub-sector 'Tele Center Service' describes a service facility domain that encompasses multiple distinct occupational categories including ICT user support technicians (3512), telephone switchboard operators (4223), and information clerks (4222), making it too broad for a single ISCO-08 4-digit unit group."",
+  ""fallback_isco_3digit"": null
+}"
+"Industry Development","Agro processing","1","no_map","","","","high","Agro processing is a broad industrial domain that encompasses diverse occupational groups including manufacturing managers, food scientists, specialized craft workers, and machine operators, making it too broad for a single ISCO unit group mapping.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""Agro processing is a broad industrial domain that encompasses diverse occupational groups including manufacturing managers, food scientists, specialized craft workers, and machine operators, making it too broad for a single ISCO unit group mapping."",
+  ""fallback_isco_3digit"": null
+}"
+"Industry Development","Chemical Manufacturing","1","no_map","","","","high","Chemical Manufacturing describes an entire industry sub-sector that includes a wide range of distinct occupational roles such as chemical engineers, technicians, and plant operators, making it too broad to map to a single 4-digit ISCO unit group.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""Chemical Manufacturing describes an entire industry sub-sector that includes a wide range of distinct occupational roles such as chemical engineers, technicians, and plant operators, making it too broad to map to a single 4-digit ISCO unit group."",
+  ""fallback_isco_3digit"": null
+}"
+"Industry Development","Garment","1","no_map","","","","high","The 'Garment' sub-sector describes a broad industry vertical that encompasses professional designers, craft-based tailors, and industrial machine operators across multiple distinct ISCO major groups.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The 'Garment' sub-sector describes a broad industry vertical that encompasses professional designers, craft-based tailors, and industrial machine operators across multiple distinct ISCO major groups."",
+  ""fallback_isco_3digit"": null
+}"
+"Industry Development","Leather","3","no_map","","","","low","The sub-sector 'Leather' is too broad as it encompasses distinct occupational categories across different ISCO major groups, including tanners and shoemakers in Major Group 7 and industrial machine operators in Major Group 8.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""low"",
+  ""rationale"": ""The sub-sector 'Leather' is too broad as it encompasses distinct occupational categories across different ISCO major groups, including tanners and shoemakers in Major Group 7 and industrial machine operators in Major Group 8."",
+  ""fallback_isco_3digit"": null
+}"
+"Industry Development","Textile","3","no_map","","","","high","The textile sub-sector is an industrial domain spanning multiple distinct ISCO categories including professional designers (2163), craft-based garment workers (753), and industrial machine operators (815).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The textile sub-sector is an industrial domain spanning multiple distinct ISCO categories including professional designers (2163), craft-based garment workers (753), and industrial machine operators (815)."",
+  ""fallback_isco_3digit"": null
+}"
+"Labor and Social Affairs","Labor","1","no_map","","","","high","The 'Labor' sub-sector within the 'Labor and Social Affairs' sector describes a broad government administrative domain that encompasses diverse roles including policy professionals (2422), labor inspectors (3359), and senior officials (1112), spanning multiple ISCO major groups.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The 'Labor' sub-sector within the 'Labor and Social Affairs' sector describes a broad government administrative domain that encompasses diverse roles including policy professionals (2422), labor inspectors (3359), and senior officials (1112), spanning multiple ISCO major groups."",
+  ""fallback_isco_3digit"": null
+}"
+"Logistics, transportation and communication","Freight Transportation","7","no_map","","","","high","The sub-sector 'Freight Transportation' is an industry category that spans multiple distinct occupational groups including managers (1324), transport clerks (4323), heavy truck drivers (8332), and freight handlers (9333).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Freight Transportation' is an industry category that spans multiple distinct occupational groups including managers (1324), transport clerks (4323), heavy truck drivers (8332), and freight handlers (9333)."",
+  ""fallback_isco_3digit"": null
+}"
+"Logistics, transportation and communication","Instant messaging service except the national postal service","1","no_map","","","","medium","The sub-sector describes a courier/messenger industry domain which encompasses diverse occupations including managers, clerical support workers, and delivery messengers, making it too broad for a single 4-digit ISCO unit group.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""medium"",
+  ""rationale"": ""The sub-sector describes a courier/messenger industry domain which encompasses diverse occupations including managers, clerical support workers, and delivery messengers, making it too broad for a single 4-digit ISCO unit group."",
+  ""fallback_isco_3digit"": null
+}"
+"Logistics, transportation and communication","National Postal Service","4","no_map","","","","high","The sub-sector 'National Postal Service' describes an entire industry domain that encompasses distinct ISCO unit groups such as counter clerks (4211), mail carriers and sorting clerks (4412), and transport drivers (8332), making it too broad to map to a single code.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'National Postal Service' describes an entire industry domain that encompasses distinct ISCO unit groups such as counter clerks (4211), mail carriers and sorting clerks (4412), and transport drivers (8332), making it too broad to map to a single code."",
+  ""fallback_isco_3digit"": null
+}"
+"Logistics, transportation and communication","Other scheduled land transport services","3","no_map","","","","medium","The sub-sector identifies an industry domain that encompasses several distinct occupational categories, including drivers (8331), conductors (5112), transport clerks (4323), and managers (1324), making it too broad for a single ISCO unit group.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""medium"",
+  ""rationale"": ""The sub-sector identifies an industry domain that encompasses several distinct occupational categories, including drivers (8331), conductors (5112), transport clerks (4323), and managers (1324), making it too broad for a single ISCO unit group."",
+  ""fallback_isco_3digit"": null
+}"
+"Logistics, transportation and communication","Other supportive transportation services","34","no_map","","","","high","The sub-sector describes a broad industry category that encompasses diverse occupations across management, administrative, agency, and manual labor domains within the logistics sector.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector describes a broad industry category that encompasses diverse occupations across management, administrative, agency, and manual labor domains within the logistics sector."",
+  ""fallback_isco_3digit"": null
+}"
+"Logistics, transportation and communication","Road freight service","6","no_map","","","","high","Road freight service is an industry sub-sector that encompasses a broad range of distinct occupational categories including drivers, freight handlers, transport clerks, and supply chain managers.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""Road freight service is an industry sub-sector that encompasses a broad range of distinct occupational categories including drivers, freight handlers, transport clerks, and supply chain managers."",
+  ""fallback_isco_3digit"": null
+}"
+"Logistics, transportation and communication","Stroage and warehousing service","7","no_map","","","","low","The sub-sector 'Storage and warehousing service' is an industry domain that spans multiple distinct ISCO occupational groups, including managers (1324), stock clerks (4321), lifting truck operators (8344), and freight handlers (9333).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""low"",
+  ""rationale"": ""The sub-sector 'Storage and warehousing service' is an industry domain that spans multiple distinct ISCO occupational groups, including managers (1324), stock clerks (4321), lifting truck operators (8344), and freight handlers (9333)."",
+  ""fallback_isco_3digit"": null
+}"
+"Manufacturing","Another unmentioned factory works","18","no_map","","","","low","The sub-sector is a residual catch-all category that is too generic to map to a specific ISCO unit group as it could encompass various roles across the entire manufacturing sector.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""low"",
+  ""rationale"": ""The sub-sector is a residual catch-all category that is too generic to map to a specific ISCO unit group as it could encompass various roles across the entire manufacturing sector."",
+  ""fallback_isco_3digit"": null
+}"
+"Manufacturing","Books, Brochures, Publisher of music books and other related articles","1","no_map","","","","medium","The sub-sector describes an entire industry (Publishing and Printing) that encompasses a broad range of occupations across different ISCO major groups, including professionals (Authors, 2641), artists (Graphic Designers, 2166), and craft workers (Printers, 7322).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""medium"",
+  ""rationale"": ""The sub-sector describes an entire industry (Publishing and Printing) that encompasses a broad range of occupations across different ISCO major groups, including professionals (Authors, 2641), artists (Graphic Designers, 2166), and craft workers (Printers, 7322)."",
+  ""fallback_isco_3digit"": null
+}"
+"Manufacturing","Chemical Manufacturing","10","no_map","","","","high","Chemical Manufacturing is an industrial domain that encompasses a wide variety of distinct occupational categories, including chemical engineers, chemists, plant controllers, and machine operators, which span multiple ISCO-08 minor groups.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""Chemical Manufacturing is an industrial domain that encompasses a wide variety of distinct occupational categories, including chemical engineers, chemists, plant controllers, and machine operators, which span multiple ISCO-08 minor groups."",
+  ""fallback_isco_3digit"": null
+}"
+"Manufacturing","Cocoa choclate candies and sweets food manufacture","3","no_map","","","","high","The sub-sector describes an entire manufacturing industry that encompasses multiple unrelated ISCO domains including managers, industrial engineers, machine operators, and laborers.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector describes an entire manufacturing industry that encompasses multiple unrelated ISCO domains including managers, industrial engineers, machine operators, and laborers."",
+  ""fallback_isco_3digit"": null
+}"
+"Manufacturing","Converting metal scraps and scraps into useful products","1","map","8121","Metal processing plant operators","812","high","The sub-sector describes the industrial activity of processing and refining metal scraps, which aligns directly with the domain of metal processing plant operators who refine and convert metal.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""8121"",
+  ""isco_label"": ""Metal processing plant operators"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector describes the industrial activity of processing and refining metal scraps, which aligns directly with the domain of metal processing plant operators who refine and convert metal."",
+  ""fallback_isco_3digit"": ""812""
+}"
+"Manufacturing","Cutters and non-electric tools and accessories Production","3","map","7222","Toolmakers and related workers","722","high","The sub-sector identifies the production of cutters and tools, which is the core specialization of the toolmakers unit group within the metal trades.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""7222"",
+  ""isco_label"": ""Toolmakers and related workers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector identifies the production of cutters and tools, which is the core specialization of the toolmakers unit group within the metal trades."",
+  ""fallback_isco_3digit"": ""722""
+}"
+"Manufacturing","Electrical equipment and utilities Manufacturing","7","no_map","","","","high","The sub-sector describes an entire industrial domain (electrical equipment and utilities) that encompasses a wide range of distinct occupational categories including engineers, managers, technicians, and assemblers.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector describes an entire industrial domain (electrical equipment and utilities) that encompasses a wide range of distinct occupational categories including engineers, managers, technicians, and assemblers."",
+  ""fallback_isco_3digit"": null
+}"
+"Manufacturing","Equipment and machine installation and maintenance service","1","map","7233","Agricultural and industrial machinery mechanics and repairers","723","high","The sub-sector directly matches the definition of ISCO-08 group 7233, which covers the fitting, installation, servicing, and repair of industrial machinery and mechanical equipment.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""7233"",
+  ""isco_label"": ""Agricultural and industrial machinery mechanics and repairers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector directly matches the definition of ISCO-08 group 7233, which covers the fitting, installation, servicing, and repair of industrial machinery and mechanical equipment."",
+  ""fallback_isco_3digit"": ""723""
+}"
+"Manufacturing","Fresh milk processing (pasteurization; Homogenesis á Stereology and Vitamin supplementation","1","map","8160","Food and related products machine operators","816","high","The sub-sector describes industrial dairy processing tasks such as pasteurization and homogenization which are core activities performed by machine operators within the food production unit group 8160.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""8160"",
+  ""isco_label"": ""Food and related products machine operators"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector describes industrial dairy processing tasks such as pasteurization and homogenization which are core activities performed by machine operators within the food production unit group 8160."",
+  ""fallback_isco_3digit"": ""816""
+}"
+"Manufacturing","General maintenance","1","no_map","","","","medium","The sub-sector 'General maintenance' in a manufacturing context is too broad as it typically encompasses multiple distinct skilled trades such as industrial machinery mechanics (7233), electrical mechanics (7412), and facility maintenance workers (9622).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""medium"",
+  ""rationale"": ""The sub-sector 'General maintenance' in a manufacturing context is too broad as it typically encompasses multiple distinct skilled trades such as industrial machinery mechanics (7233), electrical mechanics (7412), and facility maintenance workers (9622)."",
+  ""fallback_isco_3digit"": null
+}"
+"Manufacturing","Leather clothing, travel accessories, womens handbags, handbags","4","map","7536","Shoemakers and related workers","753","high","The sub-sector specifically identifies leather garments and accessories; 7536 is the most relevant unit group as it explicitly includes handbags and luggage (travel accessories) in its scope.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""7536"",
+  ""isco_label"": ""Shoemakers and related workers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector specifically identifies leather garments and accessories; 7536 is the most relevant unit group as it explicitly includes handbags and luggage (travel accessories) in its scope."",
+  ""fallback_isco_3digit"": ""753""
+}"
+"Manufacturing","Manufacture of General Mechanical Engineering Products for Metal Painting works","11","no_map","","","","low","The sub-sector describes a broad manufacturing activity involving both mechanical engineering and specialized metal painting/finishing, which spans multiple distinct ISCO unit groups such as 2144 (Mechanical Engineers), 7223 (Metal working machine tool setters), and 7132 (Spray painters).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""low"",
+  ""rationale"": ""The sub-sector describes a broad manufacturing activity involving both mechanical engineering and specialized metal painting/finishing, which spans multiple distinct ISCO unit groups such as 2144 (Mechanical Engineers), 7223 (Metal working machine tool setters), and 7132 (Spray painters)."",
+  ""fallback_isco_3digit"": null
+}"
+"Manufacturing","Manufacture of almond/ peanut/ foods","3","map","7514","Fruit, vegetable and related preservers","751","high","The sub-sector identifies the processing of nuts (almonds and peanuts), which is explicitly listed in the ISCO-08 description for unit group 7514.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""7514"",
+  ""isco_label"": ""Fruit, vegetable and related preservers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector identifies the processing of nuts (almonds and peanuts), which is explicitly listed in the ISCO-08 description for unit group 7514."",
+  ""fallback_isco_3digit"": ""751""
+}"
+"Manufacturing","Manufacture of artificial limbs","1","map","3214","Medical and dental prosthetic technicians","321","high","The sub-sector is a specialized manufacturing domain that directly aligns with the technical expertise and production duties defined for medical and dental prosthetic technicians, who are specifically tasked with designing and repairing artificial limbs.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""3214"",
+  ""isco_label"": ""Medical and dental prosthetic technicians"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector is a specialized manufacturing domain that directly aligns with the technical expertise and production duties defined for medical and dental prosthetic technicians, who are specifically tasked with designing and repairing artificial limbs."",
+  ""fallback_isco_3digit"": ""321""
+}"
+"Manufacturing","Manufacture of broadcast service, radio, loudspeakers, recording and imaging equipment, dish, decoder set top box, etc","1","no_map","","","","high","The sub-sector defines a manufacturing industry that encompasses multiple distinct ISCO domains such as engineering (2152), technical support (3114), assembly (8212), and management (1321), making it too broad for a single unit group mapping.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector defines a manufacturing industry that encompasses multiple distinct ISCO domains such as engineering (2152), technical support (3114), assembly (8212), and management (1321), making it too broad for a single unit group mapping."",
+  ""fallback_isco_3digit"": null
+}"
+"Manufacturing","Manufacture of concrete, cement and resin products","12","map","8114","Cement, stone and other mineral products machine operators","811","high","The sub-sector refers specifically to the production of concrete and cement products, which is the primary focus of the machines operated by workers in unit group 8114.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""8114"",
+  ""isco_label"": ""Cement, stone and other mineral products machine operators"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector refers specifically to the production of concrete and cement products, which is the primary focus of the machines operated by workers in unit group 8114."",
+  ""fallback_isco_3digit"": ""811""
+}"
+"Manufacturing","Manufacture of electric oven","1","no_map","","","","high","The sub-sector 'Manufacture of electric oven' describes an industrial activity that encompasses a wide range of distinct occupational roles (e.g., managers, engineers, assemblers, and manual laborers) across multiple ISCO major groups.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Manufacture of electric oven' describes an industrial activity that encompasses a wide range of distinct occupational roles (e.g., managers, engineers, assemblers, and manual laborers) across multiple ISCO major groups."",
+  ""fallback_isco_3digit"": null
+}"
+"Manufacturing","Manufacture of food, beverage and tobacco processing equipment","31","no_map","","","","high","This sub-sector represents an industrial category that employs a wide range of occupations across different ISCO domains, including management, engineering, and manual assembly.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""This sub-sector represents an industrial category that employs a wide range of occupations across different ISCO domains, including management, engineering, and manual assembly."",
+  ""fallback_isco_3digit"": null
+}"
+"Manufacturing","Manufacture of home and office furniture","6","map","7522","Cabinet-makers and related workers","752","high","Unit group 7522 specifically covers the making, decoration, and repair of furniture, which represents the core production domain for this manufacturing sub-sector.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""7522"",
+  ""isco_label"": ""Cabinet-makers and related workers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""Unit group 7522 specifically covers the making, decoration, and repair of furniture, which represents the core production domain for this manufacturing sub-sector."",
+  ""fallback_isco_3digit"": ""752""
+}"
+"Manufacturing","Manufacture of marketing measuring instruments","1","no_map","","","","high","As an industrial manufacturing sub-sector, this domain encompasses a broad range of unrelated ISCO functional groups including managers, mechanical engineers, precision instrument makers, and industrial assemblers.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""As an industrial manufacturing sub-sector, this domain encompasses a broad range of unrelated ISCO functional groups including managers, mechanical engineers, precision instrument makers, and industrial assemblers."",
+  ""fallback_isco_3digit"": null
+}"
+"Manufacturing","Manufacture of materials used to make clothing and leather","4","no_map","","","","low","The sub-sector encompasses multiple distinct industrial processes such as textile spinning, weaving, and leather tanning, which are represented by separate ISCO unit groups (e.g., 8151, 8152, 8155, and 7535).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""low"",
+  ""rationale"": ""The sub-sector encompasses multiple distinct industrial processes such as textile spinning, weaving, and leather tanning, which are represented by separate ISCO unit groups (e.g., 8151, 8152, 8155, and 7535)."",
+  ""fallback_isco_3digit"": null
+}"
+"Manufacturing","Manufacture of metal products, tanks, reservoirs used for structure","13","map","7214","Structural-metal preparers and erectors","721","high","The sub-sector focuses on the manufacture of metal structures, tanks, and reservoirs, which is the primary domain of structural-metal preparers and erectors in Minor Group 721.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""7214"",
+  ""isco_label"": ""Structural-metal preparers and erectors"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector focuses on the manufacture of metal structures, tanks, and reservoirs, which is the primary domain of structural-metal preparers and erectors in Minor Group 721."",
+  ""fallback_isco_3digit"": ""721""
+}"
+"Manufacturing","Manufacture of motor vehicle parts, trailers and semi-trailers","30","no_map","","","","high","The sub-sector describes an entire industrial manufacturing category (ISIC) which encompasses a broad range of distinct ISCO occupations including managers, mechanical engineers, industrial technicians, and assemblers.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector describes an entire industrial manufacturing category (ISIC) which encompasses a broad range of distinct ISCO occupations including managers, mechanical engineers, industrial technicians, and assemblers."",
+  ""fallback_isco_3digit"": null
+}"
+"Manufacturing","Manufacture of non-structural clay and ceramic materials","1","no_map","","","","medium","The sub-sector represents an entire manufacturing industry that spans several distinct ISCO occupational groups, including potters (7314), glass and ceramics plant operators (8181), manufacturing managers (1321), and manufacturing labourers (9329).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""medium"",
+  ""rationale"": ""The sub-sector represents an entire manufacturing industry that spans several distinct ISCO occupational groups, including potters (7314), glass and ceramics plant operators (8181), manufacturing managers (1321), and manufacturing labourers (9329)."",
+  ""fallback_isco_3digit"": null
+}"
+"Manufacturing","Manufacture of paper and paper products","8","no_map","","","","high","The sub-sector is too broad as it encompasses two distinct occupational domains in ISCO-08: pulp and papermaking (8171) and the manufacture of paper products (8143), which belong to different minor groups.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector is too broad as it encompasses two distinct occupational domains in ISCO-08: pulp and papermaking (8171) and the manufacture of paper products (8143), which belong to different minor groups."",
+  ""fallback_isco_3digit"": null
+}"
+"Manufacturing","Manufacture of pesticides and other agricultural chemicals","5","no_map","","","","high","The sub-sector identifies an entire manufacturing industry which encompasses a broad range of occupations across different ISCO major groups, including managers, chemical engineers, technicians, and plant operators.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector identifies an entire manufacturing industry which encompasses a broad range of occupations across different ISCO major groups, including managers, chemical engineers, technicians, and plant operators."",
+  ""fallback_isco_3digit"": null
+}"
+"Manufacturing","Manufacture of pulp, paper and paper board andhandles made of paper and paper products","1","no_map","","","","medium","The sub-sector covers two distinct occupational domains in ISCO-08: the primary production of pulp and paper (Unit Group 8171) and the manufacture of finished paper products like handles (Unit Group 8143).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""medium"",
+  ""rationale"": ""The sub-sector covers two distinct occupational domains in ISCO-08: the primary production of pulp and paper (Unit Group 8171) and the manufacture of finished paper products like handles (Unit Group 8143)."",
+  ""fallback_isco_3digit"": null
+}"
+"Manufacturing","Manufacturing and renewing tire products","3","map","8141","Rubber products machine operators","814","high","The sub-sector specifically describes the manufacture and renewal of tire products, which is the primary activity of rubber products machine operators.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""8141"",
+  ""isco_label"": ""Rubber products machine operators"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector specifically describes the manufacture and renewal of tire products, which is the primary activity of rubber products machine operators."",
+  ""fallback_isco_3digit"": ""814""
+}"
+"Manufacturing","Manufacturing of cooking oil","3","map","7514","Fruit, vegetable and related preservers","751","medium","This unit group specifically includes oil extraction in its description, which is the primary technical domain of cooking oil manufacturing.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""7514"",
+  ""isco_label"": ""Fruit, vegetable and related preservers"",
+  ""confidence"": ""medium"",
+  ""rationale"": ""This unit group specifically includes oil extraction in its description, which is the primary technical domain of cooking oil manufacturing."",
+  ""fallback_isco_3digit"": ""751""
+}"
+"Manufacturing","Manufacturing of cream or chocolate, or without ice cream and others manufacturing of ice","1","map","8160","Food and related products machine operators","816","high","The sub-sector describes a specific domain of food production involving dairy, confectionery, and freezing processes, which are centrally covered by the 8160 unit group and its 3-digit parent.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""8160"",
+  ""isco_label"": ""Food and related products machine operators"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector describes a specific domain of food production involving dairy, confectionery, and freezing processes, which are centrally covered by the 8160 unit group and its 3-digit parent."",
+  ""fallback_isco_3digit"": ""816""
+}"
+"Manufacturing","Manufacturing of crushed and partially ground grains","4","map","8160","Food and related products machine operators","816","high","The sub-sector specifically describes grain crushing and grinding, which is a core activity classified under grain milling within the Food and related products machine operators unit group.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""8160"",
+  ""isco_label"": ""Food and related products machine operators"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector specifically describes grain crushing and grinding, which is a core activity classified under grain milling within the Food and related products machine operators unit group."",
+  ""fallback_isco_3digit"": ""816""
+}"
+"Manufacturing","Manufacturing of hygienic and cosmetic products","4","no_map","","","","high","The sub-sector represents a broad industrial category encompassing diverse occupations such as manufacturing managers, chemists, chemical engineers, and plant operators across several different ISCO major groups.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector represents a broad industrial category encompassing diverse occupations such as manufacturing managers, chemists, chemical engineers, and plant operators across several different ISCO major groups."",
+  ""fallback_isco_3digit"": null
+}"
+"Manufacturing","Manufacturing of light bulbs and lighting fixtures","1","no_map","","","","high","The sub-sector refers to an industrial activity that encompasses a wide variety of occupational categories across different ISCO major groups, including engineers (2151), managers (1321), and assemblers (8212).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector refers to an industrial activity that encompasses a wide variety of occupational categories across different ISCO major groups, including engineers (2151), managers (1321), and assemblers (8212)."",
+  ""fallback_isco_3digit"": null
+}"
+"Manufacturing","Manufacturing of photoframes and framing","1","no_map","","","","high","The sub-sector represents an industrial manufacturing activity that encompasses a wide range of distinct ISCO categories, including managers, process control technicians, machine operators, and craft workers.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector represents an industrial manufacturing activity that encompasses a wide range of distinct ISCO categories, including managers, process control technicians, machine operators, and craft workers."",
+  ""fallback_isco_3digit"": null
+}"
+"Manufacturing","Manufacturing of plastic products","13","map","8142","Plastic products machine operators","814","high","The sub-sector specifically identifies the production of plastic products, which is directly addressed by the ISCO-08 unit group for plastic products machine operators and its broader minor group for rubber and plastic products.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""8142"",
+  ""isco_label"": ""Plastic products machine operators"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector specifically identifies the production of plastic products, which is directly addressed by the ISCO-08 unit group for plastic products machine operators and its broader minor group for rubber and plastic products."",
+  ""fallback_isco_3digit"": ""814""
+}"
+"Manufacturing","Manufacturing of prepared animal feed","2","map","8160","Food and related products machine operators","816","high","ISCO unit group 8160 specifically includes workers who operate and attend machinery used to process and make animal food.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""8160"",
+  ""isco_label"": ""Food and related products machine operators"",
+  ""confidence"": ""high"",
+  ""rationale"": ""ISCO unit group 8160 specifically includes workers who operate and attend machinery used to process and make animal food."",
+  ""fallback_isco_3digit"": ""816""
+}"
+"Manufacturing","Packaging works","1","map","8183","Packing, bottling and labelling machine operators","818","high","The sub-sector 'Packaging works' identifies a specific stage of the manufacturing process that directly corresponds to the industrial domain of operating machinery for packing, bottling, and labelling products.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""8183"",
+  ""isco_label"": ""Packing, bottling and labelling machine operators"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Packaging works' identifies a specific stage of the manufacturing process that directly corresponds to the industrial domain of operating machinery for packing, bottling, and labelling products."",
+  ""fallback_isco_3digit"": ""818""
+}"
+"Manufacturing","Preparation of textile stripes; Spinning and weaving","7","map","8151","Fibre preparing, spinning and winding machine operators","815","high","The sub-sector explicitly covers spinning and weaving, which are the core activities of ISCO Minor Group 815, specifically codes 8151 and 8152.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""8151"",
+  ""isco_label"": ""Fibre preparing, spinning and winding machine operators"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector explicitly covers spinning and weaving, which are the core activities of ISCO Minor Group 815, specifically codes 8151 and 8152."",
+  ""fallback_isco_3digit"": ""815""
+}"
+"Manufacturing","Prepared clothes (hairdressing Excluding) manufacturing","6","map","7531","Tailors, dressmakers, furriers and hatters","753","high","The sub-sector specifically identifies the garment manufacturing domain, which is centrally represented by the occupational trades within Minor Group 753.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""7531"",
+  ""isco_label"": ""Tailors, dressmakers, furriers and hatters"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector specifically identifies the garment manufacturing domain, which is centrally represented by the occupational trades within Minor Group 753."",
+  ""fallback_isco_3digit"": ""753""
+}"
+"Manufacturing","Shoe manufacturing","1","map","8156","Shoemaking and related machine operators","815","high","The sub-sector specifically describes the industrial production of footwear, which is directly aligned with the unit group for operating footwear production machinery and its corresponding 3-digit minor group for leather products.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""8156"",
+  ""isco_label"": ""Shoemaking and related machine operators"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector specifically describes the industrial production of footwear, which is directly aligned with the unit group for operating footwear production machinery and its corresponding 3-digit minor group for leather products."",
+  ""fallback_isco_3digit"": ""815""
+}"
+"Manufacturing","Soft drinks, minerals and cannedwater production","3","no_map","","","","high","This sub-sector refers to an industry branch (ISIC 1104) that employs a broad range of occupations across unrelated ISCO domains, such as manufacturing managers, chemical engineers, production machine operators, and delivery drivers.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""This sub-sector refers to an industry branch (ISIC 1104) that employs a broad range of occupations across unrelated ISCO domains, such as manufacturing managers, chemical engineers, production machine operators, and delivery drivers."",
+  ""fallback_isco_3digit"": null
+}"
+"Manufacturing","Steel tube manufacturing","6","map","8121","Metal processing plant operators","812","high","Steel tube manufacturing is a specific industrial process that falls under the domain of metal processing, rolling, and refining handled by metal processing plant operators.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""8121"",
+  ""isco_label"": ""Metal processing plant operators"",
+  ""confidence"": ""high"",
+  ""rationale"": ""Steel tube manufacturing is a specific industrial process that falls under the domain of metal processing, rolling, and refining handled by metal processing plant operators."",
+  ""fallback_isco_3digit"": ""812""
+}"
+"Manufacturing","different textile materials made (excluding clothing) Manufacturing","2","map","8152","Weaving and knitting machine operators","815","high","The sub-sector refers specifically to non-clothing textile material production, which aligns with the occupation domain covered by Minor Group 815 (Textile, Fur and Leather Products Machine Operators).","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""8152"",
+  ""isco_label"": ""Weaving and knitting machine operators"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector refers specifically to non-clothing textile material production, which aligns with the occupation domain covered by Minor Group 815 (Textile, Fur and Leather Products Machine Operators)."",
+  ""fallback_isco_3digit"": ""815""
+}"
+"Mining and Quarrying","Mining works","13","no_map","","","","high","The sub-sector 'Mining works' is too broad as it encompasses a diverse range of roles across multiple ISCO major groups, including managers, engineers, technicians, machine operators, and elementary laborers.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Mining works' is too broad as it encompasses a diverse range of roles across multiple ISCO major groups, including managers, engineers, technicians, machine operators, and elementary laborers."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Accounting and auditing Jobs","29","map","2411","Accountants","241","high","The sub-sector 'Accounting and auditing' directly aligns with the professional tasks of unit group 2411, which includes examining and analyzing accounting and financial records.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2411"",
+  ""isco_label"": ""Accountants"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Accounting and auditing' directly aligns with the professional tasks of unit group 2411, which includes examining and analyzing accounting and financial records."",
+  ""fallback_isco_3digit"": ""241""
+}"
+"Service","Accounting audit and adminstrative works","112","no_map","","","","high","The sub-sector combines two distinct functional domains (accounting/audit and general administrative work) that span multiple ISCO major groups, including professionals, associate professionals, and clerical support workers.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector combines two distinct functional domains (accounting/audit and general administrative work) that span multiple ISCO major groups, including professionals, associate professionals, and clerical support workers."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Advertising","127","map","2431","Advertising and marketing professionals","243","high","The sub-sector aligns precisely with the professional unit group dedicated to developing and coordinating advertising strategies and campaigns.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2431"",
+  ""isco_label"": ""Advertising and marketing professionals"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector aligns precisely with the professional unit group dedicated to developing and coordinating advertising strategies and campaigns."",
+  ""fallback_isco_3digit"": ""243""
+}"
+"Service","Agriculture and Livestock Services (with the exception of veterinary medicine)Livestock Breeding or artificial breeding","1","map","3142","Agricultural technicians","314","medium","The sub-sector specifically highlights 'Livestock Breeding or artificial breeding' as a service, which is a specialized technical support function performed by agricultural technicians (including artificial insemination technicians) rather than general farm management or veterinary medicine.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""3142"",
+  ""isco_label"": ""Agricultural technicians"",
+  ""confidence"": ""medium"",
+  ""rationale"": ""The sub-sector specifically highlights 'Livestock Breeding or artificial breeding' as a service, which is a specialized technical support function performed by agricultural technicians (including artificial insemination technicians) rather than general farm management or veterinary medicine."",
+  ""fallback_isco_3digit"": ""314""
+}"
+"Service","Architecture Construction and Related Consultations","12","no_map","","","","high","The sub-sector is too broad as it encompasses several distinct professional and managerial domains including building architects (2161), civil engineers (2142), and construction managers (1323).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector is too broad as it encompasses several distinct professional and managerial domains including building architects (2161), civil engineers (2142), and construction managers (1323)."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Business Promotion Service","176","no_map","","","","low","The sub-sector 'Business Promotion Service' is too broad for a single 4-digit unit group as it spans multiple professional levels and specialties, including marketing managers (1221), advertising professionals (2431), and public relations specialists (2432).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""low"",
+  ""rationale"": ""The sub-sector 'Business Promotion Service' is too broad for a single 4-digit unit group as it spans multiple professional levels and specialties, including marketing managers (1221), advertising professionals (2431), and public relations specialists (2432)."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Case manager","1","map","2635","Social work and counselling professionals","263","medium","Case managers primarily operate within the social services and counselling domain, coordinating care and resources for individuals or families in need.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2635"",
+  ""isco_label"": ""Social work and counselling professionals"",
+  ""confidence"": ""medium"",
+  ""rationale"": ""Case managers primarily operate within the social services and counselling domain, coordinating care and resources for individuals or families in need."",
+  ""fallback_isco_3digit"": ""263""
+}"
+"Service","Cleaning of buildings, industry, aircraft, housing, etc","3","map","9112","Cleaners and helpers in offices, hotels and other establishments","911","medium","The sub-sector covers a range of professional cleaning activities which span several 4-digit codes (including 9111, 9112, 9122, and 9129), but 9112 is the most representative catch-all for commercial and industrial cleaning services.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""9112"",
+  ""isco_label"": ""Cleaners and helpers in offices, hotels and other establishments"",
+  ""confidence"": ""medium"",
+  ""rationale"": ""The sub-sector covers a range of professional cleaning activities which span several 4-digit codes (including 9111, 9112, 9122, and 9129), but 9112 is the most representative catch-all for commercial and industrial cleaning services."",
+  ""fallback_isco_3digit"": ""911""
+}"
+"Service","Commercial Broadcast Service","6","no_map","","","","high","Commercial Broadcast Service is an industry category that spans multiple distinct ISCO domains, including journalists, announcers, producers, and broadcasting technicians.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""Commercial Broadcast Service is an industry category that spans multiple distinct ISCO domains, including journalists, announcers, producers, and broadcasting technicians."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Conservation of plants, animals and nature attractions","1","no_map","","","","low","The sub-sector is too broad, as it encompasses scientific research (Biologists), technical management (Forestry Technicians), and service-oriented tourism roles (Travel Guides), which span several unrelated ISCO major groups.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""low"",
+  ""rationale"": ""The sub-sector is too broad, as it encompasses scientific research (Biologists), technical management (Forestry Technicians), and service-oriented tourism roles (Travel Guides), which span several unrelated ISCO major groups."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Consulting around natural science","15","no_map","","","","medium","The term natural science encompasses multiple distinct ISCO-08 minor groups including Physical and Earth Science Professionals (211) and Life Science Professionals (213), making it too broad for a single unit group mapping.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""medium"",
+  ""rationale"": ""The term natural science encompasses multiple distinct ISCO-08 minor groups including Physical and Earth Science Professionals (211) and Life Science Professionals (213), making it too broad for a single unit group mapping."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Consulting service around social science","124","map","2632","Sociologists, anthropologists and related professionals","263","high","The sub-sector identifies a specific domain of professional expertise that aligns with the social science specialists categorized in Minor Group 263.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2632"",
+  ""isco_label"": ""Sociologists, anthropologists and related professionals"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector identifies a specific domain of professional expertise that aligns with the social science specialists categorized in Minor Group 263."",
+  ""fallback_isco_3digit"": ""263""
+}"
+"Service","Consulting service in the transport sector","1","no_map","","","","low","The sub-sector describes a diverse professional service domain that spans multiple distinct ISCO-08 groups such as town and traffic planners (2164), civil engineers (2142), and management analysts (2421).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""low"",
+  ""rationale"": ""The sub-sector describes a diverse professional service domain that spans multiple distinct ISCO-08 groups such as town and traffic planners (2164), civil engineers (2142), and management analysts (2421)."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Consulting service on the selection, installation, maintenance and disposal of scientific equipment","1","no_map","","","","low","The sub-sector describes a full product lifecycle including advisory/sales roles (selection and consulting) and technical/maintenance roles (installation, repair, and disposal), which map to distinct ISCO unit groups such as 2433 and 3119.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""low"",
+  ""rationale"": ""The sub-sector describes a full product lifecycle including advisory/sales roles (selection and consulting) and technical/maintenance roles (installation, repair, and disposal), which map to distinct ISCO unit groups such as 2433 and 3119."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Decoration works","4","map","3432","Interior designers and decorators","343","high","The sub-sector 'Decoration works' aligns directly with the 'decorators' component of this unit group, which covers planning and designing building interiors for aesthetic and functional purposes.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""3432"",
+  ""isco_label"": ""Interior designers and decorators"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Decoration works' aligns directly with the 'decorators' component of this unit group, which covers planning and designing building interiors for aesthetic and functional purposes."",
+  ""fallback_isco_3digit"": ""343""
+}"
+"Service","Education counseling service","18","map","2423","Personnel and careers professionals","242","medium","The sub-sector aligns with the 'vocational guidance' component explicitly listed in the ISCO-08 definition for unit group 2423, though some school-based personal counseling may overlap with 2635.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2423"",
+  ""isco_label"": ""Personnel and careers professionals"",
+  ""confidence"": ""medium"",
+  ""rationale"": ""The sub-sector aligns with the 'vocational guidance' component explicitly listed in the ISCO-08 definition for unit group 2423, though some school-based personal counseling may overlap with 2635."",
+  ""fallback_isco_3digit"": ""242""
+}"
+"Service","Employment agencies and recruitment agencies","76","map","3333","Employment agents and contractors","333","high","The sub-sector name directly matches the specific activities and title of ISCO-08 unit group 3333.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""3333"",
+  ""isco_label"": ""Employment agents and contractors"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector name directly matches the specific activities and title of ISCO-08 unit group 3333."",
+  ""fallback_isco_3digit"": ""333""
+}"
+"Service","Engineering Consulting Service","14","map","2149","Engineering professionals not elsewhere classified","214","high","Engineering consulting services map directly to the domain of engineering professionals; while it encompasses several 4-digit specialties, group 2149 serves as the best representative anchor for the overall engineering professional minor group.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2149"",
+  ""isco_label"": ""Engineering professionals not elsewhere classified"",
+  ""confidence"": ""high"",
+  ""rationale"": ""Engineering consulting services map directly to the domain of engineering professionals; while it encompasses several 4-digit specialties, group 2149 serves as the best representative anchor for the overall engineering professional minor group."",
+  ""fallback_isco_3digit"": ""214""
+}"
+"Service","Equipment and machine installation and maintenance service","40","map","7233","Agricultural and industrial machinery mechanics and repairers","723","high","The sub-sector's focus on installation and maintenance of equipment and machinery directly aligns with the duties defined for ISCO unit group 7233.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""7233"",
+  ""isco_label"": ""Agricultural and industrial machinery mechanics and repairers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector's focus on installation and maintenance of equipment and machinery directly aligns with the duties defined for ISCO unit group 7233."",
+  ""fallback_isco_3digit"": ""723""
+}"
+"Service","Estimating the cost of housing sales and collecting rental income","34","map","3334","Real estate agents and property managers","333","high","The sub-sector activities of estimating housing sale costs and managing rental income align precisely with the definition of real estate agents and property managers in ISCO 3334.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""3334"",
+  ""isco_label"": ""Real estate agents and property managers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector activities of estimating housing sale costs and managing rental income align precisely with the definition of real estate agents and property managers in ISCO 3334."",
+  ""fallback_isco_3digit"": ""333""
+}"
+"Service","Finance and Administration Services","359","no_map","","","","high","The sub-sector combines two distinct functional areas (Finance and Administration) and covers multiple skill levels ranging from high-level managers and accountants to clerical support staff.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector combines two distinct functional areas (Finance and Administration) and covers multiple skill levels ranging from high-level managers and accountants to clerical support staff."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","General maintenance","35","no_map","","","","high","The sub-sector 'General maintenance' is too broad as it encompasses a wide range of both specialized trade occupations (such as electricians, plumbers, and HVAC technicians in Major Group 7) and elementary maintenance roles (such as odd-job persons in Major Group 9).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'General maintenance' is too broad as it encompasses a wide range of both specialized trade occupations (such as electricians, plumbers, and HVAC technicians in Major Group 7) and elementary maintenance roles (such as odd-job persons in Major Group 9)."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","General research and experimental development work","1","no_map","","","","high","This sub-sector is a broad domain label covering many distinct ISCO groups, including managers (1223), various professional researchers (Sub-major Groups 21 and 26), and technical support staff (Minor Group 31).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""This sub-sector is a broad domain label covering many distinct ISCO groups, including managers (1223), various professional researchers (Sub-major Groups 21 and 26), and technical support staff (Minor Group 31)."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Geo-Spatial / Earth Information / Service","5","map","2165","Cartographers and surveyors","216","high","The sub-sector 'Geo-Spatial / Earth Information' directly aligns with the definition of ISCO 2165, which involves preparing digital and graphic maps and visual representations of the earth.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2165"",
+  ""isco_label"": ""Cartographers and surveyors"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Geo-Spatial / Earth Information' directly aligns with the definition of ISCO 2165, which involves preparing digital and graphic maps and visual representations of the earth."",
+  ""fallback_isco_3digit"": ""216""
+}"
+"Service","Hair and beauty care","4","map","5141","Hairdressers","514","high","The sub-sector 'Hair and beauty care' corresponds directly to ISCO Minor Group 514, which contains both 5141 (Hairdressers) and 5142 (Beauticians and related workers).","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""5141"",
+  ""isco_label"": ""Hairdressers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Hair and beauty care' corresponds directly to ISCO Minor Group 514, which contains both 5141 (Hairdressers) and 5142 (Beauticians and related workers)."",
+  ""fallback_isco_3digit"": ""514""
+}"
+"Service","Human Resource Management","1","map","1212","Human resource managers","121","high","The sub-sector name directly corresponds to the ISCO unit group dedicated to planning and coordinating personnel and industrial relations policies.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""1212"",
+  ""isco_label"": ""Human resource managers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector name directly corresponds to the ISCO unit group dedicated to planning and coordinating personnel and industrial relations policies."",
+  ""fallback_isco_3digit"": ""121""
+}"
+"Service","Industrial research and experimental development activities","33","no_map","","","","high","The sub-sector describes a broad economic domain that encompasses a wide variety of distinct occupations across different ISCO groups, including managers (1223), natural scientists (211x), engineers (214x), and technical support staff (311x).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector describes a broad economic domain that encompasses a wide variety of distinct occupations across different ISCO groups, including managers (1223), natural scientists (211x), engineers (214x), and technical support staff (311x)."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Information and Communication Technology Consulting Service","10","map","2511","Systems analysts","251","high","The sub-sector focuses on ICT consulting, which is the primary professional domain of systems analysts who evaluate client requirements and develop technology proposals.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2511"",
+  ""isco_label"": ""Systems analysts"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector focuses on ICT consulting, which is the primary professional domain of systems analysts who evaluate client requirements and develop technology proposals."",
+  ""fallback_isco_3digit"": ""251""
+}"
+"Service","Inspection","7","no_map","","","","high","The term 'Inspection' is too broad and ambiguous as it could refer to government regulatory inspectors, health and safety inspectors, or industrial product graders across multiple distinct ISCO minor groups.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The term 'Inspection' is too broad and ambiguous as it could refer to government regulatory inspectors, health and safety inspectors, or industrial product graders across multiple distinct ISCO minor groups."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Laboratory test","20","map","3212","Medical and pathology laboratory technicians","321","high","The sub-sector 'Laboratory test' in the service sector directly corresponds to the functions of medical and pathology laboratory technicians who perform clinical tests on specimens.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""3212"",
+  ""isco_label"": ""Medical and pathology laboratory technicians"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Laboratory test' in the service sector directly corresponds to the functions of medical and pathology laboratory technicians who perform clinical tests on specimens."",
+  ""fallback_isco_3digit"": ""321""
+}"
+"Service","Library and Archives Services","14","map","2622","Librarians and related information professionals","262","high","The sub-sector clearly identifies the domain of librarians and archivists, which is centrally covered by Minor Group 262 (Librarians, Archivists and Curators).","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2622"",
+  ""isco_label"": ""Librarians and related information professionals"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector clearly identifies the domain of librarians and archivists, which is centrally covered by Minor Group 262 (Librarians, Archivists and Curators)."",
+  ""fallback_isco_3digit"": ""262""
+}"
+"Service","Logistics Supply and Support Services (outside of other business sectors)","89","no_map","","","","high","The sub-sector 'Logistics Supply and Support Services' represents a broad industry domain spanning multiple ISCO major groups, including management (1324), specialized agents (3331), clerical support (4321, 4323), and manual labor (9333).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Logistics Supply and Support Services' represents a broad industry domain spanning multiple ISCO major groups, including management (1324), specialized agents (3331), clerical support (4321, 4323), and manual labor (9333)."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Management System Certification","10","map","2421","Management and organisation analysts","242","high","Management system certification involves auditing and analyzing organizational structures, methods, and systems to ensure compliance with standards, which directly aligns with the duties of management and organization analysts.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2421"",
+  ""isco_label"": ""Management and organisation analysts"",
+  ""confidence"": ""high"",
+  ""rationale"": ""Management system certification involves auditing and analyzing organizational structures, methods, and systems to ensure compliance with standards, which directly aligns with the duties of management and organization analysts."",
+  ""fallback_isco_3digit"": ""242""
+}"
+"Service","Media programming","23","no_map","","","","medium","The sub-sector 'Media programming' is too broad because it encompasses diverse occupational roles including professional content creators (2654), journalists (2642), announcers (2656), and technical broadcasting staff (3521).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""medium"",
+  ""rationale"": ""The sub-sector 'Media programming' is too broad because it encompasses diverse occupational roles including professional content creators (2654), journalists (2642), announcers (2656), and technical broadcasting staff (3521)."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Motor vehicle repair work","22","map","7231","Motor vehicle mechanics and repairers","723","high","The sub-sector 'Motor vehicle repair work' directly corresponds to the specific technical and mechanical duties defined in ISCO unit group 7231.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""7231"",
+  ""isco_label"": ""Motor vehicle mechanics and repairers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Motor vehicle repair work' directly corresponds to the specific technical and mechanical duties defined in ISCO unit group 7231."",
+  ""fallback_isco_3digit"": ""723""
+}"
+"Service","Occupational Safety and Health Care Consulting Service","21","map","2263","Environmental and occupational health and hygiene professionals","226","high","The sub-sector specifically describes professional consulting services in occupational health and safety, which is the primary focus of unit group 2263.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2263"",
+  ""isco_label"": ""Environmental and occupational health and hygiene professionals"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector specifically describes professional consulting services in occupational health and safety, which is the primary focus of unit group 2263."",
+  ""fallback_isco_3digit"": ""226""
+}"
+"Service","Other health activities","4","no_map","","","","high","The sub-sector 'Other health activities' refers to a broad industrial category that includes a diverse range of occupations from medical professionals and therapists to technical and support staff, spanning multiple ISCO-08 domains.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Other health activities' refers to a broad industrial category that includes a diverse range of occupations from medical professionals and therapists to technical and support staff, spanning multiple ISCO-08 domains."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Other not-mentioned educational services (private tutoring, etc.)","16","map","2359","Teaching professionals not elsewhere classified","235","high","The ISCO-08 code 2359 specifically includes individuals who provide private tuition, directly matching the description of this sub-sector.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2359"",
+  ""isco_label"": ""Teaching professionals not elsewhere classified"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The ISCO-08 code 2359 specifically includes individuals who provide private tuition, directly matching the description of this sub-sector."",
+  ""fallback_isco_3digit"": ""235""
+}"
+"Service","Other services","246","no_map","","","","high","The sub-sector 'Other services' is a residual and generic category that covers a vast range of unrelated occupations across multiple ISCO domains, making it unsuitable for a specific mapping.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Other services' is a residual and generic category that covers a vast range of unrelated occupations across multiple ISCO domains, making it unsuitable for a specific mapping."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Other unmentioned repair jobs","1","no_map","","","","low","The sub-sector 'Other unmentioned repair jobs' is a residual category that could encompass various unrelated repair domains such as machinery, electronics, footwear, or furniture, making it too broad for a single ISCO mapping.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""low"",
+  ""rationale"": ""The sub-sector 'Other unmentioned repair jobs' is a residual category that could encompass various unrelated repair domains such as machinery, electronics, footwear, or furniture, making it too broad for a single ISCO mapping."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Packaging works","2","no_map","","","","low","The sub-sector 'Packaging works' is ambiguous as it could refer to either machine-based packing (8183) or manual hand packing (9321), which are located in different ISCO major groups.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""low"",
+  ""rationale"": ""The sub-sector 'Packaging works' is ambiguous as it could refer to either machine-based packing (8183) or manual hand packing (9321), which are located in different ISCO major groups."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Pesticide service","4","map","7544","Fumigators and other pest and weed controllers","754","high","The sub-sector Pesticide service directly corresponds to the professional use of chemicals for pest and weed management as defined in ISCO unit group 7544.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""7544"",
+  ""isco_label"": ""Fumigators and other pest and weed controllers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector Pesticide service directly corresponds to the professional use of chemicals for pest and weed management as defined in ISCO unit group 7544."",
+  ""fallback_isco_3digit"": ""754""
+}"
+"Service","Photographic works","7","map","3431","Photographers","343","high","The sub-sector 'Photographic works' directly corresponds to the domain of professional photography services defined in unit group 3431.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""3431"",
+  ""isco_label"": ""Photographers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Photographic works' directly corresponds to the domain of professional photography services defined in unit group 3431."",
+  ""fallback_isco_3digit"": ""343""
+}"
+"Service","Pre-primary education and after-school services","6","no_map","","","","medium","The sub-sector spans two distinct occupational domains in ISCO: professional early childhood educators (2342) and personal care workers providing after-school supervision (5311).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""medium"",
+  ""rationale"": ""The sub-sector spans two distinct occupational domains in ISCO: professional early childhood educators (2342) and personal care workers providing after-school supervision (5311)."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Primary and secondary education","49","no_map","","","","high","The sub-sector 'Primary and secondary education' is too broad as it encompasses multiple distinct ISCO groups such as primary teachers (2341), secondary teachers (2330), and education managers (1345).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Primary and secondary education' is too broad as it encompasses multiple distinct ISCO groups such as primary teachers (2341), secondary teachers (2330), and education managers (1345)."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Product certification","2","no_map","","","","low","Product certification is a broad service domain that encompasses multiple distinct occupational categories across different ISCO major groups, including quality engineers (2141), technical auditors (2421), and product testers or graders (7543).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""low"",
+  ""rationale"": ""Product certification is a broad service domain that encompasses multiple distinct occupational categories across different ISCO major groups, including quality engineers (2141), technical auditors (2421), and product testers or graders (7543)."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Professional certification","1","no_map","","","","low","The sub-sector 'Professional certification' refers to a cross-cutting industry activity involving various roles like quality inspectors, management analysts, and specialized managers, which does not map cleanly to a single ISCO unit group.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""low"",
+  ""rationale"": ""The sub-sector 'Professional certification' refers to a cross-cutting industry activity involving various roles like quality inspectors, management analysts, and specialized managers, which does not map cleanly to a single ISCO unit group."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Project management","2","no_map","","","","medium","Project management is a cross-cutting functional role that spans multiple distinct ISCO-08 categories depending on the industry, such as ICT (1330), Construction (1323), or Business Services (1219).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""medium"",
+  ""rationale"": ""Project management is a cross-cutting functional role that spans multiple distinct ISCO-08 categories depending on the industry, such as ICT (1330), Construction (1323), or Business Services (1219)."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Publishing and book services","5","no_map","","","","high","The publishing and book services sub-sector encompasses both creative/professional roles like authors and journalists and technical craft roles like printers and bookbinders, which are located in completely different ISCO Major Groups.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The publishing and book services sub-sector encompasses both creative/professional roles like authors and journalists and technical craft roles like printers and bookbinders, which are located in completely different ISCO Major Groups."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Quality Award Service","1","no_map","","","","low","The sub-sector 'Quality Award Service' refers to a niche industry or functional area involving quality standards and certification that spans multiple ISCO domains such as management analysts, regulatory inspectors, and administrative staff.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""low"",
+  ""rationale"": ""The sub-sector 'Quality Award Service' refers to a niche industry or functional area involving quality standards and certification that spans multiple ISCO domains such as management analysts, regulatory inspectors, and administrative staff."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Quality Management Consulting Service","91","map","2421","Management and organisation analysts","242","high","Quality management consulting is a specialized professional service focused on improving organizational efficiency, structures, and systems, which aligns directly with the unit group for management and organization analysts.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2421"",
+  ""isco_label"": ""Management and organisation analysts"",
+  ""confidence"": ""high"",
+  ""rationale"": ""Quality management consulting is a specialized professional service focused on improving organizational efficiency, structures, and systems, which aligns directly with the unit group for management and organization analysts."",
+  ""fallback_isco_3digit"": ""242""
+}"
+"Service","Rent office equipment and supplies (including computer)","6","no_map","","","","low","The sub-sector represents a business activity (rental and leasing) that encompasses a broad range of occupations across unrelated ISCO domains, including sales representatives, electronics technicians, and managers.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""low"",
+  ""rationale"": ""The sub-sector represents a business activity (rental and leasing) that encompasses a broad range of occupations across unrelated ISCO domains, including sales representatives, electronics technicians, and managers."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Research and Experimental Development Works on Economics and Development","11","map","2631","Economists","263","high","The sub-sector explicitly targets research and development in economics and development, which is the core professional domain of Economists as defined in ISCO-08.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2631"",
+  ""isco_label"": ""Economists"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector explicitly targets research and development in economics and development, which is the core professional domain of Economists as defined in ISCO-08."",
+  ""fallback_isco_3digit"": ""263""
+}"
+"Service","Research and development work on human health, pharmacology","2","no_map","","","","low","The sub-sector defines an industrial R&D domain that spans multiple distinct ISCO groups, including managers, life scientists (biologists/pharmacologists), chemists, medical doctors, and laboratory technicians.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""low"",
+  ""rationale"": ""The sub-sector defines an industrial R&D domain that spans multiple distinct ISCO groups, including managers, life scientists (biologists/pharmacologists), chemists, medical doctors, and laboratory technicians."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Research and experimental development activities in agriculture and animal husbandry","1","no_map","","","","high","This sub-sector describes a broad research domain that encompasses multiple distinct ISCO-08 groups including life science professionals (2131, 2132), agricultural technicians (3142), and R&D managers (1223).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""This sub-sector describes a broad research domain that encompasses multiple distinct ISCO-08 groups including life science professionals (2131, 2132), agricultural technicians (3142), and R&D managers (1223)."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Research and experimental development work in biology and chemistry","6","no_map","","","","high","The sub-sector combines biology and chemistry, which are represented by distinct ISCO-08 groups (e.g., 2113 for Chemistry and 2131 for Biology) and spans both professional and technical skill levels.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector combines biology and chemistry, which are represented by distinct ISCO-08 groups (e.g., 2113 for Chemistry and 2131 for Biology) and spans both professional and technical skill levels."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Research and experimental development work in engineering and technology","27","no_map","","","","high","The sub-sector describes an industrial domain that employs a wide range of occupations across different ISCO major groups, including managers, engineering professionals, and laboratory technicians.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector describes an industrial domain that employs a wide range of occupations across different ISCO major groups, including managers, engineering professionals, and laboratory technicians."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Research and experimental development work in psychology","14","map","2634","Psychologists","263","high","The sub-sector specifies research and development in psychology, which directly aligns with the defined duties of Psychologists (2634) who conduct research into mental processes and behavior.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2634"",
+  ""isco_label"": ""Psychologists"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector specifies research and development in psychology, which directly aligns with the defined duties of Psychologists (2634) who conduct research into mental processes and behavior."",
+  ""fallback_isco_3digit"": ""263""
+}"
+"Service","Research and experimental development work on cultural and social life","2","map","2632","Sociologists, anthropologists and related professionals","263","medium","The sub-sector corresponds directly to the field of social science research, where sociologists and anthropologists are the primary unit group, though the broader research domain is accurately captured by the 3-digit minor group 263.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2632"",
+  ""isco_label"": ""Sociologists, anthropologists and related professionals"",
+  ""confidence"": ""medium"",
+  ""rationale"": ""The sub-sector corresponds directly to the field of social science research, where sociologists and anthropologists are the primary unit group, though the broader research domain is accurately captured by the 3-digit minor group 263."",
+  ""fallback_isco_3digit"": ""263""
+}"
+"Service","Research and experimental development work on human health, pharmacology","2","no_map","","","","high","The sub-sector describes an industrial research domain (NACE/ISIC category) that requires a broad range of distinct ISCO occupations including managers (1223), chemists (2113), biologists (2131), and various scientific technicians (3111, 3141).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector describes an industrial research domain (NACE/ISIC category) that requires a broad range of distinct ISCO occupations including managers (1223), chemists (2113), biologists (2131), and various scientific technicians (3111, 3141)."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Research and experimental development work on language and literature","2","map","2643","Translators, interpreters and other linguists","264","medium","The sub-sector focuses on the study and development of language and literature, which aligns with the research and linguistic study duties of unit group 2643, specifically the study of the origin, development, and structure of languages.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2643"",
+  ""isco_label"": ""Translators, interpreters and other linguists"",
+  ""confidence"": ""medium"",
+  ""rationale"": ""The sub-sector focuses on the study and development of language and literature, which aligns with the research and linguistic study duties of unit group 2643, specifically the study of the origin, development, and structure of languages."",
+  ""fallback_isco_3digit"": ""264""
+}"
+"Service","Resturant,Coffee shop","1","no_map","","","","high","The sub-sector identifies a multi-occupational establishment domain that includes diverse roles such as managers, cooks, waiters, and kitchen helpers across multiple ISCO Minor Groups.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector identifies a multi-occupational establishment domain that includes diverse roles such as managers, cooks, waiters, and kitchen helpers across multiple ISCO Minor Groups."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Security Service","50","map","5414","Security guards","541","high","The sub-sector 'Security Service' aligns directly with the protective services domain, specifically the activities of security guards and related personnel in Minor Group 541.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""5414"",
+  ""isco_label"": ""Security guards"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Security Service' aligns directly with the protective services domain, specifically the activities of security guards and related personnel in Minor Group 541."",
+  ""fallback_isco_3digit"": ""541""
+}"
+"Service","Sewage and waste disposal; Health care and similar jobs","4","no_map","","","","high","The sub-sector combines two distinct service domains—waste management and health care—which encompass a broad range of occupations across multiple ISCO major groups.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector combines two distinct service domains—waste management and health care—which encompass a broad range of occupations across multiple ISCO major groups."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Short-term language training and education","33","map","2353","Other language teachers","235","high","The sub-sector specifically identifies language training, which is the primary focus of ISCO unit group 2353, covering teachers of non-native languages outside mainstream education systems.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2353"",
+  ""isco_label"": ""Other language teachers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector specifically identifies language training, which is the primary focus of ISCO unit group 2353, covering teachers of non-native languages outside mainstream education systems."",
+  ""fallback_isco_3digit"": ""235""
+}"
+"Service","Social work services","175","no_map","","","","high","The sub-sector 'Social work services' is a broad domain that encompasses managers (1344), professionals (2635), associate professionals (3412), and personal care workers (5322), making it too broad for a single 4-digit ISCO unit group mapping.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Social work services' is a broad domain that encompasses managers (1344), professionals (2635), associate professionals (3412), and personal care workers (5322), making it too broad for a single 4-digit ISCO unit group mapping."",
+  ""fallback_isco_3digit"": null
+}"
+"Service","Special event coordination","15","map","3332","Conference and event planners","333","high","The sub-sector name perfectly matches the definition of ISCO 3332, which focuses on organizing and coordinating services for conferences and special events.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""3332"",
+  ""isco_label"": ""Conference and event planners"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector name perfectly matches the definition of ISCO 3332, which focuses on organizing and coordinating services for conferences and special events."",
+  ""fallback_isco_3digit"": ""333""
+}"
+"Service","Sports Services","3","map","3422","Sports coaches, instructors and officials","342","high","The sub-sector clearly maps to the sports and fitness domain, specifically the ISCO Minor Group 342, for which 3422 is a primary representative unit.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""3422"",
+  ""isco_label"": ""Sports coaches, instructors and officials"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector clearly maps to the sports and fitness domain, specifically the ISCO Minor Group 342, for which 3422 is a primary representative unit."",
+  ""fallback_isco_3digit"": ""342""
+}"
+"Service","Textile, Laundry clothes and laundry services","2","map","8157","Laundry machine operators","815","high","The sub-sector specifically covers textile and laundry services, which align directly with Minor Group 815 (Textile, fur and leather products machine operators) and its unit group 8157.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""8157"",
+  ""isco_label"": ""Laundry machine operators"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector specifically covers textile and laundry services, which align directly with Minor Group 815 (Textile, fur and leather products machine operators) and its unit group 8157."",
+  ""fallback_isco_3digit"": ""815""
+}"
+"Service","Vehicle Technical Inspection Service","1","map","3115","Mechanical engineering technicians","311","medium","Vehicle technical inspection is a specialized technical assessment of automotive systems that aligns with the role of mechanical engineering technicians, particularly those specializing in automotive safety and technical compliance.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""3115"",
+  ""isco_label"": ""Mechanical engineering technicians"",
+  ""confidence"": ""medium"",
+  ""rationale"": ""Vehicle technical inspection is a specialized technical assessment of automotive systems that aligns with the role of mechanical engineering technicians, particularly those specializing in automotive safety and technical compliance."",
+  ""fallback_isco_3digit"": ""311""
+}"
+"Service","Veterinary works","3","map","2250","Veterinarians","225","high","The sub-sector refers specifically to the domain of animal healthcare and medicine, which is uniquely represented by the veterinary professional and technician unit groups.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2250"",
+  ""isco_label"": ""Veterinarians"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector refers specifically to the domain of animal healthcare and medicine, which is uniquely represented by the veterinary professional and technician unit groups."",
+  ""fallback_isco_3digit"": ""225""
+}"
+"Service","Water Works Consulting Service","3","map","2142","Civil engineers","214","high","Water works consulting services primarily involve the research, design, and advisory work regarding water supply and sewerage infrastructure, which falls under civil engineering.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2142"",
+  ""isco_label"": ""Civil engineers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""Water works consulting services primarily involve the research, design, and advisory work regarding water supply and sewerage infrastructure, which falls under civil engineering."",
+  ""fallback_isco_3digit"": ""214""
+}"
+"Sport Culture and tourism","Journalism","9","map","2642","Journalists","264","high","The sub-sector 'Journalism' directly corresponds to the ISCO-08 unit group 2642 for Journalists.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2642"",
+  ""isco_label"": ""Journalists"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Journalism' directly corresponds to the ISCO-08 unit group 2642 for Journalists."",
+  ""fallback_isco_3digit"": ""264""
+}"
+"Sport Culture and tourism","Sport","16","map","3421","Athletes and sports players","342","high","The sub-sector 'Sport' corresponds directly to the occupations in Minor Group 342, which includes athletes, coaches, and fitness instructors.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""3421"",
+  ""isco_label"": ""Athletes and sports players"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Sport' corresponds directly to the occupations in Minor Group 342, which includes athletes, coaches, and fitness instructors."",
+  ""fallback_isco_3digit"": ""342""
+}"
+"Tourism and art","Circus Group","1","map","2659","Creative and performing artists not elsewhere classified","265","high","The sub-sector 'Circus Group' describes a niche within performing arts, and ISCO 2659 explicitly includes occupations central to circuses such as clowns, magicians, and acrobats.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2659"",
+  ""isco_label"": ""Creative and performing artists not elsewhere classified"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Circus Group' describes a niche within performing arts, and ISCO 2659 explicitly includes occupations central to circuses such as clowns, magicians, and acrobats."",
+  ""fallback_isco_3digit"": ""265""
+}"
+"Tourism and art","Culture and Arts Education","12","map","2355","Other arts teachers","235","high","This unit group specifically covers teachers who instruct students in the practice and theory of dance, drama, visual, and other arts, which directly defines the domain of Culture and Arts Education.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2355"",
+  ""isco_label"": ""Other arts teachers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""This unit group specifically covers teachers who instruct students in the practice and theory of dance, drama, visual, and other arts, which directly defines the domain of Culture and Arts Education."",
+  ""fallback_isco_3digit"": ""235""
+}"
+"Tourism and art","Fashion and beauty pageants","4","map","5241","Fashion and other models","524","high","The sub-sector specifically focuses on beauty pageants and the display of fashion, which directly aligns with the defined role of fashion and other models in ISCO-08.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""5241"",
+  ""isco_label"": ""Fashion and other models"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector specifically focuses on beauty pageants and the display of fashion, which directly aligns with the defined role of fashion and other models in ISCO-08."",
+  ""fallback_isco_3digit"": ""524""
+}"
+"Tourism and art","Filmmaking and related work","44","no_map","","","","high","The sub-sector is too broad as it encompasses distinct ISCO domains including creative professionals like directors and actors (Minor Group 265) and technical roles like broadcasting and audiovisual technicians (Minor Group 352).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector is too broad as it encompasses distinct ISCO domains including creative professionals like directors and actors (Minor Group 265) and technical roles like broadcasting and audiovisual technicians (Minor Group 352)."",
+  ""fallback_isco_3digit"": null
+}"
+"Tourism and art","Hotels and Motels","16","no_map","","","","high","The sub-sector 'Hotels and Motels' refers to an industry domain containing multiple distinct occupational categories such as managers, receptionists, cooks, and cleaners, rather than a single functional unit group.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Hotels and Motels' refers to an industry domain containing multiple distinct occupational categories such as managers, receptionists, cooks, and cleaners, rather than a single functional unit group."",
+  ""fallback_isco_3digit"": null
+}"
+"Tourism and art","Journalism","2","map","2642","Journalists","264","high","The sub-sector 'Journalism' maps directly to the specific ISCO-08 unit group 2642 dedicated to news research and reporting.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2642"",
+  ""isco_label"": ""Journalists"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Journalism' maps directly to the specific ISCO-08 unit group 2642 dedicated to news research and reporting."",
+  ""fallback_isco_3digit"": ""264""
+}"
+"Tourism and art","Mobile, Theater and; Video film production and distribution","4","no_map","","","","medium","The sub-sector describes an entire industry segment—encompassing production, distribution, and performance—which requires a diverse range of occupations across different ISCO minor groups such as creative professionals (265), technicians (352), and managers (143).","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""medium"",
+  ""rationale"": ""The sub-sector describes an entire industry segment—encompassing production, distribution, and performance—which requires a diverse range of occupations across different ISCO minor groups such as creative professionals (265), technicians (352), and managers (143)."",
+  ""fallback_isco_3digit"": null
+}"
+"Tourism and art","Motels, lodges and traditional restaurants","3","map","1411","Hotel managers","141","high","The sub-sector explicitly covers accommodation (motels/lodges) and food services (restaurants), which align directly with the ISCO Minor Group 141: Hotel and Restaurant Managers.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""1411"",
+  ""isco_label"": ""Hotel managers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector explicitly covers accommodation (motels/lodges) and food services (restaurants), which align directly with the ISCO Minor Group 141: Hotel and Restaurant Managers."",
+  ""fallback_isco_3digit"": ""141""
+}"
+"Tourism and art","Motion Picture Works","49","no_map","","","","medium","The sub-sector 'Motion Picture Works' describes an entire industry that encompasses both creative professional roles (such as directors and actors in 2654 and 2655) and technical roles (such as audiovisual technicians in 3521), making it too broad for a single 4-digit unit group.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""medium"",
+  ""rationale"": ""The sub-sector 'Motion Picture Works' describes an entire industry that encompasses both creative professional roles (such as directors and actors in 2654 and 2655) and technical roles (such as audiovisual technicians in 3521), making it too broad for a single 4-digit unit group."",
+  ""fallback_isco_3digit"": null
+}"
+"Tourism and art","Music Band","27","map","2652","Musicians, singers and composers","265","high","The sub-sector 'Music Band' specifically identifies the professional domain of performing musical compositions, which is the direct focus of this unit group.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""2652"",
+  ""isco_label"": ""Musicians, singers and composers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Music Band' specifically identifies the professional domain of performing musical compositions, which is the direct focus of this unit group."",
+  ""fallback_isco_3digit"": ""265""
+}"
+"Tourism and art","Resturant,Coffee shop","35","no_map","","","","high","The sub-sector covers a broad industry domain including distinct ISCO unit groups for managers (1412), chefs (3434), cooks (5120), waiters (5131), and kitchen helpers (9412), making it too broad to map to a single group.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector covers a broad industry domain including distinct ISCO unit groups for managers (1412), chefs (3434), cooks (5120), waiters (5131), and kitchen helpers (9412), making it too broad to map to a single group."",
+  ""fallback_isco_3digit"": null
+}"
+"Tourism and art","Travel Agent and Related Services","11","map","4221","Travel consultants and clerks","422","high","The sub-sector directly aligns with the duties of travel consultants and agents who provide information and arrange itineraries as defined in ISCO unit group 4221.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""4221"",
+  ""isco_label"": ""Travel consultants and clerks"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector directly aligns with the duties of travel consultants and agents who provide information and arrange itineraries as defined in ISCO unit group 4221."",
+  ""fallback_isco_3digit"": ""422""
+}"
+"agriculture","Agriculture","21","no_map","","","","high","The sub-sector 'Agriculture' is too broad as it encompasses an entire industrial domain ranging from production managers and professional advisors to skilled farmers and elementary labourers.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Agriculture' is too broad as it encompasses an entire industrial domain ranging from production managers and professional advisors to skilled farmers and elementary labourers."",
+  ""fallback_isco_3digit"": null
+}"
+"agriculture","Bee reading","1","map","6123","Apiarists and sericulturists","612","high","The sub-sector 'Bee reading' is a likely translation or clerical error for bee rearing or beekeeping (apiculture), which is explicitly covered by Unit Group 6123.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""6123"",
+  ""isco_label"": ""Apiarists and sericulturists"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Bee reading' is a likely translation or clerical error for bee rearing or beekeeping (apiculture), which is explicitly covered by Unit Group 6123."",
+  ""fallback_isco_3digit"": ""612""
+}"
+"agriculture","Breeding birds","3","map","6122","Poultry producers","612","high","The sub-sector 'Breeding birds' corresponds directly to the activities of ISCO group 6122, which includes breeding and raising various types of poultry.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""6122"",
+  ""isco_label"": ""Poultry producers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Breeding birds' corresponds directly to the activities of ISCO group 6122, which includes breeding and raising various types of poultry."",
+  ""fallback_isco_3digit"": ""612""
+}"
+"agriculture","Coffee cultivation","4","map","6112","Tree and shrub crop growers","611","high","The ISCO-08 description for 6112 explicitly includes the cultivation of coffee bushes.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""6112"",
+  ""isco_label"": ""Tree and shrub crop growers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The ISCO-08 description for 6112 explicitly includes the cultivation of coffee bushes."",
+  ""fallback_isco_3digit"": ""611""
+}"
+"agriculture","Forest development and related services","8","no_map","","","","high","The sub-sector 'Forest development and related services' represents a broad industrial domain that encompasses multiple ISCO skill levels and major groups, including managers, technicians, and laborers.","{
+  ""mapping_decision"": ""no_map"",
+  ""isco_code"": null,
+  ""isco_label"": null,
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Forest development and related services' represents a broad industrial domain that encompasses multiple ISCO skill levels and major groups, including managers, technicians, and laborers."",
+  ""fallback_isco_3digit"": null
+}"
+"agriculture","Livestock development","5","map","6121","Livestock and dairy producers","612","high","The sub-sector 'Livestock development' directly corresponds to the domain of breeding and raising domesticated animals, which is the primary focus of ISCO-08 minor group 612 (Animal Producers).","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""6121"",
+  ""isco_label"": ""Livestock and dairy producers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector 'Livestock development' directly corresponds to the domain of breeding and raising domesticated animals, which is the primary focus of ISCO-08 minor group 612 (Animal Producers)."",
+  ""fallback_isco_3digit"": ""612""
+}"
+"agriculture","Log production","1","map","6210","Forestry and related workers","621","high","Log production is the primary activity described under the cultivation, conservation, and exploitation of forests in ISCO-08 unit group 6210.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""6210"",
+  ""isco_label"": ""Forestry and related workers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""Log production is the primary activity described under the cultivation, conservation, and exploitation of forests in ISCO-08 unit group 6210."",
+  ""fallback_isco_3digit"": ""621""
+}"
+"agriculture","Mixed agriculture","5","map","6130","Mixed crop and animal producers","613","high","Mixed agriculture specifically corresponds to the ISCO unit group for farming operations that combine both crop and livestock production.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""6130"",
+  ""isco_label"": ""Mixed crop and animal producers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""Mixed agriculture specifically corresponds to the ISCO unit group for farming operations that combine both crop and livestock production."",
+  ""fallback_isco_3digit"": ""613""
+}"
+"agriculture","Vegetable, Fruit Production, Seedling and Plant Seeds","7","map","6113","Gardeners, horticultural and nursery growers","611","high","The sub-sector specifically highlights seedlings and plant seeds which are core components of nursery operations in 6113, while also spanning vegetable and fruit production which fall under the same 611 minor group.","{
+  ""mapping_decision"": ""map"",
+  ""isco_code"": ""6113"",
+  ""isco_label"": ""Gardeners, horticultural and nursery growers"",
+  ""confidence"": ""high"",
+  ""rationale"": ""The sub-sector specifically highlights seedlings and plant seeds which are core components of nursery operations in 6113, while also spanning vegetable and fruit production which fall under the same 611 minor group."",
+  ""fallback_isco_3digit"": ""611""
+}"

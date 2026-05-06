@@ -8,6 +8,7 @@ Each country folder contains the complete pipeline for mapping a national occupa
 |---------|----------|-------------|-----------------|--------|
 | [Argentina](argentina_cno2017/) | CNO-2017 | 5,690 | 89.6% | Complete |
 | [Kenya](kenya_kesco/) | KESCO | 5,917 | 97.4% | Complete |
+| [Ethiopia](ethiopia/) | ELMIS | 4,135 | 81.0% | Stage 1 + 2 complete; Stage 3 (1,300 items) live in review app |
 
 ## Adding a New Country
 

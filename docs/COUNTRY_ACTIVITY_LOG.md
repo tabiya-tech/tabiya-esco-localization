@@ -55,6 +55,39 @@ High-level updates across all localization efforts. For detailed session context
 
 ---
 
+## Ethiopia (ELMIS)
+
+### 2026-04-28 - Ethiopia
+- Scaffolded `countries/ethiopia/` and folded in stage-1 work from the Ethiopia working folder (`~/Dropbox/Tabiya/Taxonomy/Ethiopia`).
+- Imported 4,135 ELMIS titles + Amharic + sector metadata, MiniLM NEL top-5 matches CSV/JSONL, the matcher script, and the colleague's reference taxonomy-builder script.
+- Stage 1 results: 96 exact / 1,516 high_confidence / 2,523 low_similarity (best-of-top-5 per title) against Tabiya v2.0.1-rc.1.
+- Wrote `config.json` capturing NEL settings, source columns, English-first translation strategy, and ~23k future-scale target.
+- Status: In Progress - Stage 1 complete.
+
+### 2026-04-30 - Ethiopia
+- Tested sub-sector -> ISCO 4-digit filter as a stage-1 refinement (Gemini-mapped 216 sub-sectors, then filtered ESCO matches to titles whose group shares the first 2 ISCO digits).
+- Filter dropped 502 titles to "no matches at all" and 463 changed top-1; ELMIS partner review packet built (`docs/SUBSECTOR_FILTER_REVIEW.md`, `outputs/ethiopia_subsector_filter_review.xlsx`).
+- Decision: filter parked as exploration; canonical pipeline reverted to unfiltered stage-1.
+- Built stage-2 LLM matcher with swappable provider (Gemini default, DeepSeek supported via `scripts/llm_provider.py` and `config.json` switch).
+- Status: In Progress - Stage-2 build complete, ready to run.
+
+### 2026-05-05 - Ethiopia
+- Ran stage-2 LLM matching on 2,522 titles (best_score < 0.85). Parallelized to 10 workers for ~10x speedup.
+- Final canonical pipeline: 1,613 stage-1 auto-pass + 1,738 stage-2 LLM picks + 783 no_match = **81.0% ESCO-matched (3,351/4,135)**.
+- 2 errors retried (LLM returned JSON list instead of object); now 0 errors.
+- Built stage-2 review packet (`outputs/ethiopia_stage2_review.xlsx`, 7 sheets).
+- Tested expanded-pool retry on the 285 no_match titles in mapped sub-sectors: 156 flipped to match (54.7%), 92% of flips picked a candidate the NEL classifier never surfaced. Promotion declined; kept as exploration (`docs/EXPANDED_POOL_EXPLORATION.md`).
+- Status: Milestone Reached - Stage 1 + Stage 2 complete.
+
+### 2026-05-06 - Ethiopia
+- Built stage-3 review pile: 784 stage-2 no_match + 512 medium-conf + 4 low-conf matches = 1,300 items.
+- Pushed to Tabiya review app's Supabase backend (project id 9, country code ET) with synthetic 5-digit `elmis_code`s.
+- Added `sector` + `sub_sector` columns to `review_items` schema (SQL migration `review_app/sql/06_add_sector_columns.sql`); review app's Local Occupation card now shows them.
+- Rebranded the review app: removed Tabiya branding, switched to neutral Oxford blue + white + slate grey palette per partner request.
+- Status: Awaiting ELMIS Review - 1,300 items live in the review app.
+
+---
+
 ## Kenya (KESCO)
 
 ### 2025-12-24 - Kenya
@@ -114,12 +147,6 @@ High-level updates across all localization efforts. For detailed session context
 - Produced small test runs (translations_test, translations_test_50) for validation
 - Committed shared O*NET embedding generator script (shared_data/generate_onet_embeddings.py) with bundled source
 - Status: Milestone Reached - Swahili translation outputs produced, pending review
-
----
-
-## Ethiopia
-
-*No activity yet.*
 
 ---
 

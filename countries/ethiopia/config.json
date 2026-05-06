@@ -1,0 +1,60 @@
+{
+  "name": "Ethiopia ELMIS",
+  "country_code": "ET",
+  "source_taxonomy": "ELMIS",
+  "description": "Ethiopia ELMIS occupational title list (ELMIS = Ethiopian Labour Market Information System)",
+  "language": "English",
+  "local_code_field": "elmis_code",
+  "local_label_field": "elmis_title",
+  "local_label_en_field": "elmis_title",
+  "source_data": {
+    "input_file": "data/output_with_sectors.csv",
+    "title_column_en": "informal work in eng",
+    "title_column_amharic": "Profession in Amharic",
+    "sector_columns": ["sector", "sub sector"],
+    "formality_column": "professional/ formal",
+    "expected_total_titles": 23000,
+    "current_batch_size": 4135,
+    "source_has_codes": false,
+    "row_key_strategy": "title_plus_row_index",
+    "new_local_code_strategy": "isco4_plus_sequence_fallback_9999"
+  },
+  "nel_classifier": {
+    "url": "https://dev.classifier.tabiya.tech",
+    "taxonomy_model_id": "68933862382aab4c7de13ec6",
+    "taxonomy_version": "v2.0.1-rc.1",
+    "active_model_label": "minilm",
+    "active_model_decision": "accepted_minilm_only_2026-04-28",
+    "gemini_path_status": "parked_api_key_auth_blocker",
+    "thresholds": {
+      "exact": 0.95,
+      "high_confidence": 0.85,
+      "min_similarity": 0.50
+    }
+  },
+  "skills_in_scope": false,
+  "stage2": {
+    "auto_pass_threshold": 0.85,
+    "input_file": "outputs/matches_minilm.csv",
+    "output_file": "outputs/stage2_results.csv",
+    "notes": "Stage-1 NEL rows with best_score >= auto_pass_threshold are auto-accepted. The remainder go to LLM stage-2 matching."
+  },
+  "llm": {
+    "provider": "gemini",
+    "gemini": {
+      "model": "gemini-3-flash-preview",
+      "env_var": "GEMINI_API_KEY"
+    },
+    "deepseek": {
+      "model": "deepseek-chat",
+      "base_url": "https://api.deepseek.com/v1",
+      "env_var": "DEEPSEEK_API_KEY"
+    },
+    "notes": "ELMIS team can switch the active LLM by changing 'provider' to 'deepseek'. Both providers share the common interface in scripts/llm_provider.py and the same JSON output schema."
+  },
+  "translation": {
+    "primary_completion_language": "English",
+    "target_languages": ["am", "om", "ti"],
+    "notes": "Localization is finalised in English first. Translation pipeline (modeled on Kenya Swahili) will run downstream and must be language-agnostic so ELMIS can extend to Amharic, Afan Oromo, Tigrinya, etc."
+  }
+}
